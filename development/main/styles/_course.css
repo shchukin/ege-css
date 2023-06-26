@@ -1,0 +1,110 @@
+.course {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #F6F7F8;
+    margin: -2px -1005px 0; /* сверху забираемся под бордюр у табов, а по горизонтали тянем фон */
+    padding: 18px 1000px 20px;
+}
+    .course__param {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+        .course__param .label {
+            white-space: nowrap;
+        }
+
+    .course__param_subject {
+        width: 100%;
+    }
+
+    .course__param_classes-per-week {
+        width: 50%;
+        margin-top: 8px;
+    }
+
+    .course__param_period {
+        width: 50%;
+        margin-top: 8px;
+    }
+
+    .course__submit {
+        width: 100%;
+        margin-top: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+        .course__calculate {
+            width: 100%;
+        }
+
+
+
+@media (min-width: 768px) {
+
+    .course {
+        flex-wrap: nowrap;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 14px 15px 20px;
+    }
+        .course__param {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .course__param_subject {
+            width: 199px;
+        }
+
+        .course__param_classes-per-week {
+            width: 176px;
+            margin-left: 12px;
+            margin-top: 0;
+        }
+
+        .course__param_period {
+            width: 128px;
+            margin-left: 12px;
+            margin-top: 0;
+        }
+
+        .course__submit {
+            width: 99px;
+            margin-top: 32px;
+            margin-left: 12px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+            .course__calculate.button {
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+}
+
+@media (min-width: 1024px) {
+
+    .course {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .course__param {
+
+        }
+
+        .course__param_subject {
+            width: 219px;
+        }
+
+        .course__param_classes-per-week {
+            width: 181px;
+        }
+
+        .course__param_period {
+            width: 168px;
+        }
+
+        .course__submit {
+            width: 156px;
+        }
+}

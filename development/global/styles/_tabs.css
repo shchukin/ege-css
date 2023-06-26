@@ -1,0 +1,111 @@
+.tabs {
+
+}
+    .tabs__head {
+
+    }
+        .tabs__tag {
+
+        }
+
+        .tabs__tag--current {
+
+        }
+
+    .tabs__body {
+
+    }
+        .tabs__item {
+            display: none;
+        }
+
+        .tabs__item--current {
+            display: block;
+        }
+
+
+
+
+.tabs_skin_default {
+
+}
+    .tabs_skin_default .tabs__head {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+        .tabs_skin_default .tabs__tag {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid transparent;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            padding: 16px 10px 14px;
+            font-size: 15px;
+            line-height: 22px;
+            color: #FF7502;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        @media (min-width: 768px) {
+            .tabs_skin_default .tabs__tag {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        .tabs_skin_default .tabs__tag--current {
+            border-bottom-color: currentColor;
+        }
+
+    .tabs_skin_default .tabs__body {
+
+    }
+        .tabs_skin_default .tabs__item {
+            display: none;
+        }
+
+        .tabs_skin_default .tabs__item--current {
+            display: block;
+        }
+
+
+@media (min-width: 768px) {
+    
+    .tabs_skin_default {
+
+    }
+        .tabs_skin_default .tabs__head {
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+            .tabs_skin_default .tabs__tag {
+
+            }
+
+            .tabs_skin_default .tabs__tag--current {
+
+            }
+
+        .tabs_skin_default .tabs__body {
+
+        }
+            .tabs_skin_default .tabs__item {
+
+            }
+
+            .tabs_skin_default .tabs__item--current {
+
+            }
+}
+
+        
+
+

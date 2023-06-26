@@ -1,0 +1,46 @@
+.panel {
+    padding: 32px 20px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 40px 0 rgba(42, 33, 26, 0.1);
+}
+    .panel__heading {
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .panel__body {
+        margin-top: 22px;
+    }
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .panel {
+        padding: 27px 40px 24px;
+    }
+        .panel__heading {
+
+        }
+
+        .panel__body {
+            margin-top: 15px;
+        }
+}
+
+@media (min-width: 1024px) {
+
+    .panel {
+        padding: 52px 52px 60px;
+    }
+        .panel__heading {
+
+        }
+
+        .panel__body {
+
+        }
+}

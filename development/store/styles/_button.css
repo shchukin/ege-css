@@ -1,0 +1,30 @@
+/* override */
+
+.button_id-contacts-handler {
+    padding: 8px 23px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    background-image: none;
+    font-size: 13px;
+    transition: opacity 0.1s ease;
+}
+
+.button_id-contacts-handler:hover {
+    opacity: 0.8;
+}
+
+
+@media (min-width: 1024px) {
+    .button_id-contacts-handler {
+        border-color: #FF7502;
+        color: #FF7502;
+        transition: border-color 0.1s ease,
+                    color 0.1s ease;
+    }
+
+    .button_id-contacts-handler:hover {
+        opacity: 1;
+        border-color: #FE9034;
+        color: #FE9034;
+    }
+}

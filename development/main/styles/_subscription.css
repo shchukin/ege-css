@@ -1,0 +1,14 @@
+/* override */
+
+/* слишком длинные текст на мобилках, уменьшаем паддинг */
+.subscription__submit,
+.subscription__submit.button {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* аналогично, на 375px не хватает пару символов чтобы уместиться в одну строку */
+.subscription__terms {
+    margin-left: -5px;
+    margin-right: -5px;
+}

@@ -1,0 +1,120 @@
+.contacts {
+    width: 180px;
+}
+    .contacts__phone {
+
+    }
+
+    .contacts__location {
+        margin-top: 14px;
+    }
+
+    .contacts__callback {
+        margin-top: 23px;
+    }
+
+        .contacts__social {
+            display: flex;
+            padding: 16px 6px 17px;
+        }
+            .contacts__network {
+                position: relative;
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+                .contacts__network::before {
+                    content: "";
+                    position: absolute;
+                    left: -1px;
+                    top: 4px;
+                    bottom: 2px;
+                    display: block;
+                    width: 2px;
+                    background-color: rgba(205, 214, 220, 0.26);
+                    border-radius: 2px;
+                }
+
+                .contacts__network:first-child::before {
+                    display: none;
+                }
+
+        .contacts__data {
+            position: relative;
+            padding: 35px 50px 40px;
+            text-align: center;
+        }
+            .contacts__data::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                height: 2px;
+                background-color: rgba(205, 214, 220, 0.26);
+                border-radius: 2px;
+            }
+
+            .contacts__phone {
+                font-size: 21px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .contacts__address {
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            .contacts__callback {
+                margin-top: 23px;
+            }
+                .contacts__callback .button {
+                    min-width: 180px;
+                }
+
+
+
+
+@media (min-width: 768px) {
+    .contacts {
+        position: relative;
+        width: 334px;
+        min-height: 109px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+        .contacts__phone {
+            width: 184px;
+            margin-right: 22px;
+        }
+
+        .contacts__location {
+            width: 128px;
+            margin-top: 1px;
+        }
+
+        .contacts__callback {
+            position: absolute;
+            left: 0;
+            top: 46px;
+        }
+}
+
+@media (min-width: 1024px) {
+    .contacts {
+        width: 384px;
+    }
+        .contacts__location {
+            width: 178px;
+        }
+}
+
+@media (min-width: 1340px) {
+
+}
+

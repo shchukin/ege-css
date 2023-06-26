@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <linearGradient id="telegram-color-a" x1="66.67%" x2="41.67%" y1="16.67%" y2="75%">
+            <stop offset="0%" stop-color="#37AEE2"/>
+            <stop offset="100%" stop-color="#1E96C8"/>
+        </linearGradient>
+        <linearGradient id="telegram-color-b" x1="61.23%" x2="74.71%" y1="43.69%" y2="80.24%">
+            <stop offset="0%" stop-color="#EFF7FC"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="12" cy="12" r="12" fill="url(#telegram-color-a)"/>
+        <path fill="#C8DAEA" d="M10 16.5c-.39 0-.32-.15-.46-.52L8.4 12.22 17.2 7"/>
+        <path fill="url(#telegram-color-b)" d="M9.91 13.42L14.75 17c.55.3.95.14 1.09-.52l1.96-9.27c.2-.81-.3-1.18-.83-.94L5.4 10.73c-.79.32-.79.76-.14.95l2.96.93 6.87-4.33c.32-.2.62-.1.38.12"/>
+    </g>
+</svg>

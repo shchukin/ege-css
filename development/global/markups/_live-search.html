@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.live-search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.live-search</h1>
+            <p>
+                В проекте с магазом есть скин <b>.live-search_skin_header</b>. Смотри
+                <a href="../../store/markups/_live-search.html">сайт магазина</a>.
+                Там немного меняется HTML
+            </p>
+            <p>
+                <b>.live-search__option_highlighted</b> -- это модификатор на случая управления с клавиатуры.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+
+            <div class="live-search">
+                <div class="live-search__body">
+                    <label class="live-search__label" for="live-search-field">
+                        Поиск
+                    </label>
+                    <div class="live-search__wrap">
+                        <div class="live-search__field input">
+                            <input class="input__widget" type="text" placeholder="Что вы ищете?" id="live-search-field">
+                        </div>
+                        <button class="live-search__submit" type="submit">Искать</button>
+                    </div>
+                </div>
+                <div class="live-search__dropdown">
+
+                    <div class="live-search__option live-search__option_loading" title="Идет загрузка">
+                        <div class="container">Идет загрузка</div>
+                    </div>
+
+                    <!-- temp -->
+                    или:
+                    <!--/temp -->
+
+                    <div class="live-search__option live-search__option_not-found">
+                        <div class="container">Ничего не найдено</div>
+                    </div>
+
+                    <!-- temp -->
+                    или:
+                    <!--/temp -->
+
+                    <b class="visuallyhidden">Результаты живого поиска:</b>
+                    <div class="live-search__option">
+                        Курс <span class="highlight">математик</span>и
+                    </div>
+                    <div class="live-search__option">
+                        Онлайн курс по <span class="highlight">математик</span>е для учащихся 10–11 классов
+                    </div>
+                    <div class="live-search__option">
+                        Курс <span class="highlight">математик</span>и
+                    </div>
+                    <div class="live-search__option">
+                        Задания по <span class="highlight">математик</span>е. Сдача ЕГЭ.
+                    </div>
+                    <div class="live-search__option">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="live-search__option">
+                        Etiam gravida feugiat lorem vel fermentum
+                    </div>
+                    <div class="live-search__option">
+                        Integer laoreet rhoncus quam
+                    </div>
+                    <div class="live-search__option">
+                        Fringilla faucibus lacus facilisis at
+                    </div>
+                    <div class="live-search__option">
+                        Pellentesque eu placerat ligula
+                    </div>
+                    <div class="live-search__option">
+                        Cras id velit eget lacus facilisis vulputate
+                    </div>
+                    <div class="live-search__option">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="live-search__option">
+                        Etiam gravida feugiat lorem vel fermentum
+                    </div>
+                    <div class="live-search__option">
+                        Integer laoreet rhoncus quam
+                    </div>
+                    <div class="live-search__option">
+                        Fringilla faucibus lacus facilisis at
+                    </div>
+                    <div class="live-search__option">
+                        Pellentesque eu placerat ligula
+                    </div>
+                    <div class="live-search__option">
+                        Cras id velit eget lacus facilisis vulputate
+                    </div>
+                    <div class="live-search__option">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="live-search__option">
+                        Etiam gravida feugiat lorem vel fermentum
+                    </div>
+                    <div class="live-search__option">
+                        Integer laoreet rhoncus quam
+                    </div>
+                    <div class="live-search__option">
+                        Fringilla faucibus lacus facilisis at
+                    </div>
+                    <div class="live-search__option">
+                        Pellentesque eu placerat ligula
+                    </div>
+                    <div class="live-search__option">
+                        Cras id velit eget lacus facilisis vulputate
+                    </div>
+                    <div class="live-search__option">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="live-search__option">
+                        Etiam gravida feugiat lorem vel fermentum
+                    </div>
+                    <div class="live-search__option">
+                        Integer laoreet rhoncus quam
+                    </div>
+                    <div class="live-search__option">
+                        Fringilla faucibus lacus facilisis at
+                    </div>
+                    <div class="live-search__option">
+                        Pellentesque eu placerat ligula
+                    </div>
+                    <div class="live-search__option">
+                        Cras id velit eget lacus facilisis vulputate
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="../scripts/mfp.js"></script>
+        <script src="../scripts/up.js"></script>
+        <script src="../scripts/subscription.js"></script>
+        <script src="../scripts/form.js"></script>
+        <script src="../scripts/alert.js"></script>
+        <script src="../scripts/down.js"></script>
+        <script src="../scripts/owl-carousel.js"></script>
+        <script src="../scripts/slider.js"></script>
+        <script src="../scripts/live-search.js"></script>
+        <script src="../scripts/input.js"></script>
+        <script src="../scripts/tabs.js"></script>
+
+    </body>
+</html>

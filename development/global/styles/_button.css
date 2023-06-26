@@ -1,0 +1,195 @@
+.button {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+    .button__label {
+        position: relative; /* in case of overlay over the text */
+    }
+
+
+
+.button_size_smaller {
+    padding: 12px 26px;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 3px;
+}
+
+
+
+.button_disabled {
+    pointer-events: none;
+    background-color: #E4E6E8;
+    background-image: none;
+}
+
+
+
+.button_palette_submit {
+    background-color: #F8A914;
+    background-image: linear-gradient(-225deg, #F8A914, #F4512F);
+    box-shadow: 0 20px 20px 0 rgba(244, 95, 0, 0.3);
+}
+    .button_palette_submit::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(89deg, #F6A247 0%, #F47156 100%);
+        border-radius: 4px;
+        opacity: 0;
+        transition: opacity 0.1s ease;
+    }
+
+    .button_palette_submit:hover::before,
+    .button_palette_submit.button_loading::before,
+    .button_palette_submit.button_success::before {
+        opacity: 1;
+    }
+
+
+
+.button_palette_brand {
+    background-color: var(--brand_orange);
+}
+    .button_palette_brand:hover,
+    .button_palette_brand.button_loading,
+    .button_palette_brand.button_success {
+        background-color: #FFAC67;
+    }
+
+
+.button_palette_youtube {
+    background-color: #CE1312;
+}
+    .button_palette_youtube:hover {
+        background-color: #D74241;
+    }
+
+
+.button_palette_vkontakte {
+    background-color: #4C6C91;
+}
+    .button_palette_vkontakte:hover {
+        background-color: #6F89A6;
+    }
+
+
+.button_palette_neutral {
+    padding: 14px 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    background-image: none;
+    transition: opacity 0.1s ease;
+}
+
+.button_palette_neutral.button_size_smaller {
+    padding: 10px 24px;
+}
+    .button_palette_neutral:hover {
+        opacity: 0.8;
+    }
+
+
+.button_palette_faded {
+    padding: 14px 18px;
+    border: 2px solid #F0F1F2;
+    color: #697882;
+    background-color: transparent;
+    background-image: none;
+    transition: opacity 0.1s ease;
+}
+
+.button_palette_faded.button_size_smaller {
+    padding: 10px 24px;
+}
+    .button_palette_faded:hover {
+        opacity: 0.8;
+    }
+
+
+.button_palette_empty {
+    padding: 14px 18px;
+    border: 2px solid #FF7502;
+    color: #FF7502;
+    background-color: transparent;
+    background-image: none;
+    transition: opacity 0.1s ease;
+}
+
+.button_palette_empty.button_size_smaller {
+    padding: 10px 24px;
+}
+    .button_palette_empty:hover {
+        opacity: 0.8;
+    }
+
+
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.button_loading {
+    color: transparent;
+    pointer-events: none;
+}
+    .button_loading::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+        margin-left: -12px;
+        background-image: url("../vectors/button_loading.svg");
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: button-loading-spin 1s steps(12) infinite;
+    }
+
+
+
+.button_success {
+    color: transparent;
+    pointer-events: none;
+}
+    .button_success::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+        margin-left: -12px;
+        background-image: url("../vectors/button_success.svg");
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }

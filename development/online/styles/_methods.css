@@ -1,0 +1,96 @@
+.methods {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFF5E7;
+}
+    .methods__wrap {
+
+    }
+        .methods__inner {
+
+        }
+            .methods__preview {
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 32px;
+                display: block;
+                width: 248px;
+                height: 336px;
+                padding: 18px;
+                background-image: url("../vectors/methods-preview.svg");
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+                .methods__certificate {
+                    vertical-align: top;
+                    width: 212px;
+                    height: 300px;
+                    background-color: #FFFFFF;
+                }
+
+            .methods__content {
+
+            }
+                .methods__heading {
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                    font-family: var(--font_family_heading);
+                    font-weight: var(--font_weight_demi);
+                    font-size: 36px;
+                    list-style: 38px;
+                    text-align: center;
+                }
+
+                .methods__list {
+
+                }
+
+@media (min-width: 768px) {
+    .methods {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .methods__wrap {
+
+    }
+        .methods__inner {
+            display: flex;
+            align-items: flex-start;
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .methods__preview {
+                flex-shrink: 0;
+                margin-right: 40px;
+            }
+
+            .methods__content {
+                flex-shrink: 0;
+                flex-grow: 1;
+                flex-basis: 0;
+                margin-top: 9px;
+            }
+                .methods__heading {
+                    max-width: 400px;
+                    margin-bottom: 29px;
+                    font-size: 42px;
+                    line-height: 46px;
+                    text-align: left;
+                }
+}
+
+
+@media (min-width: 1024px) {
+    .methods {
+        padding-top: 124px;
+        padding-bottom: 124px;
+    }
+
+    .methods__preview {
+        margin-right: 100px;
+    }
+}

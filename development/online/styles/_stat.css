@@ -1,0 +1,46 @@
+.stat {
+
+}
+    .stat__param {
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        padding-bottom: 7px;
+        background-color: #FFF5E7;
+        border-radius: 50%;
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+    }
+        .stat__value {
+            display: block;
+            margin-left: -50px;
+            margin-right: -50px;
+        }
+
+    .stat__unit {
+        display: block;
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    
+@media (min-width: 768px) {
+    .stat__param {
+        width: 100px;
+        height: 100px;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        font-size: 52px;
+        line-height: 60px;
+    }
+}    
+

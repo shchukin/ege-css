@@ -1,0 +1,113 @@
+.tutor {
+    padding-top: 53px;
+    padding-bottom: 50px;
+    background-color: #FFF5E7;
+}
+    .tutor__wrap {
+
+    }
+        .tutor__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .tutor__preview {
+            margin-top: 38px;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+            .tutor__photo {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("../vectors/tutor__photo.svg");
+                background-size: 300px 300px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+                .tutor__image {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    vertical-align: top;
+                    border-radius: 50%;
+                    background-color: #94877F;
+                }
+
+        .tutor__name {
+            margin-top: 34px;
+            margin-bottom: 0;
+            display: block;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        .tutor__note {
+            margin-top: 13px;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+
+@media (min-width: 768px) {
+    .tutor {
+        padding-top: 84px;
+        padding-bottom: 88px;
+    }
+        .tutor__heading {
+            font-size: 52px;
+            line-height: 60px;
+        }
+
+        .tutor__preview {
+            margin-top: 28px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .tutor__name {
+            margin-top: 35px;
+        }
+
+        .tutor__note {
+            margin-top: 13px;
+        }
+}
+
+
+@media (min-width: 1024px) {
+    .tutor {
+
+    }
+        .tutor__heading {
+
+        }
+
+        .tutor__preview {
+
+        }
+
+        .tutor__name {
+
+        }
+
+        .tutor__note {
+            width: 730px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}

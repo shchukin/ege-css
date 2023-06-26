@@ -1,0 +1,183 @@
+.alone {
+    padding-top: 53px;
+    padding-bottom: 50px;
+    background-color: #FFF5E7;
+}
+    .alone__wrap {
+
+    }
+        .alone__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .alone__list {
+            margin-top: 36px;
+        }
+            .alone__feature {
+                margin-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 200px;
+                font-family: var(--font_family_heading);
+                font-weight: var(--font_weight_demi);
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 2px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .alone__feature:first-child {
+                margin-top: 0;
+            }
+                .alone__feature::before {
+                    content: "";
+                    display: block;
+                    width: 200px;
+                    height: 144px;
+                    margin-bottom: 17px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 100% auto;
+                }
+
+
+            .alone__feature_id_books::before {
+                background-image: url("../vectors/alone-books.svg");
+            }
+
+            .alone__feature_id_grammar::before {
+                background-image: url("../vectors/alone-grammar.svg");
+            }
+
+            .alone__feature_id_writing::before {
+                background-image: url("../vectors/alone-writing.svg");
+            }
+
+        .alone__sub-heading {
+            margin-top: 34px;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .alone__description {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 17px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .alone__call-for-action {
+            margin-top: 27px;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+        }
+
+        .alone__next {
+            margin-top: 29px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+@media (min-width: 768px) {
+    .alone {
+        padding-top: 84px;
+        padding-bottom: 40px;
+    }
+        .alone__wrap {
+
+        }
+            .alone__heading {
+                width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 52px;
+                line-height: 60px;
+            }
+
+            .alone__list {
+                margin-top: 30px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+                .alone__feature {
+                    margin-top: 0;
+                    margin-left: 34px;
+                    margin-right: 0;
+                }
+
+                .alone__feature:first-child {
+                    margin-left: 0;
+                }
+
+            .alone__sub-heading {
+                margin-top: 53px;
+            }
+
+            .alone__description {
+                margin-top: 9px;
+            }
+
+            .alone__call-for-action {
+                margin-top: 43px;
+            }
+
+            .alone__next {
+                margin-top: 46px;
+            }
+}
+
+
+@media (min-width: 1024px) {
+    .alone__heading {
+        width: 900px;
+    }
+
+    .alone__list {
+        margin-top: 50px;
+    }
+
+        .alone__feature {
+            margin-left: 71px;
+            width: 258px;
+            padding-left: 29px;
+            padding-right: 29px;
+        }
+            .alone__feature::before {
+                width: 258px;
+                height: 184px;
+                margin-left: -29px;
+                margin-right: -29px;
+            }
+
+        .alone__feature:first-child {
+            margin-left: 0;
+        }
+
+    .alone__description {
+        width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .alone__call-for-action {
+        margin-top: 69px;
+    }
+
+}

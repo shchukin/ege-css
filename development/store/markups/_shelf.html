@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.shelf</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div class="container">
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <h1>.shelf</h1>
+                <p>
+                    Это обреточный блок. Он создает заголовок, змейку товаров и ссылку типа
+                    <b>ВСЕ КУРСЫ ПО ИСТОРИИ</b> (выглядит как кнопка).
+                </p>
+                <p>
+                    Все ширины в змейке одинаковы и заданы прямо внутри глобального блока
+                    <a href="../../global/markups/_product.html">.product</a>. Вообще
+                    его доку тоже полезно бы посмотреть.
+                </p>
+                <p>
+                    .product висит на том же узле что и <b>.shelf__item</b>
+                </p>
+                <p>
+                    Кнопка может быть либо <b>.shelf__details</b> либо <b>.shelf__load-more</b>
+                    (смотри дальше).
+                </p>
+                <p>
+                    Заголовок может быть <b>.shelf__heading</b> - когда просто заголовок (секции в каталоге).
+                    А может быть и <b>.shelf__title</b> - когда название придемета (на главной).
+                </p>
+                <br>
+                <br>
+            </div>
+
+            <section class="shelf">
+                <h2 class="shelf__title">
+                    История
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__details">
+                    <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по истории</a>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Ограничения _rows_</h2>
+                <p>
+                    В определенных кейсах нам нужно показывать не всю простыню элементов,
+                    а только первые четыре штучки. Когда предпросматрвиаем категорию,
+                    там, как правило, не полный список, а список ограниченный одной или двумя строками.
+                </p>
+                <p>
+                    Проблема в том, что одна строка - это четыре элемента на десктопах,
+                    три на планшетах и т.д. Да еще и два кейса: когда обрезаем одной строкой или двумя.
+                    Чтобы это сделать это обрезание добавляем классы
+                    <br><b>.shelf_rows_1</b> или <b>.shelf_rows_2</b>. Они будут обрезать все,
+                    что выводится после четвертого или после третьего айтема на соответствующих
+                    экранах.
+                </p>
+                <p>
+                    В этом случае есть смысл выводить в DOM только 4 или 8 элементов.
+                    Все возможные элементы отправлять на фронт не надо. Они обрезаны навсегда
+                    и никогда не будут увидены.
+                </p>
+                <p>
+                    <i>(Здесь и далее, когда я говорю, что обрезано в одну иле две строки я
+                    имеюю ввиду десктопную версию. При этом когда она перестраивается в мобилки там
+                    может быть до черта строк.</i>
+                </p>
+                <br>
+                <br>
+                <h3>.shelf_rows_1:</h3>
+            </div>
+
+
+            <section class="shelf shelf_rows_1">
+                <h2 class="shelf__title">
+                    История
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__details">
+                    <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по истории</a>
+                </div>
+            </section>
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2:</h3>
+            </div>
+
+            <section class="shelf shelf_rows_2">
+                <h2 class="shelf__title">
+                    История
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__details">
+                    <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по истории</a>
+                </div>
+            </section>
+
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Схлопывания / расхлопывания</h2>
+                <p>
+                    Возможен еще один кейс. Когда мы находимся на развернутой странице предмета,
+                    мы в принципе так же обрезаем хвосты модификаторами <b>.shelf_rows_1</b>
+                    и <b>.shelf_rows_2</b>. Но в этом случае мы все-таки расчитываем на то,
+                    что пользователь захочет посмотреть полный список клацнув на "ПОКАЗАТЬ ЕЩЕ".
+                </p>
+                <p>
+                    Соответствено у нас возможно два состояния. Дефотное состоние, когда остаток
+                    списка обрезан (как и раньше). И состояние развернутого списка,
+                    когда показывается все, что есть на полке. Все что было скрыто ранее модификаторами.
+                    Эти состояние хранит скрытый чекбокс <b>.shelf__collapse</b>, а кнопка
+                    "ПОКАЗАТЬ ЕЩЕ", соответственно лейбл на него. Они должны быть связаны через
+                    <b>for</b> и <b>id</b>. Если на странице несколько полок,
+                    то и айдишники у чекбоксов разные. А жаба-скрипт не нужен.
+                </p>
+                <p>
+                    Здесь, кстати, вместо <b>.shelf__details</b> кнопочка обернута в
+                    <b>.shelf__load-more</b> (разные отступы). Ну и вообще в этом случае у
+                    кнопки и разметка посложнее так как в кнопке тоже надо менять текст.
+                </p>
+                <p>
+                    Ну и само собой весь список надо выводить целиком. Все что есть в базе данных
+                    выплевываем на фронт. Когда модификатор обрезания будет снят, все что было скрыто
+                    пропукается.
+                </p>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_1:</h3>
+            </div>
+
+
+
+
+            <section class="shelf shelf_rows_1">
+                <input class="shelf__collapse" type="checkbox" id="shelf-01">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-01">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2:</h3>
+            </div>
+
+            <section class="shelf shelf_rows_2">
+                <input class="shelf__collapse" type="checkbox" id="shelf-02">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-02">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Пограничные кейсы</h2>
+                <p>
+                    Жара начинается, когда нужно обработать пограничные кейсы.
+                </p>
+                <p>
+                    Вот, например, обрезаем одну строку, а нас всего четыре элемента.
+                    В таком случае кнопку "ПОКАЗАТЬ ЕЩЕ" выводить и вовсе не надо. Она просто
+                    исчезнет при клике потому что показывать больше нечего.
+                </p>
+                <p>
+                    Или надо? На планшетах то три элемента, а четвертый скрыт. Значит все-таки
+                    надо, но не всегда.
+                </p>
+                <p>
+                    А если элементов два? То тогда кнопка совсем не нужна.
+                </p>
+                <p>
+                    Получается, что надо обработать кейсы 1, 2, 3, 4 плиток
+                    когда обрезаем в одну строку и 1, 2, 3, 4, 5, 6, 7, 8 плиток когда обрезаем две.
+                </p>
+                <p>
+                    Получается, что надо знать количество элементов уже на фронте, чтобы
+                    версткапоскрывала кнопку. Для этого давай выводить модификаторы:
+                    <b>.shelf_items_1</b><br>
+                    <b>.shelf_items_2</b><br>
+                    <b>.shelf_items_3</b><br>
+                    и так далее до<br>
+                    <b>.shelf_items_8</b><br>
+                </p>
+                <p>
+                    А можно и вообще всегда и во всех кейсах выводить эти модификаторы.
+                    Ну так для сохранения общности, чтобы if/else не плодить.
+                    Выводишь блок <b>.shelf</b>, выведи заодно и то, сколько в нем айтемов.
+                    Хоть <b>.shelf_items_100500</b>. Используются, правда, только первые 8,
+                    но и фиг с ним. Пусть болтаются.
+                </p>
+                <p>
+                    И больше ничего не требуется, на самом деле. Верстка сама со всем справится.
+                    Были обработаны все возможные селекторы типа <b>.shelf_rows_1.shelf_items_4</b>
+                    и все че надо скрыто на нужных ширинах экранов.
+                </p>
+                <p>
+                    Смотрим.
+                </p>
+            </div>
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_1.shelf_items_1</h3>
+                <p>Кнопка скрыта всегда</p>
+            </div>
+
+
+            <section class="shelf shelf_rows_1 shelf_items_1">
+                <input class="shelf__collapse" type="checkbox" id="shelf-03">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-03">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_1.shelf_items_2</h3>
+                <p>Кнопка скрыта всегда</p>
+            </div>
+
+            <section class="shelf shelf_rows_1 shelf_items_2">
+                <input class="shelf__collapse" type="checkbox" id="shelf-04">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-04">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_1.shelf_items_3</h3>
+                <p>Кнопка скрыта всегда</p>
+            </div>
+
+            <section class="shelf shelf_rows_1 shelf_items_3">
+                <input class="shelf__collapse" type="checkbox" id="shelf-05">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-05">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_1.shelf_items_4</h3>
+                <p>
+                    Кнопка скрыта на телефонах, на малых планшетах - там и так по четыре штуки.
+                    Показана на больших планештах, там три штуки. И потом снова скрыта
+                    на десктопах, ибо там снова четыре штуки.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_1 shelf_items_4">
+                <input class="shelf__collapse" type="checkbox" id="shelf-06">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-06">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_1</h3>
+                <p>
+                    Кнопка скрыта всегда
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_1">
+                <input class="shelf__collapse" type="checkbox" id="shelf-07">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-07">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_2</h3>
+                <p>
+                    Кнопка скрыта всегда. Все уместились в обрезание в шесть айтемов.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_2">
+                <input class="shelf__collapse" type="checkbox" id="shelf-08">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-08">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_3</h3>
+                <p>
+                    Кнопка скрыта всегда. Все уместились в обрезание в шесть айтемов.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_3">
+                <input class="shelf__collapse" type="checkbox" id="shelf-09">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-09">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_4</h3>
+                <p>
+                    Кнопка скрыта всегда. Все уместились в обрезание в шесть айтемов.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_4">
+                <input class="shelf__collapse" type="checkbox" id="shelf-10">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-10">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_5</h3>
+                <p>
+                    Кнопка скрыта всегда. Все уместились в обрезание в шесть айтемов.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_5">
+                <input class="shelf__collapse" type="checkbox" id="shelf-11">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-11">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_6</h3>
+                <p>
+                    Кнопка скрыта всегда. Все уместились в обрезание в шесть айтемов.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_6">
+                <input class="shelf__collapse" type="checkbox" id="shelf-12">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-12">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_7</h3>
+                <p>
+                    Кнопка скрыта на десктопах. Там показываются все 7.
+                    На мобилах, малых и больших планшетах кнопка нужна,
+                    потому что там обрезано до 6.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_7">
+                <input class="shelf__collapse" type="checkbox" id="shelf-13">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-13">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>.shelf_rows_2.shelf_items_8</h3>
+                <p>
+                    Кнопка скрыта на десктопах. Там показываются все 8.
+                    На мобилах, малых и больших планшетах кнопка нужна,
+                    потому что там обрезано до 6.
+                </p>
+            </div>
+
+            <section class="shelf shelf_rows_2 shelf_items_8">
+                <input class="shelf__collapse" type="checkbox" id="shelf-14">
+                <h2 class="shelf__heading">
+                    Видеокурсы
+                </h2>
+                <div class="shelf__list">
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                    <article class="shelf__item product">
+                        <!-- temp -->
+                        <div style="height: 386px; background: linear-gradient(45deg, red, blue)"></div>
+                        <!--/temp -->
+                    </article>
+                </div>
+                <div class="shelf__load-more">
+                    <label class="shelf__handler button button_palette_faded" for="shelf-14">
+                        <span class="shelf__collapsed-label">Показать еще</span>
+                        <span class="shelf__uncovered-label">Свернуть</span>
+                    </label>
+                </div>
+            </section>
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../../global/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+
+        <script src="../../global/scripts/mfp.js"></script>
+        <script src="../../global/scripts/up.js"></script>
+        <script src="../../global/scripts/subscription.js"></script>
+        <script src="../../global/scripts/form.js"></script>
+        <script src="../../global/scripts/alert.js"></script>
+        <script src="../../global/scripts/slider.js"></script>
+        <script src="../../global/scripts/live-search.js"></script>
+        <script src="../../global/scripts/input.js"></script>
+
+        <script src="../scripts/up.js"></script>
+        <script src="../scripts/panel.js"></script>
+        <script src="../scripts/discipline.js"></script>
+
+
+
+    </body>
+</html>

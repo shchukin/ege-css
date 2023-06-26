@@ -1,0 +1,15 @@
+.section-title {
+    font-family: var(--font_family_heading);
+    font-weight: var(--font_weight_demi);
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .section-title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}

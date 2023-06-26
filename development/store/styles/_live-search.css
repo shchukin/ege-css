@@ -1,0 +1,94 @@
+/* override */
+
+
+.live-search_skin_header {
+    position: relative;
+}
+    .live-search_skin_header .live-search__body {
+        position: relative;
+        background-color: #FFFFFF;
+        border-bottom: 2px solid #F6F7F8;
+    }
+        /* label on the background to make whole thing clicakble */
+        .live-search_skin_header .live-search__label {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            cursor: text;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .live-search_skin_header .live-search__wrap {
+            position: relative;
+        }
+            .live-search_skin_header .live-search__wrap {
+
+            }
+                .live-search_skin_header .input__widget {
+                    height: 78px;
+                    padding: 26px 69px 26px 0;
+                    background-color: #FFFFFF;
+                    box-shadow: none;
+                    border: none;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #000000;
+                    transition: color 0.1s ease;
+                }
+
+            .live-search_skin_header .live-search__submit {
+                right: -15px;
+                top: 0;
+                width: 84px;
+                height: 100%;
+            }
+
+            @media (min-width: 360px) {
+                .live-search_skin_header .input__widget {
+                    padding-right: 54px;
+                }
+
+                .live-search_skin_header .live-search__submit {
+                    right: -30px;
+                }
+            }
+
+
+    .live-search_skin_header .live-search__dropdown {
+        left: 0;
+        right: 0;
+        max-height: 60vh;
+    }
+        .live-search_skin_header .live-search__option {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .live-search_skin_header .input__widget {
+        height: 100px;
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+
+    .live-search_skin_header .live-search__submit {
+        width: 100px;
+        right: -38px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .live-search_skin_header .live-search__wrap {
+        width: 800px !important; /* limit container */
+    }
+    .live-search_skin_header .live-search__option .container {
+        width: 800px !important; /* limit container */
+    }
+}

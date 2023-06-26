@@ -1,0 +1,14 @@
+/* override */
+
+.logo {
+
+}
+
+@media (max-width: 767px),
+       (min-width: 1024px) and (max-width: 1339px)
+{
+    .logo_truncated {
+        padding-bottom: 84.8484%;
+        background-image: url("../images/logo_truncated.svg");
+    }
+}

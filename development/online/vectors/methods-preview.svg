@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="336" viewBox="0 0 248 336">
+  <defs>
+    <polygon id="frame-a" points="-44 44 292 44 292 292 -44 292"/>
+    <mask id="frame-b" width="336" height="248" x="0" y="0" fill="#fff">
+      <use xlink:href="#frame-a"/>
+    </mask>
+    <linearGradient id="frame-c" x1="50%" x2="50%" y1="0%" y2="115.107%">
+      <stop offset="0%" stop-color="#FF7502"/>
+      <stop offset="76.762%" stop-color="#F90173" stop-opacity=".673"/>
+      <stop offset="100%" stop-color="#F45F00"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use stroke="#F45F00" stroke-dasharray="1.667 5" stroke-width="1.667" mask="url(#frame-b)" transform="rotate(-90 124 168)" xlink:href="#frame-a"/>
+    <path stroke="url(#frame-c)" stroke-width="3" d="M-36.5,51.5 L-36.5,284.5 L284.5,284.5 L284.5,51.5 L-36.5,51.5 Z" opacity=".485" transform="rotate(-90 124 168)"/>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+.contacts {
+
+}
+    .contacts__wrap {
+        position: relative;
+    }
+        .contacts__social {
+            display: flex;
+            padding: 16px 6px 17px;
+        }
+            .contacts__network {
+                position: relative;
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+                .contacts__network::before {
+                    content: "";
+                    position: absolute;
+                    left: -1px;
+                    top: 4px;
+                    bottom: 2px;
+                    display: block;
+                    width: 2px;
+                    background-color: rgba(205, 214, 220, 0.26);
+                    border-radius: 2px;
+                }
+
+                .contacts__network:first-child::before {
+                    display: none;
+                }
+
+        .contacts__data {
+            position: relative;
+            padding: 35px 50px 40px;
+            text-align: center;
+        }
+            .contacts__data::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                height: 2px;
+                background-color: rgba(205, 214, 220, 0.26);
+                border-radius: 2px;
+            }
+
+            .contacts__phone {
+                font-size: 21px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .contacts__address {
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            .contacts__callback {
+                margin-top: 23px;
+            }
+                .contacts__callback .button {
+                    min-width: 180px;
+                }
+
+
+        .contacts__hide {
+            position: absolute;
+            right: -15px;
+            top: 0;
+            width: 64px;
+            height: 64px;
+            background-image: url("../vectors/contacts__hide.svg");
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+
+
+@media (min-width: 768px) {
+
+    .contacts {
+
+    }
+        .contacts__wrap {
+            position: relative;
+            width: auto !important;
+            display: flex;
+            align-items: flex-start;
+        }
+            .contacts__social {
+                flex-shrink: 0;
+                padding: 0;
+            }
+                .contacts__network {
+                    position: relative;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    margin-left: 20px;
+                }
+
+                .contacts__network:first-child {
+                    margin-left: 0;
+                }
+
+                    .contacts__network::before {
+                        display: none;
+                    }
+
+            .contacts__data {
+                width: 200px;
+                flex-shrink: 0;
+                margin-left: 40px;
+                padding: 0;
+                text-align: left;
+            }
+                .contacts__data::before {
+                    display: none;
+                }
+
+            .contacts__hide {
+                display: none !important;
+            }
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .contacts {
+
+    }
+        .contacts__wrap {
+
+        }
+            .contacts__social {
+                display: block;
+            }
+                .contacts__network {
+                    margin-left: 0;
+                    margin-top: 6px;
+                }
+
+                .contacts__network:first-child {
+                    margin-top: 0;
+                }
+
+            .contacts__data {
+                margin-left: 93px;
+            }
+}
+
+@media (min-width: 1340px) {
+    .contacts__data {
+        margin-left: 228px;
+    }
+}
+

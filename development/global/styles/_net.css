@@ -1,0 +1,23 @@
+.net {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.1s ease;
+}
+
+.net_id_youtube   { background-image: url("../vectors/net_id_youtube.svg"); }
+.net_id_vkontakte { background-image: url("../vectors/net_id_vkontakte.svg"); }
+.net_id_telegram  { background-image: url("../vectors/net_id_telegram.svg"); }
+.net_id_periscope { background-image: url("../vectors/net_id_periscope.svg"); }
+
+
+.net:hover {
+    opacity: 0.8;
+}

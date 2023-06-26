@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.window</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div class="container">
+            <div style="margin: 0 auto; max-width: 600px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>.window</h1>
+                <p>
+                    <a style="color: red" href="../../global/markups/_window.html">оверрайд</a>
+                </p>
+                <p>
+                    Тут новая вариация:
+                </p>
+                <br>
+                <br>
+                <br>
+                <h2>.window_for_search</h2>
+                <p>
+                    Вон она сверху. Живой поиск у нас используется внутри модалки
+                    так как нам нужен фон чтобы кликать, нужно блокировать страницу
+                    от скролла и т.д.
+                    Так вот используется все та же модалка <a href="../../global/markups/_mfp.html">.mfp</a>
+                    с все тем же блоком <a href="../../global/markups/_window.html">.window</a>.
+                </p>
+                <p>
+                    Но нужно отменить центрирование у окна. Нужно растянуть его на всю ширину,
+                    нужно прибить к верху и т.д. Вот этот модификатор все и делает.
+                    Немного костыльно, через position fixed, но это как раз то, что нам и надо.
+                </p>
+
+                <div class="window window_for_search">
+                    <div class="window__body">
+
+                        <!-- temp -->
+                        <div style="height: 100px; line-height: 100px; text-align: center; background: linear-gradient(45deg, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.2) )">Тут поиск</div>
+                        <!--/temp -->
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../../global/vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../../global/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../../global/vendors/outline/outline.js"></script>
+
+        <script src="../../global/scripts/mfp.js"></script>
+        <script src="../../global/scripts/up.js"></script>
+        <script src="../../global/scripts/subscription.js"></script>
+        <script src="../../global/scripts/form.js"></script>
+        <script src="../../global/scripts/alert.js"></script>
+        <script src="../../global/scripts/slider.js"></script>
+        <script src="../../global/scripts/live-search.js"></script>
+        <script src="../../global/scripts/input.js"></script>
+
+        <script src="../scripts/up.js"></script>
+        <script src="../scripts/panel.js"></script>
+        <script src="../scripts/discipline.js"></script>
+
+
+
+    </body>
+</html>

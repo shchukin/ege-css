@@ -1,0 +1,53 @@
+.preview {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #FFF5E7;
+}
+    .preview__wrap {
+
+    }
+        .preview__item {
+            margin-top: 10px;
+        }
+
+        .preview__item:first-child {
+            margin-top: 0;
+        }
+
+
+
+
+@media (min-width: 768px) {
+    .preview {
+        padding-top: 55px;
+        padding-bottom: 90px;
+    }
+        .preview__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+            .preview__item {
+                width: 214px;
+                flex-shrink: 0;
+                margin-top: 0;
+            }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .preview {
+        padding-top: 55px;
+        padding-bottom: 80px;
+    }
+        .preview__item {
+            width: 308px;
+        }
+}
+
+@media (min-width: 1340px) {
+    .preview {
+        padding-top: 55px;
+    }
+        .preview__item {
+            width: 386px;
+        }
+}

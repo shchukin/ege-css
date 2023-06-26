@@ -1,0 +1,113 @@
+.arguments {
+    padding-top: 106px;
+    background-color: #FFF5E7;
+    background-image: url("../vectors/arguments.svg");
+    background-repeat: no-repeat;
+    background-position: center 48px;
+}
+    .arguments__wrap {
+
+    }
+        .arguments__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .arguments__question {
+            display: block;
+            margin-top: 32px;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+        }
+
+        .arguments__answer {
+            margin-top: 29px;
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+        .arguments__sample {
+            margin-top: 40px;
+        }
+
+@media (min-width: 420px) {
+    .arguments {
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .arguments {
+        padding-top: 145px;
+        padding-bottom: 86px;
+        background-position: center 73px;
+    }
+        .arguments__heading {
+            font-size: 42px;
+            line-height: 46px;
+        }
+
+        .arguments__question {
+
+        }
+
+        .arguments__answer {
+            column-count: 2;
+            column-gap: 32px;
+        }
+
+        .arguments__sample {
+            margin-top: 86px;
+            margin-bottom: -326px;
+        }
+}
+
+@media (min-width: 1024px) {
+    .arguments {
+        padding-bottom: 32px;
+    }
+        .arguments__heading {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .arguments__question {
+
+        }
+
+        .arguments__answer {
+
+        }
+
+        .arguments__sample {
+            width: 800px;
+            margin-left: auto !important; /* .poem */
+            margin-right: auto !important; /* .poem */
+            margin-top: 32px;
+            margin-bottom: -236px;
+        }
+}
+
+@media (min-width: 1340px) {
+    .arguments {
+        padding-bottom: 42px;
+    }
+
+        .arguments__heading {
+            width: 1200px;
+        }
+
+        .arguments__sample {
+            margin-top: 42px;
+            margin-bottom: -246px;
+        }
+}

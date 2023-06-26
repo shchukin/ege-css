@@ -1,0 +1,48 @@
+.total {
+    padding-top: 27px;
+}
+    .total__price {
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    @media (min-width: 360px) {
+
+        .total__price {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    @media (min-width: 375px) {
+
+        .total__price {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+
+    .total__note {
+        margin-top: 3px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #697882;
+    }
+
+
+@media (min-width: 768px) {
+
+    .total {
+        text-align: right;
+    }
+        .total__price {
+
+        }
+
+        .total__note {
+            margin-top: 3px;
+        }
+}

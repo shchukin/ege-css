@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212" height="212" viewBox="0 0 212 212">
+    <defs>
+        <path id="avatar-circle-border-small-a" d="M106 212c58.54 0 106-47.46 106-106S164.54 0 106 0 0 47.46 0 106s47.46 106 106 106z"/>
+        <mask id="avatar-circle-border-small-b" width="212" height="212" x="0" y="0" fill="#fff">
+            <use xlink:href="#avatar-circle-border-small-a"/>
+        </mask>
+    </defs>
+    <use fill="none" fill-rule="evenodd" stroke="#F45F00" stroke-dasharray="1.18 3.53" stroke-width="2" mask="url(#avatar-circle-border-small-b)" xlink:href="#avatar-circle-border-small-a"/>
+</svg>

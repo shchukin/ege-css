@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1687762449">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 50%; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.table</h1>
+            <p>
+                На маленьких ширинах включается горизонтальный скроллбар.
+                В этой демке табличка сделана в половину ширины окна.
+                Можно подергать и посмотреть как оно сжимается.
+            </p>
+            <p>
+                В локальных версиях можно делать оверрайды и унифицировать таблицы.
+                Например <b>.table_id_schedule</b> - там заданы ширины всем столбцам.
+            </p>
+            <br>
+            <br>
+
+            <div class="table table_skin_default">
+                <table class="table__widget">
+                    <thead class="table__section table__section_head">
+                        <tr class="table__row">
+                            <th class="table__cell">#</th>
+                            <th class="table__cell">Дата</th>
+                            <th class="table__cell">Тема занятия</th>
+                            <th class="table__cell"><span class="visuallyhidden">Статус</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__section table__section_body">
+                        <tr class="table__row">
+                            <td class="table__cell">1</td>
+                            <td class="table__cell">23-24 сентября 2017</td>
+                            <td class="table__cell">Текстовые задачи на ЕГЭ по математике. Теория вероятностей. Задачи с физическим содержанием. Бонус: Как получить баллы за задачи 17 и 19 профильного уровня.</td>
+                            <td class="table__cell">Доступна видеозапись</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">2</td>
+                            <td class="table__cell">21-22 октября 2017</td>
+                            <td class="table__cell">Геометрия и стереометрия, часть 1.</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">3</td>
+                            <td class="table__cell">18-19 ноября 2017</td>
+                            <td class="table__cell">Тригонометрия на ЕГЭ по математике. Функции. Производные. Задача 13 (С1).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">4</td>
+                            <td class="table__cell">23-24 декабря 2017</td>
+                            <td class="table__cell">Стереометрия, профильный уровень. Два метода решения — классический и векторно-координатный. Задача 14 (С2).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">5</td>
+                            <td class="table__cell">23-24 декабря 2017</td>
+                            <td class="table__cell">Неравенства и системы неравенств. Задача 15 (С3).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">6</td>
+                            <td class="table__cell">17-18 февраля 2017</td>
+                            <td class="table__cell">Геометрия на ЕГЭ по математике, Задача 16 (С4).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">7</td>
+                            <td class="table__cell">17-18 марта 2017</td>
+                            <td class="table__cell">Задачи с параметрами на ЕГЭ по математике. Задача 18 (С5).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">8</td>
+                            <td class="table__cell">14-15 апреля 2017</td>
+                            <td class="table__cell">Нестандартные задачи на ЕГЭ по математике. Задачи 17 и 19 (С6).</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">9</td>
+                            <td class="table__cell">12-13 мая 2018</td>
+                            <td class="table__cell">Самые сложные задачи ЕГЭ-2018.</td>
+                            <td class="table__cell"><span class="status status_available">Идет набор</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+
+        <script src="../scripts/mfp.js?1687762449"></script>
+        <script src="../scripts/up.js?1687762449"></script>
+        <script src="../scripts/subscription.js?1687762449"></script>
+        <script src="../scripts/form.js?1687762449"></script>
+        <script src="../scripts/alert.js?1687762449"></script>
+        <script src="../scripts/down.js?1687762449"></script>
+        <script src="../scripts/slider.js?1687762449"></script>
+        <script src="../scripts/live-search.js?1687762449"></script>
+        <script src="../scripts/input.js?1687762449"></script>
+        <script src="../scripts/tabs.js?1687762449"></script>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="avatar-b" x1="50%" x2="50%" y1="0%" y2="115.107%">
+      <stop offset="0%" stop-color="#FF7502"/>
+      <stop offset="76.762%" stop-color="#F90173" stop-opacity=".673"/>
+      <stop offset="100%" stop-color="#F45F00"/>
+    </linearGradient>
+    <circle id="avatar-a" cx="150" cy="150" r="150"/>
+    <mask id="avatar-c" width="300" height="300" x="0" y="0" fill="#fff">
+      <use xlink:href="#avatar-a"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="150" cy="150" r="116.667"/>
+    <circle cx="150" cy="150" r="124.583" stroke="url(#avatar-b)" stroke-width="2.5"/>
+    <use stroke="#F45F00" stroke-dasharray="1.667 5" stroke-width="1.667" mask="url(#avatar-c)" xlink:href="#avatar-a"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+/* override */
+
+@media (min-width: 768px) {
+
+    .call {
+
+    }
+        .call__phone {
+            color: #000000;
+        }
+
+        .call__note {
+            color: #000000;
+        }
+}

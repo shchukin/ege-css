@@ -1,0 +1,142 @@
+.universities {
+    padding-top: 175px;
+    padding-bottom: 31px;
+    background-color: #FFF5E7;
+    text-align: center;
+}
+    .universities__wrap {
+
+    }
+        .universities__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 38px;
+        }
+
+        .universities__list {
+            margin-top: 27px;
+            text-align: left;
+        }
+            .universities__item {
+                margin-top: 20px;
+            }
+
+            .universities__item:first-child {
+                margin-top: 0;
+            }
+
+        .universities__more {
+            margin-top: 23px;
+            margin-bottom: 4px;
+            display: block;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .universities__rest-of-students {
+
+        }
+
+
+@media (min-width: 768px) {
+
+    .universities {
+        padding-top: 171px;
+        padding-bottom: 61px;
+    }
+        .universities__wrap {
+
+        }
+            .universities__heading {
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            .universities__list {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 37px;
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+                .universities__item {
+                    flex-shrink: 0;
+                    width: 20%;
+                    margin-top: 0;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+            .universities__more {
+
+            }
+
+            .universities__rest-of-students {
+
+            }
+}
+
+@media (min-width: 1024px) {
+
+    .universities {
+        padding-top: 63px;
+        padding-bottom: 41px;
+    }
+        .universities__wrap {
+
+        }
+            .universities__heading {
+
+            }
+
+            .universities__list {
+                margin-top: 39px;
+            }
+                .universities__item {
+
+                }
+
+            .universities__more {
+
+            }
+
+            .universities__rest-of-students {
+
+            }
+}
+
+
+@media (min-width: 1340px) {
+
+    .universities {
+
+    }
+        .universities__wrap {
+
+        }
+            .universities__heading {
+
+            }
+
+            .universities__list {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+                .universities__item {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+            .universities__more {
+
+            }
+
+            .universities__rest-of-students {
+
+            }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.product</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1687762449">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>.product</h1>
+            <p>
+                Картинка, заголовок, цена, все по дефолту.
+            </p>
+            <p>
+                Картинка по ширине строго 276px. Высота любая
+                (одинаковая в рамках группы) и обязательно проставлен атрибут <b>height=""</b>
+            </p>
+            <p>
+                В папке <b>content/</b> есть заглухи на отсутствующие картинки.
+                Как-то так получилось, что картинки для Русского языка и литературы выглядят одинакого.
+                Еще там же есть одна отдельная заглушка для преподавательских курсов <b>product-dummy-teacher.svg</b>
+            </p>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image"
+                         srcset="../temp/product-default@2x.jpg 2x"
+                         src="../temp/product-default.jpg"
+                         width="276"
+                         height="207"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Всемирная история
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="product__action">
+                            <a class="product__apply link" href="#">Пройти курс</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Вариации</h2>
+            <ol>
+                <li>
+                    Существенная часть обложек у нас в форме коробки с диском.
+                    И похоже на то, что эти обложки уже заготовлены. Размеры у них странные.
+                    Соотношение сторон вертикальное. Добавляем такие картинки с модификатором
+                    <b>.product__image_box-art</b> он добавит 9px отступ сверху поверх бордюра.
+                </li>
+                <li>
+                    Когда скидка оригинальная цена оборачивается в<br> <b><code>&lt;s class="product__regular-price"&gt;...&lt;s&gt;</code></b>
+                    а рядом добавляется новая цена обернутая в<br> <b><code>&lt;span class="product__discount-price"&gt;...&lt;/span&gt;</code></b>
+                </li>
+                <li>
+                    Ну и вторая ссылочка внизу добавляется новым элементом <b>.product__action</b>.
+                    Разделитель появится автоматически.
+                </li>
+                <li>
+                    Крестик <b>.product__delete</b> для использования в корзине.
+                </li>
+            </ol>
+            <br>
+            <br>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image_box-art"
+                         srcset="../temp/product-boxart@2x.jpg 2x"
+                         src="../temp/product-boxart.jpg"
+                         width="158"
+                         height="198"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Видеокурс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Математика. Годовой онлайн курс.
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        <s class="product__regular-price">15 600 руб.</s>
+                        <span class="product__discount-price">7 800 руб.</span>
+                    </div>
+                    <div class="product__operations">
+                        <div class="product__action">
+                            <a class="product__apply link" href="#">Купить на диске</a>
+                        </div>
+                        <div class="product__action">
+                            <a class="product__apply link" href="#">Скачать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="product__delete" type="button">
+                    <span class="visuallyhidden">Удалить</span>
+                </button>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="../scripts/mfp.js?1687762449"></script>
+        <script src="../scripts/up.js?1687762449"></script>
+        <script src="../scripts/subscription.js?1687762449"></script>
+        <script src="../scripts/form.js?1687762449"></script>
+        <script src="../scripts/alert.js?1687762449"></script>
+        <script src="../scripts/down.js?1687762449"></script>
+        <script src="../scripts/owl-carousel.js?1687762449"></script>
+        <script src="../scripts/slider.js?1687762449"></script>
+        <script src="../scripts/live-search.js?1687762449"></script>
+        <script src="../scripts/input.js?1687762449"></script>
+        <script src="../scripts/tabs.js?1687762449"></script>
+
+    </body>
+</html>
+
+

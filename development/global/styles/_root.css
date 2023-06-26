@@ -1,0 +1,14 @@
+/* stylelint-disable declaration-colon-space-after */
+:root {
+
+    --brand_grey: #697882;
+    --brand_orange: #FF7502;
+
+    --font_family_default: "Roboto", sans-serif;
+    --font_family_heading: "Futura PT", "FuturaPT", "Futura-PT", sans-serif;
+
+    --font_weight_demi: 500;
+
+    --image-fallback: #F8F8F8;
+}
+/* stylelint-enable declaration-colon-space-after */

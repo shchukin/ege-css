@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="periscope-color-a" d="M.07 6.23c0 3.5 4.61 8.73 5.94 8.73 1.16 0 5.77-5.22 5.77-8.73C11.78 2.88 9.16.1 6 .1A6.03 6.03 0 0 0 .07 6.23z"/>
+        <path id="periscope-color-c" d="M.1 3.73c0 1.85 1.6 3.43 3.66 3.43a3.5 3.5 0 0 0 3.46-3.43C7.22 1.68 5.62.1 3.76.1A3.59 3.59 0 0 0 .1 3.73z"/>
+        <path id="periscope-color-e" d="M.01 1.49c0 .76.63 1.38 1.4 1.38.78 0 1.4-.62 1.4-1.38A1.4 1.4 0 0 0 1.41.1C.64.1.01.72.01 1.5z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#3AA4C6" d="M0 12.22A12.1 12.1 0 0 1 12.22 0C18.62 0 24 5.37 24 12.22A11.9 11.9 0 0 1 12.22 24C5.37 24 0 18.63 0 12.22z"/>
+        <g transform="translate(6 5)">
+            <mask id="periscope-color-b" fill="#fff">
+                <use xlink:href="#periscope-color-a"/>
+            </mask>
+            <polygon fill="#FFF" points="-.63 15.67 12.49 15.67 12.49 -.61 -.63 -.61" mask="url(#periscope-color-b)"/>
+            <g transform="translate(2.264 2.264)">
+                <mask id="periscope-color-d" fill="#fff">
+                    <use xlink:href="#periscope-color-c"/>
+                </mask>
+                <polygon fill="#D75444" points="-.61 7.86 7.93 7.86 7.93 -.6 -.61 -.6" mask="url(#periscope-color-d)"/>
+            </g>
+            <image width="7.22" height="7.08" x="2.34" y="2.37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAyCAYAAADx/eOPAAAAAXNSR0IArs4c6QAAA7RJREFUaAXdmYly2zAMBeP0Pv7/TzvT9EiKpb0ciNFZu5ZYzFC8wbcEaSvO6eG29ibcvYtEfor0mPIoPjxf0ssl/xX5z0jUrzYWvNYQb0I8ghFniuJALGu2SagfzVjmrrZrYD7EKh8jAfA7Ut51Qcyju5prCsR8E21Pl8TcTabjLZOIwqdIQkyB4HNKkOsKRC6QR/R7tBGp1abTNRNY7EskFgPAlCMSzZMA9I2ZGvAvFGu8jcRmfIvEGovGpDWG46+XgVxYzniGaSPQ1i9TX2WC0MGcNgH4PhJrLfpcA4MzIsLuACEI9bxALkfXZhOsBcIR95P22QgtwXA3SEKQ3xoiXA5MKBrzBglElEZtDoaIAJKPVQbJC406v0Gja5jPHrkpGO7I50g5IjjUqfkN9M66IEp5XQYDhK5XGsZguHRcdsLJJC+fk82j6y7msXNd9PH1gLaBjcFw2TFBPFo6O/fe9ymQq6KbtsH9gTIbx4uBLUges0fZjWRjPTFEZwDZRoaoONiIIF5nlPe0LJ6yG1805chICswRQdxENpaETmAqQy1EIy+NDMgwR4lIyCqmHnI2nMSnWzFhIPRCMdBJ51HHeqqPnI2XoRY4YpKSY0cGUp9ay92Xik8xjxcDj245OgChv/4NAVQecPSooB1DJzAlKDygooHUC0RIrYZm7vsJEAo09AaiXrWfiEw+YlHtEgqgR0CMTI8gaMaAKZERxrCV3g4fBaZD3QPJ3pl6Xwa9vVa8/L3qz7qf/weY8h0TVC/C2JBJeysXGL75gcF6hUJ3gfGHAYEKVQcP9ZKXVzGPGRXKDuiApUhErzDnt81o4PXfDkb1AqVm9FcYjpqR6QFEjebl7QUAjIp/gjrAvAw44AN9pBIV9AlDmX/sUDdCtB3R3GTzURiik48bIE44GhS62PQKgsAcGer84u9AQczp39vQoj608ClcrfyqUWvnAhHiL9ByqZq+PatuqlfB78eqaQpGoDpw50ILwvF6tdljMOhmIA7oz5N0Gs13M9dUD0drcLxUMgVDv28FhHUvoDGQwaUXhHwOhn6A3BHqmotY/xe5a7CZ6ETLJAgClmAYgxMi045lMReM4s1Mv+RediDQMWtbxDCW36QxL2A+frl8HrXtmbUIQs6n1irf2cHapQ07441au1hbn/Ldri+EvhejkR23znLfUpljBxiGeJN18jWGhpwAmL0bU06vgdGn51pfGYoxbZQcR18uA7EpEjjIlp3l9r8t4w+41q/1DCb0VQBZ6B+28g9yTCqYVAAAAABJRU5ErkJggg=="/>
+            <g transform="translate(3.113 2.264)">
+                <mask id="periscope-color-f" fill="#fff">
+                    <use xlink:href="#periscope-color-e"/>
+                </mask>
+                <polygon fill="#FFF" points="-.69 3.58 3.52 3.58 3.52 -.6 -.69 -.6" mask="url(#periscope-color-f)"/>
+            </g>
+        </g>
+    </g>
+</svg>

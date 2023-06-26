@@ -1,0 +1,48 @@
+/* override */
+
+.table_id_schedule {
+
+}
+    .table_id_schedule .table__widget {
+        table-layout: fixed;
+    }
+        .table_id_schedule .table__cell:nth-child(1) {
+            width: 44px;
+            padding-left: 11px;
+            text-align: center;
+        }
+
+        .table_id_schedule .table__cell:nth-child(2) {
+            width: 158px;
+        }
+
+        .table_id_schedule .table__cell:nth-child(3) {
+            width: 328px;
+        }
+
+        .table_id_schedule .table__cell:nth-child(4) {
+            width: 138px;
+        }
+
+
+@media (min-width: 1340px) {
+
+
+    .table_id_schedule .table__cell:nth-child(1) {
+        width: 90px;
+        padding-left: 22px;
+    }
+
+    .table_id_schedule .table__cell:nth-child(2) {
+        width: 218px;
+    }
+
+    .table_id_schedule .table__cell:nth-child(3) {
+        width: 730px;
+    }
+
+    .table_id_schedule .table__cell:nth-child(4) {
+        width: 162px;
+    }
+
+}

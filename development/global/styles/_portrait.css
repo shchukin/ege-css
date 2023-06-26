@@ -1,0 +1,110 @@
+.portrait {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url("../vectors/portrait-90x90.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+    .portrait::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 7px;
+        top: 7px;
+        display: block;
+        width: 76px;
+        height: 76px;
+        background-image: linear-gradient(#FF7503, #FB539A 80%, #F95266);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;
+    }
+
+    .portrait::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 9px;
+        top: 9px;
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+    .portrait__photo {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        vertical-align: top;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+    }
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .portrait {
+        width: 212px;
+        height: 212px;
+        background-image: url("../vectors/portrait-212x212.svg");
+    }
+        .portrait::before {
+            left: 18px;
+            top: 18px;
+            width: 178px;
+            height: 178px;
+        }
+
+        .portrait::after {
+            left: 21px;
+            top: 21px;
+            width: 172px;
+            height: 172px;
+        }
+
+        .portrait__photo {
+            left: 26px;
+            top: 26px;
+            width: 160px;
+            height: 160px;
+        }
+}
+
+
+@media (min-width: 1024px) {
+
+    .portrait {
+        width: 240px;
+        height: 240px;
+        background-image: url("../vectors/portrait-240x240.svg");
+    }
+        .portrait::before {
+            left: 20px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .portrait::after {
+            left: 23px;
+            top: 23px;
+            width: 194px;
+            height: 194px;
+        }
+
+        .portrait__photo {
+            left: 28px;
+            top: 28px;
+            width: 184px;
+            height: 184px;
+        }
+}
+

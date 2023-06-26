@@ -1,0 +1,31 @@
+.bag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 42px;
+    height: 42px;
+    background-image: url("../vectors/bag.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+    transition: opacity 0.1s ease;
+}
+
+.bag:hover {
+    opacity: 0.7;
+}
+
+    .bag__quantity {
+        display: block;
+        padding: 4px 3px 2px;
+        min-width: 20px;
+        height: 20px;
+        background-color: var(--brand_orange);
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 14px;
+        color: #FFFFFF;
+        text-align: center;
+    }

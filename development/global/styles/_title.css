@@ -1,0 +1,34 @@
+.title {
+    overflow: hidden;
+    text-align: center;
+}
+    .title__inner {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: inherit;
+        font-size: inherit;
+    }
+        .title__inner::before,
+        .title__inner::after {
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            width: 1000px;
+            display: block;
+            height: 1px;
+            background-color: #CDD6DC;
+        }
+
+        .title__inner::before {
+            right: 100%;
+            margin-right: 29px;
+        }
+
+        .title__inner::after {
+            left: 100%;
+            margin-left: 29px;
+        }
+

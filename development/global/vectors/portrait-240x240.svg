@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+    <defs>
+        <linearGradient id="avatar-circle-border-b" x1="50%" x2="50%" y1="0%" y2="115.11%">
+            <stop offset="0%" stop-color="#FF7502"/>
+            <stop offset="76.76%" stop-color="#F90173" stop-opacity=".67"/>
+            <stop offset="100%" stop-color="#F45F00"/>
+        </linearGradient>
+        <path id="avatar-circle-border-a" d="M120 240c66.27 0 120-53.73 120-120C240 53.73 186.27 0 120 0 53.73 0 0 53.73 0 120c0 66.27 53.73 120 120 120z"/>
+        <mask id="avatar-circle-border-c" width="240" height="240" x="0" y="0" fill="#fff">
+            <use xlink:href="#avatar-circle-border-a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="120" cy="120" r="98.5" stroke="url(#avatar-circle-border-b)" stroke-width="3"/>
+        <use stroke="#F45F00" stroke-dasharray="1.33 4" stroke-width="2" mask="url(#avatar-circle-border-c)" xlink:href="#avatar-circle-border-a"/>
+    </g>
+</svg>

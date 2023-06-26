@@ -1,0 +1,9 @@
+/* override */
+
+@media (min-width: 1024px) {
+    .location {
+        background-image: url("../vectors/location.svg"); /* black */
+        font-weight: 500;
+        color: #000000;
+    }
+}

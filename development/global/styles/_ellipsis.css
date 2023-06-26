@@ -1,0 +1,24 @@
+.ellipsis {
+    position: relative;
+    overflow: hidden;
+}
+    .ellipsis__inner {
+        display: block;
+        margin-right: -10000px;
+    }
+        .ellipsis__inner::before {
+            content: "";
+            float: right;
+            height: 48px;          /* line-height × (rows amount - 1) */
+            width: 10000px;
+        }
+
+.ellipsis::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    background-image: radial-gradient(24px 48px ellipse at 100% 100%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0));
+}

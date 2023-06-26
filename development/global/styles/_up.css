@@ -1,0 +1,39 @@
+.up {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    bottom: 268px;
+    display: none;
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.09);
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+
+@media (min-width: 768px) {
+    .up {
+        display: block;
+    }
+}
+
+.up_visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+.up_visible:hover {
+    opacity: 0.8;
+}

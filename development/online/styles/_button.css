@@ -1,0 +1,8 @@
+/* override */
+
+.button_id_download-video {
+    padding: 10px 13px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 2px;
+}

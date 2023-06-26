@@ -1,0 +1,26 @@
+.achievement {
+    padding-left: 40px;
+    min-height: 46px;
+    background-size: 30px 36px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+.achievement--red    { color: #FF7502; background-image: url("../vectors/achievement-red.svg"); }
+.achievement--green  { color: #8D9732; background-image: url("../vectors/achievement-green.svg"); }
+.achievement--orange { color: #E89802; background-image: url("../vectors/achievement-orange.svg"); }
+
+    .achievement__subject {
+        display: block;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    .achievement__score {
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 17px;
+        line-height: 22px;
+    }

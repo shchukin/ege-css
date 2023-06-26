@@ -1,0 +1,111 @@
+.team {
+    padding-top: 33px;
+    padding-bottom: 30px;
+}
+    .team__wrap {
+
+    }
+        .team__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .team__list {
+            margin-top: 27px;
+        }
+            .team__item {
+                margin-top: 42px;
+            }
+
+            .team__item:first-child {
+                margin-top: 0;
+            }
+
+
+@media (min-width: 768px) {
+
+    .team {
+        padding-top: 63px;
+        padding-bottom: 60px;
+    }
+        .team__wrap {
+
+        }
+            .team__heading {
+
+            }
+
+            .team__list {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                margin-top: 37px;
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+                .team__item {
+                    flex-shrink: 0;
+                    width: 33.3333%;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    margin-top: 0;
+                }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .team {
+
+    }
+        .team__wrap {
+
+        }
+            .team__heading {
+
+            }
+
+            .team__list {
+                margin-left: 0;
+                margin-right: 0;
+            }
+                .team__item {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: 42px;
+                    margin-right: 42px;
+                    width: 240px;
+                }
+
+                .team__item:first-child {
+                    margin-left: 0;
+                }
+
+                .team__item:last-child {
+                    margin-right: 0;
+                }
+}
+
+
+@media (min-width: 1340px) {
+
+    .team {
+
+    }
+        .team__wrap {
+
+        }
+            .team__heading {
+
+            }
+
+            .team__list {
+
+            }
+                .team__item {
+
+                }
+}
+
+

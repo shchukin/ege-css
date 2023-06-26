@@ -1,0 +1,115 @@
+.highscore {
+    padding-top: 175px;
+    padding-bottom: 30px;
+    background-color: #FFF5E7;
+}
+    .highscore__wrap {
+
+    }
+        .highscore__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .highscore__body {
+            margin: 3px -15px 0;
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+            .highscore__reason {
+                width: 150px;
+                margin-top: 24px;
+                padding-top: 102px;
+                background-size: 90px 90px;
+                background-repeat: no-repeat;
+                background-position: center top;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            @media (min-width: 360px) {
+
+                .highscore__reason {
+                    width: 165px;
+                }
+            }
+
+            .highscore__reason_id_teachers       { background-image: url("../vectors/highscore-teachers.svg"); }
+            .highscore__reason_id_plans          { background-image: url("../vectors/highscore-plans.svg"); }
+            .highscore__reason_id_practice       { background-image: url("../vectors/highscore-practice.svg"); }
+            .highscore__reason_id_smaller-groups { background-image: url("../vectors/highscore-smaller-groups.svg"); }
+            .highscore__reason_id_control        { background-image: url("../vectors/highscore-control.svg"); }
+            .highscore__reason_id_absent         { background-image: url("../vectors/highscore-absent.svg"); }
+
+
+
+@media (min-width: 768px) {
+
+    .highscore {
+        padding-top: 177px;
+        padding-bottom: 60px;
+    }
+        .highscore__wrap {
+
+        }
+            .highscore__heading {
+
+            }
+
+            .highscore__body {
+                margin: 17px 94px 0;
+            }
+                .highscore__reason {
+                    width: 160px;
+                    margin-top: 20px;
+                    padding-top: 116px;
+                    background-size: 100px 100px;
+                }
+}
+
+@media (min-width: 1024px) {
+
+    .highscore {
+
+    }
+        .highscore__wrap {
+
+        }
+            .highscore__heading {
+
+            }
+
+            .highscore__body {
+                margin: 17px 0 0;
+            }
+                .highscore__reason {
+                    width: 150px;
+                }
+}
+
+@media (min-width: 1340px) {
+
+    .highscore {
+
+    }
+        .highscore__wrap {
+
+        }
+            .highscore__heading {
+
+            }
+
+            .highscore__body {
+
+            }
+                .highscore__reason {
+                    width: 173px;
+                }
+}
+
+

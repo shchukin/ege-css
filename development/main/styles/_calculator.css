@@ -1,0 +1,47 @@
+.calculator {
+    padding-top: 33px;
+    padding-bottom: 172px;
+    overflow: hidden; /* обрезаем растяжки фонов и бордюрчики в таблице */
+}
+    .calculator__wrap {
+
+    }
+        .calculator__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .calculator__options {
+            margin-top: 7px;
+        }
+
+@media (min-width: 768px) {
+
+    .calculator {
+        padding-top: 63px;
+        padding-bottom: 155px;
+    }
+        .calculator__wrap {
+
+        }
+            .calculator__heading {
+
+            }
+
+            .calculator__options {
+                margin-top: 23px;
+            }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .calculator {
+
+    }
+        .calculator__wrap {
+            max-width: 800px;
+        }
+}

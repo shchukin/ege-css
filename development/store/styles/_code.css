@@ -1,0 +1,60 @@
+.code {
+
+}
+    .code__visibility {
+        display: block !important;
+    }
+
+    .code__handler {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    .code__body {
+        position: relative;
+        display: none;
+    }
+        .code__field {
+
+        }
+            .code__field .input__widget {
+                padding-right: 120px;
+            }
+
+        .code__submit {
+            position: absolute !important;
+            right: 0;
+            top: 0;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .code__output {
+            margin-top: 6px;
+            display: none;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: left;
+            color: #FF7502;
+        }
+
+
+.code__visibility:checked {
+
+}
+    .code__visibility:checked ~ .code__handler {
+        display: none;
+    }
+    .code__visibility:checked ~ .code__body {
+        display: block;
+    }
+
+
+@media (min-width: 768px) {
+    .code__body {
+        margin-top: -10px;
+    }
+}

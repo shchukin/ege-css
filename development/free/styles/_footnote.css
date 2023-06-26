@@ -1,0 +1,44 @@
+.footnote {
+    padding-top: 18px;
+    padding-bottom: 29px;
+}
+    .footnote__wrap {
+        text-align: center;
+    }
+        .footnote__body {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 12px;
+            font-size: 11px;
+            line-height: 14px;
+            color: var(--brand_grey);
+            text-align: left;
+        }
+            .footnote__asterisk {
+                position: absolute;
+                left: 0;
+                top: -3px;
+                font-size: 14px;
+            }
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footnote {
+        padding-top: 16px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footnote {
+        padding-top: 14px;
+        padding-bottom: 55px;
+    }
+}
+
+@media (min-width: 1340px) {
+
+}

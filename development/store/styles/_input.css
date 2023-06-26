@@ -1,0 +1,17 @@
+/* override */
+
+.input_id_post-code {
+    width: 120px;
+}
+    .input_id_post-code .label {
+        margin-right: -120px;
+    }
+
+    .input_id_post-code .input__widget {
+
+    }
+
+
+.input_id_phone {
+    width: 258px;
+}

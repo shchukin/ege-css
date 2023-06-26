@@ -1,0 +1,16 @@
+/* override */
+
+.window {
+
+}
+
+.window_for_search {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    border-radius: 0;
+}

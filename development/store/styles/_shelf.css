@@ -1,0 +1,241 @@
+.shelf {
+    position: relative;
+}
+    .shelf__collapse {
+        display: none;
+    }
+
+    .shelf__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: var(--font_weight_demi);
+        font-family: var(--font_family_heading);
+        font-size: 26px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .shelf__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: var(--font_weight_demi);
+        font-family: var(--font_family_heading);
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .shelf__sub-heading {
+        margin-top: 1px;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .shelf__list {
+        margin-top: 21px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .shelf__list:first-child {
+        margin-top: -8px;
+    }
+        /* some will be hidden by default */
+        .shelf__item {
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+
+    .shelf__load-more {
+        margin-top: 32px;
+        text-align: center;
+    }
+        .shelf__load-more {
+
+        }
+            .shelf__handler {
+                width: 276px;
+            }
+                .shelf__collapsed-label {
+
+                }
+
+                .shelf__uncovered-label {
+                    display: none;
+                }
+
+    .shelf__details {
+        margin-top: 24px;
+        text-align: center;
+    }
+        .shelf__details .button {
+            width: 276px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+    .shelf__back {
+        margin-top: 28px;
+        text-align: center;
+    }
+    
+    
+@media (min-width: 768px) {
+    .shelf__list {
+        margin: 13px -16px -16px;
+    }
+        .shelf__item {
+            margin: 16px;
+        }
+}
+
+
+
+
+/* Cut 1 row */
+
+.shelf_rows_1 {
+
+}
+
+@media (max-width: 767px) {
+    .shelf_rows_1 .shelf__item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .shelf_rows_1 .shelf__item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .shelf_rows_1 .shelf__item:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media (min-width: 1340px) {
+    .shelf_rows_1 .shelf__item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+
+
+.shelf_rows_1.shelf_items_1 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_1.shelf_items_2 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_1.shelf_items_3 .shelf__load-more {
+    display: none;
+}
+
+@media (max-width: 1023px),
+       (min-width: 1340px)
+{
+    .shelf_rows_1.shelf_items_4 .shelf__load-more {
+        display: none;
+    }
+}
+
+
+
+/* Cut 2 rows */
+
+.shelf_rows_2 {
+
+}
+
+@media (max-width: 767px) {
+    .shelf_rows_2 .shelf__item:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .shelf_rows_2 .shelf__item:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .shelf_rows_2 .shelf__item:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 1340px) {
+    .shelf_rows_2 .shelf__item:nth-child(n+9) {
+        display: none;
+    }
+}
+
+
+.shelf_rows_2.shelf_items_1 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_2.shelf_items_2 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_2.shelf_items_3 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_2.shelf_items_4 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_2.shelf_items_5 .shelf__load-more {
+    display: none;
+}
+
+.shelf_rows_2.shelf_items_6 .shelf__load-more {
+    display: none;
+}
+
+@media (min-width: 1340px) {
+    .shelf_rows_2.shelf_items_7 .shelf__load-more {
+        display: none;
+    }
+}
+
+@media (min-width: 1340px) {
+    .shelf_rows_2.shelf_items_8 .shelf__load-more {
+        display: none;
+    }
+}
+
+
+
+
+/* Uncovered */
+
+.shelf__collapse:checked {
+
+}
+    .shelf__collapse:checked ~ .shelf__list .shelf__item {
+        display: block;
+    }
+
+    .shelf__collapse:checked ~ .shelf__load-more .shelf__collapsed-label {
+        display: none;
+    }
+
+    .shelf__collapse:checked ~ .shelf__load-more .shelf__uncovered-label {
+        display: inline;
+    }
+
+
+

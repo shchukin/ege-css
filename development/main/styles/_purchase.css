@@ -1,0 +1,89 @@
+/* Тут у нас desktop first */
+
+.purchase {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 12px solid transparent; /* отступ */
+    font-size: 15px;
+    line-height: 22px;
+}
+    .purchase__body {
+
+    }
+        .purchase__row {
+            border-bottom: 2px solid #F6F7F8;
+        }
+            .purchase__cell {
+                vertical-align: middle;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            .purchase__cell_kind_delete {
+                width: 44px;
+            }
+
+            .purchase__cell_kind_subject {
+                width: 216px;
+                padding-left: 4px;
+                font-weight: 500;
+            }
+
+            .purchase__cell_kind_time {
+                color: #697882;
+            }
+
+            .purchase__cell_kind_price {
+                width: 120px;
+                padding-left: 20px;
+                padding-right: 10px;
+                text-align: right;
+            }
+
+
+@media (max-width: 767px) {
+
+    .purchase {
+        display: block;
+    }
+        .purchase__body {
+            display: block;
+        }
+            .purchase__row {
+                position: relative;
+                display: block;
+                margin: 0 -1000px;
+                padding: 14px 1000px 16px;
+            }
+
+                .purchase__cell {
+                    display: block;
+                    padding: 0;
+                }
+
+                .purchase__cell_kind_delete {
+                    position: absolute;
+                    right: 990px;
+                    top: 3px;
+                    width: auto;
+                }
+
+                .purchase__cell_kind_subject {
+                    width: 100%;
+                    padding-right: 44px; /* тут крестик */
+                }
+
+                .purchase__cell_kind_time {
+                    margin-top: 6px;
+                }
+
+                .purchase__cell_kind_price {
+                    margin-top: 6px;
+                    width: 100%;
+                    text-align: left;
+                }
+                    .purchase__price {
+                        display: inline;
+                        vertical-align: baseline;
+                    }
+}

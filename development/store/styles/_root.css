@@ -1,0 +1,21 @@
+/* stylelint-disable declaration-colon-space-after */
+:root {
+    --panel-mobile: 92px;
+    --panel-tablet-and-desktop: 159px;
+
+    --header-mobile: 120px;
+    --header-mobile--simplified: 76px;
+
+    --header-small-tablets: 134px;
+    --header-small-tablets--simplified: 89px;
+
+    --header-large-tablets-and-desktop: 126px;
+    --header-large-tablets-and-desktop--simplified: 87px;
+
+    /* --- */
+
+    --navigation-large-tablets: 93px;
+
+    --navigation-desktop: 61px;
+}
+/* stylelint-enable declaration-colon-space-after */

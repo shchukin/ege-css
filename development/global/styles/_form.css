@@ -1,0 +1,66 @@
+.form {
+    padding-bottom: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .form__heading {
+        margin-bottom: 0;
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .form__note {
+        margin-top: 11px;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .form__body {
+        margin-top: 29px;
+    }
+        .form__field {
+            margin-top: 10px;
+        }
+
+        .form__field:first-child {
+            margin-top: 0;
+        }
+
+    .form__protections {
+        margin-top: 20px;
+    }
+
+    .form__send {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        .form__submit {
+            width: 100%;
+        }
+
+    .form__agreement {
+        margin-top: 11px;
+        font-size: 11px;
+        line-height: 14px;
+        color: #7F7F7F;
+        text-align: center;
+    }
+
+
+@media (min-width: 768px) {
+    .form__send {
+        width: 282px;
+    }
+
+    .form__agreement {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}    

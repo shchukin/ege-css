@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="209px" viewBox="0 0 143 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustrations/teacher-books</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 143 0 143 209 0 209"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="143" height="209" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="115.107158%" id="linearGradient-3">
+            <stop stop-color="#FF7502" offset="0%"></stop>
+            <stop stop-color="#F90173" stop-opacity="0.673233696" offset="76.7617938%"></stop>
+            <stop stop-color="#F45F00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Illustrations/teacher-books" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-4" stroke="#F45F00" mask="url(#mask-2)" stroke-dasharray="1,2" xlink:href="#path-1"></use>
+        <rect id="Rectangle-4" stroke="url(#linearGradient-3)" stroke-width="2" opacity="0.485016325" x="5" y="5" width="133" height="199"></rect>
+    </g>
+</svg>

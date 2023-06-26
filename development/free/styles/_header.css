@@ -1,0 +1,113 @@
+.header {
+    position: relative;
+    padding-top: 19px;
+    padding-bottom: 63px;
+}
+    .header__logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 290px;
+    }
+
+    @media (min-width: 360px) {
+        .header__logo {
+            width: 300px;
+            height: 61px;
+        }
+    }
+
+    .header__contacts-visibility {
+        display: block;
+    }
+
+    .header__show-contacts {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+        .header__show-contacts::before,
+        .header__show-contacts::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: rgba(205, 214, 220, 0.3);
+            border-radius: 1px;
+        }
+
+        .header__show-contacts::before {
+            top: 0;
+        }
+
+        .header__show-contacts::after {
+            bottom: 0;
+        }
+
+    .header__contacts-body {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: none;
+        background-color: #333D41;
+        box-shadow: 0 -2px 100px 0 rgba(0, 0, 0, 0.71);
+    }
+
+    .header__contacts-visibility:checked ~ .header__contacts-body {
+        display: block;
+    }
+
+
+@media (min-width: 768px) {
+
+    .header {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 44px;
+        padding-bottom: 33px;
+    }
+        .header__wrap {
+            display: flex;
+        }
+            .header__logo {
+                margin-left: -2px;
+            }
+
+            .header__contacts-visibility {
+                display: none !important;
+            }
+
+            .header__show-contacts {
+                display: none !important;
+            }
+
+            .header__contacts-body {
+                position: static;
+                display: block !important;
+                margin-left: auto;
+                margin-top: 10px;
+                background-color: transparent;
+                box-shadow: none;
+            }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding-top: 32px;
+    }
+        .header__logo {
+            width: 329px;
+        }
+}

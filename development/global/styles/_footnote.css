@@ -1,0 +1,16 @@
+.footnote {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--brand_grey);
+}
+    .footnote::before {
+        content: "*";
+        position: absolute;
+        left: 1px;
+        top: 0;
+        color: var(--brand_orange);
+    }

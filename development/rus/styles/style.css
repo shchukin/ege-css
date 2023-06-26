@@ -1,0 +1,75 @@
+/* global vendors */
+
+@import url("../../global/vendors/normalize/normalize.css");
+@import url("../../global/vendors/magnific-popup/dist/magnific-popup.css");
+@import url("../../global/vendors/owl-carousel/dist/assets/owl.carousel.min.css");
+
+/* global blocks */
+
+@import url("../../global/styles/_root.css");
+@import url("../../global/styles/_universal.css");
+@import url("../../global/styles/_visuallyhidden.css");
+@import url("../../global/styles/_body.css");
+@import url("../../global/styles/_button.css");
+@import url("../../global/styles/_input.css");
+@import url("../../global/styles/_label.css");
+@import url("../../global/styles/_up.css");
+@import url("../../global/styles/_mfp.css");
+@import url("../../global/styles/_window.css");
+@import url("../../global/styles/_logo.css");
+@import url("../../global/styles/_alert.css");
+@import url("../../global/styles/_container.css");
+@import url("../../global/styles/_wysiwyg.css");
+@import url("../../global/styles/_link.css");
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_video.css");
+@import url("../../global/styles/_form.css");
+@import url("../../global/styles/_capcha.css");
+@import url("../../global/styles/_list.css");
+@import url("../../global/styles/_call.css");
+@import url("../../global/styles/_location.css");
+@import url("../../global/styles/_theater.css");
+@import url("../../global/styles/_down.css");
+@import url("../../global/styles/_owl-carousel.css");
+@import url("../../global/styles/_thumbnail.css");
+@import url("../../global/styles/_footnote.css");
+@import url("../../global/styles/_feature.css");
+@import url("../../global/styles/_stat.css");
+@import url("../../global/styles/_message.css");
+@import url("../../global/styles/_results.css");
+@import url("../../global/styles/_preview.css");
+
+
+
+/* rus vendors */
+
+
+
+/* rus overrides */
+
+@import url("_location.css");
+@import url("_call.css");
+@import url("_button.css");
+@import url("_down.css");
+@import url("_feature.css");
+
+
+/* rus specific */
+
+@import url("_root.css");
+@import url("_main.css");
+@import url("_header.css");
+@import url("_contacts.css");
+@import url("_stage.css");
+@import url("_alone.css");
+@import url("_salvation.css");
+@import url("_best.css");
+@import url("_contains.css");
+@import url("_writing.css");
+@import url("_arguments.css");
+@import url("_poem.css");
+@import url("_youtube.css");
+@import url("_tutor.css");
+@import url("_reasons.css");
+@import url("_panel.css");
+

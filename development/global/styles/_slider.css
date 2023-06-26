@@ -1,0 +1,207 @@
+.slider {
+    position: relative;
+}
+    .slider__handler {
+        position: absolute;
+        left: 0;
+        bottom: 0; /* should be near real controls so screen won't jump */
+        opacity: 0;
+    }
+
+    .slider__body {
+        position: relative;
+    }
+        .slider__slide {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease,
+                        visibility 0.5s ease;
+        }
+            .slider__image {
+                vertical-align: top;
+                width: 100%;
+                height: auto;
+                background-color: var(--image-fallback);
+                transition: opacity 0.1s ease;
+            }
+
+            .slider__slide:hover .slider__image { /* can't use opacity on slide cause it was used already */
+                opacity: 0.8;
+            }
+
+    .slider__navigation {
+        margin-top: 19px;
+        width: 162px; /* for proper outline effect width */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .slider__handler:focus ~ .slider__navigation {
+        outline: auto;
+    }
+
+        .slider__dot {
+            position: relative;
+            display: block;
+            width: 18px;
+            height: 18px;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+        }
+            .slider__dot::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: #E7E9EB;
+                border-radius: 50%;
+                transition: background-color 0.5s ease,
+                            transform 0.1s ease;
+            }
+
+            .slider__dot:hover::after {
+                transform: scale(1.5);
+            }
+
+    .slider__control {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        margin-top: -64px; /* 45 of half arrow plus 19 of half dot */
+        width: 98px;
+        height: 90px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+    }
+        .slider__control::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            transition: border-color 0.1s ease;
+        }
+
+        .slider__control::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0.6;
+            transition: opacity 0.1s ease;
+        }
+
+    .slider__control_prev {
+        left: 0;
+    }
+
+    .slider__control_next {
+        right: 0;
+    }
+
+        .slider__control_prev::after {
+            background-image: url("../vectors/slider-control-prev.svg");
+        }
+
+        .slider__control_next::after {
+            background-image: url("../vectors/slider-control-next.svg");
+        }
+
+
+    .slider__control:hover {
+
+    }
+        .slider__control:hover::before {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .slider__control:hover::after {
+            opacity: 0.8;
+        }
+
+
+/* slides */
+
+.slider__handler:nth-child(1):checked ~ .slider__body .slider__slide:nth-child(1),
+.slider__handler:nth-child(2):checked ~ .slider__body .slider__slide:nth-child(2),
+.slider__handler:nth-child(3):checked ~ .slider__body .slider__slide:nth-child(3),
+.slider__handler:nth-child(4):checked ~ .slider__body .slider__slide:nth-child(4),
+.slider__handler:nth-child(5):checked ~ .slider__body .slider__slide:nth-child(5),
+.slider__handler:nth-child(6):checked ~ .slider__body .slider__slide:nth-child(6),
+.slider__handler:nth-child(7):checked ~ .slider__body .slider__slide:nth-child(7),
+.slider__handler:nth-child(8):checked ~ .slider__body .slider__slide:nth-child(8),
+.slider__handler:nth-child(9):checked ~ .slider__body .slider__slide:nth-child(9)
+{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* dots */
+
+.slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1),
+.slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2),
+.slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3),
+.slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4),
+.slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5),
+.slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6),
+.slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7),
+.slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8),
+.slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)
+{
+    cursor: default;
+}
+
+    .slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,
+    .slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2)::after,
+    .slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3)::after,
+    .slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4)::after,
+    .slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5)::after,
+    .slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6)::after,
+    .slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,
+    .slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
+    .slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after
+    {
+        background-color: var(--brand_orange);
+        transform: none;
+    }
+

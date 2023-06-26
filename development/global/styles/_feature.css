@@ -1,0 +1,59 @@
+.feature {
+    padding-top: 36px;
+    padding-bottom: 32px;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+}
+    .feature::before {
+        content: "";
+        display: block;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: 100px;
+        background-color: #FFEFDC;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+        border-radius: 50%;
+    }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .feature {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .feature {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .feature_hoverable {
+        transition: background-color 0.1s ease;
+    }
+
+    .feature_hoverable:hover {
+        background-color: #FFFBF5;
+    }
+
+        .feature {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+}
+
+
+
+.feature_faded {
+
+}
+    .feature_faded::before {
+        background-color: #FFEBD2;
+    }

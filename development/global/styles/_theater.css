@@ -1,0 +1,23 @@
+.theater {
+
+}
+    .theater__stage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .theater__subscribe {
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .theater__subscribe {
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .theater__subscribe {
+            margin-top: 40px;
+        }
+    }

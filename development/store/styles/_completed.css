@@ -1,0 +1,11 @@
+.completed {
+    padding-top: 31px;
+    padding-bottom: 43px;
+}
+
+@media (min-width: 768px) {
+    .completed {
+        padding-top: 39px;
+        padding-bottom: 42px;
+    }
+}

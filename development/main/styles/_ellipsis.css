@@ -1,0 +1,19 @@
+/* override */
+
+.ellipsis_teaser {
+
+}
+    .ellipsis_teaser .ellipsis__inner::before {
+        height: 110px; /* 22 line-height * 5 rows */
+    }
+
+
+@media (min-width: 768px) {
+
+    .ellipsis_teaser {
+
+    }
+        .ellipsis_teaser .ellipsis__inner::before {
+            height: 130px; /* 26 line-height * 5 rows */
+        }
+}

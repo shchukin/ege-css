@@ -1,0 +1,85 @@
+/* global vendors */
+
+@import url("../../global/vendors/normalize/normalize.css");
+@import url("../../global/vendors/magnific-popup/dist/magnific-popup.css");
+
+
+/* global blocks */
+
+@import url("../../global/styles/_root.css");
+@import url("../../global/styles/_universal.css");
+@import url("../../global/styles/_visuallyhidden.css");
+@import url("../../global/styles/_body.css");
+@import url("../../global/styles/_button.css");
+@import url("../../global/styles/_input.css");
+@import url("../../global/styles/_label.css");
+@import url("../../global/styles/_required.css");
+@import url("../../global/styles/_up.css");
+@import url("../../global/styles/_mfp.css");
+@import url("../../global/styles/_window.css");
+@import url("../../global/styles/_logo.css");
+@import url("../../global/styles/_alert.css");
+@import url("../../global/styles/_container.css");
+@import url("../../global/styles/_wysiwyg.css");
+@import url("../../global/styles/_link.css");
+@import url("../../global/styles/_nobr.css");
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_form.css");
+@import url("../../global/styles/_capcha.css");
+@import url("../../global/styles/_call.css");
+@import url("../../global/styles/_location.css");
+@import url("../../global/styles/_article.css");
+@import url("../../global/styles/_subscription.css");
+@import url("../../global/styles/_net.css");
+@import url("../../global/styles/_product.css");
+@import url("../../global/styles/_slider.css");
+@import url("../../global/styles/_subject.css");
+@import url("../../global/styles/_informer.css");
+@import url("../../global/styles/_breadcrumbs.css");
+@import url("../../global/styles/_gallery.css");
+@import url("../../global/styles/_buying.css");
+@import url("../../global/styles/_variation.css");
+@import url("../../global/styles/_bag.css");
+@import url("../../global/styles/_search.css");
+@import url("../../global/styles/_live-search.css");
+@import url("../../global/styles/_footer.css");
+
+
+
+/* store vendors */
+
+
+
+/* store overrides */
+@import url("_call.css");
+@import url("_location.css");
+@import url("_button.css");
+@import url("_live-search.css");
+@import url("_logo.css");
+@import url("_window.css");
+@import url("_input.css");
+
+
+
+/* store specific */
+
+
+@import url("_root.css");
+@import url("_contacts.css");
+@import url("_header.css");
+@import url("_shelf.css");
+@import url("_discipline.css");
+@import url("_categories.css");
+@import url("_index.css");
+@import url("_completed.css");
+@import url("_related.css");
+@import url("_panel.css");
+@import url("_item.css");
+@import url("_cart.css");
+@import url("_highlight.css");
+@import url("_navigation.css");
+@import url("_code.css");
+@import url("_order.css");
+@import url("_customer.css");
+@import url("_path.css");
+@import url("_user-form.css");

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <path id="video-record-a" d="M13 1C6.37 1 1 6.38 1 12.72 1 19.62 6.37 25 13 25s12-5.37 12-11.72C25 6.38 19.62 1 13 1z"/>
+        <path id="video-record-b" d="M10 16.2V9.8c0-.3.18-.57.46-.7a.95.95 0 0 1 .9.03l5.25 3.2c.24.15.39.4.39.67s-.15.52-.39.67l-5.25 3.2a.94.94 0 0 1-.9.04.8.8 0 0 1-.46-.71z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="24" height="24" x="1" y="1" fill="#D8D8D8" opacity="0"/>
+        <use fill="#FF7502" xlink:href="#video-record-a"/>
+        <path stroke="#FFF" stroke-opacity=".82" d="M13 .5c6.94 0 12.5 5.65 12.5 12.78 0 6.67-5.64 12.22-12.5 12.22C6.06 25.5.5 19.86.5 12.72.5 6.05 6.15.5 13 .5z"/>
+        <g>
+            <use fill="#FFF" xlink:href="#video-record-b"/>
+            <path stroke="#FFF5E7" stroke-opacity=".11" d="M9.5 16.2V9.8c0-.49.3-.93.74-1.15.44-.22.97-.2 1.38.06l5.25 3.2c.4.24.63.64.63 1.09 0 .45-.24.85-.63 1.1l-5.25 3.2c-.41.25-.94.27-1.38.05a1.3 1.3 0 0 1-.74-1.15z"/>
+        </g>
+    </g>
+</svg>

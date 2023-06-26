@@ -1,0 +1,77 @@
+/* global vendors */
+
+@import url("../../global/vendors/normalize/normalize.css");
+@import url("../../global/vendors/magnific-popup/dist/magnific-popup.css");
+@import url("../../global/vendors/owl-carousel/dist/assets/owl.carousel.min.css");
+
+
+/* global blocks */
+
+@import url("../../global/styles/_root.css");
+@import url("../../global/styles/_universal.css");
+@import url("../../global/styles/_visuallyhidden.css");
+@import url("../../global/styles/_body.css");
+@import url("../../global/styles/_button.css");
+@import url("../../global/styles/_input.css");
+@import url("../../global/styles/_label.css");
+@import url("../../global/styles/_up.css");
+@import url("../../global/styles/_mfp.css");
+@import url("../../global/styles/_window.css");
+@import url("../../global/styles/_logo.css");
+@import url("../../global/styles/_play.css");
+@import url("../../global/styles/_alert.css");
+@import url("../../global/styles/_container.css");
+@import url("../../global/styles/_wysiwyg.css");
+@import url("../../global/styles/_link.css");
+@import url("../../global/styles/_nobr.css");
+@import url("../../global/styles/_hide.css");
+/*@import url("../../global/styles/_title.css");*/
+@import url("../../global/styles/_video.css");
+@import url("../../global/styles/_form.css");
+@import url("../../global/styles/_capcha.css");
+@import url("../../global/styles/_list.css");
+/*@import url("../../global/styles/_counter.css");*/
+@import url("../../global/styles/_table.css");
+@import url("../../global/styles/_call.css");
+@import url("../../global/styles/_location.css");
+@import url("../../global/styles/_article.css");
+@import url("../../global/styles/_subscription.css");
+@import url("../../global/styles/_theater.css");
+@import url("../../global/styles/_owl-carousel.css");
+@import url("../../global/styles/_feature.css");
+@import url("../../global/styles/_message.css");
+
+
+
+/* online vendors */
+
+
+
+/* online overrides */
+
+@import url("_table.css");
+@import url("_feature.css");
+@import url("_button.css");
+
+
+/* online specific */
+
+@import url("_root.css");
+@import url("_about.css");
+@import url("_methods.css");
+@import url("_guarantees.css");
+@import url("_contains.css");
+@import url("_master-class.css");
+@import url("_excluded.css");
+@import url("_feedback.css");
+@import url("_stat.css");
+@import url("_time-table.css");
+@import url("_status.css");
+@import url("_tutor.css");
+@import url("_trust.css");
+@import url("_panel.css");
+@import url("_main.css");
+@import url("_stage.css");
+@import url("_contacts.css");
+@import url("_header.css");
+

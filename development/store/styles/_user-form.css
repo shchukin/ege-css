@@ -1,0 +1,76 @@
+.user-form {
+    padding-bottom: 34px;
+}
+    .user-form__wrap {
+
+    }
+        .user-form__outer-wrapper {
+            border: 1px solid #E9E8E8;
+            border-radius: 3px;
+        }
+            .user-form__inner-wrapper {
+                max-width: 460px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 32px 15px;
+            }
+
+            @media (min-width: 360px) {
+                .user-form__inner-wrapper {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+
+                .user-form__fieldset {
+                    margin: 32px 0 0;
+                    padding: 0;
+                    border: none;
+                }
+
+                .user-form__fieldset:first-child {
+                    margin-top: 0;
+                }
+
+                    .user-form__legend {
+                        font-family: var(--font_family_heading);
+                        font-weight: var(--font_weight_demi);
+                        font-size: 26px;
+                        line-height: 26px;
+                    }
+
+                    .user-form__section {
+                        margin-top: 28px;
+                    }
+                        .user-form__field {
+                            margin-top: 10px;
+                        }
+
+                        .user-form__field:first-child {
+                            margin-top: 0;
+                        }
+
+                .user-form__actions {
+                    margin-top: 30px;
+                }
+                    .user-form__submit {
+                        width: 100%;
+                    }
+
+
+@media (min-width: 768px) {
+    .user-form {
+        padding-bottom: 44px;
+    }
+        .user-form__inner-wrapper {
+            padding-top: 62px;
+            padding-bottom: 60px;
+        }
+            .user-form__fieldset {
+                margin-top: 42px;
+            }
+
+            .user-form__actions {
+                margin-top: 40px;
+            }
+}

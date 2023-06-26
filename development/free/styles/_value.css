@@ -1,0 +1,45 @@
+.value {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+    .value::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .value_videocourse::before {
+        background-image: url("../vectors/value-videocourse.svg");
+    }
+
+    .value_book::before {
+        background-image: url("../vectors/value-book.svg");
+    }
+
+    .value_lecture::before {
+        background-image: url("../vectors/value-lecture.svg");
+    }
+
+    .value__heading {
+        display: block;
+        font-weight: bold;
+    }
+
+    .value__description {
+        margin-top: 6px;
+        display: block;
+    }
+
+@media (min-width: 768px) {
+    .value__heading {
+        margin-top: 10px;
+    }
+}
+

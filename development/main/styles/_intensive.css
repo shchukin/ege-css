@@ -1,0 +1,19 @@
+.intensive {
+    margin-top: -2px;
+}
+
+@media (min-width: 1024px) {
+
+    .intensive {
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+}
+
+@media (min-width: 1340px) {
+
+    .intensive {
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+}

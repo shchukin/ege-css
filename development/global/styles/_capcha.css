@@ -1,0 +1,10 @@
+.capcha {
+
+}
+    .capcha .label {
+        padding-bottom: 0;
+    }
+
+    .capcha .input__widget {
+        width: 200px;
+    }

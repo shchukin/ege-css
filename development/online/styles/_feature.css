@@ -1,0 +1,12 @@
+/* override */
+
+.feature_id_theory::before       { background-image: url("../vectors/feature_id_theory.svg"); }
+.feature_id_practice::before     { background-image: url("../vectors/feature_id_practice.svg"); }
+.feature_id_master::before       { background-image: url("../vectors/feature_id_master.svg"); }
+.feature_id_review::before       { background-image: url("../vectors/feature_id_review.svg"); }
+.feature_id_tests::before        { background-image: url("../vectors/feature_id_tests.svg"); }
+.feature_id_gifts::before        { background-image: url("../vectors/feature_id_gifts.svg"); }
+.feature_id_classes::before      { background-image: url("../vectors/feature_id_classes.svg"); }
+.feature_id_questions::before    { background-image: url("../vectors/feature_id_questions.svg"); }
+.feature_id_prediction::before   { background-image: url("../vectors/feature_id_prediction.svg"); }
+.feature_id_topping::before      { background-image: url("../vectors/feature_id_topping.svg"); }

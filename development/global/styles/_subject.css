@@ -1,0 +1,95 @@
+.subject {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+    .subject__container {
+        padding-left: 4px;
+        padding-top: 4px;
+        margin-right: -4px;
+        margin-bottom: -4px;
+    }
+        .subject__outer {
+            padding: 1px;
+            background-color: #FFFFFF;
+            border: 1px solid #EAE9E9;
+            border-radius: 3px;
+        }
+            .subject__middle {
+                margin-left: -4px;
+                margin-top: -4px;
+                padding: 1px;
+                background-color: #FFFFFF;
+                border: 1px solid #EAE9E9;
+                border-radius: 3px;
+            }
+                .subject__inner {
+                    margin-left: -4px;
+                    margin-top: -4px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 19px 21px;
+                    background-color: #FFFFFF;
+                    border: 1px solid #EAE9E9;
+                    border-radius: 3px;
+                    font-family: var(--font_family_heading);
+                    font-weight: var(--font_weight_demi);
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    white-space: nowrap;
+                    transition: color 0.1s ease;
+                }
+
+                .subject:hover .subject__inner {
+                    color: var(--brand_orange);
+                }
+
+
+                    .subject .subject__inner::before {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 16px;
+                        background-repeat: no-repeat;
+                        background-size: 20px 20px;
+                    }
+
+.subject_id_biology          .subject__inner::before { background-image: url("../sprites/subject-biology.png"); }
+.subject_id_chemistry        .subject__inner::before { background-image: url("../sprites/subject-chemistry.png"); }
+.subject_id_computer-science .subject__inner::before { background-image: url("../sprites/subject-computer-science.png"); }
+.subject_id_english-language .subject__inner::before { background-image: url("../sprites/subject-english-language.png"); }
+.subject_id_history          .subject__inner::before { background-image: url("../sprites/subject-history.png"); }
+.subject_id_literature       .subject__inner::before { background-image: url("../sprites/subject-literature.png"); }
+.subject_id_math             .subject__inner::before { background-image: url("../sprites/subject-math.png"); }
+.subject_id_physics          .subject__inner::before { background-image: url("../sprites/subject-physics.png"); }
+.subject_id_russian-language .subject__inner::before { background-image: url("../sprites/subject-russian-language.png"); }
+.subject_id_sociology        .subject__inner::before { background-image: url("../sprites/subject-sociology.png"); }
+
+@media (min-resolution: 2dppx) {
+    .subject_id_biology          .subject__inner::before { background-image: url("../sprites/subject-biology@2x.png"); }
+    .subject_id_chemistry        .subject__inner::before { background-image: url("../sprites/subject-chemistry@2x.png"); }
+    .subject_id_computer-science .subject__inner::before { background-image: url("../sprites/subject-computer-science@2x.png"); }
+    .subject_id_english-language .subject__inner::before { background-image: url("../sprites/subject-english-language@2x.png"); }
+    .subject_id_history          .subject__inner::before { background-image: url("../sprites/subject-history@2x.png"); }
+    .subject_id_literature       .subject__inner::before { background-image: url("../sprites/subject-literature@2x.png"); }
+    .subject_id_math             .subject__inner::before { background-image: url("../sprites/subject-math@2x.png"); }
+    .subject_id_physics          .subject__inner::before { background-image: url("../sprites/subject-physics@2x.png"); }
+    .subject_id_russian-language .subject__inner::before { background-image: url("../sprites/subject-russian-language@2x.png"); }
+    .subject_id_sociology        .subject__inner::before { background-image: url("../sprites/subject-sociology@2x.png"); }
+}
+
+
+
+.subject_compressed {
+    display: inline-block;
+    vertical-align: top;
+}
+    .subject_compressed .subject__inner {
+        padding: 12px 16px;
+    }
+        .subject_compressed .subject__inner::before {
+            margin-right: 10px;
+        }

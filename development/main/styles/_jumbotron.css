@@ -1,0 +1,169 @@
+.jumbotron {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+    .jumbotron__wrap {
+
+    }
+        .jumbotron__content {
+
+        }
+            .jumbotron__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: var(--font_family_heading);
+                font-weight: var(--font_weight_demi);
+                font-size: 36px;
+                line-height: 38px;
+            }
+
+            .jumbotron__average-grade {
+                margin-top: 17px;
+            }
+                .jumbotron__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: inherit;
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+
+                .jumbotron__scores {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    margin: 13px -10px -3px;
+                }
+                    .jumbotron__grade {
+                        margin: 3px 10px;
+                    }
+
+
+        .jumbotron__try {
+            position: relative;
+            margin-top: 31px;
+            margin-bottom: -165px;
+        }
+
+
+@media (min-width: 768px) {
+
+    .jumbotron {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+        .jumbotron__wrap {
+
+        }
+            .jumbotron__content {
+
+            }
+                .jumbotron__heading {
+                    font-size: 64px;
+                    line-height: 64px;
+                }
+
+                .jumbotron__average-grade {
+                    margin-top: 25px;
+                }
+                    .jumbotron__sub-heading {
+
+                    }
+
+                    .jumbotron__scores {
+                        margin: 9px -15px -15px;
+                    }
+                        .jumbotron__grade {
+                            margin: 15px;
+                        }
+
+
+            .jumbotron__try {
+                margin-top: 37px;
+                margin-bottom: -153px;
+            }
+}
+
+
+@media (min-width: 1024px) {
+
+    .jumbotron {
+        padding-bottom: 70px;
+    }
+        .jumbotron__wrap {
+            display: flex;
+            align-items: flex-start;
+        }
+            .jumbotron__content {
+                flex-shrink: 0;
+                width: 536px;
+            }
+                .jumbotron__heading {
+
+                }
+
+                .jumbotron__average-grade {
+
+                }
+                    .jumbotron__sub-heading {
+
+                    }
+
+                    .jumbotron__scores {
+
+                    }
+                        .jumbotron__grade {
+
+                        }
+
+
+            .jumbotron__try {
+                flex-shrink: 0;
+                margin-top: 9px;
+                width: 404px;
+                margin-left: 20px;
+                margin-bottom: 0;
+            }
+}
+
+
+@media (min-width: 1340px) {
+
+    .jumbotron {
+
+    }
+        .jumbotron__wrap {
+
+        }
+            .jumbotron__content {
+                flex-shrink: 0;
+                width: 596px;
+                margin-left: 80px;
+            }
+                .jumbotron__heading {
+
+                }
+
+                .jumbotron__average-grade {
+
+                }
+                    .jumbotron__sub-heading {
+
+                    }
+
+                    .jumbotron__scores {
+
+                    }
+                        .jumbotron__grade {
+
+                        }
+
+
+            .jumbotron__try {
+                width: 404px;
+                margin-left: 40px;
+                margin-right: 80px;
+            }
+}
+
+

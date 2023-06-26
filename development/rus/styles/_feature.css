@@ -1,0 +1,13 @@
+/* override */
+
+.feature_id_key::before      { background-image: url("../vectors/feature_id_key.svg"); }
+.feature_id_prepared::before { background-image: url("../vectors/feature_id_prepared.svg"); }
+.feature_id_success::before  { background-image: url("../vectors/feature_id_success.svg"); }
+.feature_id_saving::before   { background-image: url("../vectors/feature_id_saving.svg"); }
+
+.feature_id_partial::before       { background-image: url("../vectors/feature_id_partial.svg"); }
+.feature_id_consistence::before   { background-image: url("../vectors/feature_id_consistence.svg"); }
+.feature_id_unique::before        { background-image: url("../vectors/feature_id_unique.svg"); }
+.feature_id_approach::before      { background-image: url("../vectors/feature_id_approach.svg"); }
+.feature_id_authors-texts::before { background-image: url("../vectors/feature_id_authors-texts.svg"); }
+.feature_id_support::before       { background-image: url("../vectors/feature_id_support.svg"); }

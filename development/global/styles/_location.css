@@ -1,0 +1,17 @@
+.location {
+    padding-left: 34px;
+    background-image: url("../vectors/location.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 5px;
+    background-size: 12px 18px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 768px) {
+    .location {
+        background-position: 6px 2px;
+    }
+}

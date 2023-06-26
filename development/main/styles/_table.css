@@ -1,0 +1,49 @@
+/* override */
+
+.table_id_intensive {
+    font-size: 15px;
+    line-height: 22px;
+}
+    .table_id_intensive .table__widget {
+
+    }
+        .table_id_intensive .table__cell {
+            vertical-align: top;
+        }
+
+        .table_id_intensive .table__section_head .table__cell {
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+
+
+
+.table_id_intensive .table__cell:nth-child(1) {
+    width: 1px;
+}
+
+.table_id_intensive .table__cell:nth-child(2) {
+    width: 1px;
+}
+
+.table_id_intensive .table__cell:nth-child(3) {
+    width: 214px;
+}
+
+.table_id_intensive .table__cell:nth-child(4) {
+    width: 364px;
+}
+
+.table_id_intensive .table__cell:nth-child(5) {
+    width: 1px;
+}
+
+.table_id_intensive .table__cell:nth-child(6) {
+    width: 1px;
+}
+
+.table_id_intensive .table__cell:nth-child(7) {
+    width: 1px;
+}
+

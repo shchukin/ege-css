@@ -1,0 +1,33 @@
+.show {
+    display: none;
+}
+
+
+.show_mobile {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .show_mobile {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .show_small-tablet {
+        display: inline;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1219px) {
+    .show_large-tablet {
+        display: inline;
+    }
+}
+
+@media (min-width: 1220px) {
+    .show_desktop {
+        display: inline;
+    }
+}

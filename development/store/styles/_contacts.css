@@ -1,0 +1,121 @@
+.contacts {
+    width: 180px;
+}
+    .contacts__phone {
+
+    }
+
+    .contacts__location {
+        margin-top: 14px;
+    }
+
+    .contacts__connect {
+
+    }
+        .contacts__callback {
+            margin-top: 23px;
+        }
+            .contacts__callback .button {
+                min-width: 180px;
+            }
+
+        .contacts__social {
+            margin-top: 4px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            .contacts__network {
+                flex-shrink: 0;
+            }
+
+        .contacts__data {
+            position: relative;
+            padding: 35px 50px 40px;
+            text-align: center;
+        }
+            .contacts__data::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                height: 2px;
+                background-color: rgba(205, 214, 220, 0.26);
+                border-radius: 2px;
+            }
+
+            .contacts__phone {
+                font-size: 21px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .contacts__address {
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+
+.body_scrolled {
+
+}
+    .body_scrolled .contacts__location {
+        display: none;
+    }
+
+    .body_scrolled .contacts__connect {
+        display: none;
+    }
+
+
+
+@media (min-width: 1024px) {
+    .contacts {
+        position: relative;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+    }
+        .contacts__phone {
+            width: 184px;
+            margin-top: 6px;
+            margin-right: 21px;
+        }
+
+        .contacts__location {
+            display: block !important; /* больше не скрываем */
+            width: 178px;
+            margin-top: 4px;
+            margin-right: 33px;
+        }
+
+        .contacts__connect {
+            display: block !important; /* больше не скрываем */
+            transition: margin-top 0.3s ease; /* будет меняться при скролле */
+        }
+            .contacts__callback {
+                margin-top: 1px;
+            }
+
+            .contacts__social {
+                transition: opacity 0.2s ease,
+                            visibility 0.2s ease;
+            }
+
+    .body_scrolled .contacts__connect {
+        margin-top: 7px;
+    }
+        .body_scrolled .contacts__callback {
+
+        }
+
+        .body_scrolled .contacts__social {
+            visibility: hidden;
+            opacity: 0;
+        }
+}

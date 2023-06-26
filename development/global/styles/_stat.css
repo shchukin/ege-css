@@ -1,0 +1,16 @@
+.stat {
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    background-color: #FFF5E7;
+    border-radius: 50%;
+    font-family: var(--font_family_heading);
+    font-weight: var(--font_weight_demi);
+    font-size: 36px;
+    line-height: 40px;
+}
+    .stat__value {
+        margin-left: -95px;
+        margin-right: -95px;
+        text-align: center;
+    }

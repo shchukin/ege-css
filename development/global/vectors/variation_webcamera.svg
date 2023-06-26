@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <path id="webcamera-a" d="M13 17c-5.52 0-8 .8-8 2.9 0 2.3 2.48 5.1 8 5.1s8-2.8 8-4.9c0-2.3-2.48-3.1-8-3.1z"/>
+        <path id="webcamera-b" d="M10 0C4.48 0 0 4.48 0 9.77 0 15.52 4.48 20 10 20s10-4.48 10-9.77C20 4.48 15.52 0 10 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FF7502" xlink:href="#webcamera-a"/>
+        <path stroke="#FFF" stroke-opacity=".82" d="M13 16.5c5.95 0 8.5.95 8.5 3.6 0 2.91-3.39 5.4-8.5 5.4-5.15 0-8.5-2.51-8.5-5.6 0-2.48 2.6-3.4 8.5-3.4z"/>
+        <g transform="translate(3 1)">
+            <mask id="webcamera-c" fill="#fff">
+                <use xlink:href="#webcamera-b"/>
+            </mask>
+            <use fill="#FF7502" xlink:href="#webcamera-b"/>
+            <path stroke="#FFF" stroke-opacity=".82" d="M10-.5c5.83 0 10.5 4.75 10.5 10.73 0 5.6-4.74 10.27-10.5 10.27C4.17 20.5-.5 15.76-.5 9.77-.5 4.17 4.24-.5 10-.5z"/>
+            <path fill="#FFF" d="M10 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" mask="url(#webcamera-c)"/>
+            <path fill="#FF7502" d="M10 6.67a3.34 3.34 0 1 0 0 6.67 3.34 3.34 0 0 0 0-6.67z" mask="url(#webcamera-c)"/>
+            <path fill="#FFF" d="M10 8.33a1.67 1.67 0 1 0 0 3.34 1.67 1.67 0 0 0 0-3.34z" mask="url(#webcamera-c)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,45 @@
+.index {
+    padding-bottom: 100px;
+}
+    .index__wrap {
+
+    }
+        .index__theater {
+
+        }
+
+        .index__body {
+            margin-top: 28px;
+            border-top: 2px solid #F6F7F8;
+            padding-top: 42px;
+        }
+            .index__showcase {
+                margin-top: 63px;
+            }
+
+            .index__showcase:first-child {
+                margin-top: 0;
+            }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .index {
+
+    }
+        .index__body {
+
+        }
+            .index__showcase {
+
+            }
+}
+
+@media (min-width: 1024px) {
+    .index {
+
+    }
+        .index__theater {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}

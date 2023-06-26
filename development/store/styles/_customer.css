@@ -1,0 +1,44 @@
+.customer {
+    padding-top: 32px;
+}
+    .customer__head {
+
+    }
+
+    .customer__navigation {
+        margin-top: 17px;
+    }
+
+    .customer__body {
+
+    }
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .customer {
+        padding-top: 42px;
+    }
+        .customer__navigation {
+            margin-top: 17px;
+        }
+}
+
+@media (min-width: 1024px) {
+    .customer {
+        padding-top: 42px;
+    }
+        .customer__navigation {
+            margin-top: 35px;
+        }
+
+        .customer__body {
+            margin-top: 20px;
+        }
+}
+
+@media (min-width: 1340px) {
+
+}

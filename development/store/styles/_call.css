@@ -1,0 +1,77 @@
+/* override */
+
+
+.call {
+
+}
+    .call__phone {                    /* Будем анимировать цвет при скрытии-показе */
+        transition: color 0.3s ease;  /* в состоянии когда проскроллено. Так так совпало, */
+    }                                 /* что изначально белый и не видно, а делается черным */
+
+    .call__note {
+        transition: color 0.3s ease;
+    }
+
+
+.body_scrolled .call {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+    .body_scrolled .call__phone {
+        color: #000000;                /* вот, собственно и продолжение истории с цветами */
+    }
+
+    .body_scrolled .call__note {
+        color: #000000;
+    }
+
+
+@media (min-width: 360px) and (max-width: 419px) {
+
+    .body_scrolled .call {
+        right: 30px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .body_scrolled .call {
+        position: absolute;
+        right: auto;
+        left: 50%;
+        width: 182px;
+        margin-left: -2px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .body_scrolled .call {
+        position: absolute;
+        top: 21px;
+        right: auto;
+        left: 50%;
+        width: 182px;
+        margin-left: 153px;
+    }
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .call {
+        position: static !important; /* Больше никуда не улетаем */
+    }
+        .call__phone {
+            color: #000000;
+        }
+
+        .call__note {
+            font-weight: 500;
+            color: #000000;
+        }
+}

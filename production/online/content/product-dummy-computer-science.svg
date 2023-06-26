@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="207" viewBox="0 0 276 207">
+    <defs>
+        <rect id="informatics-a" width="276" height="207"/>
+        <circle id="informatics-b" cx="137.5" cy="103.5" r="88.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#EFDDF1" xlink:href="#informatics-a"/>
+        <mask id="informatics-c" fill="#fff">
+            <use xlink:href="#informatics-b"/>
+        </mask>
+        <use fill="#FFF" opacity="0" xlink:href="#informatics-b"/>
+        <text fill="#FFF" font-family=".AppleSystemUIFont" font-size="12" letter-spacing="1.95" mask="url(#informatics-c)">
+            <tspan x="7.38" y="21">0101100010100010011010010101001</tspan> <tspan x="4.58" y="36">00001001010110111101010101011000</tspan> <tspan x="8.36" y="51">1010010010000100101110101010101</tspan> <tspan x="7.38" y="66">0101010000100101010101011010010</tspan> <tspan x="7.38" y="81">1010101001011000101000100110100</tspan> <tspan x="5.57" y="96">10101001000010010101101111010101</tspan> <tspan x="7.38" y="111">0101100010100100100001001011101</tspan> <tspan x="7.38" y="126">0101010101010100001001010101010</tspan> <tspan x="8.36" y="141">1101001010010110001010001001101</tspan> <tspan x="4.58" y="156">00101010010000100101011011110101</tspan> <tspan x="7.38" y="171">0101011000101001001000010010111</tspan> <tspan x="7.38" y="186">0101010101010101000010010101010</tspan> <tspan x="8.36" y="201">1011010010101010100101100010100</tspan> <tspan x="7.38" y="216">0100110100101010010000100101011</tspan> <tspan x="8.36" y="231">0111101010101011000101001001000</tspan> <tspan x="8.36" y="246">0100101110101010101010101000010</tspan> <tspan x="51.97" y="261">010101010101101001010</tspan>
+        </text>
+    </g>
+</svg>

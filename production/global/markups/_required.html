@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.required</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1687762449">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 800px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.required</h1>
+            <p>
+                Просто звездочка. Вставляем именно так, как отдельный спан с классом.
+                Там замуты с подменой звездочки на картиинку. Обязательно пишем title=""
+                чтобы всем было понятно что за звездочка.
+            </p>
+            <p>
+                Смотрим:
+            </p>
+
+
+            <span class="required" title="обязательное поле">*</span>
+
+            <p>
+                С использованием этих звездочек есть неприятная особенность. При неудачном стечении обстоятельств может
+                получиться так, что она переносится на новую строку относительно текста слева.
+                Ну т.е. если лейбл поля по ширине равен впритык ширине экрана, и звездочке не хватает места,
+                и она улетает на новую строчку.
+            </p>
+            <p>
+                Чтобы этого не произошло нужно обернуть последнее слово в текст со звездочкой в
+                <b>&lt;span class="nobr"&gt;</b>. Как-то так:
+            </p>
+
+            <p>
+                <code style="font-size: 12px">
+                    Почтовый &lt;span class="nobr"&gt;индекс &lt;span class="required"&gt;*&lt;/span&gt;&lt;/span&gt;
+                </code>
+            </p>
+            <p>
+                <code style="font-size: 12px">
+                    Адрес (улица, дом, квартира/офис, этаж и &lt;span class="nobr"&gt;пр.) &lt;span class="required"&gt;*&lt;/span&gt;&lt;/span&gt;
+                </code>
+            </p>
+
+            <p>
+                Это гарантирует нам то, что если звездочка переносится на другую строку, то она переносится вместе с последним словом.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="../scripts/mfp.js?1687762449"></script>
+        <script src="../scripts/up.js?1687762449"></script>
+        <script src="../scripts/subscription.js?1687762449"></script>
+        <script src="../scripts/form.js?1687762449"></script>
+        <script src="../scripts/alert.js?1687762449"></script>
+        <script src="../scripts/down.js?1687762449"></script>
+        <script src="../scripts/owl-carousel.js?1687762449"></script>
+        <script src="../scripts/slider.js?1687762449"></script>
+        <script src="../scripts/live-search.js?1687762449"></script>
+        <script src="../scripts/input.js?1687762449"></script>
+        <script src="../scripts/tabs.js?1687762449"></script>
+
+    </body>
+</html>
+
+

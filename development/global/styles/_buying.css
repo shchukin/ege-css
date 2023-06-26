@@ -1,0 +1,101 @@
+.buying {
+    position: relative;
+}
+    .buying__choice {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .buying__params {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+        .buying__option {
+            margin-left: 14px;
+        }
+
+        .buying__option:first-child {
+            margin-left: 0;
+        }
+
+    .buying__body {
+        position: relative;
+        margin-top: 14px;
+        height: 198px;
+    }
+        .buying__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border: 1px solid #E9E8E8;
+            padding-top: 16px;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 0.3s ease,
+                        opacity 0.3s ease;
+        }
+            .buying__type {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            .buying__price {
+                margin-top: 13px;
+                font-family: var(--font_family_heading);
+                font-weight: var(--font_weight_demi);
+                font-size: 36px;
+                line-height: 40px;
+                color: var(--brand_orange);
+            }
+
+            .buying__old-price {
+                display: block;
+                font-family: var(--font_family_heading);
+                font-weight: var(--font_weight_demi);
+                font-size: 17px;
+                line-height: 20px;
+                color: #697882;
+                text-decoration: line-through;
+            }
+
+            .buying__action {
+                position: absolute;
+                bottom: 24px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 14px;
+                max-width: 248px;
+            }
+
+
+.buying__choice:nth-child(1):checked ~ .buying__params .buying__option:nth-child(1),
+.buying__choice:nth-child(2):checked ~ .buying__params .buying__option:nth-child(2),
+.buying__choice:nth-child(3):checked ~ .buying__params .buying__option:nth-child(3),
+.buying__choice:nth-child(4):checked ~ .buying__params .buying__option:nth-child(4),
+.buying__choice:nth-child(5):checked ~ .buying__params .buying__option:nth-child(5)
+{
+    background-color: #FFF5E7;
+    border-color: #FFF5E7;
+    cursor: default;
+}
+
+.buying__choice:nth-child(1):checked ~ .buying__body .buying__item:nth-child(1),
+.buying__choice:nth-child(2):checked ~ .buying__body .buying__item:nth-child(2),
+.buying__choice:nth-child(3):checked ~ .buying__body .buying__item:nth-child(3),
+.buying__choice:nth-child(4):checked ~ .buying__body .buying__item:nth-child(4),
+.buying__choice:nth-child(5):checked ~ .buying__body .buying__item:nth-child(5)
+{
+    visibility: visible;
+    opacity: 1;
+}

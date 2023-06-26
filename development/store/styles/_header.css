@@ -1,0 +1,321 @@
+.header {
+    position: relative;
+    z-index: 1000;
+    height: var(--header-mobile);
+}
+    .header__fixed-part {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: var(--header-mobile);
+        background-color: #FFFFFF;
+    }
+        .header__wrap {
+            height: 100%;
+            padding-top: 74px; /* Прижать кнопку контактов к низу */
+        }
+            .header__logo {
+                position: absolute;
+                left: 15px;
+                top: 12px;
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 52px;
+            }
+
+            .header__actions {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                margin-right: -9px;
+                display: flex;
+                align-items: flex-start;
+                transition: opacity 0.3s ease,    /* будет скрываться */
+                            visibility 0.3s ease; /* при прокрутке */
+            }
+                .header__search-handler {
+                    display: block;
+                    width: 42px;
+                    height: 42px;
+                    background-image: url("../vectors/header-search.svg");
+                    background-size: 42px 42px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .header__buying {
+                    margin-left: 22px;
+                }
+
+
+            .header__contacts-visibility {
+                display: block;
+            }
+
+            .header__show-contacts {
+                position: relative;
+                display: block;
+                width: 100%;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                background-color: #FFFFFF;
+                color: #000000;
+                text-align: center;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: opacity 0.3s ease,    /* будет скрываться */
+                            visibility 0.3s ease; /* при прокрутке */
+            }
+                .header__show-contacts::before,
+                .header__show-contacts::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background-color: rgba(205, 214, 220, 0.3);
+                    border-radius: 1px;
+                }
+
+                .header__show-contacts::before {
+                    top: 0;
+                }
+
+                .header__show-contacts::after {
+                    bottom: 0;
+                }
+
+            .header__contacts-body {
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                top: 0;
+                right: 0;
+                visibility: hidden; /* Не получается использовать display: block потому что далее надо накладывать transition внутри, а когда display: none / block не работает */
+                padding-top: 24px;
+                padding-bottom: 32px;
+                background-color: #2C2826;
+                box-shadow: 0 -2px 100px 0 rgba(0, 0, 0, 0.71);
+            }
+
+            .header__contacts-visibility:checked ~ .header__contacts-body {
+                visibility: visible;
+            }
+                .header__contacts-widget {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .header__hide-contacts {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 64px;
+                    height: 64px;
+                    background-image: url("../vectors/header-hide-contacts.svg");
+                    background-size: 14px 14px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+
+
+.body_scrolled .header__fixed-part {
+    height: var(--header-mobile--simplified);
+    border-bottom: 2px solid #F2F5F6;
+}
+    .body_scrolled .header__actions {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .body_scrolled .header__show-contacts {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .body_scrolled .header__contacts-body {
+        visibility: visible;
+        position: static;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+        .body_scrolled .header__hide-contacts {
+            display: none;
+        }
+
+
+
+@media (min-width: 360px) and (max-width: 419px) {
+    .header__logo {
+        left: 30px;
+    }
+
+    .header__actions {
+        right: 30px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .header__logo {
+        left: auto;
+        right: 50%;
+        margin-right: 128px;
+    }
+
+    .header__actions {
+        right: auto;
+        left: 50%;
+        margin-left: 83px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__logo {
+        left: auto;
+        right: 50%;
+        margin-right: 10px;
+    }
+
+    .header__actions {
+        right: auto;
+        left: 50%;
+        margin-left: 238px;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        height: var(--header-small-tablets);
+    }
+        .header__fixed-part {
+            height: var(--header-small-tablets);
+        }
+            .header__wrap {
+                padding-top: 87px; /* Прижать кнопку контактов к низу */
+            }
+
+    .header__logo {
+        width: 328px;
+        margin-top: -3px;
+        margin-bottom: -7px;
+    }
+
+    .header__actions {
+        top: 22px;
+    }
+
+    .body_scrolled .header__fixed-part {
+        height: var(--header-small-tablets--simplified);
+    }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    .header {
+        height: var(--header-large-tablets-and-desktop);
+    }
+        .header__fixed-part {
+            height: var(--header-large-tablets-and-desktop);
+            border-bottom: 2px solid #F6F7F8;
+            transition: height 0.3s ease;
+        }
+            .header__wrap {
+                display: flex;
+                align-items: flex-start;
+                padding-top: 26px;
+                transition: padding-top 0.3s ease; /* будет меняться при скролле */
+            }
+                .header__logo {
+                    position: static;
+                    width: 66px;
+                    margin-top: -5px;
+                }
+
+                .header__actions {
+                    position: static;
+                    visibility: visible !important; /* больше не будет */
+                    opacity: 1 !important;          /* скрываться при скролле */
+                    margin-top: 3px;
+                    margin-right: -9px;
+                    margin-left: 31px;
+                    transition: margin-top 0.3s ease; /* будет меняться при скролле */
+                }
+
+                .header__contacts-visibility {
+                    display: none !important;
+                }
+
+                .header__show-contacts {
+                    display: none !important;
+                }
+
+                .header__hide-contacts {
+                    display: none !important;
+                }
+
+                .header__contacts-body {
+                    position: static;
+                    visibility: visible !important;
+                    margin-left: auto;
+                    margin-top: 0;
+                    padding-top: 1px;
+                    padding-bottom: 0;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+
+    .body_scrolled {
+
+    }
+        .body_scrolled .header__fixed-part {
+            height: var(--header-large-tablets-and-desktop--simplified);
+        }
+
+        .body_scrolled .header__wrap {
+            padding-top: 15px;
+        }
+            .body_scrolled .header__actions {
+                margin-top: 7px;
+            }
+
+
+}
+
+
+
+
+@media (min-width: 1340px) {
+    .header__logo {
+        margin-top: -7px;
+        width: 332px;
+    }
+    .header__actions {
+        margin-left: 31px;
+    }
+}
+
+
+

@@ -1,0 +1,326 @@
+.tutor {
+    padding-top: 53px;
+    padding-bottom: 61px;
+    background-color: #FFF5E7;
+}
+    .tutor__wrap {
+
+    }
+        .tutor__intro {
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .tutor__body {
+            margin-top: 37px;
+        }
+
+            .tutor__preview {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+                .tutor__photo {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-image: url("../vectors/tutor__photo.svg");
+                    background-size: 300px 300px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                    .tutor__image {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        vertical-align: top;
+                        border-radius: 50%;
+                        background-color: #94877F;
+                    }
+
+            .tutor__name {
+                margin-top: 35px;
+                margin-bottom: 0;
+                font-family: var(--font_family_heading);
+                font-weight: var(--font_weight_demi);
+                font-size: 32px;
+                line-height: 32px;
+                text-align: center;
+            }
+
+            .tutor__note {
+                display: block;
+                margin-top: 22px;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                text-align: center;
+            }
+
+            .tutor__summary {
+                margin-top: 39px;
+                margin-bottom: 0;
+                padding-left: 0;
+                list-style: none;
+                font-size: 15px;
+                line-height: 24px;
+            }
+                .tutor__primary-features {
+
+                }
+
+                .tutor__secondary-features {
+                    margin-top: 30px;
+                }
+                    .tutor__feature {
+                        position: relative;
+                        margin-top: 30px;
+                        padding-left: 44px;
+                    }
+
+                    .tutor__feature:first-child {
+                        margin-top: 0;
+                    }
+                        .tutor__index {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            color: var(--brand_orange);
+                        }
+
+        .tutor__message {
+            margin-top: 39px;
+            font-size: 17px;
+            line-height: 26px;
+            font-style: italic;
+            text-align: center;
+        }
+
+@media (min-width: 768px) {
+
+    .tutor__message {
+        position: relative;
+        margin-top: 69px;
+        width: 446px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tutor__message::before,
+    .tutor__message::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 72px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+    }
+
+    .tutor__message::before {
+        right: 100%;
+        margin-right: 31px;
+        top: -36px;
+        background-image: url("../vectors/quote-left.svg");
+    }
+
+    .tutor__message::after {
+        left: 100%;
+        margin-left: 16px;
+        bottom: -36px;
+        background-image: url("../vectors/quote-right.svg");
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tutor {
+        padding-top: 84px;
+        padding-bottom: 90px;
+    }
+        .tutor__wrap {
+
+        }
+            .tutor__intro {
+                font-size: 52px;
+                line-height: 60px;
+            }
+
+            .tutor__body {
+                margin-top: 28px;
+            }
+                .tutor__preview {
+
+                }
+
+                .tutor__name {
+                    margin-top: 35px;
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+
+                .tutor__note {
+                    margin-top: -3px;
+                }
+
+                .tutor__summary {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-top: 31px;
+                    display: flex;
+                }
+                    .tutor__primary-features {
+                        width: 314px;
+                        flex-shrink: 0;
+                    }
+
+                    .tutor__secondary-features {
+                        margin-top: 0;
+                        width: 314px;
+                        flex-shrink: 0;
+                        padding-left: 20px;
+                    }
+                        .tutor__feature {
+                            margin-top: 25px;
+                        }
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .tutor {
+        padding-top: 81px;
+        padding-bottom: 80px;
+    }
+
+        .tutor__intro {
+            font-size: 52px;
+            line-height: 67px;
+        }
+
+        .tutor__body {
+            position: relative;
+            margin-top: 53px;
+        }
+            .tutor__preview {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .tutor__name {
+                margin-top: 43px;
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            .tutor__note {
+                margin-top: -3px;
+            }
+
+            .tutor__summary {
+                margin-top: 0;
+            }
+
+                .tutor__secondary-features {
+                    margin-top: 0;
+                }
+                    .tutor__feature {
+                        width: 314px;
+                    }
+                        .tutor__index {
+                            top: 50%;
+                            margin-top: -12px;
+                        }
+
+                    .tutor__feature_id_01 {
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        margin-top: 14px !important; /* !important is because :first-child { margin-top: 0; }  */
+                        margin-right: 169px;
+                        padding-left: 0;
+                        padding-right: 44px;
+                        text-align: right;
+                    }
+                        .tutor__feature_id_01 .tutor__index {
+                            right: 0;
+                        }
+
+                    .tutor__feature_id_02 {
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        margin-top: 103px;
+                        margin-right: 202px;
+                        padding-left: 0;
+                        padding-right: 44px;
+                        text-align: right;
+                    }
+                        .tutor__feature_id_02 .tutor__index {
+                            right: 0;
+                        }
+
+
+                    .tutor__feature_id_03 {
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        margin-top: 215px;
+                        margin-right: 169px;
+                        padding-left: 0;
+                        padding-right: 44px;
+                        text-align: right;
+                    }
+                        .tutor__feature_id_03 .tutor__index {
+                            right: 0;
+                        }
+
+                    .tutor__feature_id_04 {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        margin-top: 14px !important; /* !important is because :first-child { margin-top: 0; }  */
+                        margin-left: 167px;
+                    }
+
+                    .tutor__feature_id_05 {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        margin-top: 115px;
+                        margin-left: 198px;
+                    }
+
+                    .tutor__feature_id_06 {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        margin-top: 215px;
+                        margin-left: 167px;
+                    }
+
+            .tutor__message {
+                margin-top: 39px;
+                width: 638px;
+            }
+}
+
+
+@media (min-width: 1340px) {
+
+    .tutor__message {
+        width: 900px;
+    }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="422" height="253" viewBox="0 0 422 253">
+  <defs>
+    <polygon id="master-class-record-a" points="0 0 422 0 422 253 0 253"/>
+    <mask id="master-class-record-b" width="422" height="253" x="0" y="0" fill="#fff">
+      <use xlink:href="#master-class-record-a"/>
+    </mask>
+    <linearGradient id="master-class-record-d" x1="50%" x2="50%" y1="0%" y2="115.107%">
+      <stop offset="0%" stop-color="#FF7502"/>
+      <stop offset="76.762%" stop-color="#F90173" stop-opacity=".673"/>
+      <stop offset="100%" stop-color="#F45F00"/>
+    </linearGradient>
+    <polygon id="master-class-record-c" points="6 6 416 6 416 247 6 247"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#FFF" stroke="#F45F00" stroke-dasharray="1.667 5" stroke-width="1.667" mask="url(#master-class-record-b)" xlink:href="#master-class-record-a"/>
+    <use fill="#FFF" xlink:href="#master-class-record-c"/>
+    <path stroke="url(#master-class-record-d)" stroke-width="3" d="M7.5,7.5 L7.5,245.5 L414.5,245.5 L414.5,7.5 L7.5,7.5 Z"/>
+  </g>
+</svg>

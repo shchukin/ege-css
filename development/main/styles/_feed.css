@@ -1,0 +1,35 @@
+.feed {
+    padding-top: 33px;
+    padding-bottom: 31px;
+}
+    .feed__wrap {
+
+    }
+        .feed__item {
+            margin-top: 34px;
+        }
+
+        .feed__item:first-child {
+            margin-top: 0;
+        }
+
+
+@media (min-width: 768px) {
+
+    .feed {
+        padding-top: 63px;
+        padding-bottom: 61px;
+    }
+        .feed__wrap {
+
+        }
+            .feed__item {
+                margin-top: 44px;
+            }
+
+            .feed__item:first-child {
+
+            }
+}
+
+

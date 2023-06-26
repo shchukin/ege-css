@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1687762449">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.slider</h1>
+            <p>
+                Как и много другое работает на скрытых чекбоксах.
+                Точнее радио-кнопках в данном случае. В один момент чекнута одна раидокнопка.
+                Точки, соответствтено, это лейблы к радиокнопкам и слайдер работает!
+                Важно, чтобы радиокнопки и лейблы были связаны через <b>id</b> / <b>for</b>.
+                Стилей написано на максимум 9 элементов. Смотри конец файла <b>styles/_slider.css</b>
+            </p>
+            <p>
+                Потом, правда, появились еще стрелочки и к ним уже жаба-скрипт идет.
+            </p>
+            <p>
+                Важно, чтобы у картинок была одинаковая высота в рамках одной пачки. Любая, но одинаковая.
+            </p>
+
+
+            <div class="slider">
+                <input class="slider__handler" type="radio" name="slide-show" id="slide-show-01" checked>
+                <input class="slider__handler" type="radio" name="slide-show" id="slide-show-02">
+                <input class="slider__handler" type="radio" name="slide-show" id="slide-show-03">
+                <div class="slider__body">
+                    <a class="slider__slide" href="#">
+                        <img class="slider__image"
+                             srcset="../../global/temp/slide-show-01@2x.jpg 2x"
+                             src="../../global/temp/slide-show-01.jpg"
+                             alt=""
+                        >
+                    </a>
+                    <a class="slider__slide" href="#">
+                        <img class="slider__image"
+                             srcset="../../global/temp/slide-show-02@2x.jpg 2x"
+                             src="../../global/temp/slide-show-02.jpg"
+                             alt=""
+                        >
+                    </a>
+                    <a class="slider__slide" href="#">
+                        <img class="slider__image"
+                             srcset="../../global/temp/slide-show-03@2x.jpg 2x"
+                             src="../../global/temp/slide-show-03.jpg"
+                             alt=""
+                        >
+                    </a>
+                </div>
+                <div class="slider__navigation">
+                    <label class="slider__dot" for="slide-show-01">Слайд номер 1</label>
+                    <label class="slider__dot" for="slide-show-02">Слайд номер 2</label>
+                    <label class="slider__dot" for="slide-show-03">Слайд номер 3</label>
+                </div>
+                <button class="slider__control slider__control_prev" type="button">Назад</button>
+                <button class="slider__control slider__control_next" type="button">Вперед</button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <script src="../vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="../scripts/mfp.js?1687762449"></script>
+        <script src="../scripts/up.js?1687762449"></script>
+        <script src="../scripts/subscription.js?1687762449"></script>
+        <script src="../scripts/form.js?1687762449"></script>
+        <script src="../scripts/alert.js?1687762449"></script>
+        <script src="../scripts/down.js?1687762449"></script>
+        <script src="../scripts/owl-carousel.js?1687762449"></script>
+        <script src="../scripts/slider.js?1687762449"></script>
+        <script src="../scripts/live-search.js?1687762449"></script>
+        <script src="../scripts/input.js?1687762449"></script>
+        <script src="../scripts/tabs.js?1687762449"></script>
+
+    </body>
+</html>
+
+

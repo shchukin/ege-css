@@ -1,0 +1,110 @@
+.graduates {
+    padding-top: 33px;
+    padding-bottom: 172px;
+    background-color: #FFF5E7;
+}
+    .graduates__wrap {
+
+    }
+        .graduates__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .graduates__list {
+            margin-top: 27px;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+            .graduates__stat {
+                position: relative;
+                width: 94px;
+                padding-top: 97px;
+                background-size: 84px 84px;
+                background-repeat: no-repeat;
+                background-position: center top;
+            }
+
+            .graduates__stat_score_perfect          { background-image: url("../vectors/graduates-stat-perfect.svg"); }
+            .graduates__stat_score_almost-perfect   { background-image: url("../vectors/graduates-stat-almost-perfect.svg"); }
+            .graduates__stat_score_olympiad-winners { background-image: url("../vectors/graduates-stat-olympiad-winners.svg"); }
+
+                .graduates__count {
+                    position: absolute;
+                    left: 50%;
+                    top: 52px;
+                    margin-left: 10px;
+                    width: 40px;
+                    height: 40px;
+                    padding-top: 7px;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                    font-family: var(--font_family_heading);
+                    font-weight: var(--font_weight_demi);
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    letter-spacing: -1px;
+                }
+
+                .graduates__label {
+                    display: block;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+
+
+@media (min-width: 768px) {
+
+    .graduates {
+        padding-top: 63px;
+        padding-bottom: 175px;
+    }
+        .graduates__wrap {
+
+        }
+            .graduates__heading {
+
+            }
+
+            .graduates__list {
+                margin-top: 37px;
+                justify-content: center;
+            }
+                .graduates__stat {
+                    width: 150px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    background-size: 100px 100px;
+                    padding-top: 117px;
+                }
+
+                .graduates__stat:first-child {
+                    margin-left: 0;
+                }
+
+                .graduates__stat:last-child {
+                    margin-right: 0;
+                }
+
+                    .graduates__count {
+                        top: 62px;
+                        margin-left: 12px;
+                        width: 48px;
+                        height: 48px;
+                        padding-top: 11px;
+                        padding-right: 2px;
+                        font-size: 25px;
+                        line-height: 30px;
+                        letter-spacing: -2px;
+                    }
+
+                    .graduates__label {
+
+                    }
+}

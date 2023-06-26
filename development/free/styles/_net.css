@@ -1,0 +1,38 @@
+.net {
+    display: inline-block;
+    vertical-align: top;
+    width: 56px;
+    height: 56px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.net_vk,
+.net_smaller-vk {
+    background-image: url("../vectors/net-vk.svg");
+}
+
+.net_mail {
+    background-image: url("../vectors/net-mail.svg");
+}
+
+.net_youtube {
+    background-image: url("../vectors/net-youtube.svg");
+}
+
+
+.net_smaller-vk {
+    width: 24px;
+    height: 24px;
+}
+
+.net_full-youtube {
+    width: 50px;
+    height: 24px;
+    background-image: url("../vectors/net-youtube-full.svg");
+}

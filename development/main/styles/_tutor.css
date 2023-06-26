@@ -1,0 +1,99 @@
+.tutor {
+    position: relative;
+    padding-left: 106px;
+    padding-top: 2px;
+    min-height: 92px;
+}
+    .tutor__photo,
+    .tutor__photo.portrait {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .tutor__name {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--font_family_heading);
+        font-weight: var(--font_weight_demi);
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .tutor__position {
+        margin-top: 2px;
+        font-size: 15px;
+        line-height: 22px;
+        color: #697882;
+    }
+
+    .tutor__score {
+        margin-top: 4px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+        .tutor__year-heading {
+
+        }
+
+
+
+@media (min-width: 768px) {
+
+    .tutor {
+        position: static;
+        padding-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+        .tutor__photo,
+        .tutor__photo.portrait {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tutor__name {
+            margin-top: 22px;
+        }
+
+        .tutor__position {
+
+        }
+
+        .tutor__score {
+            margin-top: 16px;
+        }
+            .tutor__year-heading {
+
+            }
+}
+
+
+@media (min-width: 1024px) {
+
+    .tutor {
+
+    }
+        .tutor__photo,
+        .tutor__photo.portrait {
+
+        }
+
+        .tutor__name {
+
+        }
+
+        .tutor__position {
+            margin-left: -35px;
+            margin-right: -35px;
+        }
+
+        .tutor__score {
+
+        }
+            .tutor__year-heading {
+                display: block;
+            }
+
+}

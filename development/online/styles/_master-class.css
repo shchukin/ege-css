@@ -1,0 +1,66 @@
+.master-class {
+    padding-top: 53px;
+    padding-bottom: 48px;
+}
+    .master-class__wrap {
+
+    }
+        .master-class__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .master-class__note {
+            margin-top: 21px;
+            font-size: 17px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .master-class__content {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .master-class__record {
+            margin-top: 37px;
+            width: 300px;
+            height: 185px;
+            padding: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("../vectors/master-class-record.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+            .master-class__video {
+                vertical-align: top;
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: #000000;
+            }
+            
+            
+@media (min-width: 768px) {
+    .master-class {
+        padding-top: 92px;
+        padding-bottom: 88px;
+    }
+        .master-class__heading {
+            font-size: 52px;
+            line-height: 60px;
+        }
+
+        .master-class__record {
+            width: 422px;
+            height: 253px;
+            margin-top: 41px;
+        }
+}            

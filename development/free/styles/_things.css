@@ -1,0 +1,129 @@
+.things {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    text-align: center;
+}
+    .things__wrap {
+
+    }
+        .things__pre-header {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .things__heading {
+            margin-top: 24px;
+            margin-bottom: 0;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 36px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .things__list {
+            margin-top: 24px;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+            .things__item {
+                margin-top: 20px;
+            }
+
+            .things__item:first-child {
+                margin-top: 0;
+            }
+
+        .things__addition {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            padding-left: 28px;
+            font-family: var(--font_family_heading);
+            font-weight: var(--font_weight_demi);
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+        }
+            .things__plus {
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+
+
+
+@media (min-width: 768px) {
+
+    .things {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+        .things__wrap {
+
+        }
+            .things__pre-header {
+
+            }
+
+            .things__heading {
+
+            }
+
+            .things__list {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+                .things__item {
+                    margin-top: 0;
+                    width: 200px;
+                }
+
+            .things__addition {
+                margin-top: 30px;
+            }
+                .things__plus {
+
+                }
+}
+
+@media (min-width: 1024px) {
+    .things__list {
+        margin-top: 29px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .things__item {
+            width: 280px;
+        }
+
+    .things__addition {
+        margin-top: 53px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .things__list {
+        /*margin-top: 29px;*/
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        .things__item {
+            width: 340px;
+        }
+
+    /*.things__addition {*/
+        /*margin-top: 53px;*/
+    /*}*/
+}

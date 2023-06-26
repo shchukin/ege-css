@@ -1,0 +1,21 @@
+.allocation {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    cursor: help !important;
+
+    background-image: linear-gradient(to right, #CCC4B8, #CCC4B8 2px, transparent 2px, transparent);
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+
+    font-style: italic;
+    font-size: 15px;
+    line-height: 20px;
+    color: #68645E;
+}
+
+.allocation_disabled {
+    background-image: none;
+}

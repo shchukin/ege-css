@@ -1,0 +1,13 @@
+.value {
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.value_original {
+    text-decoration: line-through;
+    color: #697882;
+}
+
+.value_discount {
+    color: #FF7502;
+}

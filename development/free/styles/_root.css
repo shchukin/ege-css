@@ -1,0 +1,6 @@
+/* stylelint-disable declaration-colon-space-after */
+:root {
+    --panel-mobile: 92px;
+    --panel-tablet-and-desktop: 159px;
+}
+/* stylelint-enable declaration-colon-space-after */
