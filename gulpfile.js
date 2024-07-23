@@ -174,19 +174,19 @@ function symbolsImgToSpriteSvg(content, project) {
             if( project === 'free' ) {
                 pathString = pathString.replace('global', 'free');
             }
-            
+
             if( project === 'online' ) {
                 pathString = pathString.replace('global', 'online');
             }
-            
+
             if( project === 'rus' ) {
                 pathString = pathString.replace('global', 'rus');
             }
-            
+
             if( project === 'store' ) {
                 pathString = pathString.replace('global', 'store');
             }
-            
+
             if( project === 'main' ) {
                 pathString = pathString.replace('global', 'main');
             }
@@ -225,6 +225,18 @@ gulp.task('index', function () {
         .pipe(gulp.dest('production/'))
         ;
 });
+
+
+// Egenator: copy
+
+gulp.task('store_egenator', function () {
+    return gulp.src('development/store_egenator/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('production/store_egenator/'))
+        ;
+});
+
+
 // Temp: copy
 
 gulp.task('globalTemp', function () {
@@ -1039,6 +1051,7 @@ gulp.task('mainStyles', function () {
 gulp.task('default', function (fn) {
     run('clean',
         'index',
+        'store_egenator',
         'globalTemp', 'freeTemp', 'onlineTemp', 'rusTemp', 'storeTemp', 'mainTemp',
         'globalFonts', 'freeFonts', 'onlineFonts', 'rusFonts', 'storeFonts', 'mainFonts',
         'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'mainContent',
