@@ -77,35 +77,36 @@
 
 
 .link {
-    color: #F6BB00;
+    color: #000000;
 }
 
 .button_palette_empty {
-    border-color: #F6BB00;
-    color: #F6BB00;
+    border-color: #000000;
+    color: #000000;
 }
 
 .button_id-contacts-handler {
-    border-color: #F6BB00;
-    color: #F6BB00;
+    border-color: #000000;
+    color: #000000;
 }
 
 .button_id-contacts-handler:hover {
-    border-color: #FAD03D;
-    color: #FAD03D;
+    border-color: #000000;
+    color: #000000;
 }
 
+.button_palette_submit,
 .button_palette_submit::before {
-    background-image: linear-gradient(89deg, #F6BB00 0%, #DE5B27 100%);
+    background-image: linear-gradient(89deg, #000000 0%, #000000 100%);
 }
 
 
 .navigation__link {
-    color: #F6BB00;
+    color: #000000;
 }
 
 .bag__quantity {
-    background-color: #F6BB00;
+    background-color: #000000;
 }
 
 .slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,
@@ -117,11 +118,11 @@
 .slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,
 .slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
 .slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {
-    background-color: #F6BB00;
+    background-color: #000000;
 }
 
 .product__discount-price {
-    color: #F6BB00;
+    color: #000000;
 }
 
 
