@@ -5,16 +5,17 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>ЕГЭ-Студия</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/style.css?1721736391">
-        <link rel="stylesheet" href="styles/style.css?1721736391">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">-->
+        <link rel="stylesheet" href="../global/fonts/style.css">
+        <link rel="stylesheet" href="../store/styles/style.css">
+        <link rel="stylesheet" href="styles/style_egenator.css">
     </head>
     <body class="body">
         <header class="header">
             <div class="header__fixed-part">
                 <div class="header__wrap container">
                     <h1 class="header__logo">
-                        <span class="logo logo_truncated">
+                        <span class="logo logo_egenator">
                             <span class="visuallyhidden">Подготовка к ЕГЭ и олимпиадам — Образовательная компания «ЕГЭ-Студия»</span>
                         </span>
                     </h1>
@@ -32,7 +33,7 @@
                             </div>
                             <div class="contacts__location">
                                 <div class="location">
-                                    Москва, Страстной бульвар, 16.
+                                    Москва, Петровский бульвар 15, стр. 1
                                 </div>
                             </div>
                             <div class="contacts__connect">
@@ -78,29 +79,54 @@
                 </div>
             </div>
         </nav>
-        <main class="discipline">
-            <div class="discipline__wrap container">
-                <h2 class="discipline__heading">
-                    Математика
-                </h2>
-                <div class="discipline__filter">
-                    <a class="discipline__option" href="#video-courses">Видеокурсы</a>
-                    <a class="discipline__option" href="#online-courses">Онлайн курсы</a>
-                    <a class="discipline__option" href="#online-courses-for-teacher">Онлайн курсы для преподавателей</a>
-                    <a class="discipline__option" href="#offline-courses-in-the-classroom">Оффлайн курсы в классе</a>
+        <main class="index">
+            <div class="index__wrap container">
+                <div class="index__theater slider">
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-01" checked>
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-02">
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-03">
+                    <div class="slider__body">
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-01@2x.jpg 2x"
+                                 src="../global/temp/slide-show-01.jpg"
+                                 alt=""
+                            >
+                        </a>
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-02@2x.jpg 2x"
+                                 src="../global/temp/slide-show-02.jpg"
+                                 alt=""
+                            >
+                        </a>
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-03@2x.jpg 2x"
+                                 src="../global/temp/slide-show-03.jpg"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="slider__navigation">
+                        <label class="slider__dot" for="slide-show-01">Слайд номер 1</label>
+                        <label class="slider__dot" for="slide-show-02">Слайд номер 2</label>
+                        <label class="slider__dot" for="slide-show-03">Слайд номер 3</label>
+                    </div>
+                    <button class="slider__control slider__control_prev" type="button">Назад</button>
+                    <button class="slider__control slider__control_next" type="button">Вперед</button>
                 </div>
-                <div class="discipline__body">
-                    <section class="discipline__showcase shelf shelf_rows_2 shelf_items_11" id="video-courses"><!-- id for anchor -->
-                        <input class="shelf__collapse" type="checkbox" id="shelf-video-courses"><!-- if for shelf collapse -->
-                        <h2 class="shelf__heading">
-                            Видеокурсы
+                <div class="index__body">
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            Математика
                         </h2>
                         <div class="shelf__list">
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -132,8 +158,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -165,8 +191,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -198,239 +224,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -460,24 +255,23 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="shelf__load-more">
-                            <label class="shelf__handler button button_palette_faded" for="shelf-video-courses">
-                                <span class="shelf__collapsed-label">Показать еще</span>
-                                <span class="shelf__uncovered-label">Свернуть</span>
-                            </label>
+                        <div class="shelf__details">
+                            <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по математике</a>
                         </div>
                     </section>
-                    <section class="discipline__showcase shelf shelf_rows_2 shelf_items_3" id="online-courses"><!-- id for anchor -->
-                        <input class="shelf__collapse" type="checkbox" id="shelf-online-courses"><!-- if for shelf collapse -->
-                        <h2 class="shelf__heading">
-                            Онлайн курсы
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            Русский язык
                         </h2>
+                        <div class="shelf shelf__sub-heading">
+                            Декабрьское сочинение
+                        </div>
                         <div class="shelf__list">
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -509,8 +303,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -542,8 +336,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -572,25 +366,18 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
-                        <div class="shelf__load-more">
-                            <label class="shelf__handler button button_palette_faded" for="shelf-online-courses">
-                                <span class="shelf__collapsed-label">Показать еще</span>
-                                <span class="shelf__uncovered-label">Свернуть</span>
-                            </label>
                         </div>
                     </section>
-                    <section class="discipline__showcase shelf shelf_rows_2 shelf_items_4" id="online-courses-for-teacher"><!-- id for anchor -->
-                        <input class="shelf__collapse" type="checkbox" id="shelf-online-courses-for-teacher"><!-- if for shelf collapse -->
-                        <h2 class="shelf__heading">
-                            Онлайн курсы для преподавателей
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            История
                         </h2>
                         <div class="shelf__list">
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -622,8 +409,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -655,8 +442,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -688,8 +475,8 @@
                             <article class="shelf__item product">
                                 <a class="product__preview" href="#">
                                     <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
                                          width="158"
                                          height="198"
                                          alt=""
@@ -719,193 +506,13 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="shelf__load-more">
-                            <label class="shelf__handler button button_palette_faded" for="shelf-online-courses-for-teacher">
-                                <span class="shelf__collapsed-label">Показать еще</span>
-                                <span class="shelf__uncovered-label">Свернуть</span>
-                            </label>
-                        </div>
-                    </section>
-                    <section class="discipline__showcase shelf shelf_rows_2 shelf_items_3" id="offline-courses-in-the-classroom"><!-- id for anchor -->
-                        <input class="shelf__collapse" type="checkbox" id="shelf-offline-courses-in-the-classroom"><!-- if for shelf collapse -->
-                        <h2 class="shelf__heading">
-                            Оффлайн курсы в классе
-                        </h2>
-                        <div class="shelf__list">
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="shelf__item product">
-                                <a class="product__preview" href="#">
-                                    <img class="product__image product__image_box-art"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
-                                         width="158"
-                                         height="198"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="product__body">
-                                    <div class="product__category">
-                                        Видеокурс
-                                    </div>
-                                    <h3 class="product__title">
-                                        <a class="product__link" href="#">
-                                            Математика. Годовой онлайн курс.
-                                        </a>
-                                    </h3>
-                                    <div class="product__price">
-                                        <s class="product__regular-price">15 600 руб.</s>
-                                        <span class="product__discount-price">7 800 руб.</span>
-                                    </div>
-                                    <div class="product__operations">
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Купить на диске</a>
-                                        </div>
-                                        <div class="product__action">
-                                            <a class="product__apply link" href="#">Скачать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="shelf__load-more">
-                            <label class="shelf__handler button button_palette_faded" for="shelf-offline-courses-in-the-classroom">
-                                <span class="shelf__collapsed-label">Показать еще</span>
-                                <span class="shelf__uncovered-label">Свернуть</span>
-                            </label>
+                        <div class="shelf__details">
+                            <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по истории</a>
                         </div>
                     </section>
                 </div>
             </div>
         </main>
-        <section class="categories">
-            <div class="categories__wrap container">
-                <h2 class="categories__heading">
-                    Другие предметы
-                </h2>
-                <ul class="categories__list">
-                    <li class="categories__item">
-                        <a class="subject subject_id_russian-language" href="#">
-                            <div class="subject__container">
-                                <div class="subject__outer">
-                                    <div class="subject__middle">
-                                        <div class="subject__inner">
-                                            Русский язык
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="categories__item">
-                        <a class="subject subject_id_english-language" href="#">
-                            <div class="subject__container">
-                                <div class="subject__outer">
-                                    <div class="subject__middle">
-                                        <div class="subject__inner">
-                                            Английский язык
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="categories__item">
-                        <a class="subject subject_id_history" href="#">
-                            <div class="subject__container">
-                                <div class="subject__outer">
-                                    <div class="subject__middle">
-                                        <div class="subject__inner">
-                                            История
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="categories__item">
-                        <a class="subject subject_id_literature" href="#">
-                            <div class="subject__container">
-                                <div class="subject__outer">
-                                    <div class="subject__middle">
-                                        <div class="subject__inner">
-                                            Литература
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="categories__all">
-                    <a class="link" href="#">Посмотреть все предметы</a>
-                </div>
-            </div>
-        </section>
 
         <!-- Panel -->
         <div class="panel">
@@ -937,6 +544,7 @@
                 </div>
             </div>
         </div>
+
         <footer class="footer">
             <div class="footer__wrap container">
                 <div class="footer__info">
@@ -946,14 +554,11 @@
                         </div>
                         <div class="footer__call">
                             <div class="footer__phone">
-                                <a class="footer__number" href="tel:+74959840927">8 (495) 984-09-27</a>
-                            </div>
-                            <div class="footer__phone">
-                                <a class="footer__number" href="tel:+78007750682">8 (800) 775-06-82</a>
+                                <a class="footer__number" href="tel:+78007750682">+7 (800) 775-06-82</a>
                             </div>
                         </div>
                         <div class="footer__mail">
-                            <a class="link" href="mailto:dvdv@ege-study.ru">dvdv@ege-study.ru</a>
+                            <a class="link" href="mailto:help@egenator.ru">help@egenator.ru</a>
                         </div>
                     </div>
                     <div class="footer__channel footer__channel_visit">
@@ -961,10 +566,10 @@
                             Офис
                         </div>
                         <div class="footer__title">
-                            ООО «ЕГЭ-Студия»
+                            ООО «ЕГЭНАТОР»
                         </div>
                         <div class="footer__address">
-                            м. Пушкинская или Чеховская, Страстной бульвар, 16.
+                            Москва, ул. Петровский бульвар, 15 стр. 1
                         </div>
                     </div>
                 </div>
@@ -1056,7 +661,9 @@
                         <!--/temp -->
 
                         <div class="live-search__option live-search__option_not-found">
-                            <div class="container">Ничего не найдено</div>
+                            <div class="container">
+                                <div class="container">Ничего не найдено</div>
+                            </div>
                         </div>
 
                         <!-- temp -->
@@ -1071,7 +678,7 @@
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Онлайн курс по <span class="highlight">математик</span>е для учащихся 10–11 классов
+                                Онлайн курс по <span class="highlight">математик</span>е для учащихся 10–11 классов
                             </div>
                         </div>
                         <div class="live-search__option">
@@ -1081,7 +688,7 @@
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Задания по <span class="highlight">математик</span>е. Сдача ЕГЭ.
+                                Задания по <span class="highlight">математик</span>е. Сдача ЕГЭ.
                             </div>
                         </div>
                         <div class="live-search__option">
@@ -1106,42 +713,12 @@
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Pellentesque eu placerat ligula
+                                Pellentesque eu placerat ligula
                             </div>
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Cras id velit eget lacus facilisis vulputate
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Etiam gravida feugiat lorem vel fermentum
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Integer laoreet rhoncus quam
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Fringilla faucibus lacus facilisis at
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Pellentesque eu placerat ligula
-                            </div>
-                        </div>
-                        <div class="live-search__option">
-                            <div class="container">
-                                Cras id velit eget lacus facilisis vulputate
+                                Cras id velit eget lacus facilisis vulputate
                             </div>
                         </div>
                         <div class="live-search__option">
@@ -1166,12 +743,12 @@
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Pellentesque eu placerat ligula
+                                Pellentesque eu placerat ligula
                             </div>
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Cras id velit eget lacus facilisis vulputate
+                                Cras id velit eget lacus facilisis vulputate
                             </div>
                         </div>
                         <div class="live-search__option">
@@ -1196,12 +773,42 @@
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Pellentesque eu placerat ligula
+                                Pellentesque eu placerat ligula
                             </div>
                         </div>
                         <div class="live-search__option">
                             <div class="container">
-                                Cras id velit eget lacus facilisis vulputate
+                                Cras id velit eget lacus facilisis vulputate
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Etiam gravida feugiat lorem vel fermentum
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Integer laoreet rhoncus quam
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Fringilla faucibus lacus facilisis at
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Pellentesque eu placerat ligula
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Cras id velit eget lacus facilisis vulputate
                             </div>
                         </div>
                     </div>
@@ -1367,26 +974,23 @@
         </div>
 
 
-        <script src="vendors/jquery/jquery-3.2.0.min.js"></script>
-        <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-        <script src="vendors/outline/outline.js"></script>
+        <script src="../global/vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../global/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../global/vendors/outline/outline.js"></script>
 
-        <script src="scripts/mfp.js?1721736391"></script>
-        <script src="scripts/up.js?1721736391"></script>
-        <script src="scripts/subscription.js?1721736391"></script>
-        <script src="scripts/form.js?1721736391"></script>
-        <script src="scripts/alert.js?1721736391"></script>
-        <script src="scripts/slider.js?1721736391"></script>
-        <script src="scripts/live-search.js?1721736391"></script>
-        <script src="scripts/input.js?1721736391"></script>
+        <script src="../global/scripts/mfp.js"></script>
+        <script src="../global/scripts/up.js"></script>
+        <script src="../global/scripts/subscription.js"></script>
+        <script src="../global/scripts/form.js"></script>
+        <script src="../global/scripts/alert.js"></script>
+        <script src="../global/scripts/slider.js"></script>
+        <script src="../global/scripts/live-search.js"></script>
+        <script src="../global/scripts/input.js"></script>
 
-        <script src="scripts/up.js?1721736391"></script>
-        <script src="scripts/panel.js?1721736391"></script>
-        <script src="scripts/body.js?1721736391"></script>
-        <script src="scripts/discipline.js?1721736391"></script>
+        <script src="../store/scripts/up.js"></script>
+        <script src="../store/scripts/panel.js"></script>
+        <script src="../store/scripts/body.js"></script>
+        <script src="../store/scripts/discipline.js"></script>
 
     </body>
 </html>
-
-
-
