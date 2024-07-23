@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ЕГЭ-Студия</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">-->
+        <link rel="stylesheet" href="../global/fonts/style.css">
+        <link rel="stylesheet" href="../store/styles/style.css">
+        <link rel="stylesheet" href="styles/style_egenator.css">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="header__fixed-part">
+                <div class="header__wrap container">
+                    <h1 class="header__logo">
+                        <span class="logo logo_egenator">
+                            <span class="visuallyhidden">Подготовка к ЕГЭ и олимпиадам — Образовательная компания «ЕГЭ-Студия»</span>
+                        </span>
+                    </h1>
+                    <input class="header__contacts-visibility visuallyhidden" type="checkbox" id="contacts-visibility" style="display: none;">
+                    <label class="header__show-contacts" for="contacts-visibility">Контакты</label>
+                    <div class="header__contacts-body">
+                        <div class="header__contacts-widget contacts">
+                            <div class="contacts__phone call">
+                                <div class="call__phone">
+                                    <a class="link link_fake nobr" href="tel:+78007750682">+7 (800) 775-06-82</a>
+                                </div>
+                                <div class="call__note">
+                                    Бесплатно по РФ
+                                </div>
+                            </div>
+                            <div class="contacts__location">
+                                <div class="location">
+                                    Москва, Петровский бульвар 15, стр. 1
+                                </div>
+                            </div>
+                            <div class="contacts__connect">
+                                <div class="contacts__callback">
+                                    <a class="button button_id-contacts-handler mfp-handler" href="#callback">Позвоните мне</a>
+                                </div>
+                                <div class="contacts__social">
+                                    <a class="contacts__network net net_id_youtube" href="#">Youtube</a>
+                                    <a class="contacts__network net net_id_vkontakte" href="#">Вконтакте</a>
+                                    <a class="contacts__network net net_id_telegram" href="#">Телеграм</a>
+                                    <a class="contacts__network net net_id_periscope" href="#">Карты</a>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="header__hide-contacts" for="contacts-visibility"></label>
+                    </div>
+                    <div class="header__actions">
+                        <a class="header__search-handler mfp-handler" href="#search">
+                            Поиск
+                        </a>
+                        <a class="header__buying bag" href="#">
+                            <span class="visuallyhidden">Корзина:</span>
+                            <span class="bag__quantity">3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="navigation__fixed-part">
+                <div class="navigation__wrap container">
+                    <div class="navigation__list">
+                        <a class="navigation__link" href="#">Математика</a>
+                        <a class="navigation__link" href="#">Русский язык</a>
+                        <a class="navigation__link" href="#">Обществознание</a>
+                        <a class="navigation__link" href="#">Физика</a>
+                        <a class="navigation__link" href="#">Информатика</a>
+                        <a class="navigation__link" href="#">Химия</a>
+                        <a class="navigation__link" href="#">История</a>
+                        <a class="navigation__link" href="#">Биология</a>
+                        <a class="navigation__link" href="#">Английский язык</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="index">
+            <div class="index__wrap container">
+                <div class="index__theater slider">
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-01" checked>
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-02">
+                    <input class="slider__handler" type="radio" name="slide-show" id="slide-show-03">
+                    <div class="slider__body">
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-01@2x.jpg 2x"
+                                 src="../global/temp/slide-show-01.jpg"
+                                 alt=""
+                            >
+                        </a>
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-02@2x.jpg 2x"
+                                 src="../global/temp/slide-show-02.jpg"
+                                 alt=""
+                            >
+                        </a>
+                        <a class="slider__slide" href="#">
+                            <img class="slider__image"
+                                 srcset="../global/temp/slide-show-03@2x.jpg 2x"
+                                 src="../global/temp/slide-show-03.jpg"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="slider__navigation">
+                        <label class="slider__dot" for="slide-show-01">Слайд номер 1</label>
+                        <label class="slider__dot" for="slide-show-02">Слайд номер 2</label>
+                        <label class="slider__dot" for="slide-show-03">Слайд номер 3</label>
+                    </div>
+                    <button class="slider__control slider__control_prev" type="button">Назад</button>
+                    <button class="slider__control slider__control_next" type="button">Вперед</button>
+                </div>
+                <div class="index__body">
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            Математика
+                        </h2>
+                        <div class="shelf__list">
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="shelf__details">
+                            <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по математике</a>
+                        </div>
+                    </section>
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            Русский язык
+                        </h2>
+                        <div class="shelf shelf__sub-heading">
+                            Декабрьское сочинение
+                        </div>
+                        <div class="shelf__list">
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="index__showcase shelf shelf_rows_1">
+                        <h2 class="shelf__title">
+                            История
+                        </h2>
+                        <div class="shelf__list">
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="shelf__item product">
+                                <a class="product__preview" href="#">
+                                    <img class="product__image product__image_box-art"
+                                         srcset="../global/temp/product-boxart@2x.jpg 2x"
+                                         src="../global/temp/product-boxart.jpg"
+                                         width="158"
+                                         height="198"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="product__body">
+                                    <div class="product__category">
+                                        Видеокурс
+                                    </div>
+                                    <h3 class="product__title">
+                                        <a class="product__link" href="#">
+                                            Математика. Годовой онлайн курс.
+                                        </a>
+                                    </h3>
+                                    <div class="product__price">
+                                        <s class="product__regular-price">15 600 руб.</s>
+                                        <span class="product__discount-price">7 800 руб.</span>
+                                    </div>
+                                    <div class="product__operations">
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Купить на диске</a>
+                                        </div>
+                                        <div class="product__action">
+                                            <a class="product__apply link" href="#">Скачать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="shelf__details">
+                            <a class="button button_palette_empty button_size_smaller" href="#">Все курсы по истории</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Panel -->
+        <div class="panel">
+            <div class="panel__detachable">
+                <input class="panel__visibility visuallyhidden" id="panel-visibility" type="checkbox" style="display: none;">
+                <label class="panel__show" for="panel-visibility">Развернуть</label>
+                <label class="panel__hide" for="panel-visibility">Свернуть</label>
+                <button class="panel__close" type="button">Закрыть</button>
+                <div class="panel__wrap container">
+                    <div class="panel__heading">
+                        Сдай ЕГЭ! Получай бесплатные материалы
+                    </div>
+                    <div class="panel__body">
+                        <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
+                        <form class="subscription subscription_full">
+                            <div class="subscription__body">
+                                <div class="subscription__field input">
+                                    <input class="input__widget" type="email" placeholder="Оставь e-mail *">
+                                </div>
+                                <button class="subscription__submit button button_palette_submit" type="button">
+                                    <span class="button__label">
+                                        Подписаться и сдать ЕГЭ
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="subscription__terms">Нажимая подписаться, вы соглашаетесь с <a class="link mfp-handler" href="#agreement">политикой конфиденциальности</a>.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__wrap container">
+                <div class="footer__info">
+                    <div class="footer__channel footer__channel_reach">
+                        <div class="footer__sub-heading">
+                            Контакты
+                        </div>
+                        <div class="footer__call">
+                            <div class="footer__phone">
+                                <a class="footer__number" href="tel:+78007750682">+7 (800) 775-06-82</a>
+                            </div>
+                        </div>
+                        <div class="footer__mail">
+                            <a class="link" href="mailto:help@egenator.ru">help@egenator.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__channel footer__channel_visit">
+                        <div class="footer__sub-heading">
+                            Офис
+                        </div>
+                        <div class="footer__title">
+                            ООО «ЕГЭНАТОР»
+                        </div>
+                        <div class="footer__address">
+                            Москва, ул. Петровский бульвар, 15 стр. 1
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__menu footer__menu_primary">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Новости</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Преподаватели</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Достижения</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Истории успеха</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Социальные инициативы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Гарантии возврата средств</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Свидетельства</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Бесплатные материалы</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu footer__menu_secondary">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Партнерская программа</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Для франчайзи</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Для инвесторов</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Для СМИ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Вакансии</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- To Top -->
+        <a class="up" href="#top">
+            Наверх
+        </a>
+
+        <!-- Поиск -->
+        <div class="window window_for_search mfp-hide" id="search">
+            <div class="window__body">
+                <div class="live-search live-search_skin_header">
+                    <div class="live-search__body">
+                        <label class="live-search__label" for="live-search-field">
+                            Поиск
+                        </label>
+                        <div class="live-search__wrap container">
+                            <div class="live-search__field input">
+                                <input class="input__widget" type="text" placeholder="Что вы ищете?" id="live-search-field">
+                            </div>
+                            <button class="live-search__submit" type="submit">Искать</button>
+                        </div>
+                    </div>
+                    <div class="live-search__dropdown">
+
+                        <div class="live-search__option live-search__option_loading" title="Идет загрузка">
+                            <div class="container">Идет загрузка</div>
+                        </div>
+
+                        <!-- temp -->
+                        или:
+                        <!--/temp -->
+
+                        <div class="live-search__option live-search__option_not-found">
+                            <div class="container">
+                                <div class="container">Ничего не найдено</div>
+                            </div>
+                        </div>
+
+                        <!-- temp -->
+                        или:
+                        <!--/temp -->
+
+                        <b class="visuallyhidden">Результаты живого поиска:</b>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Курс <span class="highlight">математик</span>и
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Онлайн курс по <span class="highlight">математик</span>е для учащихся 10–11 классов
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Курс <span class="highlight">математик</span>и
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Задания по <span class="highlight">математик</span>е. Сдача ЕГЭ.
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Etiam gravida feugiat lorem vel fermentum
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Integer laoreet rhoncus quam
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Fringilla faucibus lacus facilisis at
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Pellentesque eu placerat ligula
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Cras id velit eget lacus facilisis vulputate
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Etiam gravida feugiat lorem vel fermentum
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Integer laoreet rhoncus quam
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Fringilla faucibus lacus facilisis at
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Pellentesque eu placerat ligula
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Cras id velit eget lacus facilisis vulputate
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Etiam gravida feugiat lorem vel fermentum
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Integer laoreet rhoncus quam
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Fringilla faucibus lacus facilisis at
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Pellentesque eu placerat ligula
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Cras id velit eget lacus facilisis vulputate
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Etiam gravida feugiat lorem vel fermentum
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Integer laoreet rhoncus quam
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Fringilla faucibus lacus facilisis at
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Pellentesque eu placerat ligula
+                            </div>
+                        </div>
+                        <div class="live-search__option">
+                            <div class="container">
+                                Cras id velit eget lacus facilisis vulputate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="window window_for_form mfp-hide" id="callback">
+            <button class="window__close window__close_simplified mfp-close" type="button">
+                Закрыть
+            </button>
+            <div class="window__body">
+                <div class="form">
+                    <div class="form__heading">
+                        Позвоните мне
+                    </div>
+                    <div class="form__note">
+                        Все поля обязательны для заполнения
+                    </div>
+                    <div class="form__body">
+                        <div class="form__field input input_size_medium">
+                            <label class="label" for="callback-name">Введите ваше имя:</label>
+                            <input class="input__widget" type="text" placeholder="Имя" id="callback-name">
+                        </div>
+                        <div class="form__field input input_size_medium">
+                            <label class="label" for="callback-phone">Введите телефон, чтобы мы могли с вами связаться:</label>
+                            <input class="input__widget" type="tel" placeholder="Телефон" id="callback-phone">
+                        </div>
+                    </div>
+                    <div class="form__protections input input_size_smaller capcha">
+                        <label class="label" for="callback-capcha">Введите значение выражения:</label>
+                        <!-- temp --><div style="width: 132px; height: 26px; line-height: 26px; margin-bottom: 6px; text-align: center; background: purple; color: white;">Capcha</div><!--/temp -->
+                        <input class="input__widget" type="text" placeholder="Введите ответ" id="callback-capcha">
+                    </div>
+                    <div class="form__send">
+                        <button class="form__submit button button_palette_submit" type="button">
+                            <span class="button__label">Отправить</span>
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        Нажимая на кнопку, вы даете согласие на обработку своих персональных данных
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="window mfp-hide" id="agreement">
+            <button class="window__close window__close_simplified mfp-close" type="button">
+                Закрыть
+            </button>
+            <div class="window__body">
+                <div class="article">
+                    <h2 class="article__heading">
+                        Политика конфиденциальности
+                    </h2>
+                    <div class="article__body">
+                        <p>Настоящая Политика конфиденциальности персональных данных (далее — Политика конфиденциальности) действует в отношении всей информации, которую <span class="nobr">Интернет-магазин</span> «<span class="nobr">ЕГЭ-Студия</span>» расположенный на доменном имени <span class="nobr">http://ege-study.ru/</span>, может получить о Пользователе во время использования сайта <span class="nobr">Интернет-магазина</span>, программ и продуктов <span class="nobr">Интернет-магазина</span>.</p>
+
+                        <h3>1. Определение терминов</h3>
+                        <p>1.1 В настоящей Политике конфиденциальности используются следующие термины:</p>
+                        <p>1.1.1. «Администрация сайта <span class="nobr">Интернет-магазина</span> (далее — Администрация сайта)» — уполномоченные сотрудники на управления сайтом, действующие от имени <span class="nobr">ИП Малкова А. Г.</span>, которые организуют и\или осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+                        <p>1.1.2. «Персональные данные» — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+                        <p>1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+                        <p>1.1.4. «Конфиденциальность персональных данных» — обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.</p>
+                        <p>1.1.5. «Пользователь сайта <span class="nobr">Интернет-магазина</span> (далее «Пользователь») — лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт <span class="nobr">интернет-магазина</span>.</p>
+                        <p>1.1.6. «Cookies» — небольшой фрагмент данных, отправленный <span class="nobr">веб-сервером</span> и хранимый на компьютере пользователя, который <span class="nobr">веб-клиент</span> или <span class="nobr">веб-браузер</span> каждый раз пересылает <span class="nobr">веб-серверу</span> в <span class="nobr">HTTP-запросе</span> при попытке открыть страницу соответствующего сайта.</p>
+                        <p>1.1.7. <span class="nobr">«IP-адрес»</span> — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.</p>
+
+                        <h3>2. Общие положения</h3>
+                        <p>2.1. Использование Пользователем сайта <span class="nobr">Интернет-магазина</span> означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.</p>
+                        <p>2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта <span class="nobr">Интернет-магазина</span>.</p>
+                        <p>2.3.Настоящая Политика конфиденциальности применяется только к сайту <span class="nobr">Интернет-магазина</span> <span class="nobr">«ЕГЭ-Студия»</span>. <span class="nobr">Интернет-магазин</span> не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте <span class="nobr">Интернет-магазина</span>.</p>
+                        <p>2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта <span class="nobr">Интернет-магазина</span>.</p>
+
+                        <h3>3. Предмет политики конфиденциальности</h3>
+                        <p>3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта <span class="nobr">интернет-магазина</span> по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при регистрации на сайте <span class="nobr">интернет-магазина</span> или при оформлении заказа для приобретения Товара.</p>
+                        <p>3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на Сайте <span class="nobr">интернет-магазина</span> «ЕГЭ-Студия» и включают в себя следующую информацию:</p>
+                        <p>3.2.1. фамилию, имя, отчество Пользователя;</p>
+                        <p>3.2.2. контактный телефон Пользователя;</p>
+                        <p>3.2.3. адрес электронной почты (e-mail);</p>
+                        <p>3.2.4. адрес доставки Товара;</p>
+                        <p>3.2.5. место жительство Пользователя.</p>
+                        <p>3.3. <span class="nobr">Интернет-магазин</span> защищает Данные, которые автоматически передаются в процессе просмотра рекламных блоков и при посещении страниц, на которых установлен статистический скрипт системы («пиксель»):
+                        <ul>
+                            <li>IP адрес;</li>
+                            <li>информация из cookies;</li>
+                            <li>информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);</li>
+                            <li>время доступа;</li>
+                            <li>адрес страницы, на которой расположен рекламный блок;</li>
+                            <li>реферер (адрес предыдущей страницы).</li>
+                        </ul>
+                        <p>3.3.1. Отключение cookies может повлечь невозможность доступа к частям сайта <span class="nobr">интернет-магазина</span>, требующим авторизации.</p>
+                        <p>3.3.2. <span class="nobr">Интернет-магазин</span> осуществляет сбор статистики об <span class="nobr">IP-адресах</span> своих посетителей. Данная информация используется с целью выявления и решения технических проблем, для контроля законности проводимых финансовых платежей.</p>
+                        <p>3.4. Любая иная персональная информация неоговоренная выше (история покупок, используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п.</p> 5.2. и 5.3. настоящей Политики конфиденциальности.
+
+                        <h3>4. цели сбора персональной информации пользователя</h3>
+                        <p>4.1. Персональные данные Пользователя Администрация сайта <span class="nobr">интернет-магазина</span> может использовать в целях:</p>
+                        <p>4.1.1. Идентификации Пользователя, зарегистрированного на сайте <span class="nobr">интернет-магазина</span>, для оформления заказа и\или заключения Договора <span class="nobr">купли-продажи</span> товара дистанционным способом с <span class="nobr">ИП Малкова А. Г.</span></p>
+                        <p>4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам Сайта <span class="nobr">интернет-магазина</span>.</p>
+                        <p>4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта <span class="nobr">интернет-магазина</span>, оказания услуг, обработка запросов и заявок от Пользователя.</p>
+                        <p>4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.</p>
+                        <p>4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.</p>
+                        <p>4.1.6. Создания учетной записи для совершения покупок, если Пользователь дал согласие на создание учетной записи.</p>
+                        <p>4.1.7. Уведомления Пользователя Сайта <span class="nobr">интернет-магазина</span> о состоянии Заказа.</p>
+                        <p>4.1.8. Обработки и получения платежей, подтверждения налога или налоговых льгот, оспаривания платежа, определения права на получение кредитной линии Пользователем.</p>
+                        <p>4.1.9. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с использованием Сайта <span class="nobr">интернет-магазина</span>.</p>
+                        <p>4.1.10. Предоставления Пользователю с его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени <span class="nobr">интернет-магазина</span> или от имени партнеров <span class="nobr">интернет-магазина</span>.</p>
+                        <p>4.1.11. Осуществления рекламной деятельности с согласия Пользователя.</p>
+                        <p>4.1.12. Предоставления доступа Пользователю на сайты или сервисы партнеров <span class="nobr">интернет-магазина</span> с целью получения продуктов, обновлений и услуг.</p>
+
+                        <h3>5. Способы и сроки обработки персональной информации</h3>
+                        <p>5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.</p>
+                        <p>5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на Сайте <span class="nobr">интернет-магазина</span> <span class="nobr">«ЕГЭ-Студия»</span>, включая доставку Товара.</p>
+                        <p>5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.</p>
+                        <p>5.4. При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.</p>
+                        <p>5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</p>
+                        <p>5.6. Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.</p>
+
+                        <h3>6. Обязательства сторон</h3>
+                        <p>6.1. Пользователь обязан:</p>
+                        <p>6.1.1. Предоставить информацию о персональных данных, необходимую для пользования Сайтом <span class="nobr">интернет-магазина</span>.</p>
+                        <p>6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.</p>
+                        <p>6.2. Администрация сайта обязана:</p>
+                        <p>6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.</p>
+                        <p>6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.</p>
+                        <p>6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.</p>
+                        <p>6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.</p>
+
+                        <h3>7. Ответственность сторон</h3>
+                        <p>7.1. Администрация сайта, не исполнившая свои обязательства, несёт ответственность за убытки, понесённые Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.</p>
+                        <p>7.2. В случае утраты или разглашения Конфиденциальной информации Администрация сайта не несёт ответственность, если данная конфиденциальная информация:</p>
+                        <p>7.2.1. Стала публичным достоянием до её утраты или разглашения.</p>
+                        <p>7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.</p>
+                        <p>7.2.3. Была разглашена с согласия Пользователя.</p>
+
+                        <h3>8. Разрешение споров</h3>
+                        <p>8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта <span class="nobr">интернет-магазина</span> и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).</p>
+                        <p>8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.</p>
+                        <p>8.3. При не достижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством Российской Федерации.</p>
+                        <p>8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство Российской Федерации.</p>
+
+                        <h3>9. Дополнительные условия</h3>
+                        <p>9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.</p>
+                        <p>9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте <span class="nobr">интернет-магазина</span>, если иное не предусмотрено новой редакцией Политики конфиденциальности.</p>
+                        <p>9.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует направлять на адрес Администрации Сайте dvd@ege-study.ru или <span class="nobr">+ 7 (800) 775-06-82</span> (бесплатный звонок по России); <span class="nobr">+7 (495) 984-09-27</span> (Москва)</p>
+                        <p>9.4. Действующая Политика конфиденциальности размещена на странице по адресу <span class="nobr">www.ege-study.ru</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert -->
+        <div class="alert" style="display: none;">
+            <div class="alert__label">
+                Спасибо! Вы подписаны на рассылку.<br class="hide hide_mobile">
+                На вашу почту скоро придут материалы и шпаргалки по ЕГЭ.
+            </div>
+            <button class="alert__dismiss" type="button">
+                Закрыть
+            </button>
+        </div>
+
+
+        <script src="../global/vendors/jquery/jquery-3.2.0.min.js"></script>
+        <script src="../global/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../global/vendors/outline/outline.js"></script>
+
+        <script src="../global/scripts/mfp.js"></script>
+        <script src="../global/scripts/up.js"></script>
+        <script src="../global/scripts/subscription.js"></script>
+        <script src="../global/scripts/form.js"></script>
+        <script src="../global/scripts/alert.js"></script>
+        <script src="../global/scripts/slider.js"></script>
+        <script src="../global/scripts/live-search.js"></script>
+        <script src="../global/scripts/input.js"></script>
+
+        <script src="../store/scripts/up.js"></script>
+        <script src="../store/scripts/panel.js"></script>
+        <script src="../store/scripts/body.js"></script>
+        <script src="../store/scripts/discipline.js"></script>
+
+    </body>
+</html>

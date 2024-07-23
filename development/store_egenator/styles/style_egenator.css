@@ -1,0 +1,127 @@
+/* Logo */
+/* ---- */
+
+
+.logo_egenator {
+    width: 160px;
+    height: 46px;
+    padding: 0;
+    background-image: url("../images/logo_egenator.png");
+}
+
+@media (min-resolution: 2dppx) {
+    .logo_egenator {
+        background-image: url("../images/logo_egenator@2x.png");
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 419px) {
+
+    .logo_egenator {
+        width: 170px;
+        height: 49px;
+    }
+}
+
+
+@media (min-width: 420px) and (max-width: 767px) {
+
+    .logo_egenator {
+        width: 170px;
+        height: 49px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .logo_egenator {
+        width: 210px;
+        height: 61px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .logo_egenator {
+        width: 190px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 1340px) {
+
+    .logo_egenator {
+        width: 233px;
+        height: 66px;
+    }
+}
+
+
+/* Contacts in header (width) */
+/* -------------------------- */
+
+@media (min-width: 1024px) {
+
+    .contacts__location {
+        width: 190px;
+    }
+}
+
+
+
+
+/* Yellow color (same as flame) */
+/* ---------------------------- */
+
+
+.link {
+    color: #F6BB00;
+}
+
+.button_palette_empty {
+    border-color: #F6BB00;
+    color: #F6BB00;
+}
+
+.button_id-contacts-handler {
+    border-color: #F6BB00;
+    color: #F6BB00;
+}
+
+.button_id-contacts-handler:hover {
+    border-color: #FAD03D;
+    color: #FAD03D;
+}
+
+.button_palette_submit::before {
+    background-image: linear-gradient(89deg, #F6BB00 0%, #DE5B27 100%);
+}
+
+
+.navigation__link {
+    color: #F6BB00;
+}
+
+.bag__quantity {
+    background-color: #F6BB00;
+}
+
+.slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,
+.slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2)::after,
+.slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3)::after,
+.slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4)::after,
+.slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5)::after,
+.slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6)::after,
+.slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,
+.slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
+.slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {
+    background-color: #F6BB00;
+}
+
+.product__discount-price {
+    color: #F6BB00;
+}
+
+
