@@ -5,92 +5,74 @@
 
 
 
+/* Yellow color (same as flame) */
+/* ---------------------------- */
 
 
-/*!* Contacts in header (width) *!*/
-/*!* -------------------------- *!*/
+.link {
+    color: #000000;
+}
 
-/*@media (min-width: 1024px) {*/
+.button_palette_empty {
+    border-color: #000000;
+    color: #000000;
+}
 
-/*    .contacts__location {*/
-/*        width: 190px;*/
-/*    }*/
-/*}*/
+.button_id-contacts-handler {
+    border-color: #000000;
+    color: #000000;
+}
 
+.button_id-contacts-handler:hover {
+    border-color: #000000;
+    color: #000000;
+}
 
+.button_palette_submit,
+.button_palette_submit::before {
+    background-image: linear-gradient(89deg, #000000 0%, #000000 100%);
+}
 
-
-/*!* Yellow color (same as flame) *!*/
-/*!* ---------------------------- *!*/
-
-
-/*.link {*/
-/*    color: #000000;*/
-/*}*/
-
-/*.button_palette_empty {*/
-/*    border-color: #000000;*/
-/*    color: #000000;*/
-/*}*/
-
-/*.button_id-contacts-handler {*/
-/*    border-color: #000000;*/
-/*    color: #000000;*/
-/*}*/
-
-/*.button_id-contacts-handler:hover {*/
-/*    border-color: #000000;*/
-/*    color: #000000;*/
-/*}*/
-
-/*.button_palette_submit,*/
-/*.button_palette_submit::before {*/
-/*    background-image: linear-gradient(89deg, #000000 0%, #000000 100%);*/
-/*}*/
-
-/*.button_palette_submit {*/
-/*    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);*/
-/*}*/
+.button_palette_submit {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+}
 
 
-/*.navigation__link {*/
-/*    color: #000000;*/
-/*}*/
+.navigation__link {
+    color: #000000;
+}
 
-/*.bag__quantity {*/
-/*    background-color: #000000;*/
-/*}*/
+.bag__quantity {
+    background-color: #000000;
+}
 
-/*.slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,*/
-/*.slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2)::after,*/
-/*.slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3)::after,*/
-/*.slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4)::after,*/
-/*.slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5)::after,*/
-/*.slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6)::after,*/
-/*.slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,*/
-/*.slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,*/
-/*.slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {*/
-/*    background-color: #000000;*/
-/*}*/
+.slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,
+.slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2)::after,
+.slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3)::after,
+.slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4)::after,
+.slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5)::after,
+.slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6)::after,
+.slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,
+.slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
+.slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {
+    background-color: #000000;
+}
 
-/*.product__discount-price {*/
-/*    color: #000000;*/
-/*}*/
+.product__discount-price {
+    color: #000000;
+}
 
 
-/*!* Light yellow color (same as flame) *!*/
-/*!* ---------------------------------- *!*/
-
-/*.footer {*/
-/*    background-color: #FAF1D6;*/
-/*}*/
+/* Light yellow color (same as flame) */
+/* ---------------------------------- */
 
 
 
-/*!* Media *!*/
-/*!* ---------------------------------- *!*/
 
-/*.net_id_youtube   { background-image: url("../vectors/net_id_youtube.svg"); }*/
-/*.net_id_vkontakte { background-image: url("../vectors/net_id_vkontakte.svg"); }*/
-/*.net_id_telegram  { background-image: url("../vectors/net_id_telegram.svg"); }*/
-/*.net_id_periscope { background-image: url("../vectors/net_id_periscope.svg"); }*/
+/* Media */
+/* ---------------------------------- */
+
+.net_id_youtube   { background-image: url("../vectors/net_id_youtube.svg"); }
+.net_id_vkontakte { background-image: url("../vectors/net_id_vkontakte.svg"); }
+.net_id_telegram  { background-image: url("../vectors/net_id_telegram.svg"); }
+.net_id_periscope { background-image: url("../vectors/net_id_periscope.svg"); }
