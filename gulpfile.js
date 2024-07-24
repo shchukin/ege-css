@@ -110,6 +110,10 @@ function storeSymbolsImgToSpriteSvg(content) {
     return symbolsImgToSpriteSvg(content, 'store');
 }
 
+function storeEgenatorSymbolsImgToSpriteSvg(content) {
+    return symbolsImgToSpriteSvg(content, 'storeEgenator');
+}
+
 function mainSymbolsImgToSpriteSvg(content) {
     return symbolsImgToSpriteSvg(content, 'main');
 }
@@ -186,6 +190,9 @@ function symbolsImgToSpriteSvg(content, project) {
             if( project === 'store' ) {
                 pathString = pathString.replace('global', 'store');
             }
+            if( project === 'storeEgenator' ) {
+                pathString = pathString.replace('global', 'storeEgenator');
+            }
 
             if( project === 'main' ) {
                 pathString = pathString.replace('global', 'main');
@@ -225,17 +232,6 @@ gulp.task('index', function () {
         .pipe(gulp.dest('production/'))
         ;
 });
-
-
-// Egenator: copy
-
-gulp.task('store_egenator', function () {
-    return gulp.src('development/store_egenator/**/*')
-        .pipe(plumber())
-        .pipe(gulp.dest('production/store_egenator/'))
-        ;
-});
-
 
 // Temp: copy
 
@@ -283,6 +279,16 @@ gulp.task('storeTemp', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/store/temp/'))
+        ;
+});
+
+gulp.task('storeEgenatorTemp', function () {
+    return gulp.src([
+        'development/global/temp/**/*',
+        'development/storeEgenator/temp/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/temp/'))
         ;
 });
 
@@ -347,6 +353,16 @@ gulp.task('storeFonts', function () {
         ;
 });
 
+gulp.task('storeEgenatorFonts', function () {
+    return gulp.src([
+        'development/global/fonts/**/*',
+        'development/storeEgenator/fonts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/fonts/'))
+        ;
+});
+
 gulp.task('mainFonts', function () {
     return gulp.src([
         'development/global/fonts/**/*',
@@ -404,6 +420,16 @@ gulp.task('storeContent', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/store/content/'))
+        ;
+});
+
+gulp.task('storeEgenatorContent', function () {
+    return gulp.src([
+        'development/global/content/**/*',
+        'development/storeEgenator/content/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/content/'))
         ;
 });
 
@@ -467,6 +493,16 @@ gulp.task('storeImages', function () {
         ;
 });
 
+gulp.task('storeEgenatorImages', function () {
+    return gulp.src([
+        'development/global/images/**/*',
+        'development/storeEgenator/images/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/images/'))
+        ;
+});
+
 gulp.task('mainImages', function () {
     return gulp.src([
         'development/global/images/**/*',
@@ -527,6 +563,16 @@ gulp.task('storeVendors', function () {
         ;
 });
 
+gulp.task('storeEgenatorVendors', function () {
+    return gulp.src([
+        'development/global/vendors/**/*',
+        'development/storeEgenator/vendors/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/vendors/'))
+        ;
+});
+
 gulp.task('mainVendors', function () {
     return gulp.src([
         'development/global/vendors/**/*',
@@ -584,6 +630,16 @@ gulp.task('storeScripts', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/store/scripts/'))
+        ;
+});
+
+gulp.task('storeEgenatorScripts', function () {
+    return gulp.src([
+        'development/global/scripts/**/*',
+        'development/storeEgenator/scripts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/scripts/'))
         ;
 });
 
@@ -651,6 +707,17 @@ gulp.task('storeMarkups', function () {
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/store/markups/'))
+        ;
+});
+
+gulp.task('storeEgenatorMarkups', function () {
+    return gulp.src('development/storeEgenator/markups/**/*')
+        .pipe(plumber())
+        .pipe(change(storeEgenatorSymbolsImgToSpriteSvg))
+        .pipe(change(uncommentGoogleFonts))
+        .pipe(change(releaseFromGlobal))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('production/storeEgenator/markups/'))
         ;
 });
 
@@ -722,6 +789,17 @@ gulp.task('storeLayouts', function () {
         ;
 });
 
+gulp.task('storeEgenatorLayouts', function () {
+    return gulp.src('development/storeEgenator/*.html')
+        .pipe(plumber())
+        .pipe(change(storeEgenatorSymbolsImgToSpriteSvg))
+        .pipe(change(uncommentGoogleFonts))
+        .pipe(change(releaseFromGlobal))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('production/storeEgenator/'))
+        ;
+});
+
 gulp.task('mainLayouts', function () {
     return gulp.src('development/main/*.html')
         .pipe(plumber())
@@ -782,6 +860,16 @@ gulp.task('storeSymbols', function () {
         .pipe(svgmin())
         .pipe(svgstore())
         .pipe(gulp.dest('production/store/symbols/'));
+});
+
+gulp.task('storeEgenatorSymbols', function () {
+    return gulp.src(['development/storeEgenator/symbols/*.svg',
+        'development/global/symbols/*.svg'
+    ])
+        .pipe(plumber())
+        .pipe(svgmin())
+        .pipe(svgstore())
+        .pipe(gulp.dest('production/storeEgenator/symbols/'));
 });
 
 gulp.task('mainSymbols', function () {
@@ -1006,6 +1094,48 @@ gulp.task('storeStyles', function () {
 });
 
 
+gulp.task('storeEgenatorStyles', function () {
+
+    var spritesOptions = {
+        stylesheetPath: 'production/storeEgenator/styles',
+        spritePath: 'production/storeEgenator/sprites',
+        retina: 'true',
+        filterBy: function (image) {
+            // Allow files from /sprites/ only
+            if (!/\/sprites\//.test(image.url)) {
+                return Promise.reject();
+            }
+            return Promise.resolve();
+        }
+    };
+
+    var processors = [
+        sprites(spritesOptions),
+        cssnext({
+            'browsers': 'last 2 versions' // for autoprefixer and features list
+        })
+    ];
+
+    return gulp.src([
+        'development/storeEgenator/styles/style.css'
+    ])
+        .pipe(plumber())
+        .pipe(cleanCSS({
+            advanced: false,
+            keepSpecialComments: 0
+        }))
+        .pipe(postcss(processors))
+        .pipe(base64({
+            // Allow files from /vectors/ only
+            exclude: ['/sprite/', '/images/', '/symbols/']
+        }))
+        .pipe(change(releaseFromGlobal))
+        .pipe(gulp.dest('production/storeEgenator/styles/'))
+        .pipe(size())
+        ;
+});
+
+
 gulp.task('mainStyles', function () {
 
     var spritesOptions = {
@@ -1051,17 +1181,16 @@ gulp.task('mainStyles', function () {
 gulp.task('default', function (fn) {
     run('clean',
         'index',
-        'store_egenator',
-        'globalTemp', 'freeTemp', 'onlineTemp', 'rusTemp', 'storeTemp', 'mainTemp',
-        'globalFonts', 'freeFonts', 'onlineFonts', 'rusFonts', 'storeFonts', 'mainFonts',
-        'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'mainContent',
-        'globalImages', 'freeImages', 'onlineImages', 'rusImages', 'storeImages', 'mainImages',
-        'globalVendors', 'freeVendors', 'onlineVendors', 'rusVendors', 'storeVendors', 'mainVendors',
-        'globalScripts', 'freeScripts', 'onlineScripts', 'rusScripts', 'storeScripts', 'mainScripts',
-        'globalMarkups', 'freeMarkups', 'onlineMarkups', 'rusMarkups', 'storeMarkups', 'mainMarkups',
-        'globalLayouts', 'freeLayouts', 'onlineLayouts', 'rusLayouts', 'storeLayouts', 'mainLayouts',
-        'globalSymbols', 'freeSymbols', 'onlineSymbols', 'rusSymbols', 'storeSymbols', 'mainSymbols',
-        'globalStyles', 'freeStyles', 'onlineStyles', 'rusStyles', 'storeStyles', 'mainStyles',
+        'globalTemp',    'freeTemp',    'onlineTemp',    'rusTemp',    'storeTemp',    'storeEgenatorTemp',    'mainTemp',
+        'globalFonts',   'freeFonts',   'onlineFonts',   'rusFonts',   'storeFonts',   'storeEgenatorFonts',   'mainFonts',
+        'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'storeEgenatorContent', 'mainContent',
+        'globalImages',  'freeImages',  'onlineImages',  'rusImages',  'storeImages',  'storeEgenatorImages',  'mainImages',
+        'globalVendors', 'freeVendors', 'onlineVendors', 'rusVendors', 'storeVendors', 'storeEgenatorVendors', 'mainVendors',
+        'globalScripts', 'freeScripts', 'onlineScripts', 'rusScripts', 'storeScripts', 'storeEgenatorScripts', 'mainScripts',
+        'globalMarkups', 'freeMarkups', 'onlineMarkups', 'rusMarkups', 'storeMarkups', 'storeEgenatorMarkups', 'mainMarkups',
+        'globalLayouts', 'freeLayouts', 'onlineLayouts', 'rusLayouts', 'storeLayouts', 'storeEgenatorLayouts', 'mainLayouts',
+        'globalSymbols', 'freeSymbols', 'onlineSymbols', 'rusSymbols', 'storeSymbols', 'storeEgenatorSymbols', 'mainSymbols',
+        'globalStyles',  'freeStyles',  'onlineStyles',  'rusStyles',  'storeStyles',  'storeEgenatorStyles',  'mainStyles',
         fn);
 });
 
