@@ -285,6 +285,7 @@ gulp.task('storeTemp', function () {
 gulp.task('storeEgenatorTemp', function () {
     return gulp.src([
         'development/global/temp/**/*',
+        'development/store/temp/**/*',
         'development/storeEgenator/temp/**/*'
     ])
         .pipe(plumber())
@@ -356,6 +357,7 @@ gulp.task('storeFonts', function () {
 gulp.task('storeEgenatorFonts', function () {
     return gulp.src([
         'development/global/fonts/**/*',
+        'development/store/fonts/**/*',
         'development/storeEgenator/fonts/**/*'
     ])
         .pipe(plumber())
@@ -426,6 +428,7 @@ gulp.task('storeContent', function () {
 gulp.task('storeEgenatorContent', function () {
     return gulp.src([
         'development/global/content/**/*',
+        'development/store/content/**/*',
         'development/storeEgenator/content/**/*'
     ])
         .pipe(plumber())
@@ -496,6 +499,7 @@ gulp.task('storeImages', function () {
 gulp.task('storeEgenatorImages', function () {
     return gulp.src([
         'development/global/images/**/*',
+        'development/store/images/**/*',
         'development/storeEgenator/images/**/*'
     ])
         .pipe(plumber())
@@ -566,6 +570,7 @@ gulp.task('storeVendors', function () {
 gulp.task('storeEgenatorVendors', function () {
     return gulp.src([
         'development/global/vendors/**/*',
+        'development/store/vendors/**/*',
         'development/storeEgenator/vendors/**/*'
     ])
         .pipe(plumber())
@@ -636,6 +641,7 @@ gulp.task('storeScripts', function () {
 gulp.task('storeEgenatorScripts', function () {
     return gulp.src([
         'development/global/scripts/**/*',
+        'development/store/scripts/**/*',
         'development/storeEgenator/scripts/**/*'
     ])
         .pipe(plumber())
