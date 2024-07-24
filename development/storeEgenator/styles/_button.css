@@ -16,6 +16,14 @@
         color: #333333;
     }
 
+    @media (max-width: 1023px) {
+
+        .button_id-contacts-handler:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #FFFFFF;
+        }
+    }
+
 
 .button_palette_submit {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
