@@ -46,18 +46,6 @@
     background-color: #000000;
 }
 
-.slider__handler:nth-child(1):checked ~ .slider__navigation .slider__dot:nth-child(1)::after,
-.slider__handler:nth-child(2):checked ~ .slider__navigation .slider__dot:nth-child(2)::after,
-.slider__handler:nth-child(3):checked ~ .slider__navigation .slider__dot:nth-child(3)::after,
-.slider__handler:nth-child(4):checked ~ .slider__navigation .slider__dot:nth-child(4)::after,
-.slider__handler:nth-child(5):checked ~ .slider__navigation .slider__dot:nth-child(5)::after,
-.slider__handler:nth-child(6):checked ~ .slider__navigation .slider__dot:nth-child(6)::after,
-.slider__handler:nth-child(7):checked ~ .slider__navigation .slider__dot:nth-child(7)::after,
-.slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
-.slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {
-    background-color: #000000;
-}
-
 .product__discount-price {
     color: #000000;
 }
