@@ -9,9 +9,6 @@
 /* ---------------------------- */
 
 
-.link {
-    color: #000000;
-}
 
 .button_palette_empty {
     border-color: #000000;
@@ -35,18 +32,5 @@
 
 .button_palette_submit {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
-}
-
-
-.navigation__link {
-    color: #000000;
-}
-
-.bag__quantity {
-    background-color: #000000;
-}
-
-.product__discount-price {
-    color: #000000;
 }
 
