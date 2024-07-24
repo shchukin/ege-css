@@ -16,8 +16,8 @@
 
 @media (min-width: 1024px) {
     .button_id-contacts-handler {
-        border-color: #FF7502;
-        color: #FF7502;
+        border-color: var(--brand_orange);
+        color: var(--brand_orange);
         transition: border-color 0.1s ease,
                     color 0.1s ease;
     }

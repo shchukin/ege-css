@@ -129,8 +129,8 @@
 
 .button_palette_empty {
     padding: 14px 18px;
-    border: 2px solid #FF7502;
-    color: #FF7502;
+    border: 2px solid var(--brand_orange);
+    color: var(--brand_orange);
     background-color: transparent;
     background-image: none;
     transition: opacity 0.1s ease;

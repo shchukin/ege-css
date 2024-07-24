@@ -1,0 +1,27 @@
+.button_palette_brand {
+
+}
+    .button_palette_brand:hover,
+    .button_palette_brand.button_loading,
+    .button_palette_brand.button_success {
+        background-color: #333333;
+    }
+
+
+.button_id-contacts-handler {
+
+}
+    .button_id-contacts-handler:hover {
+        border-color: #333333;
+        color: #333333;
+    }
+
+
+.button_palette_submit {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(89deg, #333333 0%, #000000 100%);
+}
+    .button_palette_submit::before {
+        background-image: linear-gradient(89deg, #444444 0%, #111111 100%);
+    }
+

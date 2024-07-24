@@ -1,7 +1,8 @@
 @import url("../../store/styles/style.css");
 
 /* Global and Store overrides */
-@import url("_overrides.css");
+@import url("_root.css");
+@import url("_button.css");
 @import url("_required.css");
 @import url("_logo.css");
 @import url("_contacts.css");
