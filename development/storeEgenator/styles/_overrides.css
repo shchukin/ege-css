@@ -62,17 +62,3 @@
     color: #000000;
 }
 
-
-/* Light yellow color (same as flame) */
-/* ---------------------------------- */
-
-
-
-
-/* Media */
-/* ---------------------------------- */
-
-.net_id_youtube   { background-image: url("../vectors/net_id_youtube.svg"); }
-.net_id_vkontakte { background-image: url("../vectors/net_id_vkontakte.svg"); }
-.net_id_telegram  { background-image: url("../vectors/net_id_telegram.svg"); }
-.net_id_periscope { background-image: url("../vectors/net_id_periscope.svg"); }
