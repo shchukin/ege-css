@@ -1,0 +1,56 @@
+.logo_egenator {
+    width: 160px;
+    height: 46px;
+    padding: 0;
+    background-image: url("../images/logo_egenator.png");
+}
+
+@media (min-resolution: 2dppx) {
+    .logo_egenator {
+        background-image: url("../images/logo_egenator@2x.png");
+    }
+}
+
+
+
+@media (min-width: 360px) and (max-width: 419px) {
+
+    .logo_egenator {
+        width: 170px;
+        height: 49px;
+    }
+}
+
+
+@media (min-width: 420px) and (max-width: 767px) {
+
+    .logo_egenator {
+        width: 170px;
+        height: 49px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .logo_egenator {
+        width: 210px;
+        height: 61px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .logo_egenator {
+        width: 190px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 1340px) {
+
+    .logo_egenator {
+        width: 233px;
+        height: 66px;
+    }
+}
