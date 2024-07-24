@@ -1,0 +1,16 @@
+.live-search__submit {
+    background-image: url("../vectors/search-submit.svg");
+}
+
+.live-search__submit:hover {
+    opacity: 0.7;
+}
+
+
+.live-search__option:hover {
+    background-color: #EEEEEE;
+}
+
+.live-search__option_highlighted {
+    background-color: #EEEEEE;
+}
