@@ -10,7 +10,7 @@
     background-position: center top;
     font-weight: normal;
     font-size: 80%;
-    color: #FF7502;
+    color: var(--danger);
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;

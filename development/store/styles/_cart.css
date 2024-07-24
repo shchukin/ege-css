@@ -96,7 +96,7 @@
                         }
 
                         .cart__new-value {
-                            color: #FF7502;
+                            color: var(--brand_orange);
                         }
 
                 .cart__about-discount {

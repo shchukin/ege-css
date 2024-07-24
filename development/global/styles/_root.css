@@ -10,5 +10,7 @@
     --font_weight_demi: 500;
 
     --image-fallback: #F8F8F8;
+
+    --danger: var(--brand_orange);
 }
 /* stylelint-enable declaration-colon-space-after */
