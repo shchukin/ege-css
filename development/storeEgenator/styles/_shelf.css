@@ -2,3 +2,8 @@
     width: auto;
     padding: 17px 31px;
 }
+
+.shelf__heading {
+    font-family: var(--font_egenator-heading);
+    font-weight: var(--ultrabold);
+}
