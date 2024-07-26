@@ -38,7 +38,8 @@
 /* Buttons from platform */
 
 .contacts__callback,
-.shelf__details {
+.shelf__details,
+.shelf__load-more {
     position: relative;
     width: fit-content;
     margin-left: auto;
@@ -46,7 +47,8 @@
 }
 
     .contacts__callback::before,
-    .shelf__details::before {
+    .shelf__details::before,
+    .shelf__load-more::before {
         content: "";
         position: absolute;
         left: 4px;
@@ -57,7 +59,8 @@
         border-radius: 10px;
     }
         .contacts__callback .button,
-        .shelf__details .button {
+        .shelf__details .button,
+        .shelf__load-more .button {
             position: relative;
             display: inline-flex;
             align-items: center;
@@ -79,7 +82,8 @@
         }
 
         .contacts__callback .button:hover,
-        .shelf__details .button:hover {
+        .shelf__details .button:hover,
+        .shelf__load-more .button:hover {
             opacity: 1;
             background-color: #FBDD78;
         }
