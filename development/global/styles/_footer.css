@@ -29,8 +29,8 @@
 
                 .footer__sub-heading {
                     margin-bottom: 14px;
-                    font-family: var(--font_family_heading);
-                    font-weight: var(--font_weight_demi);
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 2px;
@@ -67,8 +67,8 @@
 
         .footer__navigation {
             margin-top: 27px;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 16px;
             line-height: 18px;
         }

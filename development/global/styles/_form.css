@@ -6,8 +6,8 @@
 }
     .form__heading {
         margin-bottom: 0;
-        font-family: var(--font_family_heading);
-        font-weight: var(--font_weight_demi);
+        font-family: var(--font-heading);
+        font-weight: var(--font-weight-heading);
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -63,4 +63,4 @@
         margin-left: -40px;
         margin-right: -40px;
     }
-}    
+}

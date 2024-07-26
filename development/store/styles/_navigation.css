@@ -25,8 +25,8 @@
                     margin-left: 5px;
                     margin-right: 5px;
                     padding: 5px;
-                    font-family: var(--font_family_heading);
-                    font-weight: var(--font_weight_demi);
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
                     font-size: 13px;
                     line-height: 18px;
                     text-transform: uppercase;

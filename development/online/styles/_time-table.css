@@ -12,8 +12,8 @@
             max-width: 668px;
             margin-left: auto;
             margin-right: auto;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 32px;
             line-height: 32px;
             text-align: center;
@@ -34,7 +34,7 @@
         margin-top: 48px;
     }
 
-        
+
 @media (min-width: 768px) {
     .time-table {
         padding-top: 80px;

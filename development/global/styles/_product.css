@@ -34,8 +34,8 @@
         .product__title {
             margin-top: 4px;
             margin-bottom: 0;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 20px;
             line-height: 24px;
             text-align: center;

@@ -9,8 +9,8 @@
         .things__pre-header {
             margin-top: 0;
             margin-bottom: 0;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 16px;
             line-height: 21px;
             letter-spacing: 2px;
@@ -21,8 +21,8 @@
         .things__heading {
             margin-top: 24px;
             margin-bottom: 0;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 36px;
             line-height: 38px;
             text-align: center;
@@ -48,8 +48,8 @@
             vertical-align: top;
             margin-top: 40px;
             padding-left: 28px;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 24px;
             line-height: 31px;
             text-align: center;

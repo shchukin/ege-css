@@ -11,8 +11,8 @@
         padding-bottom: 7px;
         background-color: #FFF5E7;
         border-radius: 50%;
-        font-family: var(--font_family_heading);
-        font-weight: var(--font_weight_demi);
+        font-family: var(--font-heading);
+        font-weight: var(--font-weight-heading);
         font-size: 36px;
         line-height: 48px;
         text-align: center;
@@ -31,8 +31,8 @@
         line-height: 24px;
         text-align: center;
     }
-    
-    
+
+
 @media (min-width: 768px) {
     .stat__param {
         width: 100px;
@@ -42,5 +42,5 @@
         font-size: 52px;
         line-height: 60px;
     }
-}    
+}
 

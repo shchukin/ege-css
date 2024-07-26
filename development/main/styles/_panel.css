@@ -4,8 +4,8 @@
     box-shadow: 10px 10px 40px 0 rgba(42, 33, 26, 0.1);
 }
     .panel__heading {
-        font-family: var(--font_family_heading);
-        font-weight: var(--font_weight_demi);
+        font-family: var(--font-heading);
+        font-weight: var(--font-weight-heading);
         font-size: 24px;
         line-height: 28px;
         text-align: center;

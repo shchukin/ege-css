@@ -5,11 +5,12 @@
     --brand_orange: #FF7502;
 
     --font_family_default: "Roboto", sans-serif;
-    --font_family_heading: "Futura PT", "FuturaPT", "Futura-PT", sans-serif;
     --font_egenator-heading: "RF Dewi Extended", sans-serif;
-    --ultrabold: 800;
 
-    --font_weight_demi: 500;
+
+    /* Везде где используется Futura PT должен быть font-weight: 500. Грузим только одно начертание. */
+    --font-heading: "Futura PT", "FuturaPT", "Futura-PT", sans-serif;
+    --font-weight-heading: 500;
 
     --image-fallback: #F8F8F8;
 

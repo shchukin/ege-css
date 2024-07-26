@@ -46,8 +46,8 @@
                     padding-top: 23px;
                     padding-bottom: 19px;
                     background-color: #F6F7F8;
-                    font-family: var(--font_family_heading);
-                    font-weight: var(--font_weight_demi);
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
                     font-size: 16px;
                     line-height: 21px;
                     text-align: left;

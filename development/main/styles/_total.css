@@ -2,8 +2,8 @@
     padding-top: 27px;
 }
     .total__price {
-        font-family: var(--font_family_heading);
-        font-weight: var(--font_weight_demi);
+        font-family: var(--font-heading);
+        font-weight: var(--font-weight-heading);
         font-size: 22px;
         line-height: 28px;
     }

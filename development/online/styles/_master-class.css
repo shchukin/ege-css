@@ -8,8 +8,8 @@
         .master-class__heading {
             margin-top: 0;
             margin-bottom: 0;
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 32px;
             line-height: 32px;
             text-align: center;
@@ -46,8 +46,8 @@
                 border: none;
                 background-color: #000000;
             }
-            
-            
+
+
 @media (min-width: 768px) {
     .master-class {
         padding-top: 92px;
@@ -63,4 +63,4 @@
             height: 253px;
             margin-top: 41px;
         }
-}            
+}

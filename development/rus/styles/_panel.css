@@ -78,8 +78,8 @@
                 max-width: 300px;
                 margin-left: auto;
                 margin-right: auto;
-                font-family: var(--font_family_heading);
-                font-weight: var(--font_weight_demi);
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
                 font-size: 24px;
                 line-height: 28px;
                 text-align: center;
@@ -108,8 +108,8 @@
                 display: none;
             }
                 .panel__prices {
-                    font-family: var(--font_family_heading);
-                    font-weight: var(--font_weight_demi);
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
                     text-align: center;
                     white-space: nowrap;
                 }

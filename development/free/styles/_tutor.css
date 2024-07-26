@@ -7,8 +7,8 @@
 
     }
         .tutor__intro {
-            font-family: var(--font_family_heading);
-            font-weight: var(--font_weight_demi);
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
             font-size: 42px;
             line-height: 54px;
             text-align: center;
@@ -48,8 +48,8 @@
             .tutor__name {
                 margin-top: 20px;
                 margin-bottom: 0;
-                font-family: var(--font_family_heading);
-                font-weight: var(--font_weight_demi);
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
                 font-size: 36px;
                 line-height: 48px;
                 text-align: center;
