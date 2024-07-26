@@ -1,4 +1,5 @@
-.button_palette_faded {
+.button_palette_faded,
+.button_palette_empty {
     border: 1px solid #000000;
     border-radius: 8px;
     padding: 17px 31px;
@@ -11,7 +12,8 @@
     letter-spacing: 0;
 }
 
-.button_palette_faded:hover {
+.button_palette_faded:hover,
+.button_palette_empty:hover {
     background-color: var(--egenator-panel-hover);
 }
 
@@ -87,7 +89,9 @@
 /*    .shelf__details::before,*/
 /*    .shelf__load-more::before {*/
     .buying__action::before,
-    .subscription__submit::before {
+    .subscription__submit::before,
+    .user-form__actions::before,
+    .cart__submit::before {
         content: "";
         position: absolute;
         left: 4px;
