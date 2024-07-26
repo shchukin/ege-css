@@ -50,6 +50,7 @@
     box-shadow: 0 20px 20px 0 rgba(255, 208, 70, 0.3);
     background-image: none;
     background-color: var(--egenator-orange);
+    box-shadow: none;
     border-radius: 8px;
     padding: 13px 34px 15px;
     font-family: var(--font_egenator-heading);
@@ -85,7 +86,8 @@
 /*    .contacts__callback::before,*/
 /*    .shelf__details::before,*/
 /*    .shelf__load-more::before {*/
-    .buying__action::before {
+    .buying__action::before,
+    .subscription__submit::before {
         content: "";
         position: absolute;
         left: 4px;
