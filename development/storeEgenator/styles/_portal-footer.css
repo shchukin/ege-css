@@ -57,6 +57,10 @@
                 margin-top: 30px;
             }
 
+            .portal-footer__logo:first-child {
+                margin-top: -19px;
+            }
+
             .portal-footer__note {
                 margin-top: 10px;
             }
@@ -68,7 +72,7 @@
 
 
 
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
 
     .portal-footer {
         padding-top: 40px;
@@ -123,6 +127,14 @@
 
                 .portal-footer__form {
                     /*margin-top: 16px;*/
+                }
+
+                .portal-footer__logo {
+
+                }
+
+                .portal-footer__logo:first-child {
+                    margin-top: 0;
                 }
 
                 .portal-footer__note {
