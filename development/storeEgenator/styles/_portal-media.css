@@ -1,0 +1,59 @@
+/* Весь файл -- импорт с более нового портала. Добавлен префикс portal- */
+
+.portal-media {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+    .portal-media__item {
+        padding: 8px;
+        background-color: var(--portal-black);
+        border-radius: 50%;
+        line-height: 10px;
+    }
+
+    .portal-media__item:hover {
+        background-color: var(--portal-black-hover);
+    }
+        .portal-media__icon {
+            vertical-align: top;
+            width: 24px;
+            height: 24px;
+            fill: #FFFFFF;
+        }
+
+
+.portal-media--sparse {
+    gap: 24px;
+}
+
+
+.portal-media--larger {
+    gap: 16px;
+}
+    .portal-media--larger .portal-media__item {
+        padding: 14px;
+    }
+        .portal-media--larger .portal-media__icon {
+            width: 28px;
+            height: 28px;
+        }
+
+
+.portal-media--inverted {
+
+}
+    .portal-media--inverted .portal-media__item {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.17);
+    }
+        .portal-media--inverted .portal-media__icon {
+
+        }
+
+    .portal-media--inverted .portal-media__item:hover {
+        background-color: var(--portal-white);
+    }
+        .portal-media--inverted .portal-media__item:hover .portal-media__icon {
+            fill: var(--portal-black);
+        }

@@ -8,7 +8,6 @@
 @import url("_required.css");
 @import url("_logo.css");
 @import url("_contacts.css");
-@import url("_footer.css");
 @import url("_net.css");
 @import url("_live-search.css");
 @import url("_header.css");
@@ -17,3 +16,11 @@
 @import url("_navigation.css");
 @import url("_product.css");
 @import url("_call.css");
+
+/* Импорт из портала */
+@import url("_portal-footer.css");
+@import url("_portal-link.css");
+@import url("_portal-caption.css");
+@import url("_portal-title.css");
+@import url("_portal-media.css");
+@import url("_portal-logo.css");

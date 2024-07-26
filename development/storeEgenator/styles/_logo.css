@@ -2,12 +2,12 @@
     width: 160px;
     height: 46px;
     padding: 0;
-    background-image: url("../images/logo_egenator.png");
+    background-image: url("../images/portal-logo-black.png");
 }
 
 @media (min-resolution: 2dppx) {
     .logo {
-        background-image: url("../images/logo_egenator@2x.png");
+        background-image: url("../images/portal-logo-black@2x.png");
     }
 }
 

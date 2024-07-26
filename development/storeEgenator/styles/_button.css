@@ -14,7 +14,7 @@
 
 .button_palette_faded:hover,
 .button_palette_empty:hover {
-    background-color: var(--egenator-panel-hover);
+    background-color: var(--portal-panel-hover);
 }
 
 
@@ -26,7 +26,7 @@
     text-transform: uppercase;
 }
     .button_id-contacts-handler:hover {
-        background-color: var(--egenator-panel-hover);
+        background-color: var(--portal-panel-hover);
         border-color: #000000;
         color: #000000;
     }
@@ -50,7 +50,7 @@
 
 .button_palette_submit {
     background-image: none;
-    background-color: var(--egenator-orange);
+    background-color: var(--portal-orange);
     box-shadow: none;
     border-radius: 8px;
     padding: 13px 34px 15px;

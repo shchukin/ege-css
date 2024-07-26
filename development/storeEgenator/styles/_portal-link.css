@@ -1,0 +1,98 @@
+/* Весь файл -- импорт с более нового портала. Добавлен префикс portal- */
+
+.portal-link,
+.wysiwyg a {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0; /* 4px solves two problems:
+                         a) expands clickable area
+                         b) solves multi-link case problem when hovering between lines changes from pointer to arrow */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #A8D741;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portal-link:hover,
+.wysiwyg a:hover {
+    border-bottom-color: currentColor;
+}
+
+.portal-link:active,
+.wysiwyg a:active {
+
+}
+
+
+/*.portal-link--classic,*/
+/*.wysiwyg .portal-link--classic {*/
+/*    border-bottom-color: currentColor;*/
+/*}*/
+
+/*.portal-link--classic:hover,*/
+/*.wysiwyg .portal-link--classic:hover {*/
+/*    border-bottom-color: transparent;*/
+/*}*/
+
+
+.portal-link--inverted,
+.wysiwyg .portal-link--inverted {
+    border-bottom-color: transparent;
+    color: var(--portal-grey-dark);
+}
+
+.portal-link--inverted:hover,
+.wysiwyg .portal-link--inverted:hover {
+    border-bottom-color: currentColor;
+    color: var(--portal-white);
+}
+
+.portal-link--white {
+    color: var(--portal-white);
+}
+
+
+.portal-link--text-color,
+.wysiwyg .portal-link--text-color {
+    border-bottom-color: currentColor;
+    color: inherit;
+}
+
+.portal-link--text-color:hover,
+.wysiwyg .portal-link--text-color:hover {
+    border-bottom-color: transparent;
+    color: inherit;
+}
+
+
+.portal-link--text-alike,
+.wysiwyg .portal-link--text-alike {
+    border-bottom-color: transparent;
+    color: inherit;
+}
+
+.portal-link--text-alike:hover,
+.wysiwyg .portal-link--text-alike:hover {
+    border-bottom-color: currentColor;
+}
+
+
+
+
+.portal-link--fake,
+.portal-link--fake:hover,
+.wysiwyg .portal-link--fake,
+.wysiwyg .portal-link--fake:hover {
+    border-bottom-color: transparent;
+    color: inherit;
+    cursor: inherit;
+}
+
