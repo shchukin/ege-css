@@ -49,7 +49,6 @@
 
 
 .button_palette_submit {
-    box-shadow: 0 20px 20px 0 rgba(255, 208, 70, 0.3);
     background-image: none;
     background-color: var(--egenator-orange);
     box-shadow: none;
@@ -71,6 +70,28 @@
     .button_palette_submit::before {
         background-image: none;
     }
+
+    .button_palette_submit.button_loading::after {
+        background-image: url("../vectors/button_loading.svg");
+    }
+
+    .button_palette_submit.button_success::after {
+        background-image: url("../vectors/button_success.svg");
+    }
+
+
+
+
+.button_loading {
+    color: transparent;
+}
+
+.button_success {
+    color: transparent;
+}
+
+
+
 
 
 
