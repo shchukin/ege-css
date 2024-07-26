@@ -2,7 +2,7 @@
 :root {
 
     /* Roboto используется в весах 400, 500, 700 */
-    --font_family_default: "Roboto", sans-serif;
+    --font-body: "Roboto", sans-serif;
 
     /* Futura PT используется только в 500, так что везде где есть font-family: var(--font-heading); должно сразу идти и font-weight: var(--font-weight-heading); */
     --font-heading: "Futura PT", "FuturaPT", "Futura-PT", sans-serif;

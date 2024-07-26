@@ -101,7 +101,7 @@
 
                 .cart__about-discount {
                     margin-top: 7px;
-                    font-family: var(--font_family_default);
+                    font-family: var(--font-body);
                     font-weight: 500;
                     font-size: 13px;
                     line-height: 18px;
