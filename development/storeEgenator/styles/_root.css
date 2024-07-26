@@ -1,5 +1,6 @@
 :root {
-    --brand_orange: #000000;
+    --brand_orange: #000000; /* mostly used for text color */
     --danger: #F12260;
     --egenator-panel-hover: #F2F2F2;
+    --egenator-orange: #FAD03D;
 }
