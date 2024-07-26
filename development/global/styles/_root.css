@@ -1,19 +1,17 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
 
-    --brand_grey: #697882;
-    --brand_orange: #FF7502;
-
+    /* Roboto используется в весах 400, 500, 700 */
     --font_family_default: "Roboto", sans-serif;
-    --font_egenator-heading: "RF Dewi Extended", sans-serif;
 
-
-    /* Везде где используется Futura PT должен быть font-weight: 500. Грузим только одно начертание. */
+    /* Futura PT используется только в 500, так что везде где есть font-family: var(--font-heading); должно сразу идти и font-weight: var(--font-weight-heading); */
     --font-heading: "Futura PT", "FuturaPT", "Futura-PT", sans-serif;
     --font-weight-heading: 500;
 
+    /* Цвета */
+    --brand_grey: #697882;
+    --brand_orange: #FF7502;
     --image-fallback: #F8F8F8;
-
     --danger: var(--brand_orange);
 }
 /* stylelint-enable declaration-colon-space-after */

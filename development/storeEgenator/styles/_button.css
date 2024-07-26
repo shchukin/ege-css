@@ -3,8 +3,8 @@
     border: 1px solid #000000;
     border-radius: 8px;
     padding: 17px 31px;
-    font-family: var(--font_egenator-heading);
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
     font-size: 19px;
     line-height: 26px;
     color: #000000;
@@ -20,8 +20,8 @@
 
 
 .button_id-contacts-handler {
-    font-family: var(--font_egenator-heading);
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
     color: #000000;
     text-transform: uppercase;
 }
@@ -54,8 +54,8 @@
     box-shadow: none;
     border-radius: 8px;
     padding: 13px 34px 15px;
-    font-family: var(--font_egenator-heading);
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
     font-size: 16px;
     line-height: 22px;
     color: #000000;
@@ -80,8 +80,6 @@
     }
 
 
-
-
 .button_loading {
     color: transparent;
 }
@@ -91,82 +89,18 @@
 }
 
 
-
-
-
-
-/* Buttons from platform */
-
-/*.contacts__callback,*/
-/*.shelf__details,*/
-/*.shelf__load-more {*/
-/*    position: relative;*/
-/*    width: fit-content;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*}*/
-
-/*    .contacts__callback::before,*/
-/*    .shelf__details::before,*/
-/*    .shelf__load-more::before {*/
-    .buying__action::before,
-    .subscription__submit::before,
-    .user-form__actions::before,
-    .cart__submit::before {
-        content: "";
-        position: absolute;
-        left: 4px;
-        top: 4px;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        border-radius: 10px;
-    }
-/*        .contacts__callback .button,*/
-/*        .shelf__details .button,*/
-/*        .shelf__load-more .button {*/
-/*            position: relative;*/
-/*            display: inline-flex;*/
-/*            align-items: center;*/
-/*            justify-content: center;*/
-/*            vertical-align: top;*/
-/*            border: none;*/
-/*            padding: 13px 34px 15px;*/
-/*            background-color: #FAD03D;*/
-/*            border-radius: 8px;*/
-/*            font-family: var(--font_egenator-heading);*/
-/*            font-weight: var(--ultrabold);*/
-/*            font-size: 16px;*/
-/*            line-height: 24px;*/
-/*            color: #000000;*/
-/*            text-align: center;*/
-/*            text-decoration: none;*/
-/*            white-space: nowrap;*/
-/*            cursor: pointer;*/
-/*        }*/
-
-/*        .contacts__callback .button:hover,*/
-/*        .shelf__details .button:hover,*/
-/*        .shelf__load-more .button:hover {*/
-/*            opacity: 1;*/
-/*            background-color: #FBDD78;*/
-/*        }*/
-
-
-
-/*        @media (min-width: 1024px) {*/
-
-/*            .contacts__callback {*/
-/*                margin-top: -4px;*/
-/*            }*/
-/*        }*/
-
-/*        .shelf__details .button {*/
-/*            width: auto;*/
-/*        }*/
-
-/*        .contacts__callback .button {*/
-/*            padding: 10px 20px;*/
-/*            font-size: 14px;*/
-/*        }*/
+/* То, что было .shadow в портале ЕГЭнатора */
+.buying__action::before,
+.subscription__submit::before,
+.user-form__actions::before,
+.cart__submit::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
 
