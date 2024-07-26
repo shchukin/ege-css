@@ -11,9 +11,13 @@
         }
 
         .subscription__submit {
+            position: relative;
             width: 100%;
             margin-top: 10px;
         }
+            .subscription__submit .button {
+                width: 100%;
+            }
 
         .subscription__terms {
             margin-top: 10px;
@@ -74,7 +78,7 @@
         }
             .subscription_full .subscription__field {
                 flex-grow: 1;
-                margin-right: -5px;
+                margin-right: -10px;
             }
 
             .subscription_full .subscription__submit {
@@ -108,6 +112,10 @@
             margin-top: 10px;
             width: 100%;
             max-width: 300px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .subscription_vertical .subscription__terms {
