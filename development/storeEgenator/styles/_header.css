@@ -16,3 +16,17 @@
         overflow: hidden;
     }
 }
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .header__actions {
+        margin-left: 24px;
+    }
+
+    .header__buying {
+        margin-left: 16px;
+    }
+}
