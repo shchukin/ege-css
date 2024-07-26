@@ -93,7 +93,7 @@
         .body_scrolling-up .navigation__fixed-part {
             transition: top 0.3s ease,
                         margin-top 1s ease;
-            margin-top: calc( -1 * var(--navigation-desktop));
+            margin-top: calc(-1 * var(--navigation-desktop));
         }
 }
 

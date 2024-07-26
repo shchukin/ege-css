@@ -3,6 +3,11 @@
     --danger: #F12260;
     --egenator-panel-hover: #F2F2F2;
     --egenator-orange: #FAD03D;
+
+    /* Inter используется в весах 400, 500, 700 (так же как и Roboto в global) */
+    --font-body: "Inter", sans-serif;
+
+    /* RF Dewi Extended используется только в 800 (так же как и Futura PT в global) , так что везде где есть font-family: var(--font-heading); должно сразу идти и font-weight: var(--font-weight-heading); */
     --font-heading: "RF Dewi Extended", sans-serif;
     --font-weight-heading: 800;
 }
