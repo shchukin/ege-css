@@ -1,5 +1,3 @@
-/* Весь файл -- импорт с более нового портала. Добавлен префикс portal- */
-
 .portal-link,
 .wysiwyg a {
     -webkit-appearance: none;
@@ -82,6 +80,19 @@
 .portal-link--text-alike:hover,
 .wysiwyg .portal-link--text-alike:hover {
     border-bottom-color: currentColor;
+}
+
+
+
+.portal-link--text-alike-inverted,
+.wysiwyg .portal-link--text-alike-inverted {
+    border-bottom-color: currentColor;
+    color: inherit;
+}
+
+.portal-link--text-alike-inverted:hover,
+.wysiwyg .portal-link--text-alike-inverted:hover {
+    border-bottom-color: transparent;
 }
 
 

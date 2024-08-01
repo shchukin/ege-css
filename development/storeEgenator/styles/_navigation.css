@@ -29,3 +29,8 @@
         font-size: 15px;
     }
 }
+
+.navigation__link--disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
