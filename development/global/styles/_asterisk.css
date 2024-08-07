@@ -1,11 +1,11 @@
-.required {
+.asterisk {
     display: inline-block;
     vertical-align: top;
     width: 6px;
     height: 6px;
     margin-top: 3px;
     margin-left: 2px;
-    background-image: url("../vectors/required.svg");
+    background-image: url("../vectors/asterisk.svg");
     background-size: 6px 6px;
     background-position: center top;
     font-weight: normal;
