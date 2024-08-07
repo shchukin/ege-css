@@ -27,7 +27,7 @@
             .portal-footer__mail {
                 margin-top: 18px;
                 font-size: 20px;
-                color: var(--white);
+                color: var(--portal-white);
             }
 
             .portal-footer__menu {
