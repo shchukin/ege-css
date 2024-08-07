@@ -1213,7 +1213,7 @@ Improve this documentation page (simply submit commit <a href="https://github.co
   <form action="http://dimsemenov.us1.list-manage.com/subscribe/post?u=ef6026d946a7b5d41d92c02e4&amp;id=54fae727da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
     <p>Get notified about important update or new release.</p>
     <div class="mc-field-group">
-      <input type="email" value="" name="EMAIL" placeholder="Your email" class="required email" id="mce-EMAIL">
+      <input type="email" value="" name="EMAIL" placeholder="Your email" class="asterisk email" id="mce-EMAIL">
       <input type="hidden" id="group_2" name="group[2065][2]" value="true">
       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
     </div>
