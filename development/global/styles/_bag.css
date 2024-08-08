@@ -28,4 +28,10 @@
         line-height: 14px;
         color: #FFFFFF;
         text-align: center;
+        transition: opacity 0.1s ease;
+    }
+
+
+    .bag__quantity:empty {
+        opacity: 0;
     }
