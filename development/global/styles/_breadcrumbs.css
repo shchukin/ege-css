@@ -1,8 +1,8 @@
 .breadcrumbs {
     margin-left: -5px;
     margin-right: -5px;
-    display: flex;
-    align-items: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: var(--font-heading);
     font-weight: var(--font-weight-heading);
     font-size: 15px;
@@ -23,7 +23,7 @@
             content: "/";
             pointer-events: none;
             position: absolute;
-            top: 10px;
+            top: 0;
             left: -10px;
         }
 
@@ -32,7 +32,7 @@
         }
 
         .breadcrumbs__link {
-            display: block;
+            display: inline;
             padding: 10px 5px;
             color: inherit;
             text-decoration: none;
@@ -40,4 +40,10 @@
 
         .breadcrumbs__link:hover {
             text-decoration: underline;
+        }
+
+        .breadcrumbs__current {
+            display: block;
+            padding: 10px 5px;
+            opacity: 50%;
         }
