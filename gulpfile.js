@@ -233,6 +233,32 @@ gulp.task('index', function () {
         ;
 });
 
+
+
+
+// Manifest: copy
+
+gulp.task('storeEgenatorManifest', function () {
+    return gulp.src([
+            'development/storeEgenator/browserconfig.xml',
+            'development/storeEgenator/manifest.json',
+            'development/storeEgenator/humans.txt',
+            'development/storeEgenator/favicon.ico'])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/'))
+        ;
+});
+
+// Favicon: copy
+
+gulp.task('storeEgenatorFavicon', function () {
+    return gulp.src('development/storeEgenator/favicon/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/favicon/'))
+        ;
+});
+
+
 // Temp: copy
 
 gulp.task('globalTemp', function () {
@@ -1197,6 +1223,8 @@ gulp.task('default', function (fn) {
         'globalLayouts', 'freeLayouts', 'onlineLayouts', 'rusLayouts', 'storeLayouts', 'storeEgenatorLayouts', 'mainLayouts',
         'globalSymbols', 'freeSymbols', 'onlineSymbols', 'rusSymbols', 'storeSymbols', 'storeEgenatorSymbols', 'mainSymbols',
         'globalStyles',  'freeStyles',  'onlineStyles',  'rusStyles',  'storeStyles',  'storeEgenatorStyles',  'mainStyles',
+                                                                                       'storeEgenatorManifest',
+                                                                                       'storeEgenatorFavicon',
         fn);
 });
 
