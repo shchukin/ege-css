@@ -1,7 +1,10 @@
 .contacts {
     width: 200px;
 }
-
+    .contacts__network.net,
+    .contacts__network .net {
+        width: 50px; /* должно быть 40px, но из-за того что иконок 3, а не 4 -- увеличиваем */
+    }
 
 @media (min-width: 1024px) {
 
