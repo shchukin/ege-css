@@ -57,8 +57,13 @@
                 color: var(--brand_orange);
             }
 
+            .buying__price:first-child {
+                margin-top: 0;
+            }
+
             .buying__old-price {
                 display: block;
+                margin-top: 4px;
                 font-family: var(--font-heading);
                 font-weight: var(--font-weight-heading);
                 font-size: 17px;
@@ -67,16 +72,23 @@
                 text-decoration: line-through;
             }
 
-            .buying__action {
-                position: absolute;
-                bottom: 24px;
-                left: 0;
-                right: 0;
-                margin-top: 14px;
-                margin-left: auto;
-                margin-right: auto;
-                width: fit-content;
+            .buying__operation {
+                margin-top: 12px;
             }
+
+            .buying__price + .buying__operation {
+                margin-top: 18px; /* когда отсутствует old price */
+            }
+                .buying__action {
+                    position: absolute;
+                    bottom: 24px;
+                    left: 0;
+                    right: 0;
+                    margin-top: 14px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: fit-content;
+                }
 
 
 .buying__choice:nth-child(1):checked ~ .buying__params .buying__option:nth-child(1),

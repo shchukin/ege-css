@@ -21,7 +21,7 @@
 
     .product__body {
         position: relative;
-        padding: 17px 10px 62px;
+        padding: 17px 10px 20px;
         min-height: 178px;
     }
         .product__category {
@@ -73,10 +73,7 @@
             }
 
         .product__operations {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 25px;
+            margin-top: 12px;
             display: flex;
             align-items: flex-start;
             justify-content: center;

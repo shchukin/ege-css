@@ -1,0 +1,25 @@
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+    .actions__buy-now {
+
+    }
+
+
+@media (min-width: 768px) {
+
+    .actions {
+
+    }
+        .actions__buy-now {
+
+        }
+
+        .actions__add-to-cart {
+
+        }
+}
