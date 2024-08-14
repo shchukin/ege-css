@@ -1154,7 +1154,8 @@ gulp.task('storeEgenatorStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({
