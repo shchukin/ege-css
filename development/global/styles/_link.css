@@ -1,7 +1,13 @@
 .link {
     position: relative;
+    display: inline;
+    vertical-align: baseline;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
     color: var(--brand_orange);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .link:hover {
