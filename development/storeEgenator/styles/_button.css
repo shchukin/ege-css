@@ -90,6 +90,7 @@
 
 
 /* То, что было .shadow в портале ЕГЭнатора */
+.actions__buy-now::before,
 .buying__action::before,
 .subscription__submit::before,
 .user-form__actions::before,

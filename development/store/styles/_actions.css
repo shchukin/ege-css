@@ -1,13 +1,42 @@
+/* Дефолтная версия делается для деталки товара (item.html) */
+
 .actions {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
     .actions__buy-now {
+        position: relative;
+    }
+
+    .actions__add-to-cart {
+        margin-top: 2px;
+    }
+
+
+/* В маленькой карточке товара в каталоге (блок .product) всё чуть меньше: */
+.product__operations {
+
+}
+    .product__operations .actions__buy-now {
 
     }
+        .product__operations .actions__buy-now::before {
+            left: 3px;
+            top: 3px;
+        }
+
+        .product__operations .button {
+            padding: 10px 20px 12px;
+            font-size: 15px;
+        }
+
+    .product__operations .actions__add-to-cart {
+
+    }
+
 
 
 @media (min-width: 768px) {
