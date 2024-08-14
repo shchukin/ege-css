@@ -1331,6 +1331,7 @@ screen and (max-height:300px) {
   position: relative;
   display: inline;
   vertical-align: baseline;
+  padding: 0;
   background-color: transparent;
   border: none;
   font-family: inherit;
