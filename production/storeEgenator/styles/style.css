@@ -2420,10 +2420,10 @@ screen and (max-height:300px) {
   color: #697882;
   text-decoration: line-through
 }
-.buying__operation {
+.buying__operations {
   margin-top: 12px
 }
-.buying__price + .buying__operation {
+.buying__price + .buying__operations {
   margin-top: 18px
 }
 .buying__action {
