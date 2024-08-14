@@ -1,5 +1,5 @@
 (function($) {
-    $('.code__submit').on('click', function () {
+    $('.code__submit.button, .code__submit .button').on('click', function () {
         var $this = $(this);
         if ( ! $this.hasClass('button_loading') &&  ! $this.hasClass('button_success') ) {
             $this.addClass('button_loading');
