@@ -25,15 +25,6 @@
     .product__operations .actions__buy-now {
 
     }
-        .product__operations .actions__buy-now::before {
-            left: 3px;
-            top: 3px;
-        }
-
-        .product__operations .button {
-            padding: 10px 20px 12px;
-            font-size: 15px;
-        }
 
     .product__operations .actions__add-to-cart {
 

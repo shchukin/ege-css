@@ -3,6 +3,8 @@
 }
 
 .button_size_smaller {
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 15px; /* в дефолтном магазине текст написан капсом и там меньший шрифт. Здесь увеличиваем */
 }
 
