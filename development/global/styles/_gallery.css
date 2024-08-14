@@ -39,7 +39,8 @@
                 vertical-align: top;
                 width: var(--gallery-full-dimension);
                 height: var(--gallery-full-dimension);
-                background-color: var(--image-fallback);
+                object-fit: contain;
+                background-color: #FFFFFF;
             }
 
     .gallery__navigation {
