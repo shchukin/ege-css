@@ -17,6 +17,7 @@
 @import url("_product.css");
 @import url("_call.css");
 @import url("_article.css");
+@import url("_code.css");
 
 /* Импорт из портала */
 @import url("_portal-footer.css");

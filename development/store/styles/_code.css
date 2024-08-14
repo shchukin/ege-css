@@ -15,23 +15,23 @@
     .code__body {
         position: relative;
         display: none;
+        grid-template-columns: 1fr auto;
     }
         .code__field {
 
         }
             .code__field .input__widget {
-                padding-right: 120px;
+                padding-right: 13px; /* должнол быть 10, но кнопка заехала на 4 */
             }
 
         .code__submit {
-            position: absolute !important;
-            right: 0;
-            top: 0;
+            margin-left: -4px;
             padding-left: 14px;
             padding-right: 14px;
         }
 
         .code__output {
+            grid-column: span 2;
             margin-top: 6px;
             display: none;
             font-weight: 500;
@@ -49,7 +49,7 @@
         display: none;
     }
     .code__visibility:checked ~ .code__body {
-        display: block;
+        display: grid;
     }
 
 
