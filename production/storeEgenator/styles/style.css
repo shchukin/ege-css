@@ -639,7 +639,11 @@ screen and (max-height:300px) {
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color .1s ease
+  transition: background-color .1s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none
 }
 .button__label {
   position: relative
