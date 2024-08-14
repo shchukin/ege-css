@@ -1329,8 +1329,14 @@ screen and (max-height:300px) {
 }
 .link {
   position: relative;
+  display: inline;
+  vertical-align: baseline;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
   color: #000000;
-  text-decoration: none
+  text-decoration: none;
+  cursor: pointer
 }
 .link:hover {
   text-decoration: underline
@@ -4550,6 +4556,9 @@ screen and (max-height:300px) {
 }
 .actions__add-to-cart {
   margin-top: 2px
+}
+.product__operations .actions {
+  gap: 16px
 }
 .product__operations .actions__buy-now::before {
   left: 3px;
