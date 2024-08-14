@@ -25,10 +25,14 @@
             }
 
         .code__submit {
+            position: relative;
             margin-left: -4px;
-            padding-left: 14px;
-            padding-right: 14px;
         }
+            .code__submit.button,
+            .code__submit .button {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
 
         .code__output {
             grid-column: span 2;

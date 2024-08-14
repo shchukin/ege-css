@@ -94,6 +94,7 @@
 
 
 /* То, что было .shadow в портале ЕГЭнатора */
+.code__submit::before,
 .shelf__load-more::before,
 .shelf__details::before,
 .actions__buy-now::before,
@@ -111,3 +112,8 @@
     border-radius: 10px;
 }
 
+/* для кнопки smaller */
+.code__submit::before {
+    left: 3px;
+    top: 3px;
+}

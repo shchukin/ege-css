@@ -20,7 +20,8 @@
 
 @media (max-width: 767px) {
 
-    .code__submit {
+    .code__submit.button,
+    .code__submit .button {
         font-size: 14px;
     }
 }
