@@ -50,8 +50,11 @@
         }
 
     .shelf__load-more {
+        position: relative;
         margin-top: 32px;
-        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
         .shelf__load-more {
 
