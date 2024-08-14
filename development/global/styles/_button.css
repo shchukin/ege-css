@@ -17,6 +17,7 @@
     white-space: nowrap;
     cursor: pointer;
     transition: background-color 0.1s ease;
+    user-select: none;
 }
     .button__label {
         position: relative; /* in case of overlay over the text */
