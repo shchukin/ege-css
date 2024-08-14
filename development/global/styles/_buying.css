@@ -72,11 +72,11 @@
                 text-decoration: line-through;
             }
 
-            .buying__operation {
+            .buying__operations {
                 margin-top: 12px;
             }
 
-            .buying__price + .buying__operation {
+            .buying__price + .buying__operations {
                 margin-top: 18px; /* когда отсутствует old price */
             }
                 .buying__action {
