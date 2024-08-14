@@ -1,0 +1,10 @@
+.no-actions {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 34px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 18px;
+}
