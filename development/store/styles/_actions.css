@@ -17,8 +17,8 @@
 
 
 /* В маленькой карточке товара в каталоге (блок .product) всё чуть меньше: */
-.product__operations {
-
+.product__operations .actions {
+    gap: 16px;
 }
     .product__operations .actions__buy-now {
 
