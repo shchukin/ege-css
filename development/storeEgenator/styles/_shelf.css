@@ -7,7 +7,8 @@
 
 .shelf__details .button {
     width: auto;
-    padding: 17px 31px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
 
 .shelf__heading {

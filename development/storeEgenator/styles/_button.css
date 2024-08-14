@@ -2,11 +2,11 @@
 .button_palette_empty {
     border: 1px solid #000000;
     border-radius: 8px;
-    padding: 17px 31px;
+    padding-left: 31px;
+    padding-right: 31px;
     font-family: var(--font-heading);
     font-weight: var(--font-weight-heading);
     font-size: 19px;
-    line-height: 26px;
     color: #000000;
     text-transform: none;
     letter-spacing: 0;
@@ -53,11 +53,11 @@
     background-color: var(--portal-orange);
     box-shadow: none;
     border-radius: 8px;
-    padding: 13px 34px 15px;
+    padding-left: 34px;
+    padding-right: 34px;
     font-family: var(--font-heading);
     font-weight: var(--font-weight-heading);
     font-size: 16px;
-    line-height: 22px;
     color: #000000;
     text-transform: none;
     letter-spacing: 0;
