@@ -103,7 +103,8 @@
 .buying__action::before,
 .subscription__submit::before,
 .user-form__actions::before,
-.cart__submit::before {
+.cart__submit::before,
+.informer__action::before {
     content: "";
     position: absolute;
     left: 4px;
