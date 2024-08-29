@@ -38,6 +38,7 @@
 @import url("../../global/styles/_breadcrumbs.css");
 @import url("../../global/styles/_gallery.css");
 @import url("../../global/styles/_buying.css");
+@import url("../../global/styles/_actions.css");
 @import url("../../global/styles/_variation.css");
 @import url("../../global/styles/_bag.css");
 @import url("../../global/styles/_search.css");
@@ -84,4 +85,3 @@
 @import url("_customer.css");
 @import url("_path.css");
 @import url("_user-form.css");
-@import url("_actions.css");

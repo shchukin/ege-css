@@ -945,7 +945,8 @@ gulp.task('globalStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({
@@ -986,7 +987,8 @@ gulp.task('freeStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({
@@ -1028,7 +1030,8 @@ gulp.task('onlineStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({
@@ -1070,7 +1073,8 @@ gulp.task('rusStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({
@@ -1112,7 +1116,9 @@ gulp.task('storeStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
+
         }))
         .pipe(postcss(processors))
         .pipe(base64({
@@ -1197,7 +1203,8 @@ gulp.task('mainStyles', function () {
         .pipe(plumber())
         .pipe(cleanCSS({
             advanced: false,
-            keepSpecialComments: 0
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
         }))
         .pipe(postcss(processors))
         .pipe(base64({

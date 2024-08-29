@@ -1,5 +1,6 @@
 .product {
     position: relative;
+    min-height: 100%;
     width: 276px;
     border: 1px solid #E9E8E8;
     border-radius: 3px;

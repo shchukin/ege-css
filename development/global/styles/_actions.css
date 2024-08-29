@@ -10,6 +10,10 @@
     .actions__buy-now {
         position: relative;
     }
+        .buying .actions__buy-now .button {
+            padding-left: 26px;
+            padding-right: 26px;
+        }
 
     .actions__add-to-cart {
         margin-top: 2px;
