@@ -13,6 +13,12 @@
             border-top: 2px solid #F6F7F8;
             padding-top: 42px;
         }
+
+        .index__body:first-child {
+            margin-top: 0;
+            border-top: none;
+        }
+
             .index__showcase {
                 margin-top: 63px;
             }
