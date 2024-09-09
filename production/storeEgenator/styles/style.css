@@ -3092,6 +3092,12 @@ screen and (max-height:300px) {
 .input_id_phone {
   width: 258px
 }
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../../store/fonts/344CD4_0_0.woff2) format("woff2")
+}
 .contacts {
   width: 180px
 }
@@ -4722,6 +4728,7 @@ screen and (max-height:300px) {
 .asterisk {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA2IDYiPgogICAgPHBvbHlnb24gZmlsbD0iI0YxMjI2MCIgZmlsbC1ydWxlPSJldmVub2RkIiBwb2ludHM9IjIuMjQgMy4zMyAuMTggMi43MiAuNDkgMS42OSAyLjU2IDIuNDUgMi41IC4xIDMuNTQgLjEgMy40OCAyLjQ5IDUuNTEgMS43MyA1LjgyIDIuNzcgMy43MiAzLjQgNS4wNyA1LjI1IDQuMjMgNS44OSAyLjk2IDMuOTIgMS43MyA1Ljg0IC44NyA1LjIyIi8+Cjwvc3ZnPgo=)
 }
+.body_scrolled .logo,
 .logo {
   width: 160px;
   height: 46px;
@@ -4729,35 +4736,41 @@ screen and (max-height:300px) {
   background-image: url(../images/portal-logo-black.png)
 }
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:2dppx) {
+  .body_scrolled .logo,
   .logo {
     background-image: url(../images/portal-logo-black@2x.png)
   }
 }
 @media (min-width:360px) and (max-width:419px) {
+  .body_scrolled .logo,
   .logo {
     width: 170px;
     height: 49px
   }
 }
 @media (min-width:420px) and (max-width:767px) {
+  .body_scrolled .logo,
   .logo {
     width: 170px;
     height: 49px
   }
 }
 @media (min-width:768px) and (max-width:1023px) {
+  .body_scrolled .logo,
   .logo {
     width: 210px;
     height: 61px
   }
 }
 @media (min-width:1024px) {
+  .body_scrolled .logo,
   .logo {
     width: 190px;
     height: 55px
   }
 }
 @media (min-width:1340px) {
+  .body_scrolled .logo,
   .logo {
     width: 233px;
     height: 66px

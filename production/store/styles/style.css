@@ -3057,6 +3057,12 @@ screen and (max-height:300px) {
 .input_id_phone {
   width: 258px
 }
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/344CD4_0_0.woff2) format("woff2")
+}
 .contacts {
   width: 180px
 }
