@@ -1,14 +1,27 @@
 /* override */
 
 .logo {
-
+    width: 168px;
+    height: 80px;
+    padding: 0;
+    background-image: url("../images/logo.svg");
+    background-size: auto 100%;
+    background-position: left center;
+    transition: height 0.3s ease; /* будет уменьшаться при прокрутке */
 }
 
-@media (max-width: 767px),
-       (min-width: 1024px) and (max-width: 1339px)
-{
-    .logo_truncated {
-        padding-bottom: 84.8484%;
-        background-image: url("../images/logo_truncated.svg");
+
+.body_scrolled .logo {
+    height: 62px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .logo,
+    .body_scrolled .logo {
+        width: 101px;
+        height: 48px;
     }
 }
