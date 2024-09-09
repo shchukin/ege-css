@@ -37,7 +37,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .logo,
-    .body_scrolled .logo {  
+    .body_scrolled .logo {
         width: 210px;
         height: 61px;
     }
