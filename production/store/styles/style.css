@@ -3019,11 +3019,23 @@ screen and (max-height:300px) {
     width: 800px!important
   }
 }
-@media (max-width:767px),
-(min-width:1024px) and (max-width:1339px) {
-  .logo_truncated {
-    padding-bottom: 84.8484%;
-    background-image: url(../images/logo_truncated.svg)
+.logo {
+  width: 168px;
+  height: 80px;
+  padding: 0;
+  background-image: url(../images/logo.svg);
+  background-size: auto 100%;
+  background-position: left center;
+  transition: height .3s ease
+}
+.body_scrolled .logo {
+  height: 62px
+}
+@media (max-width:767px) {
+  .body_scrolled .logo,
+  .logo {
+    width: 101px;
+    height: 48px
   }
 }
 .window_for_search {
