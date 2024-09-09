@@ -64,8 +64,7 @@
 
 
 /* store specific */
-
-
+@import url("_fonts.css");
 @import url("_root.css");
 @import url("_contacts.css");
 @import url("_header.css");
