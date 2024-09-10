@@ -1,6 +1,7 @@
 @import url("../../global/vendors/normalize/normalize.css");
 @import url("../../global/vendors/magnific-popup/dist/magnific-popup.css");
 
+@import url("../../global/styles/_fonts.css");
 @import url("../../global/styles/_root.css");
 @import url("../../global/styles/_universal.css");
 @import url("../../global/styles/_visuallyhidden.css");

@@ -1,8 +1,10 @@
-@import url("_fonts.css");
-
+/* Unlike other projects we don't import global styles here.
+   Instead we import Store styles that already includes both
+   global and store specific styles. */
 @import url("../../store/styles/style.css");
 
 /* Global and Store overrides */
+@import url("_fonts.css");
 @import url("_root.css");
 @import url("_button.css");
 @import url("_asterisk.css");

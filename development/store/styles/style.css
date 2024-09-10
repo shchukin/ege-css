@@ -5,7 +5,7 @@
 
 
 /* global blocks */
-
+@import url("../../global/styles/_fonts.css");
 @import url("../../global/styles/_root.css");
 @import url("../../global/styles/_universal.css");
 @import url("../../global/styles/_visuallyhidden.css");
@@ -64,7 +64,6 @@
 
 
 /* store specific */
-@import url("_fonts.css");
 @import url("_root.css");
 @import url("_contacts.css");
 @import url("_header.css");

@@ -63,31 +63,6 @@ function addSourcesTimestamp(content) {
     return result;
 }
 
-function uncommentGoogleFonts(content) {
-    var source = content.split('\n');
-    var outputLine = '';
-    var result = '';
-
-    source.forEach(function (line) {
-
-        if (line.indexOf('google') !== -1 && line.indexOf('fonts') !== -1) {
-            outputLine = line;
-            outputLine = outputLine.replace('<!--', '');
-            outputLine = outputLine.replace('-->', '');
-            result += outputLine + '\n';
-        }
-        else {
-            result += line + '\n';
-        }
-
-    });
-
-    return result;
-}
-
-
-
-
 
 
 function globalSymbolsImgToSpriteSvg(content) {
@@ -762,7 +737,6 @@ gulp.task('globalMarkups', function () {
     return gulp.src('development/global/markups/**/*')
         .pipe(plumber())
         .pipe(change(globalSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/global/markups/'))
         ;
@@ -772,7 +746,6 @@ gulp.task('freeMarkups', function () {
     return gulp.src('development/free/markups/**/*')
         .pipe(plumber())
         .pipe(change(freeSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/free/markups/'))
@@ -783,7 +756,6 @@ gulp.task('onlineMarkups', function () {
     return gulp.src('development/online/markups/**/*')
         .pipe(plumber())
         .pipe(change(onlineSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/online/markups/'))
@@ -794,7 +766,6 @@ gulp.task('rusMarkups', function () {
     return gulp.src('development/rus/markups/**/*')
         .pipe(plumber())
         .pipe(change(rusSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/rus/markups/'))
@@ -805,7 +776,6 @@ gulp.task('storeMarkups', function () {
     return gulp.src('development/store/markups/**/*')
         .pipe(plumber())
         .pipe(change(storeSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/store/markups/'))
@@ -816,7 +786,6 @@ gulp.task('storeEgenatorMarkups', function () {
     return gulp.src('development/storeEgenator/markups/**/*')
         .pipe(plumber())
         .pipe(change(storeEgenatorSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/storeEgenator/markups/'))
@@ -827,7 +796,6 @@ gulp.task('mainMarkups', function () {
     return gulp.src('development/main/markups/**/*')
         .pipe(plumber())
         .pipe(change(mainSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/main/markups/'))
@@ -841,7 +809,6 @@ gulp.task('globalLayouts', function () {
     return gulp.src('development/global/*.html')
         .pipe(plumber())
         .pipe(change(globalSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/global/'))
         ;
@@ -851,7 +818,6 @@ gulp.task('freeLayouts', function () {
     return gulp.src('development/free/*.html')
         .pipe(plumber())
         .pipe(change(freeSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/free/'))
@@ -862,7 +828,6 @@ gulp.task('onlineLayouts', function () {
     return gulp.src('development/online/*.html')
         .pipe(plumber())
         .pipe(change(onlineSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/online/'))
@@ -873,7 +838,6 @@ gulp.task('rusLayouts', function () {
     return gulp.src('development/rus/*.html')
         .pipe(plumber())
         .pipe(change(rusSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/rus/'))
@@ -884,7 +848,6 @@ gulp.task('storeLayouts', function () {
     return gulp.src('development/store/*.html')
         .pipe(plumber())
         .pipe(change(storeSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/store/'))
@@ -895,7 +858,6 @@ gulp.task('storeEgenatorLayouts', function () {
     return gulp.src('development/storeEgenator/*.html')
         .pipe(plumber())
         .pipe(change(storeEgenatorSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/storeEgenator/'))
@@ -906,7 +868,6 @@ gulp.task('mainLayouts', function () {
     return gulp.src('development/main/*.html')
         .pipe(plumber())
         .pipe(change(mainSymbolsImgToSpriteSvg))
-        .pipe(change(uncommentGoogleFonts))
         .pipe(change(releaseFromGlobal))
         .pipe(change(addSourcesTimestamp))
         .pipe(gulp.dest('production/main/'))

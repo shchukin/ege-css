@@ -89,8 +89,8 @@ outline.js - это простейшая штука для убиства сса
 Roboto бесплатный, можно взять с Google Fonts - он сейчас подрубается к странице.
 А Futura покупали тут:
 https://www.myfonts.com/users/rasz23uo8s/overview/
-d.gavrilov@ege-study.ru / a1234567
-как выкатите - проверь, что счетчики работают (смотри папку fonts/)
+на почту d.gavrilov@ege-study.ru
+как выкатите - проверь, что счетчики работают (смотри папку adobe/)
 
 Если умеешь подключать шрифты по крутому, то подключай:
 https://web-standards.ru/articles/web-font-loading-patterns/

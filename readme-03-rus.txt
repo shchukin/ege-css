@@ -104,8 +104,8 @@ http://dimsemenov.com/plugins/magnific-popup/documentation.html#iframe-type
 
 Еще у нас была проблема со шрифтами. Я ее воспроизвести на компе не смог, но на телефоне воспроизводилась.
 Переиминовал файл
-global/fonts/MyFontsWebfontsKit.css
+global/adobe/MyFontsWebfontsKit.css
 в
-global/fonts/style.css
+global/adobe/style.css
 и вроде бы решилось.
 Переиминуй тоже и почекай плиз.

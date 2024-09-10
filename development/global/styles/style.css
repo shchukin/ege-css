@@ -2,6 +2,7 @@
 @import url("../vendors/magnific-popup/dist/magnific-popup.css");
 @import url("../vendors/owl-carousel/dist/assets/owl.carousel.min.css");
 
+@import url("_fonts.css");
 @import url("_root.css");
 @import url("_universal.css");
 @import url("_visuallyhidden.css");
