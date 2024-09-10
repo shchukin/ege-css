@@ -6,7 +6,7 @@
     padding: 0;
     background-image: url("../images/logo.svg");
     background-size: auto 100%;
-    background-position: center center;
+    background-position: left center;
     transition: height 0.3s ease; /* будет уменьшаться при прокрутке */
 }
 
