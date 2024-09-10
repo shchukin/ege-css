@@ -330,6 +330,76 @@ gulp.task('mainTemp', function () {
 });
 
 
+// Adobe: copy
+
+gulp.task('globalAdobe', function () {
+    return gulp.src('development/global/adobe/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('production/global/adobe/'))
+        ;
+});
+
+gulp.task('freeAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/free/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/free/adobe/'))
+        ;
+});
+
+gulp.task('onlineAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/online/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/online/adobe/'))
+        ;
+});
+
+gulp.task('rusAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/rus/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/rus/adobe/'))
+        ;
+});
+
+gulp.task('storeAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/store/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/store/adobe/'))
+        ;
+});
+
+gulp.task('storeEgenatorAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/store/adobe/**/*',
+        'development/storeEgenator/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeEgenator/adobe/'))
+        ;
+});
+
+gulp.task('mainAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/main/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/main/adobe/'))
+        ;
+});
+
 
 // Fonts: copy
 
@@ -1222,6 +1292,7 @@ gulp.task('default', function (fn) {
     run('clean',
         'index',
         'globalTemp',    'freeTemp',    'onlineTemp',    'rusTemp',    'storeTemp',    'storeEgenatorTemp',    'mainTemp',
+        'globalAdobe',   'freeAdobe',   'onlineAdobe',   'rusAdobe',   'storeAdobe',   'storeEgenatorAdobe',   'mainAdobe',
         'globalFonts',   'freeFonts',   'onlineFonts',   'rusFonts',   'storeFonts',   'storeEgenatorFonts',   'mainFonts',
         'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'storeEgenatorContent', 'mainContent',
         'globalImages',  'freeImages',  'onlineImages',  'rusImages',  'storeImages',  'storeEgenatorImages',  'mainImages',
