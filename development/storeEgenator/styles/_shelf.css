@@ -1,15 +1,4 @@
-.shelf__details {
-    position: relative;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.shelf__details .button {
-    width: auto;
-    padding-left: 31px;
-    padding-right: 31px;
-}
 
 .shelf__heading {
 
@@ -19,3 +8,61 @@
 .shelf__sub-heading {
     margin-top: 4px;
 }
+
+
+.shelf__details {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shelf__details .button {
+    min-width: 0;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+
+
+.shelf__details .button_russian-language-and-literature {
+
+}
+    @media (min-width: 400px) and (max-width: 479px) {
+
+        .shelf__details .button_russian-language-and-literature {
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 370px) and (max-width: 399px) {
+
+        .shelf__details .button_russian-language-and-literature {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 350px) and (max-width: 369px) {
+
+        .shelf__details .button_russian-language-and-literature {
+            padding-left: 14px;
+            padding-right: 14px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 349px) {
+
+        .shelf__details .button_russian-language-and-literature {
+            padding-left: 14px;
+            padding-right: 14px;
+            font-size: 13px;
+        }
+    }
+
+
+

@@ -75,12 +75,15 @@
         text-align: center;
     }
         .shelf__details .button {
-            width: 276px;
-            padding-left: 4px;
-            padding-right: 4px;
+            min-width: 276px;
         }
 
-    .shelf__back {
+        .shelf__details .button_russian-language-and-literature {
+            font-size: 12px;
+        }
+
+
+.shelf__back {
         margin-top: 28px;
         text-align: center;
     }

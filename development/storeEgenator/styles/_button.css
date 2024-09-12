@@ -8,6 +8,10 @@
     font-size: 15px; /* в дефолтном магазине текст написан капсом и там меньший шрифт. Здесь увеличиваем */
 }
 
+.button_russian-language-and-literature {
+
+}
+
 
 .button_palette_faded,
 .button_palette_empty {
@@ -120,3 +124,6 @@
     left: 3px;
     top: 3px;
 }
+
+
+
