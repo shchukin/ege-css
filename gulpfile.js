@@ -427,8 +427,6 @@ gulp.task('storeFonts', function () {
 
 gulp.task('storeEgenatorFonts', function () {
     return gulp.src([
-        'development/global/fonts/**/*',
-        'development/store/fonts/**/*',
         'development/storeEgenator/fonts/**/*'
     ])
         .pipe(plumber())
