@@ -32,6 +32,7 @@
     }
 
 
+    .bag__quantity.empty,
     .bag__quantity:empty {
         opacity: 0;
     }
