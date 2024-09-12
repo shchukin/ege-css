@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .hide-on-smartphone {
+    .hide-on-small-tablet {
         display: none;
     }
 }
