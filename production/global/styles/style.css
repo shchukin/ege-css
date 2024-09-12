@@ -1107,7 +1107,7 @@ screen and (max-height:300px) {
 }
 .up {
   position: fixed;
-  z-index: 100;
+  z-index: 300;
   right: 0;
   bottom: 268px;
   display: none;
@@ -1573,26 +1573,6 @@ screen and (max-height:300px) {
 }
 .nobr {
   white-space: nowrap
-}
-@media (max-width:767px) {
-  .hide_mobile {
-    display: none
-  }
-}
-@media (min-width:768px) and (max-width:1023px) {
-  .hide_small-tablet {
-    display: none
-  }
-}
-@media (min-width:1024px) and (max-width:1339px) {
-  .hide_large-tablet {
-    display: none
-  }
-}
-@media (min-width:1340px) {
-  .hide_desktop {
-    display: none
-  }
 }
 .show {
   display: none
@@ -3344,6 +3324,7 @@ screen and (max-height:300px) {
   text-align: center;
   transition: opacity .1s ease
 }
+.bag__quantity.empty,
 .bag__quantity:empty {
   opacity: 0
 }
@@ -3790,4 +3771,27 @@ screen and (max-height:300px) {
   border-radius: 8px;
   font-size: 15px;
   line-height: 18px
+}
+.hide {
+  display: none
+}
+@media (max-width:767px) {
+  .hide-on-smartphone {
+    display: none
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .hide-on-smartphone {
+    display: none
+  }
+}
+@media (min-width:1024px) and (max-width:1339px) {
+  .hide-on-large-tablet {
+    display: none
+  }
+}
+@media (min-width:1340px) {
+  .hide-on-desktop {
+    display: none
+  }
 }
