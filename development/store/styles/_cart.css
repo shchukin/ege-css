@@ -50,6 +50,10 @@
                 margin-right: auto;
             }
 
+            .cart__discount_hide {
+                display: none;
+            }
+
             .cart__price {
                 margin-top: 20px;
                 display: flex;
