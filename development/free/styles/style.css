@@ -19,7 +19,6 @@
 @import url("../../global/styles/_wysiwyg.css");
 @import url("../../global/styles/_link.css");
 @import url("../../global/styles/_nobr.css");
-@import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_title.css");
 @import url("../../global/styles/_video.css");
 @import url("../../global/styles/_form.css");
@@ -29,6 +28,12 @@
 @import url("../../global/styles/_theater.css");
 @import url("../../global/styles/_down.css");
 @import url("../../global/styles/_thumbnail.css");
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_hide-on-smartphone.css");
+@import url("../../global/styles/_hide-on-small-tablet.css");
+@import url("../../global/styles/_hide-on-large-tablet.css");
+@import url("../../global/styles/_hide-on-desktop.css");
+
 
 @import url("_root.css");
 @import url("_intro.css");

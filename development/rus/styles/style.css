@@ -21,7 +21,6 @@
 @import url("../../global/styles/_container.css");
 @import url("../../global/styles/_wysiwyg.css");
 @import url("../../global/styles/_link.css");
-@import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_video.css");
 @import url("../../global/styles/_form.css");
 @import url("../../global/styles/_capcha.css");
@@ -38,7 +37,11 @@
 @import url("../../global/styles/_message.css");
 @import url("../../global/styles/_results.css");
 @import url("../../global/styles/_preview.css");
-
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_hide-on-smartphone.css");
+@import url("../../global/styles/_hide-on-small-tablet.css");
+@import url("../../global/styles/_hide-on-large-tablet.css");
+@import url("../../global/styles/_hide-on-desktop.css");
 
 
 /* rus vendors */

@@ -20,7 +20,6 @@
 @import url("_wysiwyg.css");
 @import url("_link.css");
 @import url("_nobr.css");
-@import url("_hide.css");
 @import url("_show.css");
 @import url("_title.css");
 @import url("_video.css");
@@ -63,4 +62,9 @@
 @import url("_cancel.css");
 @import url("_ellipsis.css");
 @import url("_no-actions.css");
+@import url("_hide.css");
+@import url("_hide-on-smartphone.css");
+@import url("_hide-on-small-tablet.css");
+@import url("_hide-on-large-tablet.css");
+@import url("_hide-on-desktop.css");
 

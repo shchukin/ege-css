@@ -23,7 +23,6 @@
 @import url("../../global/styles/_wysiwyg.css");
 @import url("../../global/styles/_link.css");
 @import url("../../global/styles/_nobr.css");
-@import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_form.css");
 @import url("../../global/styles/_capcha.css");
 @import url("../../global/styles/_call.css");
@@ -45,7 +44,11 @@
 @import url("../../global/styles/_live-search.css");
 @import url("../../global/styles/_footer.css");
 @import url("../../global/styles/_no-actions.css");
-
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_hide-on-smartphone.css");
+@import url("../../global/styles/_hide-on-small-tablet.css");
+@import url("../../global/styles/_hide-on-large-tablet.css");
+@import url("../../global/styles/_hide-on-desktop.css");
 
 
 /* store vendors */

@@ -20,7 +20,6 @@
 @import url("../../global/styles/_wysiwyg.css");
 @import url("../../global/styles/_link.css");
 @import url("../../global/styles/_nobr.css");
-@import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_title.css");
 @import url("../../global/styles/_video.css");
 @import url("../../global/styles/_form.css");
@@ -39,12 +38,16 @@
 @import url("../../global/styles/_subject.css");
 @import url("../../global/styles/_footer.css");
 @import url("../../global/styles/_tabs.css");
-@import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_show.css");
 @import url("../../global/styles/_value.css");
 @import url("../../global/styles/_cancel.css");
 @import url("../../global/styles/_table.css");
 @import url("../../global/styles/_ellipsis.css");
+@import url("../../global/styles/_hide.css");
+@import url("../../global/styles/_hide-on-smartphone.css");
+@import url("../../global/styles/_hide-on-small-tablet.css");
+@import url("../../global/styles/_hide-on-large-tablet.css");
+@import url("../../global/styles/_hide-on-desktop.css");
 
 
 /* main overrides */

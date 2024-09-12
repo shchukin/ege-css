@@ -1,0 +1,9 @@
+.hide-on-large-tablet {
+
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .hide-on-large-tablet {
+        display: none;
+    }
+}
