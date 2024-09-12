@@ -3499,9 +3499,10 @@ screen and (max-height:300px) {
   text-align: center
 }
 .shelf__details .button {
-  width: 276px;
-  padding-left: 4px;
-  padding-right: 4px
+  min-width: 276px
+}
+.shelf__details .button_russian-language-and-literature {
+  font-size: 12px
 }
 .shelf__back {
   margin-top: 28px;
@@ -4817,6 +4818,9 @@ screen and (max-height:300px) {
     margin-left: 16px
   }
 }
+.shelf__sub-heading {
+  margin-top: 4px
+}
 .shelf__details {
   position: relative;
   width: -webkit-fit-content;
@@ -4826,12 +4830,37 @@ screen and (max-height:300px) {
   margin-right: auto
 }
 .shelf__details .button {
-  width: auto;
+  min-width: 0;
   padding-left: 31px;
   padding-right: 31px
 }
-.shelf__sub-heading {
-  margin-top: 4px
+@media (min-width:400px) and (max-width:479px) {
+  .shelf__details .button_russian-language-and-literature {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 15px
+  }
+}
+@media (min-width:370px) and (max-width:399px) {
+  .shelf__details .button_russian-language-and-literature {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px
+  }
+}
+@media (min-width:350px) and (max-width:369px) {
+  .shelf__details .button_russian-language-and-literature {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px
+  }
+}
+@media (max-width:349px) {
+  .shelf__details .button_russian-language-and-literature {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 13px
+  }
 }
 .user-form__actions {
   position: relative
