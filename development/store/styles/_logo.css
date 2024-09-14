@@ -5,17 +5,27 @@
     height: 80px;
     padding: 0;
     background-image: url("../images/logo.svg");
-    background-size: auto 100%;
+    background-size: contain;
     background-position: left center;
     transition: height 0.3s ease; /* будет уменьшаться при прокрутке */
 }
 
+@media (min-width: 1024px) {
 
-.body_scrolled .logo {
-    height: 62px;
+    .body_scrolled .logo {
+        height: 62px;
+    }
 }
 
 
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .logo {
+        width: 120px;
+        height: 58px;
+    }
+}
 
 @media (max-width: 767px) {
 
