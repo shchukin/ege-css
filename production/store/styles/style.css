@@ -2885,6 +2885,11 @@ screen and (max-height:300px) {
 .body_scrolled .call__note {
   color: #000
 }
+@media (max-width:359px) {
+  .call__phone {
+    font-size: 18px
+  }
+}
 @media (min-width:360px) and (max-width:419px) {
   .body_scrolled .call {
     right: 30px
@@ -3028,22 +3033,27 @@ screen and (max-height:300px) {
   }
 }
 .logo {
-  width: 168px;
-  height: 80px;
+  width: 101px;
+  height: 48px;
   padding: 0;
   background-image: url(../images/logo.svg);
-  background-size: auto 100%;
+  background-size: contain;
   background-position: left center;
   transition: height .3s ease
 }
-.body_scrolled .logo {
-  height: 62px
-}
-@media (max-width:767px) {
-  .body_scrolled .logo,
+@media (min-width:768px) and (max-width:1023px) {
   .logo {
-    width: 101px;
-    height: 48px
+    width: 120px;
+    height: 58px
+  }
+}
+@media (min-width:1024px) {
+  .logo {
+    width: 168px;
+    height: 80px
+  }
+  .body_scrolled .logo {
+    height: 62px
   }
 }
 .window_for_search {
@@ -3186,7 +3196,7 @@ screen and (max-height:300px) {
   top: 12px;
   margin-top: 0;
   margin-bottom: 0;
-  width: 52px
+  width: auto
 }
 .header__actions {
   position: absolute;
@@ -3323,7 +3333,7 @@ screen and (max-height:300px) {
   .header__logo {
     left: auto;
     right: 50%;
-    margin-right: 128px
+    margin-right: 79px
   }
   .header__actions {
     right: auto;
@@ -3354,9 +3364,7 @@ screen and (max-height:300px) {
     padding-top: 87px
   }
   .header__logo {
-    width: 328px;
-    margin-top: -3px;
-    margin-bottom: -7px
+    margin-right: 214px
   }
   .header__actions {
     top: 22px
