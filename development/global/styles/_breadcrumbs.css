@@ -1,11 +1,9 @@
 .breadcrumbs {
-    margin-left: -5px;
-    margin-right: -5px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: var(--font-heading);
     font-weight: var(--font-weight-heading);
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     color: var(--brand_orange);
     text-transform: uppercase;
@@ -13,27 +11,24 @@
 }
     .breadcrumbs__item {
         position: relative;
-        margin-left: 10px;
+        padding-right: 16px;
     }
-
-    .breadcrumbs__item:first-child {
-        margin-left: 0;
-    }
-        .breadcrumbs__item::before {
+        .breadcrumbs__item::after {
             content: "/";
             pointer-events: none;
             position: absolute;
-            top: 0;
-            left: -10px;
+            top: -3px;
+            right: 4px;
         }
 
-        .breadcrumbs__item:first-child::before {
+        .breadcrumbs__item:last-child::after {
             display: none;
         }
 
         .breadcrumbs__link {
             display: inline;
-            padding: 10px 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             color: inherit;
             text-decoration: none;
         }
@@ -43,7 +38,60 @@
         }
 
         .breadcrumbs__current {
-            display: block;
-            padding: 10px 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             opacity: 50%;
         }
+
+
+
+
+@media (min-width: 768px) {
+
+    .breadcrumbs {
+        /*padding-top: 5px;*/
+        /*padding-bottom: 5px;*/
+        /*font-family: var(--font-heading);*/
+        /*font-weight: var(--font-weight-heading);*/
+        font-size: 15px;
+        line-height: 22px;
+        /*color: var(--brand_orange);*/
+        /*text-transform: uppercase;*/
+        /*letter-spacing: 1px;*/
+    }
+        .breadcrumbs__item {
+            /*position: relative;*/
+            padding-right: 20px;
+        }
+            .breadcrumbs__item::after {
+                /*content: "/";*/
+                /*pointer-events: none;*/
+                /*position: absolute;*/
+                top: -4px;
+                right: 5px;
+            }
+
+            .breadcrumbs__item:last-child::after {
+                /*display: none;*/
+            }
+
+            .breadcrumbs__link {
+                /*display: inline;*/
+                /*padding-top: 10px;*/
+                /*padding-bottom: 10px;*/
+                /*color: inherit;*/
+                /*text-decoration: none;*/
+            }
+
+            .breadcrumbs__link:hover {
+                /*text-decoration: underline;*/
+            }
+
+            .breadcrumbs__current {
+                /*padding-top: 10px;*/
+                /*padding-bottom: 10px;*/
+                /*opacity: 50%;*/
+            }
+}
+
+
