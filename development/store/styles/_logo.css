@@ -7,7 +7,7 @@
     background-image: url("../images/logo.svg");
     background-size: contain;
     background-position: left center;
-    transition: height 0.3s ease; /* будет уменьшаться при прокрутке */
+    transition: width 0.3s ease, height 0.3s ease; /* будет уменьшаться при прокрутке */
 }
 
 
@@ -28,6 +28,7 @@
     }
 
     .body_scrolled .logo {
+        width: 131px;
         height: 62px;
     }
 }
