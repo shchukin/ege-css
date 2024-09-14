@@ -15,24 +15,16 @@
 
 
 
-@media (min-width: 360px) and (max-width: 419px) {
+/*@media (min-width: 360px) and (max-width: 419px) {*/
 
-    .logo,
-    .body_scrolled .logo {
-        width: 170px;
-        height: 49px;
-    }
-}
+/*    .logo,*/
+/*    .body_scrolled .logo {*/
+/*        width: 170px;*/
+/*        height: 49px;*/
+/*    }*/
+/*}*/
 
 
-@media (min-width: 420px) and (max-width: 767px) {
-
-    .logo,
-    .body_scrolled .logo {
-        width: 170px;
-        height: 49px;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
@@ -44,7 +36,7 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1339px) {
 
     .logo,
     .body_scrolled .logo {

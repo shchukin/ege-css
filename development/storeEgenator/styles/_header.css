@@ -1,24 +1,49 @@
+/* logo */
+
+@media (max-width: 419px) {
+
+    .header__logo {
+        overflow: hidden;
+    }
+
+    .body_scrolled .header__logo {
+        width: 46px;
+    }
+}
+
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .header__logo {
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__logo {
+        margin-right: 124px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .header__logo {
+        width: auto;
+    }
+}
+
+
+
+/* Contacts */
+
 @media (max-width: 1023px) {
 
     .header__contacts-body {
         background-color: #000000;
     }
 }
-
-@media (max-width: 767px) {
-
-
-    .header__logo {
-        width: 46px;
-    }
-
-    .body_scrolled .header__logo {
-        overflow: hidden;
-    }
-}
-
-
-
 
 @media (min-width: 1024px) and (max-width: 1339px) {
 
