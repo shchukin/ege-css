@@ -3392,8 +3392,8 @@ screen and (max-height:300px) {
   }
   .header__logo {
     position: static;
-    width: 66px;
-    margin-top: -5px
+    margin-top: -5px;
+    width: auto
   }
   .header__actions {
     position: static;
@@ -3435,8 +3435,7 @@ screen and (max-height:300px) {
 }
 @media (min-width:1340px) {
   .header__logo {
-    margin-top: -7px;
-    width: 332px
+    margin-top: -7px
   }
   .header__actions {
     margin-left: 31px
