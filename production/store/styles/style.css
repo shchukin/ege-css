@@ -2182,38 +2182,32 @@ screen and (max-height:300px) {
   }
 }
 .breadcrumbs {
-  margin-left: -5px;
-  margin-right: -5px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 18px;
   color: #FF7502;
   text-transform: uppercase;
   letter-spacing: 1px
 }
 .breadcrumbs__item {
-  position: relative;
-  margin-left: 10px
+  position: relative
 }
-.breadcrumbs__item:first-child {
-  margin-left: 0
-}
-.breadcrumbs__item::before {
+.breadcrumbs__item::after {
   content: "/";
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: -10px
+  margin-left: 2px;
+  margin-right: 2px;
+  pointer-events: none
 }
-.breadcrumbs__item:first-child::before {
+.breadcrumbs__item:last-child::after {
   display: none
 }
 .breadcrumbs__link {
   display: inline;
-  padding: 10px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: inherit;
   text-decoration: none
 }
@@ -2221,9 +2215,19 @@ screen and (max-height:300px) {
   text-decoration: underline
 }
 .breadcrumbs__current {
-  display: block;
-  padding: 10px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   opacity: 50%
+}
+@media (min-width:768px) {
+  .breadcrumbs {
+    font-size: 15px;
+    line-height: 22px
+  }
+  .breadcrumbs__item::after {
+    margin-left: 4px;
+    margin-right: 4px
+  }
 }
 .gallery {
   position: relative;
