@@ -1,22 +1,14 @@
 /* override */
 
 .logo {
-    width: 168px;
-    height: 80px;
+    width: 101px;
+    height: 48px;
     padding: 0;
     background-image: url("../images/logo.svg");
     background-size: contain;
     background-position: left center;
     transition: height 0.3s ease; /* будет уменьшаться при прокрутке */
 }
-
-@media (min-width: 1024px) {
-
-    .body_scrolled .logo {
-        height: 62px;
-    }
-}
-
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -27,11 +19,15 @@
     }
 }
 
-@media (max-width: 767px) {
 
-    .logo,
+@media (min-width: 1024px) {
+
+    .logo {
+        width: 168px;
+        height: 80px;
+    }
+
     .body_scrolled .logo {
-        width: 101px;
-        height: 48px;
+        height: 62px;
     }
 }
