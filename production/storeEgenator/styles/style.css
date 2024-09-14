@@ -4908,7 +4908,8 @@ screen and (max-height:300px) {
   font-size: 18px;
   line-height: 22px
 }
-@media (min-width:1024px) and (max-width:1339px) {
+@media (min-width:420px) and (max-width:767px),
+(min-width:1024px) and (max-width:1339px) {
   .call__phone {
     font-size: 18px
   }
