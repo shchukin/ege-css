@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>.product</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css?1726989736">
+        <link rel="stylesheet" href="../styles/style.css?1727012340">
     </head>
 
     <body class="body">
@@ -23,23 +23,17 @@
             <br>
             <h1>.product</h1>
             <p>
-                Картинка, заголовок, цена, все по дефолту.
+                Картинки строго 4:3. Если будет загружена картинка другого размера, то вёрстка сожнём и кропнет её до 4:3.
             </p>
             <p>
-                Картинка по ширине строго 276px. Высота любая
-                (одинаковая в рамках группы) и обязательно проставлен атрибут <b>height=""</b>
-            </p>
-            <p>
-                В папке <b>content/</b> есть заглухи на отсутствующие картинки.
-                Как-то так получилось, что картинки для Русского языка и литературы выглядят одинакого.
-                Еще там же есть одна отдельная заглушка для преподавательских курсов <b>product-dummy-teacher.svg</b>
+                В идеале чтобы бэк обрезал картинки до 276x207 и 276x207@2x. Тогда они будут отображаться пиксель в пиксель.
             </p>
 
             <div class="product">
                 <a class="product__preview" href="#">
                     <img class="product__image"
-                         srcset="../temp/product-default@2x.jpg 2x"
-                         src="../temp/product-default.jpg"
+                         srcset="../temp/product-boxart@2x.jpg 2x"
+                         src="../temp/product-boxart.jpg"
                          width="276"
                          height="207"
                          alt=""
@@ -61,10 +55,18 @@
                         <div class="actions">
                             <div class="actions__buy-now">
                                 <a class="button button_size_smaller button_palette_submit" href="#">
-                                    <span class="button__label">Пройти курс</span>
+                                    <span class="button__label">Купить</span>
                                 </a>
                             </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
                         </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
                     </div>
                 </div>
             </div>
@@ -73,46 +75,141 @@
             <br>
             <br>
             <br>
-            <h2>Вариации</h2>
-            <ol>
-                <li>
-                    Существенная часть обложек у нас в форме коробки с диском.
-                    И похоже на то, что эти обложки уже заготовлены. Размеры у них странные.
-                    Соотношение сторон вертикальное. Добавляем такие картинки с модификатором
-                    <b>.product__image_box-art</b> он добавит 9px отступ сверху поверх бордюра.
-                </li>
-                <li>
-                    Когда скидка оригинальная цена оборачивается в<br> <b><code>&lt;s class="product__regular-price"&gt;...&lt;s&gt;</code></b>
-                    а рядом добавляется новая цена обернутая в<br> <b><code>&lt;span class="product__discount-price"&gt;...&lt;/span&gt;</code></b>
-                </li>
-                <li>
-                    Ну и вторая ссылочка внизу добавляется новым элементом <b>.product__action</b>.
-                    Разделитель появится автоматически.
-                </li>
-                <li>
-                    Крестик <b>.product__delete</b> для использования в корзине.
-                </li>
-            </ol>
-            <br>
-            <br>
+            <h2>Фото</h2>
+            <p>
+                Вариант, когда загружается полноэкранная фотка:
+            </p>
 
             <div class="product">
                 <a class="product__preview" href="#">
-                    <img class="product__image product__image_box-art"
-                         srcset="../temp/product-boxart@2x.jpg 2x"
-                         src="../temp/product-boxart.jpg"
-                         width="158"
-                         height="198"
+                    <img class="product__image"
+                         srcset="../temp/product-stretch-over-border@2x.jpg 2x"
+                         src="../temp/product-stretch-over-border.jpg"
+                         width="278"
+                         height="208"
                          alt=""
                     >
                 </a>
                 <div class="product__body">
                     <div class="product__category">
-                        Видеокурс
+                        Онлайн курс
                     </div>
                     <h3 class="product__title">
                         <a class="product__link" href="#">
-                            Математика. Годовой онлайн курс.
+                            Всемирная история
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="actions">
+                            <div class="actions__buy-now">
+                                <a class="button button_size_smaller button_palette_submit" href="#">
+                                    <span class="button__label">Купить</span>
+                                </a>
+                            </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                ... он выглядит не очень, потому что фотка касается бордюров. В идеале дать
+                админу в админке чекбокс типа:
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox"> <b>Загружаю полноформатную фотографию</b><br>
+
+                    <small>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Чекнуть при загрузке обложки, которая целиком состоит из изображения, без белых краёв.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i>Фото будет вытянуто на 1px влево, вверх и вправо поверх бордюра. Размер 278x208.</i>
+                    </small>
+                </label>
+            </p>
+            <p>
+                При таком раскладе добавляем модификатор:<br> <b>.product__image--stretch-over-border</b>
+            </p>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image--stretch-over-border"
+                         srcset="../temp/product-stretch-over-border@2x.jpg 2x"
+                         src="../temp/product-stretch-over-border.jpg"
+                         width="278"
+                         height="208"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Всемирная история
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="actions">
+                            <div class="actions__buy-now">
+                                <a class="button button_size_smaller button_palette_submit" href="#">
+                                    <span class="button__label">Купить</span>
+                                </a>
+                            </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Скидка</h2>
+            <p>
+                Оригинальная цена оборачивается в<br> <b><code>&lt;s class="product__regular-price"&gt;...&lt;s&gt;</code></b>,<br>
+                а рядом добавляется новая цена обернутая в:<br>
+                <b><code>&lt;span class="product__discount-price"&gt;...&lt;/span&gt;</code></b>
+            </p>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image--stretch-over-border"
+                         srcset="../temp/product-stretch-over-border@2x.jpg 2x"
+                         src="../temp/product-stretch-over-border.jpg"
+                         width="278"
+                         height="208"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Всемирная история
                         </a>
                     </h3>
                     <div class="product__price">
@@ -133,11 +230,186 @@
                             </div>
                         </div>
                     </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Товар в корзине</h2>
+            <p>
+                Добавляем крестик <b>.product__delete</b> чтобы можно было из козины удалить.
+            </p>
+            <br>
+            <br>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image--stretch-over-border"
+                         srcset="../temp/product-stretch-over-border@2x.jpg 2x"
+                         src="../temp/product-stretch-over-border.jpg"
+                         width="278"
+                         height="208"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Всемирная история
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="actions">
+                            <div class="actions__buy-now">
+                                <a class="button button_size_smaller button_palette_submit" href="#">
+                                    <span class="button__label">Купить</span>
+                                </a>
+                            </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
                 </div>
                 <button class="product__delete" type="button">
                     <span class="visuallyhidden">Удалить</span>
                 </button>
             </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Заглушки</h2>
+            <p>
+                В папке <b>content/</b> есть заглушки на отсутствующие категории предметов.
+                Как-то так получилось, что картинки для Русского языка и литературы выглядят
+                одинаково, при необходимости переделать.
+            </p>
+            <p>
+                В идеале выводим так же с <b>.product__image--stretch-over-border</b>:
+            </p>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image--stretch-over-border"
+                         src="../content/product-dummy-biology.svg"
+                         width="278"
+                         height="208"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Заглушка для биологии
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="actions">
+                            <div class="actions__buy-now">
+                                <a class="button button_size_smaller button_palette_submit" href="#">
+                                    <span class="button__label">Купить</span>
+                                </a>
+                            </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Полный список заглух:
+                <b>
+                    <br>product-dummy-english-language.svg
+                    <br>product-dummy-biology.svg
+                    <br>product-dummy-chemistry.svg
+                    <br>product-dummy-computer-science.svg
+                    <br>product-dummy-history.svg
+                    <br>product-dummy-literature.svg
+                    <br>product-dummy-math.svg
+                    <br>product-dummy-physics.svg
+                    <br>product-dummy-russian-language.svg
+                    <br>product-dummy-sociology.svg
+                </b>
+            </p>
+
+            <p>
+                Еще там же есть одна отдельная заглушка для преподавательских курсов <b>product-dummy-teacher.svg</b>:
+            </p>
+
+            <div class="product">
+                <a class="product__preview" href="#">
+                    <img class="product__image product__image--stretch-over-border"
+                         src="../content/product-dummy-teacher.svg"
+                         width="278"
+                         height="208"
+                         alt=""
+                    >
+                </a>
+                <div class="product__body">
+                    <div class="product__category">
+                        Онлайн курс
+                    </div>
+                    <h3 class="product__title">
+                        <a class="product__link" href="#">
+                            Заглушка для преподавательских курсов
+                        </a>
+                    </h3>
+                    <div class="product__price">
+                        От 1 500 руб.
+                    </div>
+                    <div class="product__operations">
+                        <div class="actions">
+                            <div class="actions__buy-now">
+                                <a class="button button_size_smaller button_palette_submit" href="#">
+                                    <span class="button__label">Купить</span>
+                                </a>
+                            </div>
+                            <div class="actions__add-to-cart">
+                                <button class="link" type="button">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__type">
+                        Цифровой, 1шт
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
             <br>
             <br>
@@ -160,17 +432,17 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>
 
-        <script src="../scripts/mfp.js?1726989736"></script>
-        <script src="../scripts/up.js?1726989736"></script>
-        <script src="../scripts/subscription.js?1726989736"></script>
-        <script src="../scripts/form.js?1726989736"></script>
-        <script src="../scripts/alert.js?1726989736"></script>
-        <script src="../scripts/down.js?1726989736"></script>
-        <script src="../scripts/owl-carousel.js?1726989736"></script>
-        <script src="../scripts/slider.js?1726989736"></script>
-        <script src="../scripts/live-search.js?1726989736"></script>
-        <script src="../scripts/input.js?1726989736"></script>
-        <script src="../scripts/tabs.js?1726989736"></script>
+        <script src="../scripts/mfp.js?1727012340"></script>
+        <script src="../scripts/up.js?1727012340"></script>
+        <script src="../scripts/subscription.js?1727012340"></script>
+        <script src="../scripts/form.js?1727012340"></script>
+        <script src="../scripts/alert.js?1727012340"></script>
+        <script src="../scripts/down.js?1727012340"></script>
+        <script src="../scripts/owl-carousel.js?1727012340"></script>
+        <script src="../scripts/slider.js?1727012340"></script>
+        <script src="../scripts/live-search.js?1727012340"></script>
+        <script src="../scripts/input.js?1727012340"></script>
+        <script src="../scripts/tabs.js?1727012340"></script>
 
     </body>
 </html>

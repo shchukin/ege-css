@@ -1692,7 +1692,7 @@ screen and (max-height:300px) {
 .product {
   position: relative;
   min-height: 100%;
-  width: 276px;
+  width: 278px;
   border: 1px solid #e9e8e8;
   border-radius: 3px
 }
@@ -1701,13 +1701,20 @@ screen and (max-height:300px) {
   text-align: center
 }
 .product__image {
-  margin-top: -1px;
-  margin-left: -1px;
-  margin-right: -1px;
+  width: 276px;
+  height: 207px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  object-fit: contain;
   vertical-align: top
 }
-.product__image_box-art {
-  margin-top: 8px
+.product__image--stretch-over-border {
+  width: 278px;
+  height: 208px;
+  margin: -1px -1px 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: cover
 }
 .product__body {
   position: relative;
@@ -1793,6 +1800,13 @@ screen and (max-height:300px) {
 .product__apply {
   font-size: 15px;
   line-height: 24px
+}
+.product__type {
+  margin-top: 14px;
+  font-size: 11px;
+  line-height: 14px;
+  color: #697882;
+  text-align: center
 }
 .product__delete {
   position: absolute;
@@ -3591,13 +3605,10 @@ a.slider__slide:hover .slider__image {
   -ms-flex-align: stretch;
       align-items: stretch;
   -ms-flex-pack: center;
-      justify-content: center
-}
-.shelf__list:first-child {
-  margin-top: -8px
+      justify-content: center;
+  gap: 8px
 }
 .shelf__item {
-  margin-top: 8px;
   -ms-flex-negative: 0;
       flex-shrink: 0
 }
@@ -3632,10 +3643,7 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:768px) {
   .shelf__list {
-    margin: 13px -16px -16px
-  }
-  .shelf__item {
-    margin: 16px
+    gap: 29px
   }
 }
 @media (max-width:767px) {
@@ -3929,6 +3937,9 @@ a.slider__slide:hover .slider__image {
 }
 .index {
   padding-bottom: 100px
+}
+.index__theater {
+  border-top: 24px solid transparent
 }
 .index__body {
   margin-top: 28px;
@@ -5003,6 +5014,9 @@ a.slider__slide:hover .slider__image {
   min-width: 0;
   padding-left: 31px;
   padding-right: 31px
+}
+.shelf__details .button_russian-language-and-literature {
+  font-size: 16px
 }
 @media (min-width:400px) and (max-width:479px) {
   .shelf__details .button_russian-language-and-literature {
