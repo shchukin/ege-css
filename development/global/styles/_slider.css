@@ -30,7 +30,7 @@
                 transition: opacity 0.1s ease;
             }
 
-            .slider__slide:hover .slider__image { /* can't use opacity on slide cause it was used already */
+            a.slider__slide:hover .slider__image { /* can't use opacity on slide cause it was used already */
                 opacity: 0.8;
             }
 

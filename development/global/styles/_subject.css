@@ -57,28 +57,98 @@
                         background-size: 20px 20px;
                     }
 
-.subject_id_biology          .subject__inner::before { background-image: url("../sprites/subject-biology.png"); }
-.subject_id_chemistry        .subject__inner::before { background-image: url("../sprites/subject-chemistry.png"); }
-.subject_id_computer-science .subject__inner::before { background-image: url("../sprites/subject-computer-science.png"); }
-.subject_id_english-language .subject__inner::before { background-image: url("../sprites/subject-english-language.png"); }
-.subject_id_history          .subject__inner::before { background-image: url("../sprites/subject-history.png"); }
-.subject_id_literature       .subject__inner::before { background-image: url("../sprites/subject-literature.png"); }
-.subject_id_math             .subject__inner::before { background-image: url("../sprites/subject-math.png"); }
-.subject_id_physics          .subject__inner::before { background-image: url("../sprites/subject-physics.png"); }
-.subject_id_russian-language .subject__inner::before { background-image: url("../sprites/subject-russian-language.png"); }
-.subject_id_sociology        .subject__inner::before { background-image: url("../sprites/subject-sociology.png"); }
+.subject_id_math .subject__inner::before,
+.subject_id_matematika .subject__inner::before {
+    background-image: url("../sprites/subject-math.png");
+}
+
+.subject_id_russian-language .subject__inner::before,
+.subject_id_russkijj-jazyk-i-literatura .subject__inner::before {
+    background-image: url("../sprites/subject-russian-language.png");
+}
+
+.subject_id_physics .subject__inner::before,
+.subject_id_fizika .subject__inner::before {
+    background-image: url("../sprites/subject-physics.png");
+}
+
+.subject_id_computer-science .subject__inner::before,
+.subject_id_informatika-2 .subject__inner::before {
+    background-image: url("../sprites/subject-computer-science.png");
+}
+
+.subject_id_biology .subject__inner::before {
+    background-image: url("../sprites/subject-biology.png");
+}
+
+.subject_id_chemistry .subject__inner::before {
+    background-image: url("../sprites/subject-chemistry.png");
+}
+
+.subject_id_english-language .subject__inner::before {
+    background-image: url("../sprites/subject-english-language.png");
+}
+
+.subject_id_history .subject__inner::before {
+    background-image: url("../sprites/subject-history.png");
+}
+
+.subject_id_literature .subject__inner::before {
+    background-image: url("../sprites/subject-literature.png");
+}
+
+.subject_id_sociology .subject__inner::before {
+    background-image: url("../sprites/subject-sociology.png");
+}
+
 
 @media (min-resolution: 2dppx) {
-    .subject_id_biology          .subject__inner::before { background-image: url("../sprites/subject-biology@2x.png"); }
-    .subject_id_chemistry        .subject__inner::before { background-image: url("../sprites/subject-chemistry@2x.png"); }
-    .subject_id_computer-science .subject__inner::before { background-image: url("../sprites/subject-computer-science@2x.png"); }
-    .subject_id_english-language .subject__inner::before { background-image: url("../sprites/subject-english-language@2x.png"); }
-    .subject_id_history          .subject__inner::before { background-image: url("../sprites/subject-history@2x.png"); }
-    .subject_id_literature       .subject__inner::before { background-image: url("../sprites/subject-literature@2x.png"); }
-    .subject_id_math             .subject__inner::before { background-image: url("../sprites/subject-math@2x.png"); }
-    .subject_id_physics          .subject__inner::before { background-image: url("../sprites/subject-physics@2x.png"); }
-    .subject_id_russian-language .subject__inner::before { background-image: url("../sprites/subject-russian-language@2x.png"); }
-    .subject_id_sociology        .subject__inner::before { background-image: url("../sprites/subject-sociology@2x.png"); }
+
+    .subject_id_math .subject__inner::before,
+    .subject_id_matematika .subject__inner::before {
+        background-image: url("../sprites/subject-math@2x.png");
+    }
+
+    .subject_id_russian-language .subject__inner::before,
+    .subject_id_russkijj-jazyk-i-literatura .subject__inner::before {
+        background-image: url("../sprites/subject-russian-language@2x.png");
+    }
+
+    .subject_id_physics .subject__inner::before,
+    .subject_id_fizika .subject__inner::before {
+        background-image: url("../sprites/subject-physics@2x.png");
+    }
+
+    .subject_id_computer-science .subject__inner::before,
+    .subject_id_informatika-2 .subject__inner::before {
+        background-image: url("../sprites/subject-computer-science@2x.png");
+    }
+
+
+    .subject_id_biology          .subject__inner::before {
+        background-image: url("../sprites/subject-biology@2x.png");
+    }
+
+    .subject_id_chemistry        .subject__inner::before {
+        background-image: url("../sprites/subject-chemistry@2x.png");
+    }
+
+    .subject_id_english-language .subject__inner::before {
+        background-image: url("../sprites/subject-english-language@2x.png");
+    }
+
+    .subject_id_history          .subject__inner::before {
+        background-image: url("../sprites/subject-history@2x.png");
+    }
+
+    .subject_id_literature       .subject__inner::before {
+        background-image: url("../sprites/subject-literature@2x.png");
+    }
+
+    .subject_id_sociology        .subject__inner::before {
+        background-image: url("../sprites/subject-sociology@2x.png");
+    }
+
 }
 
 
