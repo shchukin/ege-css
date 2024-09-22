@@ -4325,7 +4325,7 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:1024px) {
   .navigation {
-    height: 93px
+    height: 61px
   }
   .navigation__fixed-part {
     position: fixed;
@@ -4349,11 +4349,6 @@ a.slider__slide:hover .slider__image {
   .body_scrolling-up .navigation__fixed-part {
     transition: top .3s ease,margin-top 1s ease;
     margin-top: -61px
-  }
-}
-@media (min-width:1340px) {
-  .navigation {
-    height: 61px
   }
 }
 .code__visibility {
