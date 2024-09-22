@@ -2302,40 +2302,40 @@ a.slider__slide:hover .slider__image {
   }
 }
 :root {
-  --gallery-full-dimension: 300px;
-  --gallery-thumb-dimension: 50px
+  --gallery-image-width: 300px;
+  --gallery-image-height: 225px;
+  --gallery-thumbnail-width: 52px;
+  --gallery-thumbnail-height: 39px
 }
 .gallery {
   position: relative;
   width: 302px;
-  width: calc(var(--gallery-full-dimension) + 2px)
+  width: calc(var(--gallery-image-width) + 2px)
 }
 .gallery__handler {
   position: absolute;
   left: 0;
-  bottom: 50px;
-  bottom: var(--gallery-thumb-dimension);
+  bottom: 52px;
+  bottom: var(--gallery-thumbnail-width);
   opacity: 0;
   pointer-events: none
 }
 .gallery__stage {
   position: relative;
-  height: 302px;
-  height: calc(var(--gallery-full-dimension) + 2px)
+  height: 227px;
+  height: calc(var(--gallery-image-height) + 2px)
 }
 .gallery__item {
   position: absolute;
   left: 0;
   top: 0;
   display: block;
-  box-sizing: content-box;
-  width: 300px;
-  width: var(--gallery-full-dimension);
-  height: 300px;
-  height: var(--gallery-full-dimension);
+  width: 302px;
+  width: calc(var(--gallery-image-width) + 2px);
+  height: 227px;
+  height: calc(var(--gallery-image-height) + 2px);
   border: 1px solid #e9e8e8;
   border-radius: 6px;
-  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transition: visibility .3s ease,opacity .3s ease
@@ -2343,44 +2343,63 @@ a.slider__slide:hover .slider__image {
 .gallery__full-image {
   vertical-align: top;
   width: 300px;
-  width: var(--gallery-full-dimension);
-  height: 300px;
-  height: var(--gallery-full-dimension);
+  width: var(--gallery-image-width);
+  height: 225px;
+  height: var(--gallery-image-height);
+  border-radius: 5px;
   object-fit: contain;
   background-color: #fff
 }
+.gallery__full-image--stretch-over-border {
+  margin: -1px;
+  width: 302px;
+  width: calc(var(--gallery-image-width) + 2px);
+  height: 227px;
+  height: calc(var(--gallery-image-height) + 2px);
+  border-radius: 5px;
+  object-fit: cover
+}
 .gallery__navigation {
   position: relative;
-  margin: 3px -3px -3px;
+  margin-top: 6px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start;
+  gap: 6px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap
 }
 .gallery__preview {
-  margin: 3px;
   display: block;
-  box-sizing: content-box;
-  width: 50px;
-  width: var(--gallery-thumb-dimension);
-  height: 50px;
-  height: var(--gallery-thumb-dimension);
+  width: 54px;
+  width: calc(var(--gallery-thumbnail-width) + 2px);
+  height: 41px;
+  height: calc(var(--gallery-thumbnail-height) + 2px);
   border: 1px solid #e9e8e8;
   border-radius: 3px;
-  overflow: hidden;
   cursor: pointer;
   transition: border-color .3s ease
 }
 .gallery__thumbnail {
   vertical-align: top;
-  width: 50px;
-  width: var(--gallery-thumb-dimension);
-  height: 50px;
-  height: var(--gallery-thumb-dimension);
+  width: 52px;
+  width: var(--gallery-thumbnail-width);
+  height: 39px;
+  height: var(--gallery-thumbnail-height);
   background-color: #F8F8F8;
-  background-color: var(--image-fallback)
+  background-color: var(--image-fallback);
+  border-radius: 2px;
+  object-fit: contain
+}
+.gallery__thumbnail--stretch-over-border {
+  margin: -1px;
+  width: 54px;
+  width: calc(var(--gallery-thumbnail-width) + 2px);
+  height: 41px;
+  height: calc(var(--gallery-thumbnail-height) + 2px);
+  border-radius: 3px;
+  object-fit: cover
 }
 .gallery__handler:focus ~ .gallery__navigation {
   outline: auto
