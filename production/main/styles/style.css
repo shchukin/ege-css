@@ -715,6 +715,16 @@ screen and (max-height:300px) {
   height: 100%;
   width: 100%
 }
+:root {
+  --font-body: "Roboto",sans-serif;
+  --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  --font-weight-heading: 500;
+  --brand_grey: #697882;
+  --brand_orange: #FF7502;
+  --image-fallback: #F8F8F8;
+  --danger: #FF7502;
+  --danger: var(--brand_orange)
+}
 * {
   box-sizing: border-box
 }
@@ -746,7 +756,8 @@ screen and (max-height:300px) {
 .body {
   min-width: 320px;
   margin: 0;
-  font-family: "Roboto",sans-serif
+  font-family: "Roboto",sans-serif;
+  font-family: var(--font-body)
 }
 .button {
   position: relative;
@@ -810,7 +821,8 @@ screen and (max-height:300px) {
   opacity: 1
 }
 .button_palette_brand {
-  background-color: #FF7502
+  background-color: #FF7502;
+  background-color: var(--brand_orange)
 }
 .button_palette_brand.button_loading,
 .button_palette_brand.button_success,
@@ -859,7 +871,9 @@ screen and (max-height:300px) {
 .button_palette_empty {
   padding: 14px 18px;
   border: 2px solid #FF7502;
+  border: 2px solid var(--brand_orange);
   color: #FF7502;
+  color: var(--brand_orange);
   background-color: transparent;
   background-image: none;
   transition: opacity .1s ease
@@ -932,18 +946,21 @@ screen and (max-height:300px) {
 .input__widget::-webkit-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget::-moz-placeholder {
   transition: color .1s ease;
   font-style: normal;
   color: #697882;
+  color: var(--brand_grey);
   opacity: 1
 }
 .input__widget:-ms-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget:hover {
   box-shadow: 0 0 4px 0 rgba(205,214,220,.5)
@@ -964,7 +981,8 @@ screen and (max-height:300px) {
   margin-top: 6px;
   font-size: 13px;
   line-height: 18px;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__upper-note {
   display: block;
@@ -975,6 +993,7 @@ screen and (max-height:300px) {
   font-size: 13px;
   line-height: 24px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: right
 }
 .label + .input__upper-note {
@@ -994,7 +1013,8 @@ screen and (max-height:300px) {
   cursor: pointer
 }
 .input_type_select .input__widget_faked-placeholder {
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input_type_select .input__widget_faked-placeholder:focus {
   color: #b4bbc0
@@ -1017,23 +1037,29 @@ screen and (max-height:300px) {
   resize: vertical
 }
 .input_error .input__widget {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error .input__widget::-webkit-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget::-moz-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget:-ms-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__note {
   font-weight: 500;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error.input_type_select .input__widget_faked-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_disabled .input__widget {
   background-color: #fcfcfd;
@@ -1356,6 +1382,7 @@ screen and (max-height:300px) {
   font-size: inherit;
   line-height: inherit;
   color: #FF7502;
+  color: var(--brand_orange);
   text-decoration: none;
   cursor: pointer
 }
@@ -1476,7 +1503,9 @@ screen and (max-height:300px) {
 .form__heading {
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -1648,7 +1677,9 @@ screen and (max-height:300px) {
 }
 .achievement__score {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 17px;
   line-height: 22px
 }
@@ -1670,6 +1701,7 @@ screen and (max-height:300px) {
   font-size: 11px;
   line-height: 14px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: center
 }
 @media (min-width:768px) and (max-width:1023px) {
@@ -1848,7 +1880,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -1890,7 +1924,9 @@ screen and (max-height:300px) {
   margin-top: 15px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -2210,7 +2246,9 @@ screen and (max-height:300px) {
   border: 1px solid #eae9e9;
   border-radius: 3px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -2218,7 +2256,8 @@ screen and (max-height:300px) {
   transition: color .1s ease
 }
 .subject:hover .subject__inner {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .subject .subject__inner::before {
   content: "";
@@ -2365,7 +2404,9 @@ screen and (max-height:300px) {
 .footer__sub-heading {
   margin-bottom: 14px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -2392,7 +2433,9 @@ screen and (max-height:300px) {
 .footer__navigation {
   margin-top: 27px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 18px
 }
@@ -2505,7 +2548,9 @@ screen and (max-height:300px) {
       align-items: center;
   border-bottom: 2px solid transparent;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   padding: 16px 10px 14px;
   font-size: 15px;
   line-height: 22px;
@@ -2627,7 +2672,9 @@ screen and (max-height:300px) {
   padding-bottom: 19px;
   background-color: #f6f7f8;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 21px;
   text-align: left;
@@ -3019,7 +3066,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px
 }
@@ -3117,7 +3166,9 @@ screen and (max-height:300px) {
 }
 .panel__heading {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -3148,7 +3199,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px
 }
@@ -3167,7 +3220,9 @@ screen and (max-height:300px) {
   margin-bottom: 4px;
   display: block;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px
 }
@@ -3266,6 +3321,7 @@ screen and (max-height:300px) {
 .building__photo {
   position: relative;
   background-color: #F8F8F8;
+  background-color: var(--image-fallback);
   width: 76px;
   height: 76px;
   vertical-align: top;
@@ -3325,7 +3381,9 @@ screen and (max-height:300px) {
 }
 .section-title {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3413,7 +3471,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px
 }
@@ -3477,7 +3537,9 @@ screen and (max-height:300px) {
 }
 .full-panel__heading {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -3594,7 +3656,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px
 }
@@ -3716,7 +3780,9 @@ screen and (max-height:300px) {
   background-color: #fff;
   border-radius: 50%;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -4187,7 +4253,9 @@ screen and (max-height:300px) {
 }
 .total__price {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 22px;
   line-height: 28px
 }

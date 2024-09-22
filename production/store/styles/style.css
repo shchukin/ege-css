@@ -553,6 +553,16 @@ screen and (max-height:300px) {
     padding-right: 6px
   }
 }
+:root {
+  --font-body: "Roboto",sans-serif;
+  --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  --font-weight-heading: 500;
+  --brand_grey: #697882;
+  --brand_orange: #FF7502;
+  --image-fallback: #F8F8F8;
+  --danger: #FF7502;
+  --danger: var(--brand_orange)
+}
 * {
   box-sizing: border-box
 }
@@ -584,7 +594,8 @@ screen and (max-height:300px) {
 .body {
   min-width: 320px;
   margin: 0;
-  font-family: "Roboto",sans-serif
+  font-family: "Roboto",sans-serif;
+  font-family: var(--font-body)
 }
 .button {
   position: relative;
@@ -648,7 +659,8 @@ screen and (max-height:300px) {
   opacity: 1
 }
 .button_palette_brand {
-  background-color: #FF7502
+  background-color: #FF7502;
+  background-color: var(--brand_orange)
 }
 .button_palette_brand.button_loading,
 .button_palette_brand.button_success,
@@ -697,7 +709,9 @@ screen and (max-height:300px) {
 .button_palette_empty {
   padding: 14px 18px;
   border: 2px solid #FF7502;
+  border: 2px solid var(--brand_orange);
   color: #FF7502;
+  color: var(--brand_orange);
   background-color: transparent;
   background-image: none;
   transition: opacity .1s ease
@@ -770,18 +784,21 @@ screen and (max-height:300px) {
 .input__widget::-webkit-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget::-moz-placeholder {
   transition: color .1s ease;
   font-style: normal;
   color: #697882;
+  color: var(--brand_grey);
   opacity: 1
 }
 .input__widget:-ms-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget:hover {
   box-shadow: 0 0 4px 0 rgba(205,214,220,.5)
@@ -802,7 +819,8 @@ screen and (max-height:300px) {
   margin-top: 6px;
   font-size: 13px;
   line-height: 18px;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__upper-note {
   display: block;
@@ -813,6 +831,7 @@ screen and (max-height:300px) {
   font-size: 13px;
   line-height: 24px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: right
 }
 .label + .input__upper-note {
@@ -832,7 +851,8 @@ screen and (max-height:300px) {
   cursor: pointer
 }
 .input_type_select .input__widget_faked-placeholder {
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input_type_select .input__widget_faked-placeholder:focus {
   color: #b4bbc0
@@ -855,23 +875,29 @@ screen and (max-height:300px) {
   resize: vertical
 }
 .input_error .input__widget {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error .input__widget::-webkit-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget::-moz-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget:-ms-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__note {
   font-weight: 500;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error.input_type_select .input__widget_faked-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_disabled .input__widget {
   background-color: #fcfcfd;
@@ -922,6 +948,7 @@ screen and (max-height:300px) {
   font-weight: 400;
   font-size: 80%;
   color: #FF7502;
+  color: var(--danger);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden
@@ -1307,6 +1334,7 @@ screen and (max-height:300px) {
   font-size: inherit;
   line-height: inherit;
   color: #FF7502;
+  color: var(--brand_orange);
   text-decoration: none;
   cursor: pointer
 }
@@ -1364,7 +1392,9 @@ screen and (max-height:300px) {
 .form__heading {
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -1454,7 +1484,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 26px;
   line-height: 28px
 }
@@ -1476,7 +1508,9 @@ screen and (max-height:300px) {
   margin-top: 18px;
   margin-bottom: 14px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 20px;
   line-height: 25px
 }
@@ -1552,6 +1586,7 @@ screen and (max-height:300px) {
   font-size: 11px;
   line-height: 14px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: center
 }
 @media (min-width:768px) and (max-width:1023px) {
@@ -1689,7 +1724,9 @@ screen and (max-height:300px) {
   margin-top: 4px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 20px;
   line-height: 24px;
   text-align: center
@@ -1720,7 +1757,8 @@ screen and (max-height:300px) {
 }
 .product__discount-price {
   margin-left: 5px;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .product__operations {
   margin-top: 12px;
@@ -1813,6 +1851,7 @@ screen and (max-height:300px) {
   width: 100%;
   height: auto;
   background-color: #F8F8F8;
+  background-color: var(--image-fallback);
   transition: opacity .1s ease
 }
 a.slider__slide:hover .slider__image {
@@ -1961,6 +2000,7 @@ a.slider__slide:hover .slider__image {
 .slider__handler:nth-child(8):checked ~ .slider__navigation .slider__dot:nth-child(8)::after,
 .slider__handler:nth-child(9):checked ~ .slider__navigation .slider__dot:nth-child(9)::after {
   background-color: #FF7502;
+  background-color: var(--brand_orange);
   transform: none
 }
 .subject {
@@ -2002,7 +2042,9 @@ a.slider__slide:hover .slider__image {
   border: 1px solid #eae9e9;
   border-radius: 3px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -2010,7 +2052,8 @@ a.slider__slide:hover .slider__image {
   transition: color .1s ease
 }
 .subject:hover .subject__inner {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .subject .subject__inner::before {
   content: "";
@@ -2141,7 +2184,9 @@ a.slider__slide:hover .slider__image {
 }
 .informer__note {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 15px;
   line-height: 22px;
   color: #697882;
@@ -2153,7 +2198,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 11px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -2193,10 +2240,13 @@ a.slider__slide:hover .slider__image {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 13px;
   line-height: 18px;
   color: #FF7502;
+  color: var(--brand_orange);
   text-transform: uppercase;
   letter-spacing: 1px
 }
@@ -2237,20 +2287,27 @@ a.slider__slide:hover .slider__image {
     margin-right: 4px
   }
 }
+:root {
+  --gallery-full-dimension: 300px;
+  --gallery-thumb-dimension: 50px
+}
 .gallery {
   position: relative;
-  width: 302px
+  width: 302px;
+  width: calc(var(--gallery-full-dimension) + 2px)
 }
 .gallery__handler {
   position: absolute;
   left: 0;
   bottom: 50px;
+  bottom: var(--gallery-thumb-dimension);
   opacity: 0;
   pointer-events: none
 }
 .gallery__stage {
   position: relative;
-  height: 302px
+  height: 302px;
+  height: calc(var(--gallery-full-dimension) + 2px)
 }
 .gallery__item {
   position: absolute;
@@ -2259,7 +2316,9 @@ a.slider__slide:hover .slider__image {
   display: block;
   box-sizing: content-box;
   width: 300px;
+  width: var(--gallery-full-dimension);
   height: 300px;
+  height: var(--gallery-full-dimension);
   border: 1px solid #e9e8e8;
   border-radius: 6px;
   overflow: hidden;
@@ -2270,7 +2329,9 @@ a.slider__slide:hover .slider__image {
 .gallery__full-image {
   vertical-align: top;
   width: 300px;
+  width: var(--gallery-full-dimension);
   height: 300px;
+  height: var(--gallery-full-dimension);
   object-fit: contain;
   background-color: #fff
 }
@@ -2289,7 +2350,9 @@ a.slider__slide:hover .slider__image {
   display: block;
   box-sizing: content-box;
   width: 50px;
+  width: var(--gallery-thumb-dimension);
   height: 50px;
+  height: var(--gallery-thumb-dimension);
   border: 1px solid #e9e8e8;
   border-radius: 3px;
   overflow: hidden;
@@ -2299,8 +2362,11 @@ a.slider__slide:hover .slider__image {
 .gallery__thumbnail {
   vertical-align: top;
   width: 50px;
+  width: var(--gallery-thumb-dimension);
   height: 50px;
-  background-color: #F8F8F8
+  height: var(--gallery-thumb-dimension);
+  background-color: #F8F8F8;
+  background-color: var(--image-fallback)
 }
 .gallery__handler:focus ~ .gallery__navigation {
   outline: auto
@@ -2379,10 +2445,13 @@ a.slider__slide:hover .slider__image {
 .buying__price {
   margin-top: 13px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .buying__price:first-child {
   margin-top: 0
@@ -2391,7 +2460,9 @@ a.slider__slide:hover .slider__image {
   display: block;
   margin-top: 4px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 17px;
   line-height: 20px;
   color: #697882;
@@ -2538,6 +2609,7 @@ a.slider__slide:hover .slider__image {
   min-width: 20px;
   height: 20px;
   background-color: #FF7502;
+  background-color: var(--brand_orange);
   border-radius: 10px;
   font-weight: 500;
   font-size: 11px;
@@ -2725,7 +2797,9 @@ a.slider__slide:hover .slider__image {
 .footer__sub-heading {
   margin-bottom: 14px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2px;
@@ -2752,7 +2826,9 @@ a.slider__slide:hover .slider__image {
 .footer__navigation {
   margin-top: 27px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 18px
 }
@@ -2955,7 +3031,9 @@ a.slider__slide:hover .slider__image {
 @media (min-width:1024px) {
   .button_id-contacts-handler {
     border-color: #FF7502;
+    border-color: var(--brand_orange);
     color: #FF7502;
+    color: var(--brand_orange);
     transition: border-color .1s ease,color .1s ease
   }
   .button_id-contacts-handler:hover {
@@ -3084,6 +3162,17 @@ a.slider__slide:hover .slider__image {
 .input_id_phone {
   width: 258px
 }
+:root {
+  --panel-mobile: 92px;
+  --panel-tablet-and-desktop: 159px;
+  --header-mobile: 120px;
+  --header-mobile--simplified: 76px;
+  --header-small-tablets: 134px;
+  --header-small-tablets--simplified: 89px;
+  --header-large-tablets-and-desktop: 126px;
+  --header-large-tablets-and-desktop--simplified: 87px;
+  --navigation-height: 61px
+}
 .contacts {
   width: 180px
 }
@@ -3184,7 +3273,8 @@ a.slider__slide:hover .slider__image {
 .header {
   position: relative;
   z-index: 1000;
-  height: 120px
+  height: 120px;
+  height: var(--header-mobile)
 }
 .header__fixed-part {
   position: fixed;
@@ -3193,6 +3283,7 @@ a.slider__slide:hover .slider__image {
   top: 0;
   right: 0;
   height: 120px;
+  height: var(--header-mobile);
   background-color: #fff
 }
 .header__wrap {
@@ -3310,6 +3401,7 @@ a.slider__slide:hover .slider__image {
 }
 .body_scrolled .header__fixed-part {
   height: 76px;
+  height: var(--header-mobile--simplified);
   border-bottom: 2px solid #f2f5f6
 }
 .body_scrolled .header__actions {
@@ -3364,10 +3456,12 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:768px) and (max-width:1023px) {
   .header {
-    height: 134px
+    height: 134px;
+    height: var(--header-small-tablets)
   }
   .header__fixed-part {
-    height: 134px
+    height: 134px;
+    height: var(--header-small-tablets)
   }
   .header__wrap {
     padding-top: 87px
@@ -3379,15 +3473,18 @@ a.slider__slide:hover .slider__image {
     top: 22px
   }
   .body_scrolled .header__fixed-part {
-    height: 89px
+    height: 89px;
+    height: var(--header-small-tablets--simplified)
   }
 }
 @media (min-width:1024px) {
   .header {
-    height: 126px
+    height: 126px;
+    height: var(--header-large-tablets-and-desktop)
   }
   .header__fixed-part {
     height: 126px;
+    height: var(--header-large-tablets-and-desktop);
     border-bottom: 2px solid #f6f7f8;
     transition: height .3s ease
   }
@@ -3433,7 +3530,8 @@ a.slider__slide:hover .slider__image {
     box-shadow: none
   }
   .body_scrolled .header__fixed-part {
-    height: 87px
+    height: 87px;
+    height: var(--header-large-tablets-and-desktop--simplified)
   }
   .body_scrolled .header__wrap {
     padding-top: 15px
@@ -3460,7 +3558,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-size: 26px;
   line-height: 26px;
   text-align: center
@@ -3469,7 +3569,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -3636,7 +3738,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 42px;
   line-height: 54px;
   text-align: center
@@ -3667,12 +3771,15 @@ a.slider__slide:hover .slider__image {
   -ms-flex-pack: center;
       justify-content: center;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #FF7502;
+  color: var(--brand_orange);
   text-align: center
 }
 .discipline__option {
@@ -3730,7 +3837,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -3858,7 +3967,8 @@ a.slider__slide:hover .slider__image {
 }
 .panel {
   position: relative;
-  height: 92px
+  height: 92px;
+  height: var(--panel-mobile)
 }
 .panel__detachable {
   position: fixed;
@@ -3867,6 +3977,7 @@ a.slider__slide:hover .slider__image {
   right: 0;
   bottom: 0;
   min-height: 92px;
+  min-height: var(--panel-mobile);
   padding-top: 20px;
   padding-bottom: 16px;
   background: #fff;
@@ -3889,6 +4000,7 @@ a.slider__slide:hover .slider__image {
   font-size: 11px;
   line-height: 14px;
   color: #FF7502;
+  color: var(--brand_orange);
   cursor: pointer
 }
 .panel__hide {
@@ -3924,7 +4036,9 @@ a.slider__slide:hover .slider__image {
 }
 .panel__heading {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -3962,7 +4076,8 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:768px) {
   .panel {
-    height: 159px
+    height: 159px;
+    height: var(--panel-tablet-and-desktop)
   }
   .panel__detachable {
     padding-bottom: 21px
@@ -4005,7 +4120,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 13px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px
 }
@@ -4030,7 +4147,9 @@ a.slider__slide:hover .slider__image {
   background-position: left top;
   background-repeat: no-repeat;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 15px;
   line-height: 22px;
   text-transform: uppercase
@@ -4085,7 +4204,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -4133,7 +4254,9 @@ a.slider__slide:hover .slider__image {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 26px;
   line-height: 30px
 }
@@ -4145,7 +4268,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 20px;
   padding-bottom: 4px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 26px;
   line-height: 30px
 }
@@ -4166,11 +4291,13 @@ a.slider__slide:hover .slider__image {
   margin-right: 5px
 }
 .cart__new-value {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .cart__about-discount {
   margin-top: 7px;
   font-family: "Roboto",sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
@@ -4299,12 +4426,15 @@ a.slider__slide:hover .slider__image {
   margin-right: 5px;
   padding: 5px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #FF7502;
+  color: var(--brand_orange);
   text-decoration: none;
   transition: padding .3s ease
 }
@@ -4325,7 +4455,8 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:1024px) {
   .navigation {
-    height: 61px
+    height: 61px;
+    height: var(--navigation-height)
   }
   .navigation__fixed-part {
     position: fixed;
@@ -4333,10 +4464,12 @@ a.slider__slide:hover .slider__image {
     left: 0;
     right: 0;
     top: 126px;
+    top: var(--header-large-tablets-and-desktop);
     transition: top .3s ease,margin-top .6s ease
   }
   .body_scrolled .navigation__fixed-part {
-    top: 87px
+    top: 87px;
+    top: var(--header-large-tablets-and-desktop--simplified)
   }
   .body_scrolled .navigation__list {
     padding-top: 9px;
@@ -4348,7 +4481,8 @@ a.slider__slide:hover .slider__image {
   }
   .body_scrolling-up .navigation__fixed-part {
     transition: top .3s ease,margin-top 1s ease;
-    margin-top: -61px
+    margin-top: -61px;
+    margin-top: calc(-1 * var(--navigation-height))
   }
 }
 .code__visibility {
@@ -4387,7 +4521,8 @@ a.slider__slide:hover .slider__image {
   font-size: 13px;
   line-height: 16px;
   text-align: left;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .code__visibility:checked ~ .code__handler {
   display: none
@@ -4408,7 +4543,9 @@ a.slider__slide:hover .slider__image {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 1px;
@@ -4419,7 +4556,9 @@ a.slider__slide:hover .slider__image {
 .order__contains {
   margin-top: 17px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -4566,7 +4705,9 @@ a.slider__slide:hover .slider__image {
 }
 .user-form__legend {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 26px;
   line-height: 26px
 }

@@ -715,6 +715,16 @@ screen and (max-height:300px) {
   height: 100%;
   width: 100%
 }
+:root {
+  --font-body: "Roboto",sans-serif;
+  --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  --font-weight-heading: 500;
+  --brand_grey: #697882;
+  --brand_orange: #FF7502;
+  --image-fallback: #F8F8F8;
+  --danger: #FF7502;
+  --danger: var(--brand_orange)
+}
 * {
   box-sizing: border-box
 }
@@ -746,7 +756,8 @@ screen and (max-height:300px) {
 .body {
   min-width: 320px;
   margin: 0;
-  font-family: "Roboto",sans-serif
+  font-family: "Roboto",sans-serif;
+  font-family: var(--font-body)
 }
 .button {
   position: relative;
@@ -810,7 +821,8 @@ screen and (max-height:300px) {
   opacity: 1
 }
 .button_palette_brand {
-  background-color: #FF7502
+  background-color: #FF7502;
+  background-color: var(--brand_orange)
 }
 .button_palette_brand.button_loading,
 .button_palette_brand.button_success,
@@ -859,7 +871,9 @@ screen and (max-height:300px) {
 .button_palette_empty {
   padding: 14px 18px;
   border: 2px solid #FF7502;
+  border: 2px solid var(--brand_orange);
   color: #FF7502;
+  color: var(--brand_orange);
   background-color: transparent;
   background-image: none;
   transition: opacity .1s ease
@@ -932,18 +946,21 @@ screen and (max-height:300px) {
 .input__widget::-webkit-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget::-moz-placeholder {
   transition: color .1s ease;
   font-style: normal;
   color: #697882;
+  color: var(--brand_grey);
   opacity: 1
 }
 .input__widget:-ms-input-placeholder {
   transition: color .1s ease;
   font-style: normal;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__widget:hover {
   box-shadow: 0 0 4px 0 rgba(205,214,220,.5)
@@ -964,7 +981,8 @@ screen and (max-height:300px) {
   margin-top: 6px;
   font-size: 13px;
   line-height: 18px;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input__upper-note {
   display: block;
@@ -975,6 +993,7 @@ screen and (max-height:300px) {
   font-size: 13px;
   line-height: 24px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: right
 }
 .label + .input__upper-note {
@@ -994,7 +1013,8 @@ screen and (max-height:300px) {
   cursor: pointer
 }
 .input_type_select .input__widget_faked-placeholder {
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .input_type_select .input__widget_faked-placeholder:focus {
   color: #b4bbc0
@@ -1017,23 +1037,29 @@ screen and (max-height:300px) {
   resize: vertical
 }
 .input_error .input__widget {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error .input__widget::-webkit-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget::-moz-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__widget:-ms-input-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .input_error .input__note {
   font-weight: 500;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_error.input_type_select .input__widget_faked-placeholder {
-  color: #FF7502
+  color: #FF7502;
+  color: var(--danger)
 }
 .input_disabled .input__widget {
   background-color: #fcfcfd;
@@ -1452,6 +1478,7 @@ screen and (max-height:300px) {
   font-size: inherit;
   line-height: inherit;
   color: #FF7502;
+  color: var(--brand_orange);
   text-decoration: none;
   cursor: pointer
 }
@@ -1538,7 +1565,9 @@ screen and (max-height:300px) {
 .form__heading {
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   text-align: center
@@ -1877,14 +1906,16 @@ screen and (max-height:300px) {
   padding-left: 15px;
   font-size: 11px;
   line-height: 14px;
-  color: #697882
+  color: #697882;
+  color: var(--brand_grey)
 }
 .footnote::before {
   content: "*";
   position: absolute;
   left: 1px;
   top: 0;
-  color: #FF7502
+  color: #FF7502;
+  color: var(--brand_orange)
 }
 .feature {
   padding-top: 36px;
@@ -1939,7 +1970,9 @@ screen and (max-height:300px) {
   background-color: #fff5e7;
   border-radius: 50%;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px
 }
@@ -1970,7 +2003,9 @@ screen and (max-height:300px) {
   margin-top: 15px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -2036,7 +2071,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -2194,6 +2231,12 @@ screen and (max-height:300px) {
 }
 .feature_id_support::before {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogIDxkZWZzPgogICAgPHBvbHlnb24gaWQ9InF1ZXN0aW9ucy1hIiBwb2ludHM9IjI2IDc0Ljc1NiA3NC44OTggNzQuNzU2IDc0Ljg5OCAyMy41MTUgMjYgMjMuNTE1Ii8+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNNTEuMjM4MDcxMywyNC41NDQ1NTQ1IEMzOC43MzQ5MDMsMjQuNTQ0NTU0NSAyOC42MDQxNzAzLDM0LjY3NDI1NzQgMjguNjA0MTcwMyw0Ny4xNzc0MjU3IEMyOC42MDQxNzAzLDUyLjc2NTEwODkgMzAuNjMyNjg1MSw1Ny44NjYyNTc0IDMzLjk4OTAwMiw2MS44MTUxNjgzIEwyOC43MTM4MzM3LDcxLjgxNzcwMyBMMzguMzA5MTIwOCw2NS43MzczMDY5IEM0MS45NzMzMTg4LDY4LjI5ODY5MzEgNDYuNDI0MjA5OSw2OS44MTI4NzEzIDUxLjIzODA3MTMsNjkuODEyODcxMyBDNjMuNzM0NTQ2NSw2OS44MTI4NzEzIDczLjg2Nzg1MzUsNTkuNjc2NDc1MiA3My44Njc4NTM1LDQ3LjE3NzQyNTcgQzczLjg2Nzg1MzUsMzQuNjc0MjU3NCA2My43MzQ1NDY1LDI0LjU0NDU1NDUgNTEuMjM4MDcxMywyNC41NDQ1NTQ1IEw1MS4yMzgwNzEzLDI0LjU0NDU1NDUgWiIvPgogICAgPHBhdGggZmlsbD0iIzI4MkQzMyIgZD0iTTI1LjIzODA3MTMsMi4zMDI5ODIxOCBDMTMuMzI1NDM3NiwyLjMwMjk4MjE4IDMuNjMzODczMjcsMTEuOTk0MDMxNyAzLjYzMzg3MzI3LDIzLjkwNjE1MDUgQzMuNjMzODczMjcsMjkuMDE2MDUxNSA1LjQ1OTAyMTc4LDMzLjk3NzY3NTIgOC43NzM2MzU2NCwzNy44NzcxNjA0IEw5LjIyNDY0NTU0LDM4LjQwNzk3MjMgTDUuNDI3NjE1ODQsNDUuNjA3NjU1NCBMMTIuMzM2OTIyOCw0MS4yMjkzNTg0IEwxMi44OTkxNDA2LDQxLjYyMjE5MDEgQzE2LjUzOTE0MDYsNDQuMTY3MTAxIDIwLjgwNjIyOTcsNDUuNTExODkzMSAyNS4yMzgwNzEzLDQ1LjUxMTg5MzEgQzM3LjE0ODEzMDcsNDUuNTExODkzMSA0Ni44MzgxNTA1LDM1LjgxOTI5OSA0Ni44MzgxNTA1LDIzLjkwNjE1MDUgQzQ2LjgzODE1MDUsMTEuOTk0MDMxNyAzNy4xNDgxMzA3LDIuMzAyOTgyMTggMjUuMjM4MDcxMywyLjMwMjk4MjE4IEwyNS4yMzgwNzEzLDIuMzAyOTgyMTggWiBNNS4xNDg1MTQ4NWUtMDUsNTEuNDg1MiBMNi43NTc5OTIwOCwzOC42NzAwMzE3IEMzLjQxMDQyNzcyLDM0LjQ4NTMxODggMS41NzQ0NjczMywyOS4yNzAzODgxIDEuNTc0NDY3MzMsMjMuOTA2MTUwNSBDMS41NzQ0NjczMywxMC44NTgyNjkzIDEyLjE4OTY3NTIsMC4yNDM1NzYyMzggMjUuMjM4MDcxMywwLjI0MzU3NjIzOCBDMzguMjgzODkzMSwwLjI0MzU3NjIzOCA0OC44OTc1NTY0LDEwLjg1ODI2OTMgNDguODk3NTU2NCwyMy45MDYxNTA1IEM0OC44OTc1NTY0LDM2Ljk1NTA2MTQgMzguMjgzODkzMSw0Ny41NzEyOTkgMjUuMjM4MDcxMyw0Ny41NzEyOTkgQzIwLjYxMjEzMDcsNDcuNTcxMjk5IDE2LjE1MDQyNzcsNDYuMjMzNzE0OSAxMi4yOTAwNzEzLDQzLjY5NzA0MTYgTDUuMTQ4NTE0ODVlLTA1LDUxLjQ4NTIgWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjYgMjMuMjcxKSIvPgogICAgPHBhdGggZmlsbD0iI0ZGNzUwMiIgZD0iTTY5Ljc4OTgxNzgsNDcuMjA0ODE1OCBDNjkuNzg5ODE3OCw1Ny41MDY0NzkyIDYxLjQzODkyNjcsNjUuODU2ODU1NCA1MS4xMzg4MDc5LDY1Ljg1Njg1NTQgQzQwLjgzNzY1OTQsNjUuODU2ODU1NCAzMi40ODY3NjgzLDU3LjUwNjQ3OTIgMzIuNDg2NzY4Myw0Ny4yMDQ4MTU4IEMzMi40ODY3NjgzLDM2LjkwNDE4MjIgNDAuODM3NjU5NCwyOC41NTM4MDU5IDUxLjEzODgwNzksMjguNTUzODA1OSBDNjEuNDM4OTI2NywyOC41NTM4MDU5IDY5Ljc4OTgxNzgsMzYuOTA0MTgyMiA2OS43ODk4MTc4LDQ3LjIwNDgxNTgiLz4KICAgIDxtYXNrIGlkPSJxdWVzdGlvbnMtYiIgZmlsbD0iI2ZmZiI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3F1ZXN0aW9ucy1hIi8+CiAgICA8L21hc2s+CiAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNNDUuMzA1NjY0MSw0Mi4zODQ3NjU2IEw0Ny44MTA1NDY5LDQyLjM4NDc2NTYgQzQ3Ljg4ODY3MjMsNDEuMzM5ODM4NSA0OC4yNjIyMDM3LDQwLjUxMjIxMDEgNDguOTMxMTUyMywzOS45MDE4NTU1IEM0OS42MDAxMDEsMzkuMjkxNTAwOSA1MC40ODYzMjI2LDM4Ljk4NjMyODEgNTEuNTg5ODQzOCwzOC45ODYzMjgxIEM1Mi42ODM1OTkyLDM4Ljk4NjMyODEgNTMuNTU1MTcyNSwzOS4yODQxNzY3IDU0LjIwNDU4OTgsMzkuODc5ODgyOCBDNTQuODU0MDA3Miw0MC40NzU1ODg5IDU1LjE3ODcxMDksNDEuMjI3NTM0NSA1NS4xNzg3MTA5LDQyLjEzNTc0MjIgQzU1LjE3ODcxMDksNDIuOTE2OTk2MSA1NC45OTgwNDg3LDQzLjU3MTI4NjQgNTQuNjM2NzE4OCw0NC4wOTg2MzI4IEM1NC4yNzUzODg4LDQ0LjYyNTk3OTIgNTMuNjY5OTI2MSw0NS4xNDg0MzQ5IDUyLjgyMDMxMjUsNDUuNjY2MDE1NiBDNTEuODE0NDQ4MSw0Ni4yNjE3MjE3IDUxLjA3MjI2OCw0Ni45MTExMjkzIDUwLjU5Mzc1LDQ3LjYxNDI1NzggQzUwLjExNTIzMiw0OC4zMTczODYzIDQ5Ljg4MDg1OTMsNDkuMTUyMzM4OSA0OS44OTA2MjUsNTAuMTE5MTQwNiBMNDkuODkwNjI1LDUxLjQ2Njc5NjkgTDUyLjQ1NDEwMTYsNTEuNDY2Nzk2OSBMNTIuNDU0MTAxNiw1MC41MTQ2NDg0IEM1Mi40NTQxMDE2LDQ5Ljc0MzE2MDIgNTIuNjIwMTE1NSw0OS4xMTA4NDIzIDUyLjk1MjE0ODQsNDguNjE3Njc1OCBDNTMuMjg0MTgxMyw0OC4xMjQ1MDkzIDUzLjkxNDA1NzksNDcuNjA0NDk0OSA1NC44NDE3OTY5LDQ3LjA1NzYxNzIgQzU1Ljc3OTMwMTYsNDYuNDkxMjA4MSA1Ni41MjM5MjMsNDUuNzk1NDE0MyA1Ny4wNzU2ODM2LDQ0Ljk3MDIxNDggQzU3LjYyNzQ0NDIsNDQuMTQ1MDE1NCA1Ny45MDMzMjAzLDQzLjE1NjI1NTggNTcuOTAzMzIwMyw0Mi4wMDM5MDYyIEM1Ny45MDMzMjAzLDQwLjQ5MDIyNjggNTcuMzI5NTk1NiwzOS4yMjgwMzI0IDU2LjE4MjEyODksMzguMjE3Mjg1MiBDNTUuMDM0NjYyMiwzNy4yMDY1Mzc5IDUzLjUzODA5NTIsMzYuNzAxMTcxOSA1MS42OTIzODI4LDM2LjcwMTE3MTkgQzQ5LjYzMTgyNTYsMzYuNzAxMTcxOSA0OC4wNzE3ODI2LDM3LjI1MjkyNDIgNDcuMDEyMjA3LDM4LjM1NjQ0NTMgQzQ1Ljk1MjYzMTQsMzkuNDU5OTY2NSA0NS4zODM3ODk1LDQwLjgwMjcyNjUgNDUuMzA1NjY0MSw0Mi4zODQ3NjU2IFogTTUxLjE3OTY4NzUsNTguMTQ2NDg0NCBDNTEuNjU4MjA1NSw1OC4xNDY0ODQ0IDUyLjA1NjE1MDgsNTcuOTg1MzUzMiA1Mi4zNzM1MzUyLDU3LjY2MzA4NTkgQzUyLjY5MDkxOTYsNTcuMzQwODE4NyA1Mi44NDk2MDk0LDU2Ljk0NTMxNDggNTIuODQ5NjA5NCw1Ni40NzY1NjI1IEM1Mi44NDk2MDk0LDU1Ljk5ODA0NDUgNTIuNjkwOTE5Niw1NS42MDAwOTkyIDUyLjM3MzUzNTIsNTUuMjgyNzE0OCBDNTIuMDU2MTUwOCw1NC45NjUzMzA0IDUxLjY1ODIwNTUsNTQuODA2NjQwNiA1MS4xNzk2ODc1LDU0LjgwNjY0MDYgQzUwLjcxMDkzNTIsNTQuODA2NjQwNiA1MC4zMTU0MzEzLDU0Ljk2NTMzMDQgNDkuOTkzMTY0MSw1NS4yODI3MTQ4IEM0OS42NzA4OTY4LDU1LjYwMDA5OTIgNDkuNTA5NzY1Niw1NS45OTgwNDQ1IDQ5LjUwOTc2NTYsNTYuNDc2NTYyNSBDNDkuNTA5NzY1Niw1Ni45NDUzMTQ4IDQ5LjY3MDg5NjgsNTcuMzQwODE4NyA0OS45OTMxNjQxLDU3LjY2MzA4NTkgQzUwLjMxNTQzMTMsNTcuOTg1MzUzMiA1MC43MTA5MzUyLDU4LjE0NjQ4NDQgNTEuMTc5Njg3NSw1OC4xNDY0ODQ0IFoiIG1hc2s9InVybCgjcXVlc3Rpb25zLWIpIi8+CiAgPC9nPgo8L3N2Zz4K)
+}
+:root {
+  --panel-mobile: 100px;
+  --panel-small-tablet: 200px;
+  --panel-large-tablet: 130px;
+  --panel-desktop: 130px
 }
 .main {
   display: table;
@@ -2505,14 +2548,18 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px
 }
 .stage__note {
   margin-top: 25px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px
 }
@@ -2593,7 +2640,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -2607,7 +2656,9 @@ screen and (max-height:300px) {
   margin-right: auto;
   width: 200px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -2640,7 +2691,9 @@ screen and (max-height:300px) {
   margin-top: 34px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -2655,7 +2708,9 @@ screen and (max-height:300px) {
 .alone__call-for-action {
   margin-top: 27px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 31px;
   text-align: center
@@ -2744,7 +2799,9 @@ screen and (max-height:300px) {
 }
 .salvation__note {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 2px;
@@ -2755,7 +2812,9 @@ screen and (max-height:300px) {
   margin-top: 41px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -2782,7 +2841,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 2px;
@@ -2799,7 +2860,9 @@ screen and (max-height:300px) {
   margin-top: 37px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -2807,20 +2870,26 @@ screen and (max-height:300px) {
 .salvation__price {
   margin-top: 17px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 40px;
   color: #FF7502;
+  color: var(--brand_orange);
   text-align: center
 }
 .salvation__old-price {
   display: block;
   margin-top: -5px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 17px;
   line-height: 28px;
   color: #697882;
+  color: var(--brand_grey);
   text-align: center;
   text-decoration: line-through
 }
@@ -2909,7 +2978,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -2968,7 +3039,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3008,7 +3081,9 @@ screen and (max-height:300px) {
   background-color: #f6f7f8;
   border-radius: 1px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -3098,7 +3173,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3114,7 +3191,9 @@ screen and (max-height:300px) {
   margin-top: 27px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 31px;
   text-align: center
@@ -3162,7 +3241,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3171,7 +3252,9 @@ screen and (max-height:300px) {
   display: block;
   margin-top: 32px;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 31px;
   text-align: center
@@ -3264,7 +3347,9 @@ screen and (max-height:300px) {
 }
 .poem__index {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -3275,7 +3360,9 @@ screen and (max-height:300px) {
   margin-top: 25px;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 31px;
   text-align: center
@@ -3309,7 +3396,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3366,7 +3455,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3403,7 +3494,9 @@ screen and (max-height:300px) {
   margin-bottom: 0;
   display: block;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 48px;
   text-align: center
@@ -3450,7 +3543,9 @@ screen and (max-height:300px) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 36px;
   line-height: 38px;
   text-align: center
@@ -3485,6 +3580,7 @@ screen and (max-height:300px) {
 }
 .panel {
   height: 100px;
+  height: var(--panel-mobile);
   visibility: hidden;
   opacity: 0;
   transition: visibility .2s,opacity .2s
@@ -3500,6 +3596,7 @@ screen and (max-height:300px) {
   right: 0;
   bottom: 0;
   min-height: 100px;
+  min-height: var(--panel-mobile);
   padding-top: 22px;
   padding-bottom: 16px;
   background: #fff;
@@ -3519,6 +3616,7 @@ screen and (max-height:300px) {
   font-size: 11px;
   line-height: 14px;
   color: #FF7502;
+  color: var(--brand_orange);
   cursor: pointer
 }
 .panel__hide {
@@ -3557,7 +3655,9 @@ screen and (max-height:300px) {
   margin-left: auto;
   margin-right: auto;
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   font-size: 24px;
   line-height: 28px;
   text-align: center
@@ -3581,7 +3681,9 @@ screen and (max-height:300px) {
 }
 .panel__prices {
   font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
   font-weight: 500;
+  font-weight: var(--font-weight-heading);
   text-align: center;
   white-space: nowrap
 }
@@ -3596,6 +3698,7 @@ screen and (max-height:300px) {
   font-size: 17px;
   line-height: 28px;
   color: #697882;
+  color: var(--brand_grey);
   text-decoration: line-through
 }
 .panel__actions {
@@ -3654,11 +3757,13 @@ screen and (max-height:300px) {
 }
 @media (min-width:768px) and (max-width:1023px) {
   .panel {
-    height: 200px
+    height: 200px;
+    height: var(--panel-small-tablet)
   }
   .panel__detachable {
     padding-top: 27px;
-    height: 200px
+    height: 200px;
+    height: var(--panel-small-tablet)
   }
   .panel__body {
     margin-top: 14px;
@@ -3675,11 +3780,13 @@ screen and (max-height:300px) {
 }
 @media (min-width:1024px) {
   .panel {
-    height: 130px
+    height: 130px;
+    height: var(--panel-large-tablet)
   }
   .panel__detachable {
     padding-top: 35px;
-    height: 130px
+    height: 130px;
+    height: var(--panel-large-tablet)
   }
   .panel__wrap {
     display: -ms-flexbox;
@@ -3711,11 +3818,13 @@ screen and (max-height:300px) {
 }
 @media (min-width:1340px) {
   .panel {
-    height: 130px
+    height: 130px;
+    height: var(--panel-desktop)
   }
   .panel__detachable {
     padding-top: 35px;
-    height: 130px
+    height: 130px;
+    height: var(--panel-desktop)
   }
   .panel__wrap {
     width: 984px!important
