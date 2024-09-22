@@ -12,10 +12,6 @@
     --header-large-tablets-and-desktop: 126px;
     --header-large-tablets-and-desktop--simplified: 87px;
 
-    /* --- */
-
-    --navigation-large-tablets: 93px;
-
-    --navigation-desktop: 61px;
+    --navigation-height: 61px; /* Если айтемов на 2 строки, то делаем 93px */
 }
 /* stylelint-enable declaration-colon-space-after */
