@@ -38,14 +38,10 @@
         flex-wrap: wrap;
         align-items: stretch;
         justify-content: center;
-    }
-
-    .shelf__list:first-child {
-        margin-top: -8px;
+        gap: 8px;
     }
         /* some will be hidden by default */
         .shelf__item {
-            margin-top: 8px;
             flex-shrink: 0;
         }
 
@@ -91,10 +87,10 @@
 
 @media (min-width: 768px) {
     .shelf__list {
-        margin: 13px -16px -16px;
+        gap: 29px;
     }
         .shelf__item {
-            margin: 16px;
+
         }
 }
 
