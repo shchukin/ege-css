@@ -1,35 +1,35 @@
 :root {
-    --gallery-full-dimension: 300px;
-    --gallery-thumb-dimension: 50px;
+    --gallery-image-width: 300px;
+    --gallery-image-height: 225px;
+    --gallery-thumbnail-width: 52px;
+    --gallery-thumbnail-height: 39px;
 }
 
 .gallery {
     position: relative;
-    width: calc(var(--gallery-full-dimension) + 2px);
+    width: calc(var(--gallery-image-width) + 2px);
 }
     .gallery__handler {
         position: absolute;
         left: 0;
-        bottom: var(--gallery-thumb-dimension); /* to make them next to thumbs so screen won't jump */
+        bottom: var(--gallery-thumbnail-width); /* to make them next to thumbs so screen won't jump */
         opacity: 0;
         pointer-events: none;
     }
 
     .gallery__stage {
         position: relative;
-        height: calc(var(--gallery-full-dimension) + 2px);
+        height: calc(var(--gallery-image-height) + 2px);
     }
         .gallery__item {
             position: absolute;
             left: 0;
             top: 0;
             display: block;
-            box-sizing: content-box;
-            width: var(--gallery-full-dimension);
-            height: var(--gallery-full-dimension);
+            width: calc(var(--gallery-image-width) + 2px);
+            height: calc(var(--gallery-image-height) + 2px);
             border: 1px solid #E9E8E8;
             border-radius: 6px;
-            overflow: hidden; /* to crop border angles */
             opacity: 0;
             visibility: hidden;
             transition: visibility 0.3s ease,
@@ -37,36 +37,53 @@
         }
             .gallery__full-image {
                 vertical-align: top;
-                width: var(--gallery-full-dimension);
-                height: var(--gallery-full-dimension);
+                width: var(--gallery-image-width);
+                height: var(--gallery-image-height);
+                border-radius: 5px;
                 object-fit: contain;
                 background-color: #FFFFFF;
             }
 
+            .gallery__full-image--stretch-over-border {
+                margin: -1px;
+                width: calc(var(--gallery-image-width) + 2px);
+                height: calc(var(--gallery-image-height) + 2px);
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
     .gallery__navigation {
         position: relative;
-        margin: 3px -3px -3px;
+        margin-top: 6px;
         display: flex;
         align-items: flex-start;
+        gap: 6px;
         flex-wrap: wrap;
     }
         .gallery__preview {
-            margin: 3px;
             display: block;
-            box-sizing: content-box;
-            width: var(--gallery-thumb-dimension);
-            height: var(--gallery-thumb-dimension);
+            width: calc(var(--gallery-thumbnail-width) + 2px);
+            height: calc(var(--gallery-thumbnail-height) + 2px);
             border: 1px solid #E9E8E8;
             border-radius: 3px;
-            overflow: hidden; /* to crop border angles */
             cursor: pointer;
             transition: border-color 0.3s ease;
         }
             .gallery__thumbnail {
                 vertical-align: top;
-                width: var(--gallery-thumb-dimension);
-                height: var(--gallery-thumb-dimension);
+                width: var(--gallery-thumbnail-width);
+                height: var(--gallery-thumbnail-height);
                 background-color: var(--image-fallback);
+                border-radius: 2px;
+                object-fit: contain;
+            }
+
+            .gallery__thumbnail--stretch-over-border {
+                margin: -1px;
+                width: calc(var(--gallery-thumbnail-width) + 2px);
+                height: calc(var(--gallery-thumbnail-height) + 2px);
+                border-radius: 3px;
+                object-fit: cover;
             }
 
 
