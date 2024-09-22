@@ -964,7 +964,12 @@ gulp.task('globalStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1006,7 +1011,12 @@ gulp.task('freeStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1049,7 +1059,12 @@ gulp.task('onlineStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1092,7 +1107,12 @@ gulp.task('rusStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1135,7 +1155,12 @@ gulp.task('storeStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1179,7 +1204,12 @@ gulp.task('storeEgenatorStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
@@ -1222,7 +1252,12 @@ gulp.task('mainStyles', function () {
     var processors = [
         sprites(spritesOptions),
         cssnext({
-            'browsers': 'last 2 versions' // for autoprefixer and features list
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
         })
     ];
 
