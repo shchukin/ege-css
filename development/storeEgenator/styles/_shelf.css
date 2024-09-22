@@ -26,7 +26,7 @@
 
 
 .shelf__details .button_russian-language-and-literature {
-
+    font-size: 16px; /* Повторяем "в дефолтном магазине текст написан капсом и там меньший шрифт. Здесь увеличиваем" */
 }
     @media (min-width: 400px) and (max-width: 479px) {
 
