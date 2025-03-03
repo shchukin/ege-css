@@ -3,6 +3,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: var(--portal-black);
+    color-scheme: dark;
     color: var(--portal-white);
 }
     .portal-footer__wrap {
