@@ -18,8 +18,8 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/fonts.css?1740984520">
-        <link rel="stylesheet" href="styles/style.css?1740984520">
+        <link rel="stylesheet" href="fonts/fonts.css?1741084686">
+        <link rel="stylesheet" href="styles/style.css?1741084686">
     </head>
     <body class="body">
         <header class="header">
@@ -90,33 +90,12 @@
             </div>
         </nav>
         <main class="customer">
-
-            <div class="customer__head order">
-                <div class="order__wrap container">
-                    <h1 class="order__heading">Оформление заказа</h1>
-                    <div class="order__contains">Видеокурс. ЕГЭ по математике: «Текстовые задачи». Электронная версия.</div>
-                    <div class="order__price">1 320 руб.</div>
-                </div>
+            <div class="customer__head container">
+                <h1 class="customer__heading">Оформление заказа</h1>
+                <div class="customer__price">18 600 руб</div>
             </div>
-
-            <div class="customer__navigation path">
-                <div class="path__ribbon">
-                    <div class="path__step">
-                        <a class="path__link" href="#">1. Выбор способа оплаты</a>
-                    </div>
-                    <div class="path__step">
-                        <a class="path__link path__link_current" href="#">2. Ввод данных</a>
-                    </div>
-                    <div class="path__step">
-                        <a class="path__link" href="#">3. Подтверждение заказа</a>
-                    </div>
-                </div>
-            </div>
-
             <div class="customer__body">
-
                 <div class="user-form">
-                    <h1 class="visuallyhidden">Ввод данных</h1>
                     <div class="user-form__wrap container">
                         <div class="user-form__outer-wrapper">
                             <form class="user-form__inner-wrapper">
@@ -135,7 +114,7 @@
                                         </div>
                                         <div class="user-form__field input input_size_medium input_id_phone">
                                             <label class="label" for="temp-phone">Введите телефон</label>
-                                            <div class="input__upper-note">Необязательно</div>
+                                            <div class="upper-note">Необязательно</div>
                                             <input class="input__widget" type="tel" id="temp-phone">
                                         </div>
                                     </div>
@@ -181,10 +160,49 @@
                                             </label>
                                             <textarea class="input__widget" id="temp-address" rows="2"></textarea>
                                         </div>
-                                        <div class="user-form__field input input_size_medium input_type_area">
-                                            <label class="label" for="temp-comment">Комментарий</label>
-                                            <span class="input__upper-note">Необязательно</span>
-                                            <textarea class="input__widget" id="temp-comment" rows="3"></textarea>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="user-form__fieldset order-confirm">
+                                    <legend class="user-form__legend">
+                                        Состав заказа
+                                    </legend>
+                                    <div class="user-form__section">
+                                        <div class="user-form__field">
+                                            <div class="box">
+                                                <ul class="box__list">
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="https://shop.egenator.ru.test/russkij-yazyk/tovar-11_13/">Товар 11</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="https://shop.egenator.ru.test/informatika/tovar-14_16/">Товар 14</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="https://shop.egenator.ru.test/anglijjskijj-jazyk/tovar-1-dlja-komplekta_72/">Товар 1 для комплекта</a>, <span class="nobr">цифровой – 2 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="https://shop.egenator.ru.test/matematika/tovar-dolzhna-byt-rassrochka-i-kredit_76/">Товар "должна быть рассрочка и кредит"</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="box__price">
+                                                    <span class="box__price-label">
+                                                        Стоимость заказа:
+                                                    </span>
+                                                    <span class="box__total">
+                                                        18 600 руб
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-form__field">
+                                            <label class="label">
+                                                Комментарий к заказу
+                                            </label>
+                                            <span class="upper-note">
+                                                Необязательно
+                                              </span>
+                                            <div class="input input_size_medium input_type_area">
+                                                <textarea class="input__widget" rows="3"></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -197,9 +215,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </main>
 
         <!-- Panel -->
@@ -641,21 +657,21 @@
         <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
 
-        <script src="scripts/mfp.js?1740984520"></script>
-        <script src="scripts/up.js?1740984520"></script>
-        <script src="scripts/subscription.js?1740984520"></script>
-        <script src="scripts/form.js?1740984520"></script>
-        <script src="scripts/alert.js?1740984520"></script>
-        <script src="scripts/slider.js?1740984520"></script>
-        <script src="scripts/live-search.js?1740984520"></script>
-        <script src="scripts/input.js?1740984520"></script>
+        <script src="scripts/mfp.js?1741084686"></script>
+        <script src="scripts/up.js?1741084686"></script>
+        <script src="scripts/subscription.js?1741084686"></script>
+        <script src="scripts/form.js?1741084686"></script>
+        <script src="scripts/alert.js?1741084686"></script>
+        <script src="scripts/slider.js?1741084686"></script>
+        <script src="scripts/live-search.js?1741084686"></script>
+        <script src="scripts/input.js?1741084686"></script>
 
-        <script src="../store/scripts/up.js?1740984520"></script>
-        <script src="../store/scripts/panel.js?1740984520"></script>
-        <script src="../store/scripts/body.js?1740984520"></script>
-        <script src="../store/scripts/navigation.js?1740984520"></script>
-        <script src="../store/scripts/discipline.js?1740984520"></script>
-        <script src="../store/scripts/code.js?1740984520"></script>
+        <script src="../store/scripts/up.js?1741084686"></script>
+        <script src="../store/scripts/panel.js?1741084686"></script>
+        <script src="../store/scripts/body.js?1741084686"></script>
+        <script src="../store/scripts/navigation.js?1741084686"></script>
+        <script src="../store/scripts/discipline.js?1741084686"></script>
+        <script src="../store/scripts/code.js?1741084686"></script>
 
     </body>
 </html>
