@@ -4667,7 +4667,7 @@ a.slider__slide:hover .slider__image {
   }
 }
 .box {
-  padding-bottom: 20px
+  padding-bottom: 14px
 }
 .box__list {
   margin-top: 0;
@@ -4721,4 +4721,14 @@ a.slider__slide:hover .slider__image {
   font-weight: 700;
   font-size: 20px;
   line-height: 28px
+}
+.box__promo {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px
+}
+.box__promo strong {
+  font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
+  font-weight: 700
 }
