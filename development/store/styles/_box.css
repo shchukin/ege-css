@@ -54,3 +54,14 @@
             font-size: 20px;
             line-height: 28px;
         }
+
+
+    .box__promo {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+        .box__promo strong {
+            font-family: var(--font-heading);
+            font-weight: bold;
+        }
