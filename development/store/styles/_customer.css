@@ -5,10 +5,6 @@
 
     }
 
-    .customer__navigation {
-        margin-top: 17px;
-    }
-
     .customer__body {
 
     }
@@ -21,19 +17,12 @@
     .customer {
         padding-top: 42px;
     }
-        .customer__navigation {
-            margin-top: 17px;
-        }
 }
 
 @media (min-width: 1024px) {
     .customer {
         padding-top: 42px;
     }
-        .customer__navigation {
-            margin-top: 35px;
-        }
-
         .customer__body {
             margin-top: 20px;
         }

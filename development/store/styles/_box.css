@@ -1,0 +1,56 @@
+.box {
+    padding-bottom: 20px;
+}
+    .box__list {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+    }
+        .box__item {
+            margin-top: 6px;
+            position: relative;
+            padding-left: 16px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .box__item:first-child {
+            margin-top: 0;
+        }
+            .box__item::before {
+                content: "";
+                position: absolute;
+                left: 2px;
+                top: 8px;
+                width: 4px;
+                height: 4px;
+                background-color: currentColor;
+                border-radius: 50%;
+            }
+            .box__link {
+                color: var(--brand_orange);
+                text-decoration-color: currentColor;
+                text-underline-offset: 2px;
+            }
+
+            .box__link:hover {
+                text-decoration-color: transparent;
+            }
+
+    .box__price {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+        .box__price-label {
+            margin-right: 4px;
+            font-weight: 500;
+        }
+
+        .box__total {
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+        }

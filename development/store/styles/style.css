@@ -11,6 +11,7 @@
 @import url("../../global/styles/_body.css");
 @import url("../../global/styles/_button.css");
 @import url("../../global/styles/_input.css");
+@import url("../../global/styles/_upper-note.css");
 @import url("../../global/styles/_label.css");
 @import url("../../global/styles/_asterisk.css");
 @import url("../../global/styles/_up.css");
@@ -83,5 +84,5 @@
 @import url("_code.css");
 @import url("_order.css");
 @import url("_customer.css");
-@import url("_path.css");
 @import url("_user-form.css");
+@import url("_box.css");

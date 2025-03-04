@@ -51,22 +51,6 @@
         color: var(--brand_grey);
     }
 
-    .input__upper-note {
-        display: block;
-        width: 200px;
-        padding-bottom: 9px;
-        margin-left: auto;
-        font-weight: normal;
-        font-size: 13px;
-        line-height: 24px;
-        color: var(--brand_grey);
-        text-align: right;
-    }
-
-    .label + .input__upper-note {
-        margin-top: -33px;
-    }
-
 
 
 .input_size_medium {
