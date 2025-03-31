@@ -9,7 +9,7 @@
     --font-weight-heading: 500;
 
     /* Контейнер */
-    --container-padding: 15px;
+    --container-padding: 10px;
 
     /* Цвета */
     --brand_grey: #697882;
@@ -24,7 +24,7 @@
 
 @media (min-width: 360px) {
     :root {
-        --container-padding: 30px;
+        --container-padding: 16px;
     }
 }
 

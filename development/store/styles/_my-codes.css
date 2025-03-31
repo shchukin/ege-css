@@ -1,8 +1,9 @@
 .my-codes {
-
+    padding-top: 40px;
 }
     .my-codes__heading {
-
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .my-codes__list {

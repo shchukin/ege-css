@@ -1,29 +1,12 @@
 .title {
     font-family: var(--font-heading);
     font-weight: var(--font-weight-heading);
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 36px;
+    line-height: 40px;
 }
-
-
-@media (min-width: 768px) {
-    .title {
-        font-size: 36px;
-        line-height: 40px;
-    }
-}
-
 
 
 .title--smaller {
-    font-size: 22px;
-    line-height: 26px;
-}
-
-
-@media (min-width: 768px) {
-    .title--smaller {
-        font-size: 26px;
-        line-height: 30px;
-    }
+    font-size: 26px;
+    line-height: 30px;
 }
