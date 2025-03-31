@@ -43,12 +43,14 @@
 @import url("../../global/styles/_search.css");
 @import url("../../global/styles/_live-search.css");
 @import url("../../global/styles/_footer.css");
+@import url("../../global/styles/_cabinet.css");
 @import url("../../global/styles/_no-actions.css");
 @import url("../../global/styles/_hide.css");
 @import url("../../global/styles/_hide-on-smartphone.css");
 @import url("../../global/styles/_hide-on-small-tablet.css");
 @import url("../../global/styles/_hide-on-large-tablet.css");
 @import url("../../global/styles/_hide-on-desktop.css");
+@import url("../../global/styles/_hide-scrollbar.css");
 
 
 /* store vendors */
