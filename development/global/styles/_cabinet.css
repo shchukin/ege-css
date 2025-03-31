@@ -97,7 +97,7 @@
                 }
 
         .cabinet__body {
-
+            flex-grow: 1;
         }
 }
 

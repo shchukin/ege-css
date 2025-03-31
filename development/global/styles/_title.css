@@ -12,3 +12,18 @@
         line-height: 40px;
     }
 }
+
+
+
+.title--smaller {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+@media (min-width: 768px) {
+    .title--smaller {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

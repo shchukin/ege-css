@@ -15,6 +15,7 @@
     --brand_grey: #697882;
     --brand_orange: #FF7502;
     --brand-orange-15pct: rgb(255 117 2 / 15%);
+    --brand-orange-5pct: rgb(255 117 2 / 5%);
     --image-fallback: #F8F8F8;
     --danger: var(--brand_orange);
 }
