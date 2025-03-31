@@ -1,6 +1,6 @@
 .label {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    width: fit-content;
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 15px;

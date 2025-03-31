@@ -1,0 +1,13 @@
+.my-subscriptions {
+
+}
+    .my-subscriptions__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .my-subscriptions__description {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }

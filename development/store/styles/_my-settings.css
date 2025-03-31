@@ -1,0 +1,37 @@
+.my-settings {
+
+}
+    .my-settings__section + .my-settings__section {
+        margin-top: 40px;
+    }
+
+    .my-settings__section:first-child {
+        margin-top: 0;
+    }
+
+        .my-settings__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .my-settings__description {
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .my-settings__field {
+            margin-top: 24px;
+        }
+
+        .my-settings__field:first-child {
+
+        }
+            .my-settings__field .input__widget {
+                max-width: 300px;
+            }
+
+
+        .my-settings__submit {
+            margin-top: 32px;
+        }

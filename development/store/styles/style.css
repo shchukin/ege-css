@@ -43,7 +43,6 @@
 @import url("../../global/styles/_search.css");
 @import url("../../global/styles/_live-search.css");
 @import url("../../global/styles/_footer.css");
-@import url("../../global/styles/_cabinet.css");
 @import url("../../global/styles/_no-actions.css");
 @import url("../../global/styles/_title.css");
 @import url("../../global/styles/_hide.css");
@@ -88,4 +87,7 @@
 @import url("_customer.css");
 @import url("_user-form.css");
 @import url("_box.css");
+@import url("_cabinet.css");
 @import url("_my-codes.css");
+@import url("_my-settings.css");
+@import url("_my-subscriptions.css");
