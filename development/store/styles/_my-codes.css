@@ -1,5 +1,5 @@
 .my-codes {
-    padding-top: 40px;
+
 }
     .my-codes__heading {
         margin-top: 0;
@@ -7,12 +7,12 @@
     }
 
     .my-codes__list {
-        margin-top: 40px;
+        margin-top: 32px;
     }
         .my-codes__item {
-            margin-top: 30px;
+            margin-top: 24px;
             border-top: 1px solid #F6F7F8;
-            padding-top: 30px;
+            padding-top: 24px;
         }
 
         .my-codes__item:first-child {
@@ -48,14 +48,81 @@
                 }
 
             .my-codes__value {
-                margin-top: 14px;
+                margin-top: 10px;
                 font-size: 16px;
                 line-height: 24px;
             }
 
             .my-codes__note {
-                margin-top: 14px;
+                margin-top: 10px;
                 font-size: 14px;
                 line-height: 20px;
                 color: #697882;
             }
+
+
+
+@media (min-width: 768px) {
+
+    .my-codes {
+
+    }
+        .my-codes__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .my-codes__list {
+            margin-top: 40px;
+        }
+            .my-codes__item {
+                margin-top: 30px;
+                /*border-top: 1px solid #F6F7F8;*/
+                padding-top: 30px;
+            }
+
+            .my-codes__item:first-child {
+                /*margin-top: 0;*/
+                /*border-top: none;*/
+                /*padding-top: 0;*/
+            }
+
+                .my-codes__head {
+
+                }
+                    .my-codes__sub-heading {
+                        /*margin-top: 0;*/
+                        /*margin-bottom: 0;*/
+                        /*display: inline;*/
+                        /*vertical-align: baseline;*/
+                    }
+
+                    .my-codes__copy {
+                        /*padding: 8px 10px;*/
+                        /*background-color: transparent;*/
+                        /*border: none;*/
+                        /*display: inline;*/
+                        /*vertical-align: baseline;*/
+                        /*font-family: inherit;*/
+                        /*color: var(--brand_orange);*/
+                        /*cursor: pointer;*/
+                        /*border-radius: 6px;*/
+                    }
+
+                    .my-codes__copy:hover {
+                        /*background-color: var(--brand-orange-5pct);*/
+                    }
+
+                .my-codes__value {
+                    margin-top: 14px;
+                    /*font-size: 16px;*/
+                    /*line-height: 24px;*/
+                }
+
+                .my-codes__note {
+                    margin-top: 14px;
+                    /*font-size: 14px;*/
+                    /*line-height: 20px;*/
+                    /*color: #697882;*/
+                }
+}
