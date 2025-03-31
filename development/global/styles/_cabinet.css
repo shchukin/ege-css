@@ -64,7 +64,7 @@
                 top: var(--header-small-tablets--simplified);
                 display: block;
                 /*align-items: stretch;*/
-                padding: 0;
+                padding: 12px 0 0;
                 border: none;
                 margin-right: 20px;
             }
