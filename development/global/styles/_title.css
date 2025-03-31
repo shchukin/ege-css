@@ -1,8 +1,8 @@
-.title {
+.title-bumper {
     overflow: hidden;
     text-align: center;
 }
-    .title__inner {
+    .title-bumper__inner {
         position: relative;
         margin-top: 0;
         margin-bottom: 0;
@@ -11,8 +11,8 @@
         font-weight: inherit;
         font-size: inherit;
     }
-        .title__inner::before,
-        .title__inner::after {
+        .title-bumper__inner::before,
+        .title-bumper__inner::after {
             content: "";
             position: absolute;
             bottom: 50%;
@@ -22,12 +22,12 @@
             background-color: #CDD6DC;
         }
 
-        .title__inner::before {
+        .title-bumper__inner::before {
             right: 100%;
             margin-right: 29px;
         }
 
-        .title__inner::after {
+        .title-bumper__inner::after {
             left: 100%;
             margin-left: 29px;
         }

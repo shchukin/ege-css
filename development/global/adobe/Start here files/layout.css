@@ -134,7 +134,7 @@ pre code {
 	font-family: "Consolas", "Menlo", "DejaVu Sans Mono", monospace;
 }
 pre .subst,
-pre .title {
+pre .title-bumper {
   font-weight: normal;
   color: #000;
 }
@@ -148,7 +148,7 @@ pre .doctype {
 pre .tag {
   background: #F3F3F3;
 }
-pre .tag .title,
+pre .tag .title-bumper,
 pre .id,
 pre .attr_selector,
 pre .pseudo,
@@ -156,9 +156,9 @@ pre .literal,
 pre .keyword,
 pre .hexcolor,
 pre .css .function,
-pre .ini .title,
+pre .ini .title-bumper,
 pre .css .class,
-pre .list .title,
+pre .list .title-bumper,
 pre .tex .command {
   font-weight: normal;
   color: #FF0C64;
