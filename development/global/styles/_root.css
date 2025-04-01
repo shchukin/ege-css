@@ -17,7 +17,9 @@
     --brand-orange-15pct: rgb(255 117 2 / 15%);
     --brand-orange-5pct: rgb(255 117 2 / 5%);
     --image-fallback: #F8F8F8;
-    --danger: var(--brand_orange);
+    --success: #00FF00;
+    --warning: var(--brand_orange);
+    --danger: #FF0000;
 }
 /* stylelint-enable declaration-colon-space-after */
 

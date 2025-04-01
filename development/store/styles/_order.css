@@ -1,0 +1,141 @@
+.order {
+
+}
+    .order__data {
+
+    }
+        .order__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: normal;
+        }
+            .order__summary {
+
+            }
+
+        .order__contains {
+            margin-top: 16px;
+        }
+            .order__item {
+                margin-top: 16px;
+                border-bottom: 1px solid #F2F5F6;
+                padding-bottom: 16px;
+            }
+
+            .order__item:first-child {
+                margin-top: 0;
+                border-top: none;
+                padding-top: 0;
+            }
+
+                .order__course {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+                .order__numbers {
+                    margin-top: 8px;
+                }
+                    .order__param {
+                        display: inline;
+                        vertical-align: baseline;
+                        font-size: 15px;
+                        line-height: 22px;
+                        white-space: nowrap;
+                    }
+
+                    .order__param:empty {
+                        display: none;
+                    }
+                        .order__param::before {
+                            content: "•";
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin-right: 8px;
+                            margin-left: 4px;
+                            color: #A7C0D0;
+                        }
+
+                        .order__param:first-child::before {
+                            display: none;
+                        }
+
+                        .order__param s {
+                            color: #697882;
+                        }
+
+                    .order__param--title {
+
+                    }
+    
+                    .order__param--amount {
+    
+                    }
+    
+                    .order__param--price {
+
+                    }
+    
+                    .order__param--discount {
+    
+                    }
+    
+                    .order__param--final-price {
+    
+                    }
+
+        .order__footer {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+            .order__total {
+                white-space: nowrap;
+            }
+
+    .order__status {
+        margin-top: 12px;
+    }
+
+    .order__status--waiting {
+
+    }
+
+    .order__status--completed {
+
+    }
+
+    .order__status--cancelled {
+
+    }
+        .order__status-heading {
+            display: inline;
+            vertical-align: baseline;
+        }
+
+        .order__status-title {
+            font-weight: bold;
+            display: inline;
+            vertical-align: baseline;
+        }
+
+        .order__status--completed .order__status-title {
+            color: var(--success);
+        }
+
+        .order__status--waiting .order__status-title {
+            color: var(--warning);
+        }
+
+        .order__status--cancelled .order__status-title {
+            color: var(--danger);
+        }
+
+        .order__status-footer {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }

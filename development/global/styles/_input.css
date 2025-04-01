@@ -122,9 +122,9 @@
     }
 
     /* stylelint-disable block-opening-brace-space-before */
-    .input_error .input__widget::-webkit-input-placeholder { color: var(--brand_orange); }
-    .input_error .input__widget::-moz-placeholder          { color: var(--brand_orange); }
-    .input_error .input__widget:-ms-input-placeholder      { color: var(--brand_orange); }
+    .input_error .input__widget::-webkit-input-placeholder { color: var(--danger); }
+    .input_error .input__widget::-moz-placeholder          { color: var(--danger); }
+    .input_error .input__widget:-ms-input-placeholder      { color: var(--danger); }
     /* stylelint-enable */
 
     .input_error .input__note {
