@@ -10,5 +10,23 @@
         margin-top: 40px;
     }
         .my-orders__item {
-            margin-top: 48px;
+            margin-top: 40px;
+            border-top: 2px solid #F2F5F6;
+            padding-top: 40px;
+        }
+
+        .my-orders__item:first-child {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+
+        @media (max-width: 419px) {
+
+            .my-orders__item {
+                margin-left: calc(-1 * var(--container-padding));
+                margin-right: calc(-1 * var(--container-padding));
+                padding-left: var(--container-padding);
+                padding-right: var(--container-padding);
+            }
         }

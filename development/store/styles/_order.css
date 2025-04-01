@@ -98,18 +98,6 @@
     .order__status {
         margin-top: 12px;
     }
-
-    .order__status--waiting {
-
-    }
-
-    .order__status--completed {
-
-    }
-
-    .order__status--cancelled {
-
-    }
         .order__status-heading {
             display: inline;
             vertical-align: baseline;
@@ -121,15 +109,15 @@
             vertical-align: baseline;
         }
 
-        .order__status--completed .order__status-title {
+        .order__status-title_completed {
             color: var(--success);
         }
 
-        .order__status--waiting .order__status-title {
+        .order__status-title_waiting {
             color: var(--warning);
         }
 
-        .order__status--cancelled .order__status-title {
+        .order__status-title_cancelled {
             color: var(--danger);
         }
 
