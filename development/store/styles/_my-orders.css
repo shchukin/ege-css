@@ -30,3 +30,31 @@
                 padding-right: var(--container-padding);
             }
         }
+
+
+
+@media (min-width: 1024px) {
+
+    .my-orders {
+
+    }
+        .my-orders__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .my-orders__list {
+            /*margin-top: 40px;*/
+        }
+            .my-orders__item {
+                /*margin-top: 40px;*/
+                border-top: none;
+                padding-top: 0;
+            }
+
+            .my-orders__item:first-child {
+                /*margin-top: 0;*/
+                /*border-top: none;*/
+                /*padding-top: 0;*/
+            }
+}
