@@ -52,11 +52,29 @@
                     font-size: 15px;
                     line-height: 22px;
                 }
+                    .order__serial-key {
+                        margin-top: 4px;
+                        padding-left: 4px;
+                    }
+
+                    .order__serial-key::before {
+                        content: "";
+                        float: left;
+                        margin-top: 8px;
+                        margin-right: 8px;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-left: 2px solid #A7C0D0;
+                        border-bottom: 2px solid #A7C0D0;
+                    }
 
                 .order__numbers {
                     margin-top: 8px;
                 }
                     .order__param {
+                        position: relative;
+                        padding-left: 18px;
                         display: inline;
                         vertical-align: baseline;
                         font-size: 15px;
@@ -68,20 +86,26 @@
                         display: none;
                     }
                         .order__param::before {
-                            content: "•";
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                            display: block;
                             font-weight: bold;
                             font-size: 16px;
                             margin-right: 8px;
                             margin-left: 4px;
-                            color: #A7C0D0;
+                            width: 4px;
+                            height: 4px;
+                            background-color: #A7C0D0;
+                            border-radius: 50%;
                         }
 
+                    .order__param:first-child {
+                        padding-left: 0;
+                    }
                         .order__param:first-child::before {
                             display: none;
-                        }
-
-                        .order__param s {
-                            color: #697882;
                         }
 
                     .order__param--title {
@@ -149,13 +173,20 @@
 
                 .order__status {
                     margin-left: 8px;
+                    position: relative;
+                    padding-left: 16px;
                     font-size: inherit;
                     display: inline;
                 }
                     .order__status::before {
-                        content: "•";
-                        margin-right: 6px;
-                        color: #A7C0D0;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 9px;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #A7C0D0;
+                        border-radius: 50%;
                     }
 
 
@@ -227,6 +258,7 @@
                     .order__numbers {
                         margin-top: 0;
                         margin-left: auto;
+                        white-space: nowrap;
                     }
                         .order__param {
 

@@ -1,0 +1,18 @@
+.key {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-style: italic;
+    gap: 4px;
+}
+    .key__title {
+
+    }
+
+    .key__value {
+        white-space: nowrap;
+    }
+
+    .key__copy {
+
+    }
