@@ -1,0 +1,11 @@
+.my-payments {
+
+}
+    .my-payments__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .my-payments__body {
+        margin-top: 24px;
+    }
