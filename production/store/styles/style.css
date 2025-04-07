@@ -4971,7 +4971,7 @@ a.slider__slide:hover .slider__image {
   margin-bottom: 0
 }
 .my-orders__list {
-  margin-top: 40px
+  margin-top: 32px
 }
 .my-orders__item {
   margin-top: 40px;
@@ -4996,6 +4996,9 @@ a.slider__slide:hover .slider__image {
   }
 }
 @media (min-width:1024px) {
+  .my-orders__list {
+    margin-top: 40px
+  }
   .my-orders__item {
     border-top: none;
     padding-top: 0
