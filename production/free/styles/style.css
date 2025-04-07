@@ -557,11 +557,36 @@ screen and (max-height:300px) {
   --font-body: "Roboto",sans-serif;
   --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   --font-weight-heading: 500;
+  --container-padding: 10px;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
+  --brand-orange-15pct: rgb(255 117 2 / 15%);
+  --brand-orange-5pct: rgb(255 117 2 / 5%);
   --image-fallback: #F8F8F8;
-  --danger: #FF7502;
-  --danger: var(--brand_orange)
+  --success: #04B004;
+  --warning: #FF7502;
+  --warning: var(--brand_orange);
+  --danger: #E51C1C
+}
+@media (min-width:360px) {
+  :root {
+    --container-padding: 16px
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  :root {
+    --container-width: 668px
+  }
+}
+@media (min-width:1024px) and (max-width:1339px) {
+  :root {
+    --container-width: 960px
+  }
+}
+@media (min-width:1340px) {
+  :root {
+    --container-width: 1200px
+  }
 }
 * {
   box-sizing: border-box
@@ -860,28 +885,28 @@ screen and (max-height:300px) {
   resize: vertical
 }
 .input_error .input__widget {
-  color: #FF7502;
+  color: #E51C1C;
   color: var(--danger)
 }
 .input_error .input__widget::-webkit-input-placeholder {
-  color: #FF7502;
-  color: var(--brand_orange)
+  color: #E51C1C;
+  color: var(--danger)
 }
 .input_error .input__widget::-moz-placeholder {
-  color: #FF7502;
-  color: var(--brand_orange)
+  color: #E51C1C;
+  color: var(--danger)
 }
 .input_error .input__widget:-ms-input-placeholder {
-  color: #FF7502;
-  color: var(--brand_orange)
+  color: #E51C1C;
+  color: var(--danger)
 }
 .input_error .input__note {
   font-weight: 500;
-  color: #FF7502;
+  color: #E51C1C;
   color: var(--danger)
 }
 .input_error.input_type_select .input__widget_faked-placeholder {
-  color: #FF7502;
+  color: #E51C1C;
   color: var(--danger)
 }
 .input_disabled .input__widget {
@@ -909,8 +934,10 @@ screen and (max-height:300px) {
   }
 }
 .label {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-bottom: 10px;
   font-weight: 500;
   font-size: 15px;
@@ -1251,35 +1278,18 @@ screen and (max-height:300px) {
   }
 }
 .container {
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+  border-left: 10px solid transparent;
+  border-left: var(--container-padding) solid transparent;
+  border-right: 10px solid transparent;
+  border-right: var(--container-padding) solid transparent;
   margin-left: auto;
   margin-right: auto;
   max-width: 420px
 }
-@media (min-width:360px) {
+@media (min-width:768px) {
   .container {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent
-  }
-}
-@media (min-width:768px) and (max-width:1023px) {
-  .container {
-    width: 668px;
-    max-width: none;
-    border: none
-  }
-}
-@media (min-width:1024px) and (max-width:1339px) {
-  .container {
-    width: 960px;
-    max-width: none;
-    border: none
-  }
-}
-@media (min-width:1340px) {
-  .container {
-    width: 1200px;
+    width: var(--container-width);
+    width: var(--container-width);
     max-width: none;
     border: none
   }
@@ -1331,11 +1341,11 @@ screen and (max-height:300px) {
 .wysiwyg_quarter-spacing ul li::before {
   content: "- "
 }
-.link {
-  position: relative;
+.link,
+.wysiwyg a {
   display: inline;
   vertical-align: baseline;
-  padding: 0;
+  padding: 6px 0;
   background-color: transparent;
   border: none;
   font-family: inherit;
@@ -1343,43 +1353,29 @@ screen and (max-height:300px) {
   line-height: inherit;
   color: #FF7502;
   color: var(--brand_orange);
-  text-decoration: none;
+  text-decoration: 1px underline transparent;
+  text-underline-offset: .25em;
   cursor: pointer
 }
-.link:hover {
-  text-decoration: underline
+.link:hover,
+.wysiwyg a:hover {
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor
 }
-.link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -13px;
-  bottom: -13px
+.link_danger {
+  color: #E51C1C;
+  color: var(--danger)
 }
 .link_fancy {
-  white-space: nowrap
-}
-.link_fancy::after {
-  content: "";
-  position: absolute;
-  left: 1px;
-  right: 1px;
-  bottom: -2px;
-  height: 1px;
-  background-image: linear-gradient(to right,currentColor 0,currentColor 2px,transparent 2px,transparent 4px);
-  background-size: 4px 1px;
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  text-decoration: none;
-  transition: opacity .1s ease
+  white-space: nowrap;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor
 }
 .link_fancy:hover {
-  text-decoration: none
-}
-.link_fancy:hover::after {
-  opacity: 0
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent
 }
 .link_fake {
   text-decoration: none;
@@ -1391,11 +1387,11 @@ screen and (max-height:300px) {
 .nobr {
   white-space: nowrap
 }
-.title {
+.title-bumper {
   overflow: hidden;
   text-align: center
 }
-.title__inner {
+.title-bumper__inner {
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
@@ -1404,8 +1400,8 @@ screen and (max-height:300px) {
   font-weight: inherit;
   font-size: inherit
 }
-.title__inner::after,
-.title__inner::before {
+.title-bumper__inner::after,
+.title-bumper__inner::before {
   content: "";
   position: absolute;
   bottom: 50%;
@@ -1414,11 +1410,11 @@ screen and (max-height:300px) {
   height: 1px;
   background-color: #cdd6dc
 }
-.title__inner::before {
+.title-bumper__inner::before {
   right: 100%;
   margin-right: 29px
 }
-.title__inner::after {
+.title-bumper__inner::after {
   left: 100%;
   margin-left: 29px
 }

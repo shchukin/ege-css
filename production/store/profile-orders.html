@@ -80,172 +80,170 @@
                 </div>
             </div>
         </nav>
-        <main class="completed">
-            <div class="buying-completed__wrap container">
-                <section class="informer">
-                    <div class="informer__note">
-                        Спасибо за заказ
-                    </div>
-                    <h1 class="informer__heading">
-                        Заказ успешно оформлен
+        <main class="cabinet container">
+            <div class="cabinet__sidebar hide-scrollbar">
+                <div class="cabinet__ribbon">
+                    <a class="cabinet__link cabinet__link_current" href="profile-orders.html">Мои заказы</a>
+                    <a class="cabinet__link" href="profile-subscriptions.html">Подписки <span class="cabinet__development">(в разработке)</span></a>
+                    <a class="cabinet__link" href="profile-payments.html">Платежи</a>
+                    <a class="cabinet__link" href="profile-promo-codes.html">Промо-коды</a>
+                    <a class="cabinet__link" href="profile-settings.html">Настройки аккаунта</a>
+                </div>
+            </div>
+            <div class="cabinet__body">
+                <div class="my-orders">
+                    <h1 class="my-orders__heading title">
+                        Мои заказы
                     </h1>
-                    <div class="informer__action">
-                        <button class="button button_palette_submit" type="button">
-                            <span class="button__label">Оплатить 19900 руб.</span>
-                        </button>
+                    <div class="my-orders__list">
+                        <div class="my-orders__item">
+                            <div class="order">
+                                <div class="order__data">
+                                    <h2 class="order__heading">
+                                        Заказ
+                                        <b class="order__summary">
+                                            №36340 от 24.03.2025
+                                        </b>
+                                        <span class="order__status order__status_waiting">
+                                            Ожидает оплаты
+                                        </span>
+                                    </h2>
+                                    <div class="order__contains">
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Онлайн-курс Математика Профиль 100 баллов PRO для Преподавателей (24/26)
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--price">5 000 руб.</div>
+                                            </div>
+                                        </div>
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Суперкомплект Марафоны 2 часть ЕГЭ профиль
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--discount">-15%</div>
+                                                <s class="order__param order__param--regular-price">15 600 руб.</s>
+                                                <div class="order__param order__param--discount-price">7 800 руб.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__footer">
+                                    Общая стоимость заказа
+                                    <b class="order__total">11 675 руб.</b>
+                                </div>
+                                <div class="order__payment">
+                                    <button class="button button_palette_submit" type="button">
+                                        <span class="button__label">Оплатить</span>
+                                    </button>
+                                    <button class="link link_danger" type="button">
+                                        Отменить заказ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-orders__item">
+                            <div class="order">
+                                <div class="order__data">
+                                    <h2 class="order__heading">
+                                        Заказ
+                                        <b class="order__summary">
+                                            №36340 от 24.03.2025
+                                        </b>
+                                        <span class="order__status order__status_completed">
+                                            Оплачен
+                                        </span>
+                                    </h2>
+                                    <div class="order__contains">
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Суперкомплект преподавателя: Как экономить время + Секреты преподавания онлайн в 2025/26!
+                                                <div class="order__serial-key">
+                                                    <div class="key">
+                                                        <div class="key__title">
+                                                            Ключ:
+                                                        </div>
+                                                        <div class="key__value">
+                                                            CAPHU-*****-*****-MZUEH
+                                                        </div>
+                                                        <div class="key__copy">
+                                                            <div class="copy">
+                                                                <button class="copy__handler" type="button">Копировать</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--price">5 000 руб.</div>
+                                            </div>
+                                        </div>
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Онлайн-курс Русский язык 100 баллов (24/25 г.) VIP
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--price">19 500 руб.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__footer">
+                                    Общая стоимость заказа
+                                    <b class="order__total">11 675 руб.</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-orders__item">
+                            <div class="order">
+                                <div class="order__data">
+                                    <h2 class="order__heading">
+                                        Заказ
+                                        <b class="order__summary">
+                                            №36340 от 24.03.2025
+                                        </b>
+                                        <span class="order__status order__status_cancelled">
+                                            Отменён
+                                        </span>
+                                    </h2>
+                                    <div class="order__contains">
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Онлайн-курс Математика Профиль 100 баллов PRO для Преподавателей (24/26)
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--price">5 000 руб.</div>
+                                            </div>
+                                        </div>
+                                        <div class="order__item">
+                                            <div class="order__course">
+                                                Суперкомплект Марафоны 2 часть ЕГЭ профиль
+                                            </div>
+                                            <div class="order__numbers">
+                                                <div class="order__param order__param--amount">1 шт.</div>
+                                                <div class="order__param order__param--discount">-15%</div>
+                                                <s class="order__param order__param--regular-price">15 600 руб.</s>
+                                                <div class="order__param order__param--discount-price">7 800 руб.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__footer">
+                                    Общая стоимость заказа
+                                    <b class="order__total">11 675 руб.</b>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="informer__description">
-                        При возникновении вопросов по вашему заказу свяжитесь с технической поддержкой по почте <a class="link nobr" href="mailto:help@egenator.ru">help@egenator.ru</a>
-                    </p>
-                </section>
+                </div>
             </div>
         </main>
-        <section class="related">
-            <div class="related__wrap container">
-                <section class="related__showcase shelf shelf_rows_1">
-                    <h2 class="shelf__heading">
-                        Возможно вас заинтересует
-                    </h2>
-                    <div class="shelf__list">
-                        <article class="shelf__item product">
-                            <a class="product__preview" href="#">
-                                <img class="product__image"
-                                     srcset="temp/product-boxart@2x.jpg 2x"
-                                     src="temp/product-boxart.jpg"
-                                     width="276"
-                                     height="207"
-                                     alt=""
-                                >
-                            </a>
-                            <div class="product__body">
-                                <div class="product__category">
-                                    Видеокурс
-                                </div>
-                                <h3 class="product__title">
-                                    <a class="product__link" href="#">
-                                        Математика. Годовой онлайн курс.
-                                    </a>
-                                </h3>
-                                <div class="product__price">
-                                    <s class="product__regular-price">15 600 руб.</s>
-                                    <span class="product__discount-price">7 800 руб.</span>
-                                </div>
-                                <div class="product__operations">
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Купить на диске</a>
-                                    </div>
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Скачать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="shelf__item product">
-                            <a class="product__preview" href="#">
-                                <img class="product__image"
-                                     srcset="temp/product-boxart@2x.jpg 2x"
-                                     src="temp/product-boxart.jpg"
-                                     width="276"
-                                     height="207"
-                                     alt=""
-                                >
-                            </a>
-                            <div class="product__body">
-                                <div class="product__category">
-                                    Видеокурс
-                                </div>
-                                <h3 class="product__title">
-                                    <a class="product__link" href="#">
-                                        Математика. Годовой онлайн курс.
-                                    </a>
-                                </h3>
-                                <div class="product__price">
-                                    <s class="product__regular-price">15 600 руб.</s>
-                                    <span class="product__discount-price">7 800 руб.</span>
-                                </div>
-                                <div class="product__operations">
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Купить на диске</a>
-                                    </div>
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Скачать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="shelf__item product">
-                            <a class="product__preview" href="#">
-                                <img class="product__image"
-                                     srcset="temp/product-boxart@2x.jpg 2x"
-                                     src="temp/product-boxart.jpg"
-                                     width="276"
-                                     height="207"
-                                     alt=""
-                                >
-                            </a>
-                            <div class="product__body">
-                                <div class="product__category">
-                                    Видеокурс
-                                </div>
-                                <h3 class="product__title">
-                                    <a class="product__link" href="#">
-                                        Математика. Годовой онлайн курс.
-                                    </a>
-                                </h3>
-                                <div class="product__price">
-                                    <s class="product__regular-price">15 600 руб.</s>
-                                    <span class="product__discount-price">7 800 руб.</span>
-                                </div>
-                                <div class="product__operations">
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Купить на диске</a>
-                                    </div>
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Скачать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="shelf__item product">
-                            <a class="product__preview" href="#">
-                                <img class="product__image"
-                                     srcset="temp/product-boxart@2x.jpg 2x"
-                                     src="temp/product-boxart.jpg"
-                                     width="276"
-                                     height="207"
-                                     alt=""
-                                >
-                            </a>
-                            <div class="product__body">
-                                <div class="product__category">
-                                    Видеокурс
-                                </div>
-                                <h3 class="product__title">
-                                    <a class="product__link" href="#">
-                                        Математика. Годовой онлайн курс.
-                                    </a>
-                                </h3>
-                                <div class="product__price">
-                                    <s class="product__regular-price">15 600 руб.</s>
-                                    <span class="product__discount-price">7 800 руб.</span>
-                                </div>
-                                <div class="product__operations">
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Купить на диске</a>
-                                    </div>
-                                    <div class="product__action">
-                                        <a class="product__apply link" href="#">Скачать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="shelf__back">
-                        <a class="link" href="#">На главную</a>
-                    </div>
-                </section>
-            </div>
-        </section>
 
         <!-- Panel -->
         <div class="panel">

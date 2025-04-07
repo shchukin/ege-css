@@ -27,9 +27,9 @@
         scrolled = $(window).scrollTop();
 
         if ( scrolled > scrolledBefore ) {
-            $body.addClass('body_scrolling-up');
+            $body.addClass('body_scrolling-up').removeClass('body_scrolling-down');
         } else {
-            $body.removeClass('body_scrolling-up');
+            $body.removeClass('body_scrolling-up').addClass('body_scrolling-down');
         }
 
         scrolledBefore = scrolled;
