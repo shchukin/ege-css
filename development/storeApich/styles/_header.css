@@ -31,6 +31,12 @@
 
     .header__logo {
         width: auto;
+        margin-top: 4px;
+        transition: margin-top 0.3s ease;
+    }
+
+    .body_scrolled .header__logo {
+        margin-top: -2px;
     }
 }
 
