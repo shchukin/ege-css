@@ -3,6 +3,17 @@
    global and store specific styles. */
 @import url("../../store/styles/style.css");
 
+/* Портальные компоненты */
+@import url("../../global/styles/_portal-footer.css");
+@import url("../../global/styles/_portal-link.css");
+@import url("../../global/styles/_portal-caption.css");
+@import url("../../global/styles/_portal-title.css");
+@import url("../../global/styles/_portal-media.css");
+@import url("../../global/styles/_portal-logo.css");
+
+@import url("_portal-footer-override.css");
+
+
 /* Global and Store overrides */
 @import url("_root.css");
 @import url("_button.css");
@@ -20,12 +31,4 @@
 @import url("_article.css");
 @import url("_code.css");
 
-/* Импорт из портала */
-@import url("_portal-footer.css");
-@import url("_portal-link.css");
-@import url("_portal-caption.css");
-@import url("_portal-title.css");
-@import url("_portal-media.css");
-@import url("_portal-logo.css");
 
-@import url("_portal-footer-override.css");

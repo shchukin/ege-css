@@ -1,55 +1,16 @@
 .logo,
 .body_scrolled .logo {
-    width: 160px;
-    height: 46px;
+    width: 80px;
+    height: 50px;
     padding: 0;
-    background-image: url("../images/portal-logo-black.png");
+    background-image: url("../images/logo.svg");
 }
 
-@media (min-resolution: 2dppx) {
-    .logo,
-    .body_scrolled .logo {
-        background-image: url("../images/portal-logo-black@2x.png");
-    }
-}
-
-
-
-/*@media (min-width: 360px) and (max-width: 419px) {*/
-
-/*    .logo,*/
-/*    .body_scrolled .logo {*/
-/*        width: 170px;*/
-/*        height: 49px;*/
-/*    }*/
-/*}*/
-
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
 
     .logo,
     .body_scrolled .logo {
-        width: 210px;
-        height: 61px;
-    }
-}
-
-
-@media (min-width: 1024px) and (max-width: 1339px) {
-
-    .logo,
-    .body_scrolled .logo {
-        width: 190px;
-        height: 55px;
-    }
-}
-
-@media (min-width: 1340px) {
-
-    .logo,
-    .body_scrolled .logo {
-        width: 233px;
-        height: 66px;
+        width: 126px;
+        height: 60px;
     }
 }

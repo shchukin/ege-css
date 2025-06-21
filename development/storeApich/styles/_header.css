@@ -7,21 +7,21 @@
     }
 
     .body_scrolled .header__logo {
-        width: 46px;
+        width: 80px;
     }
 }
 
 
 @media (min-width: 420px) and (max-width: 767px) {
     .header__logo {
-        margin-right: 20px;
+        margin-right: 100px;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .header__logo {
-        margin-right: 124px;
+        margin-right: 210px;
     }
 }
 

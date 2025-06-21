@@ -3,7 +3,7 @@
 }
     .call__phone {
         font-weight: 500;
-        font-size: 21px;
+        font-size: 20px;
         line-height: 24px;
         color: #FFFFFF;
         white-space: nowrap;
@@ -13,6 +13,5 @@
         margin-top: 2px;
         font-size: 15px;
         line-height: 20px;
-        color: #AAA9A8;
         color: rgba(255, 255, 255, 0.6);
     }
