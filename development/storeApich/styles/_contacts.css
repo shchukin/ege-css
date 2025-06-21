@@ -1,34 +1,7 @@
 .contacts {
-    width: 200px;
+
 }
     .contacts__network.net,
     .contacts__network .net {
         width: 50px; /* должно быть 40px, но из-за того что иконок 3, а не 4 -- увеличиваем */
     }
-
-@media (min-width: 1024px) {
-
-    .contacts {
-        width: auto;
-    }
-
-        .contacts__phone {
-            width: auto;
-            margin-top: 4px;
-        }
-
-        .contacts__location {
-            width: 190px;
-        }
-}
-
-
-
-@media (min-width: 1024px) and (max-width: 1339px) {
-
-    .contacts__location {
-        margin-right: 20px;
-    }
-}
-
-
