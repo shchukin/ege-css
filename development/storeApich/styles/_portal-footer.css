@@ -1,0 +1,161 @@
+/* Весь файл -- импорт с более нового портала. Добавлен префикс portal- */
+.portal-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--portal-black);
+    color-scheme: dark;
+    color: var(--portal-white);
+}
+    .portal-footer__wrap {
+        display: flex;
+        align-items: stretch;
+    }
+        .portal-footer__primary {
+            position: relative;
+            padding-bottom: 100px;
+            order: 2;
+            margin-left: auto;
+            width: 390px;
+            flex-shrink: 0;
+        }
+            .portal-footer__phone {
+                display: inline-block;
+                vertical-align: top;
+                text-decoration: none;
+                color: var(--portal-white);
+            }
+
+            .portal-footer__mail {
+                margin-top: 18px;
+                font-size: 20px;
+                color: var(--portal-white);
+            }
+
+            .portal-footer__menu {
+                margin-top: 16px;
+            }
+                .portal-footer__item {
+                    margin-top: 2px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+            .portal-footer__social {
+                position: absolute;
+                left: 0;
+                bottom: 12px;
+            }
+
+        .portal-footer__secondary {
+            order: 1;
+            width: 494px;
+            flex-shrink: 0;
+        }
+            .portal-footer__intro {
+
+            }
+
+            .portal-footer__form {
+                margin-top: 16px;
+            }
+
+            .portal-footer__logo {
+                display: block;
+                margin-top: 30px;
+            }
+
+            .portal-footer__logo:first-child {
+                margin-top: -19px;
+            }
+
+            .portal-footer__note {
+                margin-top: 10px;
+            }
+
+            .portal-footer__copyright {
+                margin-top: 14px;
+                color: var(--portal-grey-dark);
+            }
+
+
+
+@media (max-width: 1023px) {
+
+    .portal-footer {
+        padding-top: 40px;
+        padding-bottom: 32px;
+        /*background-color: var(--black);*/
+        /*color: var(--white);*/
+    }
+        .portal-footer__wrap {
+            display: block;
+            /*align-items: stretch;*/
+        }
+            .portal-footer__primary {
+                /*position: relative;*/
+                padding-bottom: 0;
+                /*order: 2;*/
+                /*margin-left: auto;*/
+                width: auto;
+                /*flex-shrink: 0;*/
+            }
+                .portal-footer__phone {
+                    /*display: inline-block;*/
+                    /*vertical-align: top;*/
+                    /*text-decoration: none;*/
+                    /*color: var(--white);*/
+                }
+
+                .portal-footer__mail {
+                    /*margin-top: 28px;*/
+                    /*font-size: 20px;*/
+                    /*color: var(--white);*/
+                }
+
+                .portal-footer__menu {
+                    /*margin-top: 16px;*/
+                }
+                    .portal-footer__item {
+                        /*margin-top: 8px;*/
+                        /*font-size: 20px;*/
+                        /*line-height: 30px;*/
+                    }
+
+                .portal-footer__social {
+                    margin-top: 20px;
+                    position: static;
+                    /*left: 0;*/
+                    /*bottom: 12px;*/
+                }
+
+            .portal-footer__secondary {
+                margin-top: 40px;
+                /*order: 1;*/
+                width: auto;
+                /*flex-shrink: 0;*/
+            }
+                .portal-footer__intro {
+
+                }
+
+                .portal-footer__form {
+                    /*margin-top: 16px;*/
+                }
+
+                .portal-footer__logo {
+
+                }
+
+                .portal-footer__logo:first-child {
+                    margin-top: 0;
+                }
+
+                .portal-footer__note {
+                    /*margin-top: 10px;*/
+                }
+
+                .portal-footer__copyright {
+                    /*margin-top: 16px;*/
+                    /*color: var(--grey-dark);*/
+                }
+}

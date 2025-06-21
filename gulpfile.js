@@ -89,6 +89,10 @@ function storeEgenatorSymbolsImgToSpriteSvg(content) {
     return symbolsImgToSpriteSvg(content, 'storeEgenator');
 }
 
+function storeApichSymbolsImgToSpriteSvg(content) {
+    return symbolsImgToSpriteSvg(content, 'storeApich');
+}
+
 function mainSymbolsImgToSpriteSvg(content) {
     return symbolsImgToSpriteSvg(content, 'main');
 }
@@ -165,8 +169,13 @@ function symbolsImgToSpriteSvg(content, project) {
             if( project === 'store' ) {
                 pathString = pathString.replace('global', 'store');
             }
+            
             if( project === 'storeEgenator' ) {
                 pathString = pathString.replace('global', 'storeEgenator');
+            }
+            
+            if( project === 'storeApich' ) {
+                pathString = pathString.replace('global', 'storeApich');
             }
 
             if( project === 'main' ) {
@@ -224,12 +233,34 @@ gulp.task('storeEgenatorManifest', function () {
         ;
 });
 
+gulp.task('storeApichManifest', function () {
+    return gulp.src([
+            'development/storeApich/browserconfig.xml',
+            'development/storeApich/manifest.json',
+            'development/storeApich/humans.txt',
+            'development/storeApich/favicon.ico'])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/'))
+        ;
+});
+
+
 // Favicon: copy
 
 gulp.task('storeEgenatorFavicon', function () {
     return gulp.src('development/storeEgenator/favicon/**/*')
         .pipe(plumber())
         .pipe(gulp.dest('production/storeEgenator/favicon/'))
+        ;
+});
+
+
+// Favicon: copy
+
+gulp.task('storeApichFavicon', function () {
+    return gulp.src('development/storeApich/favicon/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/favicon/'))
         ;
 });
 
@@ -291,6 +322,17 @@ gulp.task('storeEgenatorTemp', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/storeEgenator/temp/'))
+        ;
+});
+
+gulp.task('storeApichTemp', function () {
+    return gulp.src([
+        'development/global/temp/**/*',
+        'development/store/temp/**/*',
+        'development/storeApich/temp/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/temp/'))
         ;
 });
 
@@ -365,6 +407,17 @@ gulp.task('storeEgenatorAdobe', function () {
         ;
 });
 
+gulp.task('storeApichAdobe', function () {
+    return gulp.src([
+        'development/global/adobe/**/*',
+        'development/store/adobe/**/*',
+        'development/storeApich/adobe/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/adobe/'))
+        ;
+});
+
 gulp.task('mainAdobe', function () {
     return gulp.src([
         'development/global/adobe/**/*',
@@ -431,6 +484,15 @@ gulp.task('storeEgenatorFonts', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/storeEgenator/fonts/'))
+        ;
+});
+
+gulp.task('storeApichFonts', function () {
+    return gulp.src([
+        'development/storeApich/fonts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/fonts/'))
         ;
 });
 
@@ -505,6 +567,17 @@ gulp.task('storeEgenatorContent', function () {
         ;
 });
 
+gulp.task('storeApichContent', function () {
+    return gulp.src([
+        'development/global/content/**/*',
+        'development/store/content/**/*',
+        'development/storeApich/content/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/content/'))
+        ;
+});
+
 gulp.task('mainContent', function () {
     return gulp.src([
         'development/global/content/**/*',
@@ -573,6 +646,17 @@ gulp.task('storeEgenatorImages', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/storeEgenator/images/'))
+        ;
+});
+
+gulp.task('storeApichImages', function () {
+    return gulp.src([
+        'development/global/images/**/*',
+        'development/store/images/**/*',
+        'development/storeApich/images/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/images/'))
         ;
 });
 
@@ -647,6 +731,17 @@ gulp.task('storeEgenatorVendors', function () {
         ;
 });
 
+gulp.task('storeApichVendors', function () {
+    return gulp.src([
+        'development/global/vendors/**/*',
+        'development/store/vendors/**/*',
+        'development/storeApich/vendors/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/vendors/'))
+        ;
+});
+
 gulp.task('mainVendors', function () {
     return gulp.src([
         'development/global/vendors/**/*',
@@ -715,6 +810,17 @@ gulp.task('storeEgenatorScripts', function () {
     ])
         .pipe(plumber())
         .pipe(gulp.dest('production/storeEgenator/scripts/'))
+        ;
+});
+
+gulp.task('storeApichScripts', function () {
+    return gulp.src([
+        'development/global/scripts/**/*',
+        'development/store/scripts/**/*',
+        'development/storeApich/scripts/**/*'
+    ])
+        .pipe(plumber())
+        .pipe(gulp.dest('production/storeApich/scripts/'))
         ;
 });
 
@@ -790,6 +896,16 @@ gulp.task('storeEgenatorMarkups', function () {
         ;
 });
 
+gulp.task('storeApichMarkups', function () {
+    return gulp.src('development/storeApich/markups/**/*')
+        .pipe(plumber())
+        .pipe(change(storeApichSymbolsImgToSpriteSvg))
+        .pipe(change(releaseFromGlobal))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('production/storeApich/markups/'))
+        ;
+});
+
 gulp.task('mainMarkups', function () {
     return gulp.src('development/main/markups/**/*')
         .pipe(plumber())
@@ -862,6 +978,16 @@ gulp.task('storeEgenatorLayouts', function () {
         ;
 });
 
+gulp.task('storeApichLayouts', function () {
+    return gulp.src('development/storeApich/*.html')
+        .pipe(plumber())
+        .pipe(change(storeApichSymbolsImgToSpriteSvg))
+        .pipe(change(releaseFromGlobal))
+        .pipe(change(addSourcesTimestamp))
+        .pipe(gulp.dest('production/storeApich/'))
+        ;
+});
+
 gulp.task('mainLayouts', function () {
     return gulp.src('development/main/*.html')
         .pipe(plumber())
@@ -931,6 +1057,16 @@ gulp.task('storeEgenatorSymbols', function () {
         .pipe(svgmin())
         .pipe(svgstore())
         .pipe(gulp.dest('production/storeEgenator/symbols/'));
+});
+
+gulp.task('storeApichSymbols', function () {
+    return gulp.src(['development/storeApich/symbols/*.svg',
+        'development/global/symbols/*.svg'
+    ])
+        .pipe(plumber())
+        .pipe(svgmin())
+        .pipe(svgstore())
+        .pipe(gulp.dest('production/storeApich/symbols/'));
 });
 
 gulp.task('mainSymbols', function () {
@@ -1234,6 +1370,54 @@ gulp.task('storeEgenatorStyles', function () {
 });
 
 
+gulp.task('storeApichStyles', function () {
+
+    var spritesOptions = {
+        stylesheetPath: 'production/storeApich/styles',
+        spritePath: 'production/storeApich/sprites',
+        retina: 'true',
+        filterBy: function (image) {
+            // Allow files from /sprites/ only
+            if (!/\/sprites\//.test(image.url)) {
+                return Promise.reject();
+            }
+            return Promise.resolve();
+        }
+    };
+
+    var processors = [
+        sprites(spritesOptions),
+        cssnext({
+            browsers: 'last 2 versions', // for autoprefixer and features list
+            features: {
+                customProperties: {
+                    preserve: true // Don't fallback css variables
+                }
+            }
+        })
+    ];
+
+    return gulp.src([
+        'development/storeApich/styles/style.css'
+    ])
+        .pipe(plumber())
+        .pipe(cleanCSS({
+            advanced: false,
+            keepSpecialComments: 0,
+            format: 'beautify' // Не сжимаем в одну строку
+        }))
+        .pipe(postcss(processors))
+        .pipe(base64({
+            // Allow files from /vectors/ only
+            exclude: ['/sprite/', '/images/', '/symbols/']
+        }))
+        .pipe(change(releaseFromGlobal))
+        .pipe(gulp.dest('production/storeApich/styles/'))
+        .pipe(size())
+        ;
+});
+
+
 gulp.task('mainStyles', function () {
 
     var spritesOptions = {
@@ -1285,19 +1469,19 @@ gulp.task('mainStyles', function () {
 gulp.task('default', function (fn) {
     run('clean',
         'index',
-        'globalTemp',    'freeTemp',    'onlineTemp',    'rusTemp',    'storeTemp',    'storeEgenatorTemp',    'mainTemp',
-        'globalAdobe',   'freeAdobe',   'onlineAdobe',   'rusAdobe',   'storeAdobe',   'storeEgenatorAdobe',   'mainAdobe',
-        'globalFonts',   'freeFonts',   'onlineFonts',   'rusFonts',   'storeFonts',   'storeEgenatorFonts',   'mainFonts',
-        'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'storeEgenatorContent', 'mainContent',
-        'globalImages',  'freeImages',  'onlineImages',  'rusImages',  'storeImages',  'storeEgenatorImages',  'mainImages',
-        'globalVendors', 'freeVendors', 'onlineVendors', 'rusVendors', 'storeVendors', 'storeEgenatorVendors', 'mainVendors',
-        'globalScripts', 'freeScripts', 'onlineScripts', 'rusScripts', 'storeScripts', 'storeEgenatorScripts', 'mainScripts',
-        'globalMarkups', 'freeMarkups', 'onlineMarkups', 'rusMarkups', 'storeMarkups', 'storeEgenatorMarkups', 'mainMarkups',
-        'globalLayouts', 'freeLayouts', 'onlineLayouts', 'rusLayouts', 'storeLayouts', 'storeEgenatorLayouts', 'mainLayouts',
-        'globalSymbols', 'freeSymbols', 'onlineSymbols', 'rusSymbols', 'storeSymbols', 'storeEgenatorSymbols', 'mainSymbols',
-        'globalStyles',  'freeStyles',  'onlineStyles',  'rusStyles',  'storeStyles',  'storeEgenatorStyles',  'mainStyles',
-                                                                                       'storeEgenatorManifest',
-                                                                                       'storeEgenatorFavicon',
+        'globalTemp',    'freeTemp',    'onlineTemp',    'rusTemp',    'storeTemp',    'storeEgenatorTemp',     'storeApichTemp',    'mainTemp',
+        'globalAdobe',   'freeAdobe',   'onlineAdobe',   'rusAdobe',   'storeAdobe',   'storeEgenatorAdobe',    'storeApichAdobe',   'mainAdobe',
+        'globalFonts',   'freeFonts',   'onlineFonts',   'rusFonts',   'storeFonts',   'storeEgenatorFonts',    'storeApichFonts',   'mainFonts',
+        'globalContent', 'freeContent', 'onlineContent', 'rusContent', 'storeContent', 'storeEgenatorContent',  'storeApichContent', 'mainContent',
+        'globalImages',  'freeImages',  'onlineImages',  'rusImages',  'storeImages',  'storeEgenatorImages',   'storeApichImages',  'mainImages',
+        'globalVendors', 'freeVendors', 'onlineVendors', 'rusVendors', 'storeVendors', 'storeEgenatorVendors',  'storeApichVendors', 'mainVendors',
+        'globalScripts', 'freeScripts', 'onlineScripts', 'rusScripts', 'storeScripts', 'storeEgenatorScripts',  'storeApichScripts', 'mainScripts',
+        'globalMarkups', 'freeMarkups', 'onlineMarkups', 'rusMarkups', 'storeMarkups', 'storeEgenatorMarkups',  'storeApichMarkups', 'mainMarkups',
+        'globalLayouts', 'freeLayouts', 'onlineLayouts', 'rusLayouts', 'storeLayouts', 'storeEgenatorLayouts',  'storeApichLayouts', 'mainLayouts',
+        'globalSymbols', 'freeSymbols', 'onlineSymbols', 'rusSymbols', 'storeSymbols', 'storeEgenatorSymbols',  'storeApichSymbols', 'mainSymbols',
+        'globalStyles',  'freeStyles',  'onlineStyles',  'rusStyles',  'storeStyles',  'storeEgenatorStyles',   'storeApichStyles',  'mainStyles',
+                                                                                       'storeEgenatorManifest', 'storeApichManifest',
+                                                                                       'storeEgenatorFavicon',  'storeApichFavicon',
         fn);
 });
 

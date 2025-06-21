@@ -1,0 +1,129 @@
+.button {
+    font-size: 16px; /* в дефолтном магазине текст написан капсом и там меньший шрифт. Здесь увеличиваем */
+}
+
+.button_size_smaller {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px; /* в дефолтном магазине текст написан капсом и там меньший шрифт. Здесь увеличиваем */
+}
+
+.button_russian-language-and-literature {
+
+}
+
+
+.button_palette_faded,
+.button_palette_empty {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
+    color: #000000;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.button_palette_faded:hover,
+.button_palette_empty:hover {
+    background-color: var(--portal-panel-hover);
+}
+
+
+
+.button_id-contacts-handler {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
+    font-size: 13px;
+    color: #000000;
+    text-transform: uppercase;
+}
+    .button_id-contacts-handler:hover {
+        background-color: var(--portal-panel-hover);
+        border-color: #000000;
+        color: #000000;
+    }
+
+    @media (max-width: 1023px) {
+
+        .button_id-contacts-handler {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #FFFFFF;
+        }
+
+        .button_id-contacts-handler:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            background-color: transparent;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+
+
+.button_palette_submit {
+    background-image: none;
+    background-color: var(--portal-orange);
+    box-shadow: none;
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-heading);
+    color: #000000;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.button_palette_submit:hover {
+    opacity: 1;
+    background-color: #FBDD78;
+}
+    .button_palette_submit::before {
+        background-image: none;
+    }
+
+    .button_palette_submit.button_loading::after {
+        background-image: url("../vectors/button_loading.svg");
+    }
+
+    .button_palette_submit.button_success::after {
+        background-image: url("../vectors/button_success.svg");
+    }
+
+
+.button_loading {
+    color: transparent;
+}
+
+.button_success {
+    color: transparent;
+}
+
+
+/* То, что было .shadow в портале ЕГЭнатора */
+.code__submit::before,
+.shelf__load-more::before,
+.shelf__details::before,
+.actions__buy-now::before,
+.buying__action::before,
+.subscription__submit::before,
+.user-form__actions::before,
+.cart__submit::before,
+.informer__action::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+/* для кнопки smaller */
+.code__submit::before {
+    left: 3px;
+    top: 3px;
+}
+
+
+

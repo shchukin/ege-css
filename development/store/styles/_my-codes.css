@@ -32,20 +32,9 @@
                 }
 
                 .my-codes__copy {
-                    padding: 8px 10px;
-                    background-color: transparent;
-                    border: none;
-                    display: inline;
-                    vertical-align: baseline;
-                    font-family: inherit;
-                    color: var(--brand_orange);
-                    cursor: pointer;
-                    border-radius: 6px;
+
                 }
 
-                .my-codes__copy:hover {
-                    background-color: var(--brand-orange-5pct);
-                }
 
             .my-codes__value {
                 margin-top: 10px;
@@ -87,15 +76,12 @@
 
                 }
                     .my-codes__sub-heading {
-
+                        margin-right: 12px;
                     }
 
                     .my-codes__copy {
-
-                    }
-
-                    .my-codes__copy:hover {
-
+                        display: inline;
+                        vertical-align: baseline;
                     }
 
                 .my-codes__value {

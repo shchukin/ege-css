@@ -1,0 +1,11 @@
+.net_id_youtube   { background-image: url("../vectors/net_id_youtube.svg"); }
+.net_id_vkontakte { background-image: url("../vectors/net_id_vkontakte.svg"); }
+.net_id_telegram  { background-image: url("../vectors/net_id_telegram.svg"); }
+.net_id_periscope { background-image: url("../vectors/net_id_periscope.svg"); }
+
+
+@media (max-width: 1023px) {
+    .net {
+        filter: invert(1);
+    }
+}

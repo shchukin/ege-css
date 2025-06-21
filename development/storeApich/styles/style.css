@@ -1,0 +1,31 @@
+/* Unlike other projects we don't import global styles here.
+   Instead we import Store styles that already includes both
+   global and store specific styles. */
+@import url("../../store/styles/style.css");
+
+/* Global and Store overrides */
+@import url("_root.css");
+@import url("_button.css");
+@import url("_asterisk.css");
+@import url("_logo.css");
+@import url("_contacts.css");
+@import url("_net.css");
+@import url("_live-search.css");
+@import url("_header.css");
+@import url("_shelf.css");
+@import url("_user-form.css");
+@import url("_navigation.css");
+@import url("_product.css");
+@import url("_call.css");
+@import url("_article.css");
+@import url("_code.css");
+
+/* Импорт из портала */
+@import url("_portal-footer.css");
+@import url("_portal-link.css");
+@import url("_portal-caption.css");
+@import url("_portal-title.css");
+@import url("_portal-media.css");
+@import url("_portal-logo.css");
+
+@import url("_portal-footer-override.css");

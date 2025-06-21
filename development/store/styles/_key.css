@@ -1,18 +1,19 @@
-.key {
+.serial-key {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     font-style: italic;
     gap: 4px;
 }
-    .key__title {
+    .serial-key__title {
 
     }
 
-    .key__value {
+    .serial-key__value {
+        margin-right: 8px;
         white-space: nowrap;
     }
 
-    .key__copy {
+    .serial-key__copy {
 
     }

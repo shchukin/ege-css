@@ -69,14 +69,14 @@
 
     .cabinet {
         padding-top: 16px;
-        /*padding-top: 40px;*/
-        /*padding-bottom: 80px;*/
+        padding-bottom: 120px;
         display: flex;
         align-items: stretch;
     }
         .cabinet__sidebar {
             overflow-x: visible;
             flex-shrink: 0;
+            width: 220px;
             margin: 0 50px 0 -16px;
         }
             .cabinet__ribbon {

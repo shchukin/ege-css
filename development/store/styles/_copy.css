@@ -1,17 +1,24 @@
 .copy {
-
+    display: inline;
+    vertical-align: baseline;
+    padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--brand_orange);
+    text-decoration: 1px underline transparent;
+    text-decoration-style: dashed;
+    text-underline-offset: 0.25em;
+    cursor: pointer;
 }
-    .copy__handler {
-        display: inline;
-        vertical-align: baseline;
-        padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
-        background-color: transparent;
-        border: none;
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-        color: var(--brand_orange);
-        text-decoration: 1px underline transparent;
-        text-underline-offset: 0.25em;
-        cursor: pointer;
-    }
+
+.copy:hover {
+    text-decoration-color: currentColor;
+}
+
+.copy--inline {
+    display: inline;
+    vertical-align: baseline;
+}
