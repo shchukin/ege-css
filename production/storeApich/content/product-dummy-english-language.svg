@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="207" viewBox="0 0 276 207">
+    <defs>
+        <circle id="english-a" cx="138" cy="104" r="90"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="276" height="207" fill="#FFD3A4"/>
+        <mask id="english-b" fill="#fff">
+            <use xlink:href="#english-a"/>
+        </mask>
+        <use fill="#FFD3A4" xlink:href="#english-a"/>
+        <path fill="#448FD2" fill-rule="nonzero" d="M-19 138.12h69.65L-19 184.04v-45.92zm315 0v45.92l-69.65-45.92H296zM-19 69.23V23.31l70 45.92h-70zm315 0h-69.65L296 23.31v45.92zM112.25 207h-95.9l95.9-62.97V207zm52.5 0v-62.97l95.9 62.97h-95.9zM112.25 0v62.97L16.35 0h95.9zm52.5 0h95.9l-95.9 62.97V0z" mask="url(#english-b)" opacity=".41"/>
+        <path fill="#FF6B42" d="M296 82.8v41.4H154.25V207h-31.5v-82.8H-19V82.8h141.75V0h31.5v82.8H296zm-105 55.32h23.45L296 191.69V207l-105-68.88zM86 69.23H62.55L-19 15.66V.35L86 69.23zm0 68.89h23.45L4.45 207H-19l105-68.88zm105-68.89h-23.45l105-68.88H296L191 69.23z" mask="url(#english-b)" opacity=".41"/>
+    </g>
+</svg>

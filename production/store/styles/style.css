@@ -4820,6 +4820,7 @@ a.slider__slide:hover .slider__image {
 @media (min-width:1024px) {
   .cabinet {
     padding-top: 16px;
+    padding-bottom: 120px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: stretch;
@@ -4829,6 +4830,7 @@ a.slider__slide:hover .slider__image {
     overflow-x: visible;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    width: 220px;
     margin: 0 50px 0 -16px
   }
   .cabinet__ribbon {
@@ -4891,22 +4893,6 @@ a.slider__slide:hover .slider__image {
   display: inline;
   vertical-align: baseline
 }
-.my-codes__copy {
-  padding: 8px 10px;
-  background-color: transparent;
-  border: none;
-  display: inline;
-  vertical-align: baseline;
-  font-family: inherit;
-  color: #FF7502;
-  color: var(--brand_orange);
-  cursor: pointer;
-  border-radius: 6px
-}
-.my-codes__copy:hover {
-  background-color: rgb(255 117 2 / 5%);
-  background-color: var(--brand-orange-5pct)
-}
 .my-codes__value {
   margin-top: 10px;
   font-size: 16px;
@@ -4925,6 +4911,13 @@ a.slider__slide:hover .slider__image {
   .my-codes__item {
     margin-top: 30px;
     padding-top: 30px
+  }
+  .my-codes__sub-heading {
+    margin-right: 12px
+  }
+  .my-codes__copy {
+    display: inline;
+    vertical-align: baseline
   }
   .my-codes__value {
     margin-top: 14px
@@ -5135,7 +5128,7 @@ a.slider__slide:hover .slider__image {
 }
 @media (min-width:768px) {
   .order__status {
-    margin-left: 8px;
+    margin-left: 12px;
     position: relative;
     padding-left: 16px;
     font-size: inherit;
@@ -5190,7 +5183,7 @@ a.slider__slide:hover .slider__image {
         justify-content: flex-end
   }
 }
-.key {
+.serial-key {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -5200,10 +5193,11 @@ a.slider__slide:hover .slider__image {
   font-style: italic;
   gap: 4px
 }
-.key__value {
+.serial-key__value {
+  margin-right: 8px;
   white-space: nowrap
 }
-.copy__handler {
+.copy {
   display: inline;
   vertical-align: baseline;
   padding: 6px 0;
@@ -5215,8 +5209,18 @@ a.slider__slide:hover .slider__image {
   color: #FF7502;
   color: var(--brand_orange);
   text-decoration: 1px underline transparent;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
   text-underline-offset: .25em;
   cursor: pointer
+}
+.copy:hover {
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor
+}
+.copy--inline {
+  display: inline;
+  vertical-align: baseline
 }
 @media (max-width:767px) {
   .payment {
