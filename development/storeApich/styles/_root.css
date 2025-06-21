@@ -2,6 +2,7 @@
 
     /* оверрайд глобальных переменных */
     --brand_orange: #393939; /* В основном используется для текста */
+    --brand_orange-hover: #494949; /* В основном используется для текста */
     --danger: #F12260;
 
     /* Inter используется в весах 400, 500, 700 (так же как и Roboto в global) */
@@ -13,7 +14,7 @@
 
     /* Импорт с более нового портала */
     --portal-panel-hover: #F2F2F2;
-    --portal-orange: #FAD03D;
+    --portal-orange: #393939;
     --portal-black: #111111;
     --portal-black-hover: rgba(17, 17, 17, 0.8);
     --portal-white: #FFFEFB;

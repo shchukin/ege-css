@@ -38,11 +38,12 @@
     color: #000000;
     text-transform: uppercase;
 }
-    .button_id-contacts-handler:hover {
-        background-color: var(--portal-panel-hover);
-        border-color: #000000;
-        color: #000000;
-    }
+
+.button_id-contacts-handler:hover {
+    background-color: var(--portal-panel-hover);
+    border-color: #000000;
+    color: #000000;
+}
 
     @media (max-width: 1023px) {
 
