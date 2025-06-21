@@ -1,0 +1,4 @@
+.location {
+    background-image: url("../vectors/location.svg");
+    color: var(--brand_orange);
+}

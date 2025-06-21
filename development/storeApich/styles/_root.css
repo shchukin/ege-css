@@ -1,7 +1,7 @@
 :root {
 
     /* оверрайд глобальных переменных */
-    --brand_orange: #393939; /* В основном используется для текста */
+    --brand_orange: #2C2C2C; /* В основном используется для текста */
     --brand_orange-hover: #494949; /* В основном используется для текста */
     --danger: #F12260;
 
@@ -14,7 +14,7 @@
 
     /* Импорт с более нового портала */
     --portal-panel-hover: #F2F2F2;
-    --portal-orange: #393939;
+    --portal-orange: #2C2C2C;
     --portal-black: #111111;
     --portal-black-hover: rgba(17, 17, 17, 0.8);
     --portal-white: #FFFEFB;

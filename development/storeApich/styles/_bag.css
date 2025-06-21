@@ -1,0 +1,6 @@
+.bag {
+    background-image: url("../vectors/bag.svg");
+}
+    .bag__quantity {
+        line-height: 12px;
+    }
