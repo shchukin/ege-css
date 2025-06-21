@@ -1,15 +1,15 @@
 :root {
 
     /* оверрайд глобальных переменных */
-    --brand_orange: #000000; /* В основном используется для текста */
+    --brand_orange: #393939; /* В основном используется для текста */
     --danger: #F12260;
 
     /* Inter используется в весах 400, 500, 700 (так же как и Roboto в global) */
-    --font-body: "Inter", sans-serif;
+    --font-body: "Open Sans", sans-serif;
 
     /* RF Dewi Extended используется только в 800 (так же как и Futura PT в global) , так что везде где есть font-family: var(--font-heading); должно сразу идти и font-weight: var(--font-weight-heading); */
-    --font-heading: "RF Dewi Extended", sans-serif;
-    --font-weight-heading: 800;
+    --font-heading: "Open Sans", sans-serif;
+    --font-weight-heading: 700;
 
     /* Импорт с более нового портала */
     --portal-panel-hover: #F2F2F2;
