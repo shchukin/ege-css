@@ -1,3 +1,4 @@
+/* убираем иконки */
 .subject .subject__inner::before {
     display: none;
 }

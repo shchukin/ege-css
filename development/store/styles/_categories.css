@@ -21,6 +21,9 @@
     }
         .categories__item {
             margin-top: 18px;
+            width: 276px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .categories__item:first-child {
@@ -29,81 +32,25 @@
 
 
 @media (min-width: 768px) {
+
     .categories {
         padding-top: 63px;
         padding-bottom: 103px;
     }
         .categories__list {
             display: flex;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 16px;
             justify-content: center;
         }
             .categories__item {
-                flex-shrink: 0;
-                margin-top: 0;
+                width: auto;
+                margin: 0;
+                max-width: 468px;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 200px;
             }
 }
 
-
-
-
-
-@media (max-width: 767px) {
-    .categories__item {
-        margin-left: auto;
-        margin-right: auto;
-        width: 276px;
-    }
-
-    .categories__item:nth-child(n+5) {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .categories__list {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-        .categories__item {
-            width: 33.3333%;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-
-        .categories__item:nth-child(n+4) {
-            display: none;
-        }
-}
-
-@media (min-width: 1024px) and (max-width: 1339px) {
-    .categories__list {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-        .categories__item {
-            width: 25%;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        .categories__item:nth-child(n+5) {
-            display: none;
-        }
-}
-
-@media (min-width: 1340px) {
-    .categories__list {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-        .categories__item {
-            width: 25%;
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-
-        .categories__item:nth-child(n+5) {
-            display: none;
-        }
-}
 
