@@ -1,9 +1,6 @@
 /* Весь файл -- импорт с более нового портала. Добавлен префикс portal- */
 
 .portal-logo {
-    width: 230px;
-    height: 66px;
-    background-image: url("../images/portal-logo-orange.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -11,11 +8,3 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
-@media (min-resolution: 2dppx) {
-
-    .portal-logo {
-        background-image: url("../images/portal-logo-orange@2x.png");
-    }
-}
-
