@@ -720,6 +720,7 @@ screen and (max-height:300px) {
   --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   --font-weight-heading: 500;
   --container-padding: 10px;
+  --container-width: 100%;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
   --brand-orange-15pct: rgb(255 117 2 / 15%);
@@ -1409,7 +1410,7 @@ screen and (max-height:300px) {
 }
 @media (min-width:768px) {
   .container {
-    width: var(--container-width);
+    width: 100%;
     width: var(--container-width);
     max-width: none;
     border: none
@@ -1631,7 +1632,7 @@ screen and (max-height:300px) {
 }
 .call__phone {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 24px;
   color: #fff;
   white-space: nowrap
@@ -1640,7 +1641,6 @@ screen and (max-height:300px) {
   margin-top: 2px;
   font-size: 15px;
   line-height: 20px;
-  color: #aaa9a8;
   color: rgba(255,255,255,.6)
 }
 .location {

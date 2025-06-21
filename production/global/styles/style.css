@@ -720,6 +720,7 @@ screen and (max-height:300px) {
   --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   --font-weight-heading: 500;
   --container-padding: 10px;
+  --container-width: 100%;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
   --brand-orange-15pct: rgb(255 117 2 / 15%);
@@ -1465,7 +1466,7 @@ screen and (max-height:300px) {
 }
 @media (min-width:768px) {
   .container {
-    width: var(--container-width);
+    width: 100%;
     width: var(--container-width);
     max-width: none;
     border: none
@@ -1826,7 +1827,7 @@ screen and (max-height:300px) {
 }
 .call__phone {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 24px;
   color: #fff;
   white-space: nowrap
@@ -1835,7 +1836,6 @@ screen and (max-height:300px) {
   margin-top: 2px;
   font-size: 15px;
   line-height: 20px;
-  color: #aaa9a8;
   color: rgba(255,255,255,.6)
 }
 .location {
@@ -2454,6 +2454,10 @@ screen and (max-height:300px) {
 .product {
   position: relative;
   min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 278px;
   border: 1px solid #e9e8e8;
   border-radius: 3px
@@ -2481,7 +2485,13 @@ screen and (max-height:300px) {
 .product__body {
   position: relative;
   padding: 17px 10px 20px;
-  min-height: 178px
+  min-height: 178px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column
 }
 .product__category {
   font-size: 11px;
@@ -2530,7 +2540,8 @@ screen and (max-height:300px) {
   color: var(--brand_orange)
 }
 .product__operations {
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;

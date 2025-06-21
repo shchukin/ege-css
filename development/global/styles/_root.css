@@ -10,6 +10,7 @@
 
     /* Контейнер */
     --container-padding: 10px;
+    --container-width: 100%;
 
     /* Цвета */
     --brand_grey: #697882;

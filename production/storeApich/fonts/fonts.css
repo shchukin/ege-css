@@ -1,40 +1,23 @@
 @font-face {
     font-display: swap;
-    font-family: "Inter";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("Inter Regular"), url("inter-v13-cyrillic_latin-regular.woff2") format("woff2");
+    src: url("open-sans-v43-cyrillic_latin-regular.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inter";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 500;
-    src: local("Inter Medium"), url("inter-v13-cyrillic_latin-500.woff2") format("woff2");
+    src: url("open-sans-v43-cyrillic_latin-500.woff2") format("woff2");
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inter";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("Inter Bold"), url("inter-v13-cyrillic_latin-700.woff2") format("woff2");
-}
-
-
-@font-face {
-    font-display: swap;
-    font-family: "RF Dewi Extended";
-    font-style: normal;
-    font-weight: 400;
-    src: url("RFDewiExtended-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "RF Dewi Extended";
-    font-style: normal;
-    font-weight: 800;
-    src: url("RFDewiExtended-Ultrabold.woff2") format("woff2");
+    src: url("open-sans-v43-cyrillic_latin-700.woff2") format("woff2");
 }

@@ -558,6 +558,7 @@ screen and (max-height:300px) {
   --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   --font-weight-heading: 500;
   --container-padding: 10px;
+  --container-width: 100%;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
   --brand-orange-15pct: rgb(255 117 2 / 15%);
@@ -1280,7 +1281,7 @@ screen and (max-height:300px) {
 }
 @media (min-width:768px) {
   .container {
-    width: var(--container-width);
+    width: 100%;
     width: var(--container-width);
     max-width: none;
     border: none
@@ -1446,7 +1447,7 @@ screen and (max-height:300px) {
 }
 .call__phone {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 24px;
   color: #fff;
   white-space: nowrap
@@ -1455,7 +1456,6 @@ screen and (max-height:300px) {
   margin-top: 2px;
   font-size: 15px;
   line-height: 20px;
-  color: #aaa9a8;
   color: rgba(255,255,255,.6)
 }
 .location {
@@ -1688,6 +1688,10 @@ screen and (max-height:300px) {
 .product {
   position: relative;
   min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 278px;
   border: 1px solid #e9e8e8;
   border-radius: 3px
@@ -1715,7 +1719,13 @@ screen and (max-height:300px) {
 .product__body {
   position: relative;
   padding: 17px 10px 20px;
-  min-height: 178px
+  min-height: 178px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column
 }
 .product__category {
   font-size: 11px;
@@ -1764,7 +1774,8 @@ screen and (max-height:300px) {
   color: var(--brand_orange)
 }
 .product__operations {
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -3893,7 +3904,10 @@ a.slider__slide:hover .slider__image {
   list-style: none
 }
 .categories__item {
-  margin-top: 18px
+  margin-top: 18px;
+  width: 276px;
+  margin-left: auto;
+  margin-right: auto
 }
 .categories__item:first-child {
   margin-top: 0
@@ -3906,67 +3920,22 @@ a.slider__slide:hover .slider__image {
   .categories__list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: start;
-        align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px;
     -ms-flex-pack: center;
         justify-content: center
   }
   .categories__item {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    margin-top: 0
-  }
-}
-@media (max-width:767px) {
-  .categories__item {
-    margin-left: auto;
-    margin-right: auto;
-    width: 276px
-  }
-  .categories__item:nth-child(n+5) {
-    display: none
-  }
-}
-@media (min-width:768px) and (max-width:1023px) {
-  .categories__list {
-    margin-left: -8px;
-    margin-right: -8px
-  }
-  .categories__item {
-    width: 33.3333%;
-    padding-left: 8px;
-    padding-right: 8px
-  }
-  .categories__item:nth-child(n+4) {
-    display: none
-  }
-}
-@media (min-width:1024px) and (max-width:1339px) {
-  .categories__list {
-    margin-left: -8px;
-    margin-right: -8px
-  }
-  .categories__item {
-    width: 25%;
-    padding-left: 8px;
-    padding-right: 8px
-  }
-  .categories__item:nth-child(n+5) {
-    display: none
-  }
-}
-@media (min-width:1340px) {
-  .categories__list {
-    margin-left: -16px;
-    margin-right: -16px
-  }
-  .categories__item {
-    width: 25%;
-    padding-left: 16px;
-    padding-right: 16px
-  }
-  .categories__item:nth-child(n+5) {
-    display: none
+    width: auto;
+    margin: 0;
+    max-width: 468px;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px
   }
 }
 .index {
@@ -5301,5 +5270,32 @@ a.slider__slide:hover .slider__image {
   }
   .payment__mobile-heading {
     display: none
+  }
+}
+.article {
+  padding-top: 35px;
+  padding-bottom: 100px
+}
+.article__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Futura PT","FuturaPT","Futura-PT",sans-serif;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-weight: var(--font-weight-heading);
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center
+}
+.article__body {
+  margin-top: 31px
+}
+@media (min-width:768px) {
+  .article {
+    padding-top: 43px
+  }
+  .article__heading {
+    font-size: 42px;
+    line-height: 54px
   }
 }
