@@ -5746,3 +5746,9 @@ a.slider__slide:hover .slider__image {
 .subject .subject__inner::before {
   display: none
 }
+.alert {
+  background-color: #6e7620
+}
+.alert_danger {
+  background-color: #ac2323
+}
