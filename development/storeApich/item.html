@@ -101,10 +101,8 @@
                 <div class="item__body">
                     <div class="item__preview">
                         <div class="item__pictures gallery">
-                            <input class="gallery__handler" type="radio" name="item-gallery" id="item-gallery-01" checked>
-                            <input class="gallery__handler" type="radio" name="item-gallery" id="item-gallery-02">
                             <div class="gallery__stage">
-                                <a class="gallery__item" href="#">
+                                <a class="gallery__item gallery__item--current" href="#">
                                     <img class="gallery__full-image gallery__full-image--stretch-over-border"
                                          src="../global/content/product-placeholder.svg"
                                          width="300"
@@ -113,33 +111,51 @@
                                     >
                                 </a>
                                 <a class="gallery__item" href="#">
-                                    <img class="gallery__full-image gallery__full-image--stretch-over-border"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                    <img class="gallery__full-image"
+                                         srcset="../global/temp/product-boxart-300x225@2x.jpg 2x"
+                                         src="../global/temp/product-boxart-300x225.jpg"
                                          width="300"
                                          height="225"
                                          alt=""
                                     >
                                 </a>
+                                <a class="gallery__item" href="#">
+                                    <img class="gallery__full-image gallery__full-image--stretch-over-border"
+                                         srcset="../global/temp/product-stretch-over-border-302x227@2x.jpg 2x"
+                                         src="../global/temp/product-stretch-over-border-302x227.jpg"
+                                         width="302"
+                                         height="227"
+                                         alt=""
+                                    >
+                                </a>
                             </div>
                             <div class="gallery__navigation">
-                                <label class="gallery__preview" for="item-gallery-01">
+                                <button class="gallery__preview gallery__preview--current" type="button">
                                     <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
                                          src="../global/content/product-placeholder.svg"
                                          width="50"
                                          height="50"
                                          alt=""
                                     >
-                                </label>
-                                <label class="gallery__preview" for="item-gallery-02">
+                                </button>
+                                <button class="gallery__preview" type="button">
+                                    <img class="gallery__thumbnail"
+                                         srcset="../global/temp/product-boxart-52x39@2x.jpg 2x"
+                                         src="../global/temp/product-boxart-52x39.jpg"
+                                         width="52"
+                                         height="39"
+                                         alt=""
+                                    >
+                                </button>
+                                <button class="gallery__preview" type="button">
                                     <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
-                                         srcset="temp/product-boxart@2x.jpg 2x"
-                                         src="temp/product-boxart.jpg"
+                                         srcset="../global/temp/product-stretch-over-border-54x41@2x.jpg 2x"
+                                         src="../global/temp/product-stretch-over-border-54x41.jpg"
                                          width="54"
                                          height="41"
                                          alt=""
                                     >
-                                </label>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -673,6 +689,7 @@
         <script src="../global/scripts/slider.js"></script>
         <script src="../global/scripts/live-search.js"></script>
         <script src="../global/scripts/input.js"></script>
+        <script src="../global/scripts/gallery.js"></script>
 
         <script src="../store/scripts/up.js"></script>
         <script src="../store/scripts/panel.js"></script>

@@ -2347,6 +2347,10 @@ a.slider__slide:hover .slider__image {
   visibility: hidden;
   transition: visibility .3s ease,opacity .3s ease
 }
+.gallery__item--current {
+  visibility: visible;
+  opacity: 1
+}
 .gallery__full-image {
   vertical-align: top;
   width: 300px;
@@ -2378,15 +2382,31 @@ a.slider__slide:hover .slider__image {
       flex-wrap: wrap
 }
 .gallery__preview {
+  position: relative;
   display: block;
   width: 54px;
   width: calc(var(--gallery-thumbnail-width) + 2px);
   height: 41px;
   height: calc(var(--gallery-thumbnail-height) + 2px);
   border: 1px solid #e9e8e8;
+  padding: 0;
+  background-color: transparent;
   border-radius: 3px;
-  cursor: pointer;
+  cursor: pointer
+}
+.gallery__preview--current {
+  cursor: default
+}
+.gallery__preview::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 1px solid transparent;
+  border-radius: 3px;
   transition: border-color .3s ease
+}
+.gallery__preview--current::after {
+  border-color: #ff7502
 }
 .gallery__thumbnail {
   vertical-align: top;
@@ -2410,30 +2430,6 @@ a.slider__slide:hover .slider__image {
 }
 .gallery__handler:focus ~ .gallery__navigation {
   outline: auto
-}
-.gallery__handler:nth-child(1):checked ~ .gallery__stage .gallery__item:nth-child(1),
-.gallery__handler:nth-child(2):checked ~ .gallery__stage .gallery__item:nth-child(2),
-.gallery__handler:nth-child(3):checked ~ .gallery__stage .gallery__item:nth-child(3),
-.gallery__handler:nth-child(4):checked ~ .gallery__stage .gallery__item:nth-child(4),
-.gallery__handler:nth-child(5):checked ~ .gallery__stage .gallery__item:nth-child(5),
-.gallery__handler:nth-child(6):checked ~ .gallery__stage .gallery__item:nth-child(6),
-.gallery__handler:nth-child(7):checked ~ .gallery__stage .gallery__item:nth-child(7),
-.gallery__handler:nth-child(8):checked ~ .gallery__stage .gallery__item:nth-child(8),
-.gallery__handler:nth-child(9):checked ~ .gallery__stage .gallery__item:nth-child(9) {
-  visibility: visible;
-  opacity: 1
-}
-.gallery__handler:nth-child(1):checked ~ .gallery__navigation .gallery__preview:nth-child(1),
-.gallery__handler:nth-child(2):checked ~ .gallery__navigation .gallery__preview:nth-child(2),
-.gallery__handler:nth-child(3):checked ~ .gallery__navigation .gallery__preview:nth-child(3),
-.gallery__handler:nth-child(4):checked ~ .gallery__navigation .gallery__preview:nth-child(4),
-.gallery__handler:nth-child(5):checked ~ .gallery__navigation .gallery__preview:nth-child(5),
-.gallery__handler:nth-child(6):checked ~ .gallery__navigation .gallery__preview:nth-child(6),
-.gallery__handler:nth-child(7):checked ~ .gallery__navigation .gallery__preview:nth-child(7),
-.gallery__handler:nth-child(8):checked ~ .gallery__navigation .gallery__preview:nth-child(8),
-.gallery__handler:nth-child(9):checked ~ .gallery__navigation .gallery__preview:nth-child(9) {
-  border-color: #ff7502;
-  cursor: default
 }
 .buying {
   position: relative
