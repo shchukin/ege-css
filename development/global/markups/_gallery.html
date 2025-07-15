@@ -16,32 +16,12 @@
             <br>
             <br>
             <h1>.gallery</h1>
-            <p>
-                Функционал галереи основан на скрытых радиокнопках. Одна радиокнопка отвечает за одну картинку.
-                Когда она чекнута соответствующая картинка показывается, а все остальные скрыты.
-                Сответствено для переключения слайдов нужно переключать радио-кнопки.
-                Для этого делаем тумбнейлчики внизу тегом &lt;label&gt; и направляем их
-                на соответствующую радиокнопку: свзяываем по <b>id</b> и <b>for</b>.
-                За этим надо следить. Зато жаба-скрипт не нужен.
-            </p>
-            <p>
-                Сейчас есть ограничение на то, что в галерее может быть максимум 9 айтемов.
-                Это связанно с тем, что для каждой радиокнопки нужно отдельно прописывать
-                <b>:checked</b> состояние. Смотри конец файла <b>styles/_gallery.css</b>.
-                Если вдруг надо будет больше, то можно вынести эти строчки в HTML и генерить
-                програмно с бекенда.
-            </p>
-
 
             <div class="gallery">
-                <input class="gallery__handler" type="radio" name="item-gallery" id="item-gallery-01" checked>
-                <input class="gallery__handler" type="radio" name="item-gallery" id="item-gallery-02">
-                <input class="gallery__handler" type="radio" name="item-gallery" id="item-gallery-03">
                 <div class="gallery__stage">
-                    <a class="gallery__item" href="#">
-                        <img class="gallery__full-image"
-                             srcset="../../global/temp/gallery-01-full@2x.jpg 2x"
-                             src="../../global/temp/gallery-01-full.jpg"
+                    <a class="gallery__item gallery__item--current" href="#">
+                        <img class="gallery__full-image gallery__full-image--stretch-over-border"
+                             src="../../global/content/product-placeholder.svg"
                              width="300"
                              height="300"
                              alt=""
@@ -49,51 +29,50 @@
                     </a>
                     <a class="gallery__item" href="#">
                         <img class="gallery__full-image"
-                             srcset="../../global/temp/gallery-02-full@2x.jpg 2x"
-                             src="../../global/temp/gallery-02-full.jpg"
+                             srcset="../../global/temp/product-boxart-300x225@2x.jpg 2x"
+                             src="../../global/temp/product-boxart-300x225.jpg"
                              width="300"
-                             height="300"
+                             height="225"
                              alt=""
                         >
                     </a>
                     <a class="gallery__item" href="#">
-                        <img class="gallery__full-image"
-                             srcset="../../global/temp/gallery-03-full@2x.jpg 2x"
-                             src="../../global/temp/gallery-03-full.jpg"
-                             width="300"
-                             height="300"
+                        <img class="gallery__full-image gallery__full-image--stretch-over-border"
+                             srcset="../../global/temp/product-stretch-over-border-302x227@2x.jpg 2x"
+                             src="../../global/temp/product-stretch-over-border-302x227.jpg"
+                             width="302"
+                             height="227"
                              alt=""
                         >
                     </a>
                 </div>
                 <div class="gallery__navigation">
-                    <label class="gallery__preview" for="item-gallery-01">
-                        <img class="gallery__thumbnail"
-                             srcset="../../global/temp/gallery-01-thumb@2x.jpg 2x"
-                             src="../../global/temp/gallery-01-thumb.jpg"
+                    <button class="gallery__preview gallery__preview--current" type="button">
+                        <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
+                             src="../../global/content/product-placeholder.svg"
                              width="50"
                              height="50"
                              alt=""
                         >
-                    </label>
-                    <label class="gallery__preview" for="item-gallery-02">
+                    </button>
+                    <button class="gallery__preview" type="button">
                         <img class="gallery__thumbnail"
-                             srcset="../../global/temp/gallery-02-thumb@2x.jpg 2x"
-                             src="../../global/temp/gallery-02-thumb.jpg"
-                             width="50"
-                             height="50"
+                             srcset="../../global/temp/product-boxart-52x39@2x.jpg 2x"
+                             src="../../global/temp/product-boxart-52x39.jpg"
+                             width="52"
+                             height="39"
                              alt=""
                         >
-                    </label>
-                    <label class="gallery__preview" for="item-gallery-03">
-                        <img class="gallery__thumbnail"
-                             srcset="../../global/temp/gallery-03-thumb@2x.jpg 2x"
-                             src="../../global/temp/gallery-03-thumb.jpg"
-                             width="50"
-                             height="50"
+                    </button>
+                    <button class="gallery__preview" type="button">
+                        <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
+                             srcset="../../global/temp/product-stretch-over-border-54x41@2x.jpg 2x"
+                             src="../../global/temp/product-stretch-over-border-54x41.jpg"
+                             width="54"
+                             height="41"
                              alt=""
                         >
-                    </label>
+                    </button>
                 </div>
             </div>
 
@@ -129,6 +108,7 @@
         <script src="../scripts/live-search.js"></script>
         <script src="../scripts/input.js"></script>
         <script src="../scripts/tabs.js"></script>
+        <script src="../scripts/gallery.js"></script>
 
     </body>
 </html>
