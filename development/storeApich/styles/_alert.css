@@ -1,5 +1,5 @@
 .alert {
-    background-color: #6e7620;
+    background-color: var(--brand_orange);
 }
 
 .alert_danger {

@@ -841,6 +841,7 @@ screen and (max-height:300px) {
 .input__widget:focus:-ms-input-placeholder {
   color: #b4bbc0
 }
+.help-block,
 .input__note {
   margin-top: 6px;
   font-size: 13px;
@@ -901,6 +902,9 @@ screen and (max-height:300px) {
   color: #E51C1C;
   color: var(--danger)
 }
+.has-error .help-block,
+.has-error .input__note,
+.input_error .help-block,
 .input_error .input__note {
   font-weight: 500;
   color: #E51C1C;

@@ -44,13 +44,13 @@
 
 
 
-    .input__note {
+    .input__note,
+    .help-block {
         margin-top: 6px;
         font-size: 13px;
         line-height: 18px;
         color: var(--brand_grey);
     }
-
 
 
 .input_size_medium {
@@ -127,7 +127,10 @@
     .input_error .input__widget:-ms-input-placeholder      { color: var(--danger); }
     /* stylelint-enable */
 
-    .input_error .input__note {
+    .input_error .input__note,
+    .input_error .help-block,
+    .has-error .input__note,
+    .has-error .help-block {
         font-weight: 500;
         color: var(--danger);
     }

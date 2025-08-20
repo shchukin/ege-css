@@ -1,7 +1,19 @@
 .call__phone {
-    color: var(--brand_orange);
+    color: #FFFFFF;
 }
 
 .call__note {
-    color: var(--brand_orange);
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 1024px) {
+
+    .call__phone {
+        color: var(--brand_orange);
+    }
+
+    .call__note {
+        color: var(--brand_orange);
+    }
 }

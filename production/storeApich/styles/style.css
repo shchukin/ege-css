@@ -841,6 +841,7 @@ screen and (max-height:300px) {
 .input__widget:focus:-ms-input-placeholder {
   color: #b4bbc0
 }
+.help-block,
 .input__note {
   margin-top: 6px;
   font-size: 13px;
@@ -901,6 +902,9 @@ screen and (max-height:300px) {
   color: #F12260;
   color: var(--danger)
 }
+.has-error .help-block,
+.has-error .input__note,
+.input_error .help-block,
 .input_error .input__note {
   font-weight: 500;
   color: #F12260;
@@ -3007,6 +3011,30 @@ a.slider__slide:hover .slider__image {
   scrollbar-width: none;
   -ms-overflow-style: none
 }
+.info-panel {
+  background-color: #2C2C2C;
+  background-color: var(--brand_orange);
+  color: #fff;
+  text-align: center
+}
+.info-panel__message {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase
+}
+@media (min-width:768px) {
+  .info-panel__message {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 22px
+  }
+}
 .call__phone {
   transition: color .3s ease
 }
@@ -4133,8 +4161,21 @@ a.slider__slide:hover .slider__image {
   font-family: var(--font-heading);
   font-weight: 700;
   font-weight: var(--font-weight-heading);
-  font-size: 36px;
-  line-height: 40px
+  font-size: 22px;
+  line-height: 30px;
+  word-wrap: break-word
+}
+@media (min-width:350px) {
+  .item__heading {
+    font-size: 24px;
+    line-height: 32px
+  }
+}
+@media (min-width:400px) {
+  .item__heading {
+    font-size: 26px;
+    line-height: 34px
+  }
 }
 .item__intro {
   margin-top: 13px
@@ -4204,6 +4245,10 @@ a.slider__slide:hover .slider__image {
   }
   .item__content {
     width: 460px
+  }
+  .item__heading {
+    font-size: 32px;
+    line-height: 36px
   }
 }
 .cart {
@@ -5727,23 +5772,38 @@ a.slider__slide:hover .slider__image {
   line-height: 12px
 }
 .call__phone {
-  color: #2C2C2C;
-  color: var(--brand_orange)
+  color: #fff
 }
 .call__note {
-  color: #2C2C2C;
-  color: var(--brand_orange)
+  color: #fff
+}
+@media (min-width:1024px) {
+  .call__phone {
+    color: #2C2C2C;
+    color: var(--brand_orange)
+  }
+  .call__note {
+    color: #2C2C2C;
+    color: var(--brand_orange)
+  }
 }
 .location {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEyIDE4Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02IC0zKSI+CiAgICA8cGF0aCBmaWxsPSIjMkMyQzJDIiBkPSJNNiw5IEM2LDUuNjg2NSA4LjY4NjUsMyAxMiwzIEMxNS4zMTM1LDMgMTgsNS42ODY1IDE4LDkgQzE4LDEyLjMxMzUgMTIsMjEgMTIsMjEgQzEyLDIxIDYsMTIuMzEzNSA2LDkgTDYsOSBaIE0xNSw5IEMxNSw3LjM0NCAxMy42NTYsNiAxMiw2IEMxMC4zNDQsNiA5LDcuMzQ0IDksOSBDOSwxMC42NTYgMTAuMzQ0LDEyIDEyLDEyIEMxMy42NTYsMTIgMTUsMTAuNjU2IDE1LDkgTDE1LDkgWiIvPgogIDwvZz4KPC9zdmc+Cg==);
-  color: #2C2C2C;
-  color: var(--brand_orange)
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEyIDE4Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02IC0zKSI+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNiw5IEM2LDUuNjg2NSA4LjY4NjUsMyAxMiwzIEMxNS4zMTM1LDMgMTgsNS42ODY1IDE4LDkgQzE4LDEyLjMxMzUgMTIsMjEgMTIsMjEgQzEyLDIxIDYsMTIuMzEzNSA2LDkgTDYsOSBaIE0xNSw5IEMxNSw3LjM0NCAxMy42NTYsNiAxMiw2IEMxMC4zNDQsNiA5LDcuMzQ0IDksOSBDOSwxMC42NTYgMTAuMzQ0LDEyIDEyLDEyIEMxMy42NTYsMTIgMTUsMTAuNjU2IDE1LDkgTDE1LDkgWiIvPgogIDwvZz4KPC9zdmc+Cg==);
+  color: #fff
+}
+@media (min-width:1024px) {
+  .location {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEyIDE4Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02IC0zKSI+CiAgICA8cGF0aCBmaWxsPSIjMkMyQzJDIiBkPSJNNiw5IEM2LDUuNjg2NSA4LjY4NjUsMyAxMiwzIEMxNS4zMTM1LDMgMTgsNS42ODY1IDE4LDkgQzE4LDEyLjMxMzUgMTIsMjEgMTIsMjEgQzEyLDIxIDYsMTIuMzEzNSA2LDkgTDYsOSBaIE0xNSw5IEMxNSw3LjM0NCAxMy42NTYsNiAxMiw2IEMxMC4zNDQsNiA5LDcuMzQ0IDksOSBDOSwxMC42NTYgMTAuMzQ0LDEyIDEyLDEyIEMxMy42NTYsMTIgMTUsMTAuNjU2IDE1LDkgTDE1LDkgWiIvPgogIDwvZz4KPC9zdmc+Cg==);
+    color: #2C2C2C;
+    color: var(--brand_orange)
+  }
 }
 .subject .subject__inner::before {
   display: none
 }
 .alert {
-  background-color: #6e7620
+  background-color: #2C2C2C;
+  background-color: var(--brand_orange)
 }
 .alert_danger {
   background-color: #ac2323
