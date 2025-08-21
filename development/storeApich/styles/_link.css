@@ -1,0 +1,11 @@
+.link {
+
+}
+
+.link_classic-decoration {
+    text-decoration-color: currentColor;
+}
+
+.link_classic-decoration:hover {
+    text-decoration-color: transparent;
+}
