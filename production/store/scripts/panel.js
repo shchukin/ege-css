@@ -2,7 +2,7 @@
     var $panel = $('.panel');
     var stickPosition = 200; /* Random number but same to up.js */
     var unStickPosition = 0;
-    
+
     function countUnStickPosition() {
         unStickPosition = $panel.offset().top - $(window).outerHeight() + $('.panel__detachable').outerHeight();
     }
@@ -34,10 +34,10 @@
         $panel.addClass('panel_static');
         $panel.addClass('panel_grounded');
     }
-    
+
     $('.panel__close').on('click', groundPanel);
 
-    if ($panel.length) {
+    if ($panel.length && ! $panel.hasClass('panel_grounded')) {
         $(document).ready(countUnStickPosition);
         $(window).on('load', countUnStickPosition);
         $(window).on('resize', countUnStickPosition);

@@ -3035,6 +3035,24 @@ a.slider__slide:hover .slider__image {
     line-height: 22px
   }
 }
+.cookies {
+  position: fixed;
+  z-index: 100;
+  left: 20px;
+  bottom: 20px;
+  max-width: min(670px,calc(100% - 40px));
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 20px 0 rgba(42,33,26,.1);
+  border-radius: 3px
+}
+.cookies__body {
+  font-size: 15px;
+  line-height: 24px
+}
+.cookies__action {
+  margin-top: 18px
+}
 .call__phone {
   transition: color .3s ease
 }
