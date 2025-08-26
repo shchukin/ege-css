@@ -1,0 +1,110 @@
+.shipping {
+    margin-top: -6px;
+}
+    .shipping__item {
+        margin-top: 8px;
+        padding-left: 28px;
+    }
+
+    .shipping__item--selected {
+
+    }
+
+    .shipping__item:first-child {
+        margin-top: 0;
+    }
+        .shipping__selector {
+            position: relative;
+            width: fit-content;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            cursor: pointer;
+        }
+            .shipping__icon {
+                position: absolute;
+                right: 100%;
+                margin-right: 8px;
+                top: 8px;
+                width: 20px;
+                height: 20px;
+                border: 2px solid var(--brand_grey);
+                border-radius: 50%;
+            }
+
+            .shipping__item--selected .shipping__icon::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                width: 10px;
+                height: 10px;
+                background-color: var(--brand_grey);
+                border-radius: 50%;
+                display: block;
+            }
+
+            .shipping__label {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+        .shipping__select-method {
+            margin-top: -8px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .shipping__self-pick-up {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .shipping__delivery {
+            margin-top: 12px;
+            padding-bottom: 12px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+            .shipping__stat {
+                margin-top: 12px;
+            }
+
+            .shipping__stat:first-child {
+                margin-top: 0;
+            }
+                .shipping__param {
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+                .shipping__value {
+                    margin-top: 4px;
+                }
+
+                .shipping__change {
+                    display: block;
+                    width: fit-content;
+                    margin-left: -4px;
+                    margin-top: -2px;
+                    padding: 6px 0 6px 24px;
+                    background-color: transparent;
+                    background-image: url("../vectors/shippin-change.svg");
+                    background-size: 22px 22px;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    border: none;
+                    font-family: inherit;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--brand_grey);
+                    text-decoration: 1px underline currentColor;
+                    text-decoration-style: dashed;
+                    text-underline-offset: 3px;
+                    cursor: pointer;
+                }
+
+                .shipping__change:hover {
+                    text-decoration-color: transparent;
+                }

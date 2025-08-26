@@ -124,44 +124,97 @@
                                 </fieldset>
                                 <fieldset class="user-form__fieldset">
                                     <legend class="user-form__legend">
-                                        Адрес доставки
+                                        Доставка
                                     </legend>
                                     <div class="user-form__section">
-                                        <div class="user-form__field input input_size_medium input_type_select">
-                                            <label class="label" for="temp-country">
-                                                <span class="nobr">Страна <span class="asterisk" title="обязательное поле">*</span></span>
-                                            </label>
-                                            <select class="input__widget" id="temp-country">
-                                                <option value="placeholder">Выберите страну</option>
-                                                <option>Россия</option>
-                                                <option>Украина</option>
-                                                <option>Белоруссия</option>
-                                                <option>Казахстан</option>
-                                            </select>
+                                        <div class="user-form__field">
+                                            <div class="shipping">
+                                                <div class="shipping__item shipping__item--selected">
+                                                    <div class="shipping__selector">
+                                                        <div class="shipping__icon">
+
+                                                        </div>
+                                                        <div class="shipping__label">
+                                                            Пункт выдачи заказа
+                                                        </div>
+                                                    </div>
+                                                    <div class="shipping__select-method">
+                                                        <button class="link link_fancy" type="button">Выбрать</button>
+                                                    </div>
+                                                </div>
+                                                <div class="shipping__item">
+                                                    <div class="shipping__selector">
+                                                        <div class="shipping__icon">
+
+                                                        </div>
+                                                        <div class="shipping__label">
+                                                            Самовывоз
+                                                        </div>
+                                                    </div>
+                                                    <div class="shipping__self-pick-up">
+                                                        Самовывоз со склада "Руза" – бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="user-form__field input input_size_medium input_type_select input_disabled">
-                                            <label class="label" for="temp-city">
-                                                Город/населенный <span class="nobr">пункт <span class="asterisk" title="обязательное поле">*</span></span>
-                                            </label>
-                                            <select class="input__widget" id="temp-city" disabled>
-                                                <option value="placeholder">Выберите город/населенный пункт</option>
-                                                <option>Москва</option>
-                                                <option>Киев</option>
-                                                <option>Минск</option>
-                                                <option>Астана</option>
-                                            </select>
-                                        </div>
-                                        <div class="user-form__field input input_size_medium input_id_post-code">
-                                            <label class="label" for="temp-post-code">
-                                                Почтовый <span class="nobr">индекс <span class="asterisk" title="обязательное поле">*</span></span>
-                                            </label>
-                                            <input class="input__widget" type="text" id="temp-post-code">
-                                        </div>
-                                        <div class="user-form__field input input_size_medium input_type_area">
-                                            <label class="label" for="temp-address">
-                                                Адрес (улица, дом, квартира/офис, этаж и <span class="nobr">пр.) <span class="asterisk" title="обязательное поле">*</span></span>
-                                            </label>
-                                            <textarea class="input__widget" id="temp-address" rows="2"></textarea>
+                                    </div>
+                                </fieldset>
+
+                                <!-- temp -->
+                                <br>
+                                <br>
+                                <br>
+                                или:
+                                <br>
+                                <br>
+                                <!--/temp -->
+
+                                <fieldset class="user-form__fieldset">
+                                    <legend class="user-form__legend">
+                                        Доставка
+                                    </legend>
+                                    <div class="user-form__section">
+                                        <div class="user-form__field">
+                                            <div class="shipping">
+                                                <div class="shipping__item shipping__item--selected">
+                                                    <div class="shipping__selector">
+                                                        <div class="shipping__icon">
+
+                                                        </div>
+                                                        <div class="shipping__label">
+                                                            Пункт выдачи заказа
+                                                        </div>
+                                                    </div>
+                                                    <div class="shipping__delivery">
+                                                        <div class="shipping__stat">
+                                                            <div class="shipping__param">Адрес:</div>
+                                                            <div class="shipping__value">посёлок Карачиха Школьная улица 1А</div>
+                                                            <button class="shipping__change" type="button">Изменить</button>
+                                                        </div>
+                                                        <div class="shipping__stat">
+                                                            <div class="shipping__param">Стоимость доставки:</div>
+                                                            <div class="shipping__value">189 руб.</div>
+                                                        </div>
+                                                        <div class="shipping__stat">
+                                                            <div class="shipping__param">Срок доставки:</div>
+                                                            <div class="shipping__value">с 31 авг</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="shipping__item">
+                                                    <div class="shipping__selector">
+                                                        <div class="shipping__icon">
+
+                                                        </div>
+                                                        <div class="shipping__label">
+                                                            Самовывоз
+                                                        </div>
+                                                    </div>
+                                                    <div class="shipping__self-pick-up">
+                                                        Самовывоз со склада "Руза" – бесплатно.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -174,21 +227,30 @@
                                             <div class="box">
                                                 <ul class="box__list">
                                                     <li class="box__item">
-                                                        <a class="box__link" href="#">Товар 11</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                        <a class="box__link" href="#">Шампунь, аромат п.м. Tobacco & Vanilla, 1 л.</a>, <span class="nobr">– 1 шт.</span>
                                                     </li>
                                                     <li class="box__item">
-                                                        <a class="box__link" href="#">Товар 14</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                        <a class="box__link" href="#">Бальзам, аромат Yuzu Flower, 1 л.</a>, <span class="nobr">– 1 шт.</span>
                                                     </li>
                                                     <li class="box__item">
-                                                        <a class="box__link" href="#">Товар 1 для комплекта</a>, <span class="nobr">цифровой – 2 шт.</span>
+                                                        <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 2 шт.</span>
                                                     </li>
                                                     <li class="box__item">
-                                                        <a class="box__link" href="#">Товар "должна быть рассрочка и кредит"</a>, <span class="nobr">цифровой – 1 шт.</span>
+                                                        <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 1 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="#">Экстракт монарды 30 мл.</a>, <span class="nobr">– 1 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="#">Масло чайного дерева, 30 мл</a>, <span class="nobr">– 1 шт.</span>
+                                                    </li>
+                                                    <li class="box__item">
+                                                        <a class="box__link" href="#">Масло для ногтей и кутикулы, 30 мл</a>, <span class="nobr">– 1 шт.</span>
                                                     </li>
                                                 </ul>
                                                 <div class="box__price">
                                                     <span class="box__price-label">
-                                                        Стоимость заказа:
+                                                        Стоимость заказа (с доставкой):
                                                     </span>
                                                     <span class="box__total">
                                                         18 600 руб
@@ -199,13 +261,14 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="user-form__fieldset order-confirm">
+                                    <legend class="user-form__legend">
+                                        Комментарий к заказу
+                                    </legend>
+                                    <div class="user-form__section">
                                         <div class="user-form__field">
-                                            <label class="label">
-                                                Комментарий к заказу
-                                            </label>
-                                            <span class="upper-note">
-                                                Необязательно
-                                              </span>
                                             <div class="input input_size_medium input_type_area">
                                                 <textarea class="input__widget" rows="3"></textarea>
                                             </div>
@@ -552,7 +615,7 @@
 
 
         <!-- Куки -->
-        <div class="cookies">
+        <div class="cookies" style="display: none">
             <div class="cookies__body">
                 Во время посещения сайта вы соглашаетесь с использованием нами файлов cookie, метрических программ, <a class="link link_classic-decoration" href="privacy-policy.html">Политикой конфиденциальности</a> и даёте согласие на обработку и трансграничную передачу персональных данных
             </div>
