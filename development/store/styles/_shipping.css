@@ -80,8 +80,7 @@
                 .shipping__change {
                     display: block;
                     width: fit-content;
-                    margin-left: -4px;
-                    margin-top: -2px;
+                    margin-top: -6px;
                     padding: 6px 0;
                     border: none;
                     background-color: transparent;
@@ -100,6 +99,8 @@
                 }
 
                 .shipping__change--edit-icon {
+                    margin-top: -2px;
+                    margin-left: -4px;
                     padding-left: 24px;
                     background-image: url("../vectors/shippin-change.svg");
                     background-size: 22px 22px;

@@ -1,108 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
 #delivery-widget {
-    /*height: 100%;*/
+
 }
 
 .ydw-widget {
     border-radius: 0 !important;
-    box-sizing: border-box;
 }
 
-/*.widget__input.active {*/
-/*    width: calc(100% - 44px) !important;*/
-/*    border: none !important;*/
-/*    box-shadow: inset 0 0 0 2px var(--color-black) !important;*/
-/*}*/
+.widget__input.active {
+    width: calc(100% - 44px) !important;
+    border: none !important;
+    box-shadow: inset 0 0 0 2px var(--color-black) !important;
+}
 
-/*.widget__label-button {*/
-/*    top: auto !important;*/
-/*    bottom: 0 !important;*/
-/*    right: -8px !important;*/
-/*    transform: none !important;*/
-/*    display: flex !important;*/
-/*    align-items: center !important;*/
-/*    justify-content: center !important;*/
-/*    width: 48px !important;*/
-/*    height: 48px !important;*/
-/*}*/
-
-
-
-/*.widget__wrapper {*/
-/*    overflow: visible !important;*/
-/*}*/
-
-/*@media (min-width: 768px) {*/
-
-/*    .widget__wrapper {*/
-
-/*    }*/
-/*    .widget__content {*/
-/*        width: 380px !important;*/
-/*        flex-shrink: 0 !important;*/
-/*        min-width: 0 !important;*/
-/*        max-width: none !important;*/
-/*    }*/
-/*    .widget__header {*/
-
-/*    }*/
-
-/*    .widget__list {*/
-/*        height: 452px !important;*/
-/*    }*/
-
-/*    .widget__map {*/
-/*        flex-grow: 1 !important;*/
-/*        border-radius: var(--border-radius) !important;*/
-/*        overflow: hidden !important;*/
-/*    }*/
-
-/*    .widget__title-text {*/
-/*        font-size: 20px !important;*/
-/*    }*/
-
-/*}*/
+.widget__label-button {
+    top: auto !important;
+    bottom: 0 !important;
+    right: -8px !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+}
 
 
 
+.widget__wrapper {
+    overflow: visible !important;
+}
+
+@media (min-width: 768px) {
+
+    .widget__wrapper {
+
+    }
+    .widget__content {
+        width: 380px !important;
+        flex-shrink: 0 !important;
+        min-width: 0 !important;
+        max-width: none !important;
+    }
+    .widget__header {
+
+    }
+
+    .widget__list {
+
+    }
+
+    .widget__map {
+        flex-grow: 1 !important;
+        border-radius: var(--border-radius) !important;
+        overflow: hidden !important;
+    }
+
+    .widget__title-text {
+        font-size: 20px !important;
+    }
+
+}
 
 
-/*@media (max-width: 768px) {*/
 
-/*    .widget__wrapper {*/
-/*        height: auto !important;*/
-/*    }*/
 
-/*    .widget__content {*/
-/*        padding: 0 !important;*/
-/*    }*/
-/*    .widget__header {*/
-/*        position: static !important;*/
-/*        width: auto !important;*/
-/*    }*/
 
-/*    .widget__list {*/
-/*        position: static !important;*/
-/*        transform: none !important;*/
-/*        border-radius: 0 !important;*/
-/*    }*/
+@media (max-width: 768px) {
 
-/*    .widget__location {*/
-/*        padding-bottom: 12px !important;*/
-/*    }*/
+    .widget__wrapper {
+        height: auto !important;
+    }
 
-/*    .widget__map {*/
+    .widget__content {
+        padding: 0 !important;
+    }
+    .widget__header {
+        position: static !important;
+        width: auto !important;
+    }
 
-/*    }*/
+    .widget__list {
+        position: static !important;
+        transform: none !important;
+        border-radius: 0 !important;
+    }
 
-/*    .widget__title-text {*/
-/*        font-size: 18px !important;*/
-/*    }*/
+    .widget__location {
+        padding-bottom: 12px !important;
+    }
 
-/*    @media (max-width: 350px) {*/
+    .widget__map {
 
-/*        .widget__title-text {*/
-/*            font-size: 16px !important;*/
-/*        }*/
-/*    }*/
+    }
 
-/*}*/
+    .widget__title-text {
+        font-size: 18px !important;
+    }
+
+    @media (max-width: 350px) {
+
+        .widget__title-text {
+            font-size: 16px !important;
+        }
+    }
+
+}

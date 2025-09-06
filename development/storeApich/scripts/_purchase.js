@@ -1,43 +1,15 @@
 (function($) {
 
-    function disableStylesAndDOM() {
-        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').hide();
-
-        $('html, body').css({
-            'height': '100%',
-            'margin': 0
-        });
-
-        $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', true);
-    }
-
-
-    function enableStylesAndDOM() {
-        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').show();
-
-        $('html, body').css({
-            'height': '',
-            'margin': ''
-        });
-
-        $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', false);
-    }
-
-
-
-
-    $('.shipping__change').on('click', function () {
-        disableStylesAndDOM();
-
-
+    function initDemoYandexWidget(recalculatedHeight) {
+        /* За исключением высоты весь остальной код ниже -- это заглушка */
         (function(w) {
             function startWidget() {
                 w.YaDelivery.createWidget({
                     containerId: 'delivery-widget',         // Идентификатор HTML-элемента (контейнера), в котором будет отображаться виджет
                     params: {
                         city: "Москва",                     // Город, отображаемый на карте при запуске
-                        size:{                              // Размеры виджета
-                            "height": "100%",               // !!! ВАЖНО !!!
+                        size: {                             // Размеры виджета
+                            "height": recalculatedHeight,   // !!! ВАЖНО !!!
                             "width": "100%"                 // Ширина
                         },
                         source_platform_station: "05e809bb-4521-42d9-a936-0fb0744c0fb3",  // Станция отгрузки
@@ -77,10 +49,39 @@
             console.log(data.detail.address.house);
             console.log(data.detail.address.comment);
         });
+    }
 
+
+    function disableStylesAndDOM() {
+        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').hide();
+        $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', true);
+        $('#delivery-widget').show();
+    }
+
+    function enableStylesAndDOM() {
+        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').show();
+        $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', false);
+        $('#delivery-widget').hide();
+    }
+
+    $('.shipping__change').on('click', function () {
+
+        /* Виджет яндекса капец какой нестабильный, и непонятно с чем он конфликтует:
+         * либо с размерами окна, либо с кодом сайта. Даём виджету полную свободу,
+         * скрываем и удаляем весь DOM и стили:
+         */
+        disableStylesAndDOM();
+
+        /* У виджета сразу два бага с высотой.
+         * Во-первых он неправильно обрабатывает высоту в 100%: кнопочки на карте улетают за верхний кря экрана.
+         * Во-вторых игнорируется внутренний паддинг в 16px (box-sizing не помогает).
+         * Обсчитываем нужную высоту вручную и передаём в пикселях
+         */
+        const height = $(document).outerHeight() - 16 + 'px';
+        initDemoYandexWidget(height)
     });
 
-    $('#delivery-widget').on('click', function (){
+    $('#delivery-widget').on('click', function () {
         enableStylesAndDOM();
     });
 
