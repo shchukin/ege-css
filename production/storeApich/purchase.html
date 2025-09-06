@@ -18,8 +18,9 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/fonts.css?1756208517">
-        <link rel="stylesheet" href="styles/style.css?1756208517">
+        <link rel="stylesheet" href="fonts/fonts.css?1757144352">
+        <link rel="stylesheet" href="styles/style.css?1757144352">
+        <link rel="stylesheet" href="styles/yandex-delivery-widget-fixes.css?1757144352" id="yandex-delivery-widget-fixes" disabled>
     </head>
     <body class="body">
         <header class="header">
@@ -138,9 +139,9 @@
                                                             Пункт выдачи заказа
                                                         </div>
                                                     </div>
-                                                    <div class="shipping__select-method">
-                                                        <button class="link link_fancy" type="button">Выбрать</button>
-                                                    </div>
+                                                    <button class="shipping__change" type="button">
+                                                        Выбрать
+                                                    </button>
                                                 </div>
                                                 <div class="shipping__item">
                                                     <div class="shipping__selector">
@@ -189,7 +190,7 @@
                                                         <div class="shipping__stat">
                                                             <div class="shipping__param">Адрес:</div>
                                                             <div class="shipping__value">посёлок Карачиха Школьная улица 1А</div>
-                                                            <button class="shipping__change" type="button">Изменить</button>
+                                                            <button class="shipping__change shipping__change--edit-icon" type="button">Изменить</button>
                                                         </div>
                                                         <div class="shipping__stat">
                                                             <div class="shipping__param">Стоимость доставки:</div>
@@ -374,11 +375,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- To Top -->
-        <a class="up" href="#top">
-            Наверх
-        </a>
 
         <!-- Поиск -->
         <div class="window window_for_search mfp-hide" id="search">
@@ -627,27 +623,35 @@
         </div>
         <!--/Куки -->
 
+        <div id="delivery-widget" style="display: none;">
+
+        </div>
+
+
 
         <script src="vendors/jquery/jquery-3.2.0.min.js"></script>
         <script src="vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
 
-        <script src="scripts/mfp.js?1756208517"></script>
-        <script src="scripts/up.js?1756208517"></script>
-        <script src="scripts/subscription.js?1756208517"></script>
-        <script src="scripts/form.js?1756208517"></script>
-        <script src="scripts/alert.js?1756208517"></script>
-        <script src="scripts/slider.js?1756208517"></script>
-        <script src="scripts/live-search.js?1756208517"></script>
-        <script src="scripts/input.js?1756208517"></script>
-        <script src="scripts/gallery.js?1756208517"></script>
+        <script src="scripts/mfp.js?1757144352"></script>
+        <script src="scripts/up.js?1757144352"></script>
+        <script src="scripts/subscription.js?1757144352"></script>
+        <script src="scripts/form.js?1757144352"></script>
+        <script src="scripts/alert.js?1757144352"></script>
+        <script src="scripts/slider.js?1757144352"></script>
+        <script src="scripts/live-search.js?1757144352"></script>
+        <script src="scripts/input.js?1757144352"></script>
+        <script src="scripts/gallery.js?1757144352"></script>
 
-        <script src="../store/scripts/up.js?1756208517"></script>
-        <script src="../store/scripts/panel.js?1756208517"></script>
-        <script src="../store/scripts/body.js?1756208517"></script>
-        <script src="../store/scripts/navigation.js?1756208517"></script>
-        <script src="../store/scripts/discipline.js?1756208517"></script>
-        <script src="../store/scripts/code.js?1756208517"></script>
+        <script src="../store/scripts/up.js?1757144352"></script>
+        <script src="../store/scripts/panel.js?1757144352"></script>
+        <script src="../store/scripts/body.js?1757144352"></script>
+        <script src="../store/scripts/navigation.js?1757144352"></script>
+        <script src="../store/scripts/discipline.js?1757144352"></script>
+        <script src="../store/scripts/code.js?1757144352"></script>
+
+        <script async src="https://ndd-widget.landpro.site/widget.js?1757144352"></script>
+        <script src="scripts/_purchase.js?1757144352"></script>
 
     </body>
 </html>
