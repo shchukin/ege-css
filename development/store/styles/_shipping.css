@@ -49,12 +49,6 @@
                 line-height: 24px;
             }
 
-        .shipping__select-method {
-            margin-top: -8px;
-            font-size: 14px;
-            line-height: 20px;
-        }
-
         .shipping__self-pick-up {
             font-size: 14px;
             line-height: 20px;
@@ -88,13 +82,9 @@
                     width: fit-content;
                     margin-left: -4px;
                     margin-top: -2px;
-                    padding: 6px 0 6px 24px;
-                    background-color: transparent;
-                    background-image: url("../vectors/shippin-change.svg");
-                    background-size: 22px 22px;
-                    background-repeat: no-repeat;
-                    background-position: left center;
+                    padding: 6px 0;
                     border: none;
+                    background-color: transparent;
                     font-family: inherit;
                     font-size: 14px;
                     line-height: 20px;
@@ -107,4 +97,12 @@
 
                 .shipping__change:hover {
                     text-decoration-color: transparent;
+                }
+
+                .shipping__change--edit-icon {
+                    padding-left: 24px;
+                    background-image: url("../vectors/shippin-change.svg");
+                    background-size: 22px 22px;
+                    background-repeat: no-repeat;
+                    background-position: left center;
                 }

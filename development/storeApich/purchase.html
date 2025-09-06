@@ -20,6 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts/fonts.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/yandex-delivery-widget-fixes.css" id="yandex-delivery-widget-fixes">
     </head>
     <body class="body">
         <header class="header">
@@ -138,9 +139,9 @@
                                                             Пункт выдачи заказа
                                                         </div>
                                                     </div>
-                                                    <div class="shipping__select-method">
-                                                        <button class="link link_fancy" type="button">Выбрать</button>
-                                                    </div>
+                                                    <button class="shipping__change" type="button">
+                                                        Выбрать
+                                                    </button>
                                                 </div>
                                                 <div class="shipping__item">
                                                     <div class="shipping__selector">
@@ -189,7 +190,7 @@
                                                         <div class="shipping__stat">
                                                             <div class="shipping__param">Адрес:</div>
                                                             <div class="shipping__value">посёлок Карачиха Школьная улица 1А</div>
-                                                            <button class="shipping__change" type="button">Изменить</button>
+                                                            <button class="shipping__change shipping__change--edit-icon" type="button">Изменить</button>
                                                         </div>
                                                         <div class="shipping__stat">
                                                             <div class="shipping__param">Стоимость доставки:</div>
@@ -374,11 +375,6 @@
                 </div>
             </div>
         </footer>
-
-        <!-- To Top -->
-        <a class="up" href="#top">
-            Наверх
-        </a>
 
         <!-- Поиск -->
         <div class="window window_for_search mfp-hide" id="search">
@@ -627,6 +623,11 @@
         </div>
         <!--/Куки -->
 
+        <div id="delivery-widget" style="height: 100%;">
+
+        </div>
+
+
 
         <script src="../global/vendors/jquery/jquery-3.2.0.min.js"></script>
         <script src="../global/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
@@ -648,6 +649,9 @@
         <script src="../store/scripts/navigation.js"></script>
         <script src="../store/scripts/discipline.js"></script>
         <script src="../store/scripts/code.js"></script>
+
+        <script async src="https://ndd-widget.landpro.site/widget.js"></script>
+        <script src="scripts/_purchase.js"></script>
 
     </body>
 </html>
