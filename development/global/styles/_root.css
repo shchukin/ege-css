@@ -9,7 +9,7 @@
     --font-weight-heading: 500;
 
     /* Контейнер */
-    --container-padding: 10px;
+    --container-padding: 16px;
     --container-width: 100%;
 
     /* Цвета */
@@ -25,9 +25,9 @@
 /* stylelint-enable declaration-colon-space-after */
 
 
-@media (min-width: 360px) {
+@media (min-width: 370px) {
     :root {
-        --container-padding: 16px;
+        --container-padding: 20px;
     }
 }
 
