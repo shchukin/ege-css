@@ -132,6 +132,10 @@
                     opacity: 0.7;
                 }
 
+                .alt-header__burger {
+                    display: none;
+                }
+
 
                 .alt-header__profile {
                     position: absolute;
@@ -456,6 +460,35 @@
                     .alt-header__profile:hover {
                         /*opacity: 0.7;*/
                     }
+
+                    .alt-header__burger {
+                        flex-shrink: 0;
+                        display: block;
+                        margin-right: calc(-1 * var(--container-padding) + 2px);
+                        width: 62px;
+                        padding: 0;
+                        height: calc(var(--alt-header-height) - 2px); /* 2px  */
+                        border: none;
+                        border-right: 8px solid transparent;
+                        background-color: transparent;
+                        background-image: url("../vectors/burger.svg");
+                        background-size: 24px 24px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        transition: opacity 0.1s ease;
+                        text-indent: 200%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+
+                    .burger-expanded {
+
+                    }
+
+    .burger-expanded .alt-header__dropdown {
+        display: block;
+    }
 }
 
 
