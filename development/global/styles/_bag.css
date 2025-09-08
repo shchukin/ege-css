@@ -1,7 +1,5 @@
 .bag {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: relative;
     width: 42px;
     height: 42px;
     background-image: url("../vectors/bag.svg");
@@ -17,8 +15,11 @@
 }
 
     .bag__quantity {
+        position: absolute;
+        right: 0;
+        top: 0;
         display: block;
-        padding: 4px 3px 2px;
+        padding: 3px;
         min-width: 20px;
         height: 20px;
         background-color: var(--brand_orange);
