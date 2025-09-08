@@ -28,7 +28,7 @@
 
             .header__actions {
                 position: absolute;
-                right: -9px;
+                right: -12px;
                 top: 15px;
                 display: flex;
                 gap: 8px;
@@ -196,23 +196,6 @@
         .body_scrolled .header__hide-contacts {
             display: none;
         }
-
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header__logo {
-        left: auto;
-        right: 50%;
-        margin-right: 10px;
-    }
-
-    .header__actions {
-        right: auto;
-        left: 50%;
-        margin-left: 238px;
-    }
-}
-
 
 
 
