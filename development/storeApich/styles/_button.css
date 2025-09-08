@@ -17,32 +17,3 @@
 
 
 
-.button_id-contacts-handler {
-    font-family: var(--font-heading);
-    font-weight: var(--font-weight-heading);
-    font-size: 13px;
-    color: var(--brand_orange);
-    text-transform: uppercase;
-}
-
-.button_id-contacts-handler:hover {
-    background-color: var(--portal-panel-hover);
-    border-color: var(--brand_orange);
-    color: var(--brand_orange);
-}
-
-    @media (max-width: 1023px) {
-
-        .button_id-contacts-handler {
-            border-color: rgba(255, 255, 255, 0.3);
-            color: #FFFFFF;
-        }
-
-        .button_id-contacts-handler:hover {
-            border-color: rgba(255, 255, 255, 0.3);
-            background-color: transparent;
-            color: #FFFFFF;
-            opacity: 1;
-        }
-    }
-

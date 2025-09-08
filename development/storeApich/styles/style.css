@@ -30,3 +30,7 @@
 @import url("_link.css");
 @import url("_window.css");
 
+
+/* Apich specific */
+@import url("_alt-header.css");
+

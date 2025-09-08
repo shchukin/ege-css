@@ -23,59 +23,44 @@
         <link rel="stylesheet" href="vendors/yandex-delivery-widget/yandex-delivery-widget-fixes.css" id="yandex-delivery-widget-fixes" disabled>
     </head>
     <body class="body">
-        <header class="header">
-            <div class="header__fixed-part">
-                <div class="header__wrap container">
-                    <h1 class="header__logo">
+        <header class="alt-header">
+            <div class="alt-header__fixed-part">
+                <div class="alt-header__wrap container">
+                    <h1 class="alt-header__logo">
                         <span class="logo">
                             <span class="visuallyhidden">ЕГЭнатор</span>
                         </span>
                     </h1>
-                    <input class="header__contacts-visibility visuallyhidden" type="checkbox" id="contacts-visibility" style="display: none;">
-                    <label class="header__show-contacts" for="contacts-visibility">Контакты</label>
-                    <div class="header__contacts-body">
-                        <div class="header__contacts-widget contacts">
-                            <div class="contacts__connect">
-                                <div class="contacts__callback">
-                                    <a class="button button_id-contacts-handler mfp-handler" href="#callback">Позвоните мне</a>
-                                </div>
-                                <div class="contacts__social">
-                                    <a class="contacts__network net net_id_vkontakte" href="https://vk.com/apichru">Вконтакте</a>
-                                    <a class="contacts__network net net_id_telegram" href="https://t.me/apichru">Телеграм</a>
-                                </div>
-                            </div>
+                    <div class="alt-header__dropdown">
+                        <div class="alt-header__nav">
+                            <a class="alt-header__link" href="#">Акции</a>
+                            <a class="alt-header__link" href="#">Наборы</a>
+                            <a class="alt-header__link" href="#">Лицо</a>
+                            <a class="alt-header__link" href="#">Тело</a>
+                            <a class="alt-header__link" href="#">Волосы</a>
+                            <a class="alt-header__link" href="#">Разное</a>
                         </div>
-                        <label class="header__hide-contacts" for="contacts-visibility"></label>
+                        <div class="alt-header__dropdown-actions">
+                            <a class="alt-header__search-handler mfp-handler" href="#search">
+                                <span class="visuallyhidden">Поиск</span>
+                            </a>
+                            <a class="alt-header__profile" href="#">
+                                <span class="visuallyhidden">Личный кабинет</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="header__actions">
-                        <a class="header__search-handler mfp-handler" href="#search">
-                            Поиск
+                    <div class="alt-header__actions">
+                        <a class="alt-header__callback mfp-handler" href="#callback">
+                            Позвоните мне
                         </a>
-                        <a class="header__buying bag" href="#">
+                        <a class="alt-header__buying bag" href="#">
                             <span class="visuallyhidden">Корзина:</span>
                             <span class="bag__quantity">3</span>
-                        </a>
-                        <a class="header__profile" href="#">
-                            <span class="visuallyhidden">Личный кабинет</span>
                         </a>
                     </div>
                 </div>
             </div>
         </header>
-        <nav class="navigation">
-            <div class="navigation__fixed-part">
-                <div class="navigation__wrap container">
-                    <div class="navigation__list">
-                        <a class="navigation__link" href="#">Акции</a>
-                        <a class="navigation__link" href="#">Наборы</a>
-                        <a class="navigation__link" href="#">Лицо</a>
-                        <a class="navigation__link" href="#">Тело</a>
-                        <a class="navigation__link" href="#">Волосы</a>
-                        <a class="navigation__link" href="#">Разное</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
         <div class="info-panel">
             <div class="info-panel__wrap container">
                 <div class="info-panel__message">
