@@ -44,7 +44,7 @@
             right: 15px !important;
         }
     }
-
+        /* cross icon */
         .window__close::before {
             content: "";
             position: absolute;
@@ -57,27 +57,37 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
-
-        .window__close:hover::after {
-            color: #666666;
-        }
-
-        .window__close:active::after {
-            color: #000000;
-        }
-
-        .window__close_simplified {
-            right: 0 !important;
-            width: 44px;
-            height: 44px;
-            padding: 0 !important;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden !important;
-        }
-            .window__close_simplified::before {
-                left: 15px;
+            .window__close::after {
+                content: "";
+                position: absolute;
+                inset: 4px -12px 4px -16px;
+                border-radius: 4px;
+                background-color: var(--brand_orange);
+                opacity: 0;
+                transition: opacity 0.1s ease;
             }
+
+            .window__close:hover::after {
+                opacity: 10%;
+            }
+
+    .window__close_simplified {
+        right: 0 !important;
+        width: 44px;
+        height: 44px;
+        padding: 0 !important;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden !important;
+    }
+        .window__close_simplified::before {
+            left: 15px;
+        }
+
+        .window__close_simplified::after {
+            inset: 0;
+            border-radius: 50%;
+        }
 
 
 
