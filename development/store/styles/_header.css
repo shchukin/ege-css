@@ -13,12 +13,13 @@
         background-color: #FFFFFF;
     }
         .header__wrap {
+            position: relative;
             height: 100%;
             padding-top: 74px; /* Прижать кнопку контактов к низу */
         }
             .header__logo {
                 position: absolute;
-                left: 15px;
+                left: 0;
                 top: 12px;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -27,15 +28,23 @@
 
             .header__actions {
                 position: absolute;
-                right: 15px;
+                right: -9px;
                 top: 15px;
-                margin-right: -9px;
                 display: flex;
+                gap: 8px;
                 align-items: flex-start;
                 transition: opacity 0.3s ease,    /* будет скрываться */
                             visibility 0.3s ease; /* при прокрутке */
             }
+
+            @media (min-width: 360px) {
+                .header__actions {
+                    gap: 14px;
+                }
+            }
+
                 .header__search-handler {
+                    flex-shrink: 0;
                     display: block;
                     width: 42px;
                     height: 42px;
@@ -53,8 +62,33 @@
                     opacity: 0.7;
                 }
 
+
                 .header__buying {
-                    margin-left: 22px;
+                    flex-shrink: 0;
+                }
+
+                .header__buying:hover {
+                    opacity: 0.7;
+                }
+
+
+                .header__profile {
+                    flex-shrink: 0;
+                    display: block;
+                    width: 42px;
+                    height: 42px;
+                    background-image: url("../vectors/header-profile.svg");
+                    background-size: 24px 24px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    transition: opacity 0.1s ease;
+                }
+
+                .header__profile:hover {
+                    opacity: 0.7;
                 }
 
 
@@ -103,9 +137,9 @@
             .header__contacts-body {
                 position: absolute;
                 z-index: 100;
-                left: 0;
                 top: 0;
-                right: 0;
+                left: calc(-1 * var(--container-padding));
+                right: calc(-1 * var(--container-padding));
                 visibility: hidden; /* Не получается использовать display: block потому что далее надо накладывать transition внутри, а когда display: none / block не работает */
                 padding-top: 24px;
                 padding-bottom: 32px;
@@ -164,30 +198,6 @@
         }
 
 
-
-@media (min-width: 360px) and (max-width: 419px) {
-    .header__logo {
-        left: 30px;
-    }
-
-    .header__actions {
-        right: 30px;
-    }
-}
-
-@media (min-width: 420px) and (max-width: 767px) {
-    .header__logo {
-        left: auto;
-        right: 50%;
-        margin-right: 79px;
-    }
-
-    .header__actions {
-        right: auto;
-        left: 50%;
-        margin-left: 83px;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .header__logo {
@@ -265,7 +275,7 @@
                     visibility: visible !important; /* больше не будет */
                     opacity: 1 !important;          /* скрываться при скролле */
                     margin-top: 3px;
-                    margin-right: -9px;
+                    margin-right: -12px;
                     margin-left: 31px;
                     transition: margin-top 0.3s ease; /* будет меняться при скролле */
                 }

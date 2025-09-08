@@ -15,7 +15,7 @@
 
 .body_scrolled .call {
     position: absolute;
-    right: 15px;
+    right: 0;
     top: 13px;
 }
     .body_scrolled .call__phone {
@@ -29,24 +29,6 @@
 @media (max-width: 359px) {
     .call__phone {
         font-size: 18px;
-    }
-}
-
-
-@media (min-width: 360px) and (max-width: 419px) {
-
-    .body_scrolled .call {
-        right: 30px;
-    }
-}
-
-@media (min-width: 420px) and (max-width: 767px) {
-    .body_scrolled .call {
-        position: absolute;
-        right: auto;
-        left: 50%;
-        width: 182px;
-        margin-left: -2px;
     }
 }
 
