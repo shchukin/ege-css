@@ -486,9 +486,16 @@
 
                     }
 
-    .burger-expanded .alt-header__dropdown {
-        display: block;
+    .burger-expanded {
+
     }
+        .burger-expanded .alt-header__burger {
+            background-image: url("../vectors/burger-close.svg");
+        }
+
+        .burger-expanded .alt-header__dropdown {
+            display: block;
+        }
 }
 
 
