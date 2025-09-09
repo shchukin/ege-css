@@ -3933,20 +3933,20 @@ a.slider__slide:hover .slider__image {
   text-align: center
 }
 .info-panel__message {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 18px;
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase
 }
 @media (min-width:768px) {
   .info-panel__message {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
     line-height: 22px
   }
 }
