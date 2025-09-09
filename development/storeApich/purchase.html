@@ -29,27 +29,9 @@
                     <a class="alt-header__logo" href="#">
                         <span class="visuallyhidden">Apich</span>
                     </a>
-                    <div class="alt-header__dropdown">
-                        <div class="alt-header__nav">
-                            <a class="alt-header__link" href="#">Акции</a>
-                            <a class="alt-header__link" href="#">Наборы</a>
-                            <a class="alt-header__link" href="#">Лицо</a>
-                            <a class="alt-header__link" href="#">Тело</a>
-                            <a class="alt-header__link" href="#">Волосы</a>
-                            <a class="alt-header__link" href="#">Разное</a>
-                        </div>
-                        <div class="alt-header__dropdown-actions">
-                            <a class="alt-header__search-handler mfp-handler" href="#search">
-                                <span class="visuallyhidden">Поиск</span>
-                            </a>
-                            <a class="alt-header__profile" href="#">
-                                <span class="visuallyhidden">Личный кабинет</span>
-                            </a>
-                        </div>
-                    </div>
                     <div class="alt-header__actions">
-                        <a class="alt-header__callback mfp-handler" href="#callback">
-                            Позвоните мне
+                        <a class="alt-header__search-handler mfp-handler" href="#search">
+                            <span class="visuallyhidden">Поиск</span>
                         </a>
                         <a class="alt-header__buying bag" href="#">
                             <span class="visuallyhidden">Корзина:</span>
@@ -61,296 +43,316 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="info-panel">
-            <div class="info-panel__wrap container">
-                <div class="info-panel__message">
-                    22-23 августа на все заказы больше 500&nbsp;руб. бесплатная доставка!
+            <div class="alt-header__dropdown container">
+                <div class="alt-header__nav">
+                    <a class="alt-header__link" href="#">Акции</a>
+                    <a class="alt-header__link" href="#">Наборы</a>
+                    <a class="alt-header__link" href="#">Лицо</a>
+                    <a class="alt-header__link" href="#">Тело</a>
+                    <a class="alt-header__link" href="#">Волосы</a>
+                    <a class="alt-header__link" href="#">Разное</a>
+                </div>
+                <div class="alt-header__dropdown-actions">
+                    <a class="alt-header__callback mfp-handler" href="#callback">
+                        Позвоните мне
+                    </a>
+                    <a class="alt-header__profile" href="#">
+                        Личный кабинет
+                    </a>
                 </div>
             </div>
-        </div>
-        <main class="customer">
-            <div class="customer__head container">
-                <h1 class="customer__heading">Оформление заказа</h1>
-                <div class="customer__price">18 600 руб</div>
+        </header>
+        <div class="page">
+            <div class="info-panel">
+                <div class="info-panel__wrap container">
+                    <div class="info-panel__message">
+                        22-23 августа на все заказы больше 500&nbsp;руб. бесплатная доставка!
+                    </div>
+                </div>
             </div>
-            <div class="customer__body">
-                <div class="user-form">
-                    <div class="user-form__wrap container">
-                        <div class="user-form__outer-wrapper">
-                            <form class="user-form__inner-wrapper">
-                                <fieldset class="user-form__fieldset">
-                                    <legend class="user-form__legend">
-                                        Данные получателя
-                                    </legend>
-                                    <div class="user-form__section">
-                                        <div class="user-form__field input input_size_medium">
-                                            <label class="label" for="temp-name">Имя <span class="nobr">получателя <span class="asterisk" title="обязательное поле">*</span></span></label>
-                                            <input class="input__widget" type="text" id="temp-name">
+            <main class="customer">
+                <div class="customer__head container">
+                    <h1 class="customer__heading">Оформление заказа</h1>
+                    <div class="customer__price">18 600 руб</div>
+                </div>
+                <div class="customer__body">
+                    <div class="user-form">
+                        <div class="user-form__wrap container">
+                            <div class="user-form__outer-wrapper">
+                                <form class="user-form__inner-wrapper">
+                                    <fieldset class="user-form__fieldset">
+                                        <legend class="user-form__legend">
+                                            Данные получателя
+                                        </legend>
+                                        <div class="user-form__section">
+                                            <div class="user-form__field input input_size_medium">
+                                                <label class="label" for="temp-name">Имя <span class="nobr">получателя <span class="asterisk" title="обязательное поле">*</span></span></label>
+                                                <input class="input__widget" type="text" id="temp-name">
+                                            </div>
+                                            <div class="user-form__field input input_size_medium">
+                                                <label class="label" for="temp-email">Адрес электронный <span class="nobr">почты <span class="asterisk" title="обязательное поле">*</span></span></label>
+                                                <input class="input__widget" type="email" id="temp-email">
+                                            </div>
+                                            <div class="user-form__field input input_size_medium input_id_phone">
+                                                <label class="label" for="temp-phone">Телефон</label>
+                                                <div class="upper-note">Необязательно</div>
+                                                <input class="input__widget" type="tel" id="temp-phone">
+                                            </div>
                                         </div>
-                                        <div class="user-form__field input input_size_medium">
-                                            <label class="label" for="temp-email">Адрес электронный <span class="nobr">почты <span class="asterisk" title="обязательное поле">*</span></span></label>
-                                            <input class="input__widget" type="email" id="temp-email">
-                                        </div>
-                                        <div class="user-form__field input input_size_medium input_id_phone">
-                                            <label class="label" for="temp-phone">Телефон</label>
-                                            <div class="upper-note">Необязательно</div>
-                                            <input class="input__widget" type="tel" id="temp-phone">
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="user-form__fieldset">
-                                    <legend class="user-form__legend">
-                                        Доставка
-                                    </legend>
-                                    <div class="user-form__section">
-                                        <div class="user-form__field">
-                                            <div class="shipping">
-                                                <div class="shipping__item shipping__item--selected">
-                                                    <div class="shipping__selector">
-                                                        <div class="shipping__icon">
+                                    </fieldset>
+                                    <fieldset class="user-form__fieldset">
+                                        <legend class="user-form__legend">
+                                            Доставка
+                                        </legend>
+                                        <div class="user-form__section">
+                                            <div class="user-form__field">
+                                                <div class="shipping">
+                                                    <div class="shipping__item shipping__item--selected">
+                                                        <div class="shipping__selector">
+                                                            <div class="shipping__icon">
 
+                                                            </div>
+                                                            <div class="shipping__label">
+                                                                Пункт выдачи заказа
+                                                            </div>
                                                         </div>
-                                                        <div class="shipping__label">
-                                                            Пункт выдачи заказа
-                                                        </div>
+                                                        <button class="shipping__change" type="button">
+                                                            Выбрать
+                                                        </button>
                                                     </div>
-                                                    <button class="shipping__change" type="button">
-                                                        Выбрать
-                                                    </button>
-                                                </div>
-                                                <div class="shipping__item">
-                                                    <div class="shipping__selector">
-                                                        <div class="shipping__icon">
+                                                    <div class="shipping__item">
+                                                        <div class="shipping__selector">
+                                                            <div class="shipping__icon">
 
+                                                            </div>
+                                                            <div class="shipping__label">
+                                                                Самовывоз
+                                                            </div>
                                                         </div>
-                                                        <div class="shipping__label">
-                                                            Самовывоз
+                                                        <div class="shipping__self-pick-up">
+                                                            Самовывоз со склада "Руза" – бесплатно.
                                                         </div>
-                                                    </div>
-                                                    <div class="shipping__self-pick-up">
-                                                        Самовывоз со склада "Руза" – бесплатно.
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
 
-                                <!-- temp -->
-                                <br>
-                                <br>
-                                <br>
-                                или:
-                                <br>
-                                <br>
-                                <!--/temp -->
+                                    <!-- temp -->
+                                    <br>
+                                    <br>
+                                    <br>
+                                    или:
+                                    <br>
+                                    <br>
+                                    <!--/temp -->
 
-                                <fieldset class="user-form__fieldset">
-                                    <legend class="user-form__legend">
-                                        Доставка
-                                    </legend>
-                                    <div class="user-form__section">
-                                        <div class="user-form__field">
-                                            <div class="shipping">
-                                                <div class="shipping__item shipping__item--selected">
-                                                    <div class="shipping__selector">
-                                                        <div class="shipping__icon">
+                                    <fieldset class="user-form__fieldset">
+                                        <legend class="user-form__legend">
+                                            Доставка
+                                        </legend>
+                                        <div class="user-form__section">
+                                            <div class="user-form__field">
+                                                <div class="shipping">
+                                                    <div class="shipping__item shipping__item--selected">
+                                                        <div class="shipping__selector">
+                                                            <div class="shipping__icon">
 
+                                                            </div>
+                                                            <div class="shipping__label">
+                                                                Пункт выдачи заказа
+                                                            </div>
                                                         </div>
-                                                        <div class="shipping__label">
-                                                            Пункт выдачи заказа
+                                                        <div class="shipping__delivery">
+                                                            <div class="shipping__stat">
+                                                                <div class="shipping__param">Адрес:</div>
+                                                                <div class="shipping__value">посёлок Карачиха Школьная улица 1А</div>
+                                                                <button class="shipping__change shipping__change--edit-icon" type="button">Изменить</button>
+                                                            </div>
+                                                            <div class="shipping__stat">
+                                                                <div class="shipping__param">Стоимость доставки:</div>
+                                                                <div class="shipping__value">189 руб.</div>
+                                                            </div>
+                                                            <div class="shipping__stat">
+                                                                <div class="shipping__param">Срок доставки:</div>
+                                                                <div class="shipping__value">с 31 авг</div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="shipping__delivery">
-                                                        <div class="shipping__stat">
-                                                            <div class="shipping__param">Адрес:</div>
-                                                            <div class="shipping__value">посёлок Карачиха Школьная улица 1А</div>
-                                                            <button class="shipping__change shipping__change--edit-icon" type="button">Изменить</button>
+                                                    <div class="shipping__item">
+                                                        <div class="shipping__selector">
+                                                            <div class="shipping__icon">
+
+                                                            </div>
+                                                            <div class="shipping__label">
+                                                                Самовывоз
+                                                            </div>
                                                         </div>
-                                                        <div class="shipping__stat">
-                                                            <div class="shipping__param">Стоимость доставки:</div>
-                                                            <div class="shipping__value">189 руб.</div>
-                                                        </div>
-                                                        <div class="shipping__stat">
-                                                            <div class="shipping__param">Срок доставки:</div>
-                                                            <div class="shipping__value">с 31 авг</div>
+                                                        <div class="shipping__self-pick-up">
+                                                            Самовывоз со склада "Руза" – бесплатно.
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="shipping__item">
-                                                    <div class="shipping__selector">
-                                                        <div class="shipping__icon">
-
-                                                        </div>
-                                                        <div class="shipping__label">
-                                                            Самовывоз
-                                                        </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="user-form__fieldset order-confirm">
+                                        <legend class="user-form__legend">
+                                            Состав заказа
+                                        </legend>
+                                        <div class="user-form__section">
+                                            <div class="user-form__field">
+                                                <div class="box">
+                                                    <ul class="box__list">
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Шампунь, аромат п.м. Tobacco & Vanilla, 1 л.</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Бальзам, аромат Yuzu Flower, 1 л.</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 2 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Экстракт монарды 30 мл.</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Масло чайного дерева, 30 мл</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                        <li class="box__item">
+                                                            <a class="box__link" href="#">Масло для ногтей и кутикулы, 30 мл</a>, <span class="nobr">– 1 шт.</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="box__price">
+                                                        <span class="box__price-label">
+                                                            Стоимость заказа (с доставкой):
+                                                        </span>
+                                                        <span class="box__total">
+                                                            18 600 руб
+                                                        </span>
                                                     </div>
-                                                    <div class="shipping__self-pick-up">
-                                                        Самовывоз со склада "Руза" – бесплатно.
+                                                    <div class="box__promo">
+                                                        Скидка по промокоду <strong>TEST</strong> — <strong>17%</strong>. Промокод применен, и&nbsp;цена пересчитываться больше не&nbsp;будет.
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="user-form__fieldset order-confirm">
-                                    <legend class="user-form__legend">
-                                        Состав заказа
-                                    </legend>
-                                    <div class="user-form__section">
-                                        <div class="user-form__field">
-                                            <div class="box">
-                                                <ul class="box__list">
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Шампунь, аромат п.м. Tobacco & Vanilla, 1 л.</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Бальзам, аромат Yuzu Flower, 1 л.</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 2 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Крем-воск от трещин, 100 мл</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Экстракт монарды 30 мл.</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Масло чайного дерева, 30 мл</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                    <li class="box__item">
-                                                        <a class="box__link" href="#">Масло для ногтей и кутикулы, 30 мл</a>, <span class="nobr">– 1 шт.</span>
-                                                    </li>
-                                                </ul>
-                                                <div class="box__price">
-                                                    <span class="box__price-label">
-                                                        Стоимость заказа (с доставкой):
-                                                    </span>
-                                                    <span class="box__total">
-                                                        18 600 руб
-                                                    </span>
-                                                </div>
-                                                <div class="box__promo">
-                                                    Скидка по промокоду <strong>TEST</strong> — <strong>17%</strong>. Промокод применен, и&nbsp;цена пересчитываться больше не&nbsp;будет.
+                                    </fieldset>
+                                    <fieldset class="user-form__fieldset order-confirm">
+                                        <legend class="user-form__legend">
+                                            Комментарий к заказу
+                                        </legend>
+                                        <div class="user-form__section">
+                                            <div class="user-form__field">
+                                                <div class="input input_size_medium input_type_area">
+                                                    <textarea class="input__widget" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                    <div class="user-form__actions">
+                                        <button class="user-form__submit button button_palette_submit" type="submit">
+                                            <span class="button__label">Перейти к оплате</span>
+                                        </button>
                                     </div>
-                                </fieldset>
-                                <fieldset class="user-form__fieldset order-confirm">
-                                    <legend class="user-form__legend">
-                                        Комментарий к заказу
-                                    </legend>
-                                    <div class="user-form__section">
-                                        <div class="user-form__field">
-                                            <div class="input input_size_medium input_type_area">
-                                                <textarea class="input__widget" rows="3"></textarea>
-                                            </div>
-                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Panel -->
+            <div class="panel">
+                <div class="panel__detachable">
+                    <input class="panel__visibility visuallyhidden" id="panel-visibility" type="checkbox" style="display: none;">
+                    <label class="panel__show" for="panel-visibility">Развернуть</label>
+                    <label class="panel__hide" for="panel-visibility">Свернуть</label>
+                    <button class="panel__close" type="button">Закрыть</button>
+                    <div class="panel__wrap container">
+                        <div class="panel__heading">
+                            Подписка на рассылку
+                        </div>
+                        <div class="panel__body">
+                            <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
+                            <form class="subscription subscription_full">
+                                <div class="subscription__body">
+                                    <div class="subscription__field input">
+                                        <input class="input__widget" type="email" placeholder="Оставь e-mail *">
                                     </div>
-                                </fieldset>
-                                <div class="user-form__actions">
-                                    <button class="user-form__submit button button_palette_submit" type="submit">
-                                        <span class="button__label">Перейти к оплате</span>
-                                    </button>
+                                    <div class="subscription__submit">
+                                        <button class="button button_palette_submit" type="button">
+                                            <span class="button__label">
+                                                Подписаться
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="subscription__terms">
+                                    Нажимая подписаться, вы соглашаетесь с <a class="link" href="privacy-policy.html">политикой конфиденциальности</a>.
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
 
-        <!-- Panel -->
-        <div class="panel">
-            <div class="panel__detachable">
-                <input class="panel__visibility visuallyhidden" id="panel-visibility" type="checkbox" style="display: none;">
-                <label class="panel__show" for="panel-visibility">Развернуть</label>
-                <label class="panel__hide" for="panel-visibility">Свернуть</label>
-                <button class="panel__close" type="button">Закрыть</button>
-                <div class="panel__wrap container">
-                    <div class="panel__heading">
-                        Подписка на рассылку
+            <footer class="portal-footer">
+                <div class="portal-footer__wrap container">
+                    <div class="portal-footer__primary">
+                        <a class="portal-footer__phone portal-title portal-title--h5" href="tel:+78001872277">
+                            8 800 187 22 77
+                        </a>
+                        <div class="portal-footer__mail">
+                            <a class="portal-link portal-link--text-alike" href="mailto:help@apich.ru">
+                                help@apich.ru
+                            </a>
+                        </div>
+                        <div class="portal-footer__menu">
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Помощь</a>
+                            </div>
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Личный кабинет</a>
+                            </div>
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Журнал</a>
+                            </div>
+                        </div>
+                        <div class="portal-footer__social portal-media portal-media--inverted portal-media--sparse">
+                            <a class="portal-media__item" href="https://vk.com/apichru">
+                                <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <path d="M15.206 23C5.98 23 .719 16.994.5 7h4.62c.153 7.335 3.56 10.442 6.257 11.083V7h4.352v6.326c2.664-.272 5.463-3.155 6.408-6.326h4.351c-.725 3.908-3.76 6.79-5.92 7.976 2.16.96 5.617 3.475 6.932 8.024h-4.79c-1.028-3.043-3.592-5.397-6.981-5.718V23h-.523Z"/>
+                                </svg>
+                            </a>
+                            <a class="portal-media__item" href="https://t.me/apichru">
+                                <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <path d="M2.36 13.379c6.288-2.74 10.481-4.546 12.579-5.418 5.99-2.492 7.235-2.925 8.046-2.939.178-.003.577.041.836.25.218.178.278.417.307.585.028.168.064.55.036.849-.325 3.41-1.73 11.687-2.444 15.507-.302 1.616-.898 2.159-1.474 2.211-1.253.116-2.204-.827-3.417-1.622-1.898-1.245-2.97-2.02-4.813-3.234-2.13-1.403-.75-2.175.464-3.435.318-.33 5.837-5.35 5.943-5.805.014-.057.026-.27-.1-.381-.126-.113-.312-.074-.447-.044-.19.044-3.223 2.048-9.098 6.014-.86.59-1.64.879-2.339.864-.77-.017-2.251-.436-3.352-.794-1.351-.439-2.425-.67-2.331-1.417.048-.388.583-.785 1.604-1.191Z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="panel__body">
-                        <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
-                        <form class="subscription subscription_full">
-                            <div class="subscription__body">
-                                <div class="subscription__field input">
-                                    <input class="input__widget" type="email" placeholder="Оставь e-mail *">
-                                </div>
-                                <div class="subscription__submit">
-                                    <button class="button button_palette_submit" type="button">
-                                        <span class="button__label">
-                                            Подписаться
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="subscription__terms">
-                                Нажимая подписаться, вы соглашаетесь с <a class="link" href="privacy-policy.html">политикой конфиденциальности</a>.
-                            </div>
-                        </form>
+                    <div class="portal-footer__secondary">
+                        <a class="portal-footer__logo portal-logo" href="#">
+                            ЕГЭнатор
+                        </a>
+                        <div class="portal-footer__note portal-caption">
+                            Красивая косметика для красивой тебя
+                        </div>
+                        <div class="portal-footer__copyright portal-caption">
+                            © ООО «ГИД КОСМЕТИКС»<br>
+                            <a class="portal-link portal-link--text-alike-inverted" href="privacy-policy.html">Политика конфиденциальности</a> / <a class="portal-link portal-link--text-alike-inverted" href="public-offer.html">Договор&nbsp;оферты</a><br>
+                            <br>
+                            ОГРН/ОГРНИП <a class="portal-link portal-link--fake">1237700379157</a><br>
+                            ИНН <a class="portal-link portal-link--fake">7716983072</a><br>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
-
-        <footer class="portal-footer">
-            <div class="portal-footer__wrap container">
-                <div class="portal-footer__primary">
-                    <a class="portal-footer__phone portal-title portal-title--h5" href="tel:+78001872277">
-                        8 800 187 22 77
-                    </a>
-                    <div class="portal-footer__mail">
-                        <a class="portal-link portal-link--text-alike" href="mailto:help@apich.ru">
-                            help@apich.ru
-                        </a>
-                    </div>
-                    <div class="portal-footer__menu">
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Помощь</a>
-                        </div>
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Личный кабинет</a>
-                        </div>
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Журнал</a>
-                        </div>
-                    </div>
-                    <div class="portal-footer__social portal-media portal-media--inverted portal-media--sparse">
-                        <a class="portal-media__item" href="https://vk.com/apichru">
-                            <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                                <path d="M15.206 23C5.98 23 .719 16.994.5 7h4.62c.153 7.335 3.56 10.442 6.257 11.083V7h4.352v6.326c2.664-.272 5.463-3.155 6.408-6.326h4.351c-.725 3.908-3.76 6.79-5.92 7.976 2.16.96 5.617 3.475 6.932 8.024h-4.79c-1.028-3.043-3.592-5.397-6.981-5.718V23h-.523Z"/>
-                            </svg>
-                        </a>
-                        <a class="portal-media__item" href="https://t.me/apichru">
-                            <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                                <path d="M2.36 13.379c6.288-2.74 10.481-4.546 12.579-5.418 5.99-2.492 7.235-2.925 8.046-2.939.178-.003.577.041.836.25.218.178.278.417.307.585.028.168.064.55.036.849-.325 3.41-1.73 11.687-2.444 15.507-.302 1.616-.898 2.159-1.474 2.211-1.253.116-2.204-.827-3.417-1.622-1.898-1.245-2.97-2.02-4.813-3.234-2.13-1.403-.75-2.175.464-3.435.318-.33 5.837-5.35 5.943-5.805.014-.057.026-.27-.1-.381-.126-.113-.312-.074-.447-.044-.19.044-3.223 2.048-9.098 6.014-.86.59-1.64.879-2.339.864-.77-.017-2.251-.436-3.352-.794-1.351-.439-2.425-.67-2.331-1.417.048-.388.583-.785 1.604-1.191Z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="portal-footer__secondary">
-                    <a class="portal-footer__logo portal-logo" href="#">
-                        ЕГЭнатор
-                    </a>
-                    <div class="portal-footer__note portal-caption">
-                        Красивая косметика для красивой тебя
-                    </div>
-                    <div class="portal-footer__copyright portal-caption">
-                        © ООО «ГИД КОСМЕТИКС»<br>
-                        <a class="portal-link portal-link--text-alike-inverted" href="privacy-policy.html">Политика конфиденциальности</a> / <a class="portal-link portal-link--text-alike-inverted" href="public-offer.html">Договор&nbsp;оферты</a><br>
-                        <br>
-                        ОГРН/ОГРНИП <a class="portal-link portal-link--fake">1237700379157</a><br>
-                        ИНН <a class="portal-link portal-link--fake">7716983072</a><br>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
         <!-- Поиск -->
         <div class="window window_for_search mfp-hide" id="search">
