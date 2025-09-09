@@ -719,7 +719,7 @@ screen and (max-height:300px) {
   --font-body: "Roboto",sans-serif;
   --font-heading: "Futura PT","FuturaPT","Futura-PT",sans-serif;
   --font-weight-heading: 500;
-  --container-padding: 10px;
+  --container-padding: 16px;
   --container-width: 100%;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
@@ -731,9 +731,9 @@ screen and (max-height:300px) {
   --warning: var(--brand_orange);
   --danger: #E51C1C
 }
-@media (min-width:360px) {
+@media (min-width:370px) {
   :root {
-    --container-padding: 16px
+    --container-padding: 20px
   }
 }
 @media (min-width:768px) and (max-width:1023px) {
@@ -763,21 +763,27 @@ screen and (max-height:300px) {
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px
+  width: 1px;
+  white-space: nowrap
 }
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
+  -webkit-clip-path: none;
+          clip-path: none;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto
+  width: auto;
+  white-space: inherit
 }
 .body {
   min-width: 320px;
@@ -1158,8 +1164,10 @@ screen and (max-height:300px) {
 }
 .mfp-container {
   display: inline-block;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-left: var(--container-padding);
+  padding-right: 16px;
+  padding-right: var(--container-padding);
   vertical-align: top;
   width: auto;
   min-width: 100%;
@@ -1167,19 +1175,11 @@ screen and (max-height:300px) {
   cursor: auto
 }
 .mfp-content {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 16px;
+  margin-top: var(--container-padding);
+  margin-bottom: 16px;
+  margin-bottom: var(--container-padding);
   text-align: center
-}
-@media (min-width:360px) {
-  .mfp-container {
-    padding-left: 30px;
-    padding-right: 30px
-  }
-  .mfp-content {
-    margin-top: 30px;
-    margin-bottom: 30px
-  }
 }
 .mfp-close {
   cursor: pointer!important
@@ -1227,8 +1227,9 @@ screen and (max-height:300px) {
   position: relative;
   width: 100%;
   min-width: 290px;
-  max-width: 360px;
-  padding: 44px 15px 20px;
+  max-width: 420px;
+  padding: 44px 16px 20px;
+  padding: 44px var(--container-padding) 20px;
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
@@ -1237,7 +1238,7 @@ screen and (max-height:300px) {
 }
 @media (min-width:360px) and (max-width:767px) {
   .window {
-    padding: 44px 15px 24px
+    padding-bottom: 24px
   }
 }
 .window__close {
@@ -1274,11 +1275,18 @@ screen and (max-height:300px) {
   background-repeat: no-repeat;
   background-position: center center
 }
-.window__close:hover::after {
-  color: #666
+.window__close::after {
+  content: "";
+  position: absolute;
+  inset: 4px -12px 4px -16px;
+  border-radius: 4px;
+  background-color: #FF7502;
+  background-color: var(--brand_orange);
+  opacity: 0;
+  transition: opacity .1s ease
 }
-.window__close:active::after {
-  color: #000
+.window__close:hover::after {
+  opacity: 10%
 }
 .window__close_simplified {
   right: 0!important;
@@ -1291,6 +1299,10 @@ screen and (max-height:300px) {
 }
 .window__close_simplified::before {
   left: 15px
+}
+.window__close_simplified::after {
+  inset: 0;
+  border-radius: 50%
 }
 @media (min-width:768px) {
   .window {
@@ -1326,6 +1338,9 @@ screen and (max-height:300px) {
   .window_for_theater {
     width: 914px
   }
+}
+.window_for_form {
+  max-width: none
 }
 @media (min-width:768px) {
   .window_for_form {
@@ -1445,9 +1460,9 @@ screen and (max-height:300px) {
   }
 }
 .container {
-  border-left: 10px solid transparent;
+  border-left: 16px solid transparent;
   border-left: var(--container-padding) solid transparent;
-  border-right: 10px solid transparent;
+  border-right: 16px solid transparent;
   border-right: var(--container-padding) solid transparent;
   margin-left: auto;
   margin-right: auto;
@@ -1598,8 +1613,8 @@ screen and (max-height:300px) {
   font-family: var(--font-heading);
   font-weight: 500;
   font-weight: var(--font-weight-heading);
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 38px;
   text-align: center
 }
 .form__note {
@@ -1609,22 +1624,20 @@ screen and (max-height:300px) {
   text-align: center
 }
 .form__body {
-  margin-top: 29px
+  margin-top: 20px
 }
 .form__field {
-  margin-top: 10px
+  margin-top: 14px
 }
 .form__field:first-child {
   margin-top: 0
-}
-.form__protections {
-  margin-top: 20px
 }
 .form__send {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%
+  width: 100%;
+  max-width: 282px
 }
 .form__submit {
   width: 100%
@@ -1637,19 +1650,13 @@ screen and (max-height:300px) {
   text-align: center
 }
 @media (min-width:768px) {
-  .form__send {
-    width: 282px
+  .form__heading {
+    font-size: 36px;
+    line-height: 40px
   }
-  .form__agreement {
-    margin-left: -40px;
-    margin-right: -40px
+  .form__body {
+    margin-top: 28px
   }
-}
-.capcha .label {
-  padding-bottom: 0
-}
-.capcha .input__widget {
-  width: 200px
 }
 .list {
   margin-top: 0;
