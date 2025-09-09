@@ -1,7 +1,7 @@
 :root {
     --alt-header-height: 80px;
     --actions-gap: 12px;
-    --last-icon-shift: -12px;
+    --last-icon-shift: 10px;
     --action-width: 42px;
     --logo-width: 110px;
     --callback-width: 182px;
@@ -259,7 +259,7 @@
                         position: absolute;
                         top: 0;
                         left: calc(var(--logo-width) + var(--actions-gap));
-                        right: calc(3 * var(--action-width) + var(--callback-width) + 4 * var(--actions-gap));
+                        right: calc(3 * var(--action-width) + var(--callback-width) + 4 * var(--actions-gap) - var(--last-icon-shift));
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -270,7 +270,7 @@
 
                     @media (min-width: 1024px) and (max-width: 1339px) {
                         .alt-header__nav {
-                            right: calc(4 * var(--action-width) + 4 * var(--actions-gap));
+                            right: calc(4 * var(--action-width) + 4 * var(--actions-gap) - var(--last-icon-shift));
                             gap: 12px;
                         }
                     }
@@ -310,7 +310,7 @@
                     }
                         .alt-header__callback {
                             position: absolute;
-                            right: calc(2 * var(--action-width) + 2 * var(--actions-gap));
+                            right: calc(2 * var(--action-width) + 2 * var(--actions-gap) - var(--last-icon-shift));
                             margin-top: 0;
                             /*display: block;*/
                             /*width: fit-content;*/
@@ -355,7 +355,7 @@
 
                         .alt-header__profile {
                             position: absolute;
-                            right: 0;
+                            right: calc(-1 * var(--last-icon-shift));
                             top: 0;
                             margin-top: 0;
                             /*display: flex;*/
@@ -394,7 +394,7 @@
                 }
                     .alt-header__search-handler {
                         position: absolute;
-                        right: calc(2 * var(--action-width) + var(--callback-width) + 3 * var(--actions-gap));
+                        right: calc(2 * var(--action-width) + var(--callback-width) + 3 * var(--actions-gap) - var(--last-icon-shift));
                         top: 0;
                         /*flex-shrink: 0;*/
                         /*display: block;*/
@@ -414,13 +414,13 @@
                     @media (min-width: 1024px) and (max-width: 1339px) {
 
                         .alt-header__search-handler {
-                            right: calc(3 * var(--action-width) + 3 * var(--actions-gap));
+                            right: calc(3 * var(--action-width) + 3 * var(--actions-gap) - var(--last-icon-shift));
                         }
                     }
 
 
                     .alt-header__buying {
-                        right: calc(var(--action-width) + var(--actions-gap));
+                        right: calc(var(--action-width) + var(--actions-gap) - var(--last-icon-shift) - 4px); /* 4px несистемный сдвиг, но выглядит лучше */
                     }
 
                     .alt-header__buying:hover {
