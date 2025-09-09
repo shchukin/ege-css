@@ -53,13 +53,13 @@
 
 
     function disableStylesAndDOM() {
-        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').hide();
+        $('.header, .alt-header, .page, .window, .cookies').hide();
         $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', true);
         $('#delivery-widget').show();
     }
 
     function enableStylesAndDOM() {
-        $('.header, .navigation, .info-panel, .customer, .panel, .portal-footer, .window').show();
+        $('.header, .alt-header, .page, .window, .cookies').show();
         $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', false);
         $('#delivery-widget').hide();
     }
