@@ -22,328 +22,303 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body class="body">
-        <header class="header">
-            <div class="header__fixed-part">
-                <div class="header__wrap container">
-                    <h1 class="header__logo">
-                        <span class="logo">
-                            <span class="visuallyhidden">ЕГЭнатор</span>
-                        </span>
-                    </h1>
-                    <input class="header__contacts-visibility visuallyhidden" type="checkbox" id="contacts-visibility" style="display: none;">
-                    <label class="header__show-contacts" for="contacts-visibility">Контакты</label>
-                    <div class="header__contacts-body">
-                        <div class="header__contacts-widget contacts">
-                            <div class="contacts__phone call">
-                                <div class="call__phone">
-                                    <a class="link link_fake nobr" href="tel:+78007750682">+7 (800) 775-06-82</a>
-                                </div>
-                                <div class="call__note">
-                                    Бесплатно по РФ
-                                </div>
-                            </div>
-                            <div class="contacts__location">
-                                <div class="location">
-                                    Москва, Петровский бульвар 15, стр. 1
-                                </div>
-                            </div>
-                            <div class="contacts__connect">
-                                <div class="contacts__callback">
-                                    <a class="button button_id-contacts-handler mfp-handler" href="#callback">Позвоните мне</a>
-                                </div>
-                                <div class="contacts__social">
-                                    <a class="contacts__network net net_id_vkontakte" href="https://vk.com/apichru">Вконтакте</a>
-                                    <a class="contacts__network net net_id_telegram" href="https://t.me/apichru">Телеграм</a>
-                                </div>
-                            </div>
-                        </div>
-                        <label class="header__hide-contacts" for="contacts-visibility"></label>
-                    </div>
-                    <div class="header__actions">
-                        <a class="header__search-handler mfp-handler" href="#search">
-                            Поиск
+        <header class="alt-header">
+            <div class="alt-header__fixed-part">
+                <div class="alt-header__wrap container">
+                    <a class="alt-header__logo" href="#">
+                        <span class="visuallyhidden">Apich</span>
+                    </a>
+                    <div class="alt-header__actions">
+                        <a class="alt-header__search-handler mfp-handler" href="#search">
+                            <span class="visuallyhidden">Поиск</span>
                         </a>
-                        <a class="header__buying bag" href="#">
+                        <a class="alt-header__buying bag" href="#">
                             <span class="visuallyhidden">Корзина:</span>
                             <span class="bag__quantity">3</span>
                         </a>
-                        <a class="header__profile" href="#">
-                            <span class="visuallyhidden">Личный кабинет</span>
-                        </a>
+                        <button class="alt-header__burger" type="button">
+                            Меню
+                        </button>
                     </div>
+                </div>
+            </div>
+            <div class="alt-header__dropdown container">
+                <div class="alt-header__nav">
+                    <a class="alt-header__link" href="#">Акции</a>
+                    <a class="alt-header__link" href="#">Наборы</a>
+                    <a class="alt-header__link" href="#">Лицо</a>
+                    <a class="alt-header__link" href="#">Тело</a>
+                    <a class="alt-header__link" href="#">Волосы</a>
+                    <a class="alt-header__link" href="#">Разное</a>
+                </div>
+                <div class="alt-header__dropdown-actions">
+                    <a class="alt-header__callback mfp-handler" href="#callback">
+                        Позвоните мне
+                    </a>
+                    <a class="alt-header__profile" href="#">
+                        Личный кабинет
+                    </a>
                 </div>
             </div>
         </header>
-        <nav class="navigation">
-            <div class="navigation__fixed-part">
-                <div class="navigation__wrap container">
-                    <div class="navigation__list">
-                        <a class="navigation__link" href="#">Акции</a>
-                        <a class="navigation__link" href="#">Наборы</a>
-                        <a class="navigation__link" href="#">Лицо</a>
-                        <a class="navigation__link" href="#">Тело</a>
-                        <a class="navigation__link" href="#">Волосы</a>
-                        <a class="navigation__link" href="#">Разное</a>
+        <div class="page">
+            <div class="info-panel">
+                <div class="info-panel__wrap container">
+                    <div class="info-panel__message">
+                        22-23 августа на все заказы больше 500&nbsp;руб. бесплатная доставка!
                     </div>
                 </div>
             </div>
-        </nav>
-        <div class="info-panel">
-            <div class="info-panel__wrap container">
-                <div class="info-panel__message">
-                    22-23 августа на все заказы больше 500&nbsp;руб. бесплатная доставка!
-                </div>
-            </div>
-        </div>
-        <main class="item">
-            <div class="item__wrap container">
-                <div class="item__path breadcrumbs">
-                    <span class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Математика</a>
-                    </span>
-                    <span class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Видеокурсы</a>
-                    </span>
-                    <span class="breadcrumbs__item">
-                        <span class="breadcrumbs__current">Восстанавливающий шампунь для всех типов волос с ароматом по мотивам Lost Cherry, 1000 мл</span>
-                    </span>
-                </div>
-                <div class="item__body">
-                    <div class="item__preview">
-                        <div class="item__pictures gallery">
-                            <div class="gallery__stage">
-                                <a class="gallery__item gallery__item--current" href="#">
-                                    <img class="gallery__full-image gallery__full-image--stretch-over-border"
-                                         src="../global/content/product-placeholder.svg"
-                                         width="300"
-                                         height="300"
-                                         alt=""
-                                    >
-                                </a>
-                                <a class="gallery__item" href="#">
-                                    <img class="gallery__full-image"
-                                         srcset="../global/temp/product-boxart-300x225@2x.jpg 2x"
-                                         src="../global/temp/product-boxart-300x225.jpg"
-                                         width="300"
-                                         height="225"
-                                         alt=""
-                                    >
-                                </a>
-                                <a class="gallery__item" href="#">
-                                    <img class="gallery__full-image gallery__full-image--stretch-over-border"
-                                         srcset="../global/temp/product-stretch-over-border-302x227@2x.jpg 2x"
-                                         src="../global/temp/product-stretch-over-border-302x227.jpg"
-                                         width="302"
-                                         height="227"
-                                         alt=""
-                                    >
-                                </a>
-                            </div>
-                            <div class="gallery__navigation">
-                                <button class="gallery__preview gallery__preview--current" type="button">
-                                    <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
-                                         src="../global/content/product-placeholder.svg"
-                                         width="50"
-                                         height="50"
-                                         alt=""
-                                    >
-                                </button>
-                                <button class="gallery__preview" type="button">
-                                    <img class="gallery__thumbnail"
-                                         srcset="../global/temp/product-boxart-52x39@2x.jpg 2x"
-                                         src="../global/temp/product-boxart-52x39.jpg"
-                                         width="52"
-                                         height="39"
-                                         alt=""
-                                    >
-                                </button>
-                                <button class="gallery__preview" type="button">
-                                    <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
-                                         srcset="../global/temp/product-stretch-over-border-54x41@2x.jpg 2x"
-                                         src="../global/temp/product-stretch-over-border-54x41.jpg"
-                                         width="54"
-                                         height="41"
-                                         alt=""
-                                    >
-                                </button>
-                            </div>
-                        </div>
+            <main class="item">
+                <div class="item__wrap container">
+                    <div class="item__path breadcrumbs">
+                        <span class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Математика</a>
+                        </span>
+                        <span class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Видеокурсы</a>
+                        </span>
+                        <span class="breadcrumbs__item">
+                            <span class="breadcrumbs__current">Восстанавливающий шампунь для всех типов волос с ароматом по мотивам Lost Cherry, 1000 мл</span>
+                        </span>
                     </div>
-                    <div class="item__content">
-                        <div class="item__category">
-                            Разное
-                        </div>
-                        <h1 class="item__heading">
-                            Восстанавливающий шампунь для всех типов волос с ароматом по мотивам Lost Cherry, 1000 мл
-                        </h1>
-                        <div class="item__intro wysiwyg">
-                            <p>«Теория вероятностей». Задачи, которые на ЕГЭ могут поставить в тупик не только школьников, но и многих учителей. В большинстве школ эту тему не проходят.</p>
-                        </div>
-                        <div class="item__purchase buying">
-                            <input class="buying__choice" type="radio" name="byuing" id="buying-disc" checked>
-                            <input class="buying__choice" type="radio" name="byuing" id="buying-digital">
-                            <div class="buying__params">
-                                <label class="buying__option variation variation_disc" for="buying-disc">
-                                    <span class="variation__type">Диск</span>
-                                    <span class="variation__price">1 320 руб. </span>
-                                </label>
-                                <label class="buying__option variation variation_download" for="buying-digital">
-                                    <span class="variation__type">Электронная версия</span>
-                                    <span class="variation__price">990 руб.</span>
-                                </label>
-                            </div>
-                            <div class="buying__body">
-                                <div class="buying__item">
-                                    <div class="buying__type">Цифровой</div>
-                                    <div class="buying__price">1 320 руб.</div>
-                                    <s class="buying__old-price">37 500 руб.</s>
-                                    <div class="buying__operations">
-                                        <div class="actions">
-                                            <div class="actions__buy-now">
-                                                <a class="button button_palette_submit" href="#">
-                                                    <span class="button__label">Купить</span>
-                                                </a>
-                                            </div>
-                                            <div class="actions__add-to-cart">
-                                                <button class="link" type="button">
-                                                    В корзину
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!-- или:
-                                        <div class="no-actions">
-                                            Нет в наличии
-                                        </div>
-                                        -->
-                                    </div>
+                    <div class="item__body">
+                        <div class="item__preview">
+                            <div class="item__pictures gallery">
+                                <div class="gallery__stage">
+                                    <a class="gallery__item gallery__item--current" href="#">
+                                        <img class="gallery__full-image gallery__full-image--stretch-over-border"
+                                             src="../global/content/product-placeholder.svg"
+                                             width="300"
+                                             height="300"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="gallery__item" href="#">
+                                        <img class="gallery__full-image"
+                                             srcset="../global/temp/product-boxart-300x225@2x.jpg 2x"
+                                             src="../global/temp/product-boxart-300x225.jpg"
+                                             width="300"
+                                             height="225"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="gallery__item" href="#">
+                                        <img class="gallery__full-image gallery__full-image--stretch-over-border"
+                                             srcset="../global/temp/product-stretch-over-border-302x227@2x.jpg 2x"
+                                             src="../global/temp/product-stretch-over-border-302x227.jpg"
+                                             width="302"
+                                             height="227"
+                                             alt=""
+                                        >
+                                    </a>
                                 </div>
-                                <div class="buying__item">
-                                    <div class="buying__type">Электронная версия</div>
-                                    <div class="buying__price">990 руб.</div>
-                                    <div class="buying__operations">
-                                        <div class="actions">
-                                            <div class="actions__buy-now">
-                                                <a class="button button_palette_submit" href="#">
-                                                    <span class="button__label">Купить</span>
-                                                </a>
-                                            </div>
-                                            <div class="actions__add-to-cart">
-                                                <button class="link" type="button">
-                                                    В корзину
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <!-- или:
-                                        <div class="no-actions">
-                                            Нет в наличии
-                                        </div>
-                                        -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item__description wysiwyg">
-                            <p>80% выпускников, сдавая ЕГЭ по математике, теряются при виде текстовых задач. Особенно если в последний раз встречались с ними в 5-7 классе. Задачи на проценты, движение по окружности или встречное движение оказываются для абитуриентов неожиданными. Многие пытаются решить их наугад, теряя на этом время и драгоценные баллы.</p>
-                            <p>На этом диске — основы математики. Именно те знания, из-за отсутствия которых 80% учеников сдают ЕГЭ по математике значительно хуже, чем рассчитывали.</p>
-                        </div>
-                        <div class="item__addition">
-                            <h2 class="item__bonus">Бонус</h2>
-                            <div class="item__extra wysiwyg">
-                                <p>«Теория вероятностей». Задачи, которые на ЕГЭ могут поставить в тупик не только школьников, но и многих учителей. В большинстве школ эту тему не проходят.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Panel -->
-        <div class="panel">
-            <div class="panel__detachable">
-                <input class="panel__visibility visuallyhidden" id="panel-visibility" type="checkbox" style="display: none;">
-                <label class="panel__show" for="panel-visibility">Развернуть</label>
-                <label class="panel__hide" for="panel-visibility">Свернуть</label>
-                <button class="panel__close" type="button">Закрыть</button>
-                <div class="panel__wrap container">
-                    <div class="panel__heading">
-                        Подписка на рассылку
-                    </div>
-                    <div class="panel__body">
-                        <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
-                        <form class="subscription subscription_full">
-                            <div class="subscription__body">
-                                <div class="subscription__field input">
-                                    <input class="input__widget" type="email" placeholder="Оставь e-mail *">
-                                </div>
-                                <div class="subscription__submit">
-                                    <button class="button button_palette_submit" type="button">
-                                        <span class="button__label">
-                                            Подписаться
-                                        </span>
+                                <div class="gallery__navigation">
+                                    <button class="gallery__preview gallery__preview--current" type="button">
+                                        <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
+                                             src="../global/content/product-placeholder.svg"
+                                             width="50"
+                                             height="50"
+                                             alt=""
+                                        >
+                                    </button>
+                                    <button class="gallery__preview" type="button">
+                                        <img class="gallery__thumbnail"
+                                             srcset="../global/temp/product-boxart-52x39@2x.jpg 2x"
+                                             src="../global/temp/product-boxart-52x39.jpg"
+                                             width="52"
+                                             height="39"
+                                             alt=""
+                                        >
+                                    </button>
+                                    <button class="gallery__preview" type="button">
+                                        <img class="gallery__thumbnail gallery__thumbnail--stretch-over-border"
+                                             srcset="../global/temp/product-stretch-over-border-54x41@2x.jpg 2x"
+                                             src="../global/temp/product-stretch-over-border-54x41.jpg"
+                                             width="54"
+                                             height="41"
+                                             alt=""
+                                        >
                                     </button>
                                 </div>
                             </div>
-                            <div class="subscription__terms">
-                                Нажимая подписаться, вы соглашаетесь с <a class="link" href="privacy-policy.html">политикой конфиденциальности</a>.
+                        </div>
+                        <div class="item__content">
+                            <div class="item__category">
+                                Разное
                             </div>
-                        </form>
+                            <h1 class="item__heading">
+                                Восстанавливающий шампунь для всех типов волос с ароматом по мотивам Lost Cherry, 1000 мл
+                            </h1>
+                            <div class="item__intro wysiwyg">
+                                <p>«Теория вероятностей». Задачи, которые на ЕГЭ могут поставить в тупик не только школьников, но и многих учителей. В большинстве школ эту тему не проходят.</p>
+                            </div>
+                            <div class="item__purchase buying">
+                                <input class="buying__choice" type="radio" name="byuing" id="buying-disc" checked>
+                                <input class="buying__choice" type="radio" name="byuing" id="buying-digital">
+                                <div class="buying__params">
+                                    <label class="buying__option variation variation_disc" for="buying-disc">
+                                        <span class="variation__type">Диск</span>
+                                        <span class="variation__price">1 320 руб. </span>
+                                    </label>
+                                    <label class="buying__option variation variation_download" for="buying-digital">
+                                        <span class="variation__type">Электронная версия</span>
+                                        <span class="variation__price">990 руб.</span>
+                                    </label>
+                                </div>
+                                <div class="buying__body">
+                                    <div class="buying__item">
+                                        <div class="buying__type">Цифровой</div>
+                                        <div class="buying__price">1 320 руб.</div>
+                                        <s class="buying__old-price">37 500 руб.</s>
+                                        <div class="buying__operations">
+                                            <div class="actions">
+                                                <div class="actions__buy-now">
+                                                    <a class="button button_palette_submit" href="#">
+                                                        <span class="button__label">Купить</span>
+                                                    </a>
+                                                </div>
+                                                <div class="actions__add-to-cart">
+                                                    <button class="link" type="button">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- или:
+                                            <div class="no-actions">
+                                                Нет в наличии
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                    <div class="buying__item">
+                                        <div class="buying__type">Электронная версия</div>
+                                        <div class="buying__price">990 руб.</div>
+                                        <div class="buying__operations">
+                                            <div class="actions">
+                                                <div class="actions__buy-now">
+                                                    <a class="button button_palette_submit" href="#">
+                                                        <span class="button__label">Купить</span>
+                                                    </a>
+                                                </div>
+                                                <div class="actions__add-to-cart">
+                                                    <button class="link" type="button">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- или:
+                                            <div class="no-actions">
+                                                Нет в наличии
+                                            </div>
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__description wysiwyg">
+                                <p>80% выпускников, сдавая ЕГЭ по математике, теряются при виде текстовых задач. Особенно если в последний раз встречались с ними в 5-7 классе. Задачи на проценты, движение по окружности или встречное движение оказываются для абитуриентов неожиданными. Многие пытаются решить их наугад, теряя на этом время и драгоценные баллы.</p>
+                                <p>На этом диске — основы математики. Именно те знания, из-за отсутствия которых 80% учеников сдают ЕГЭ по математике значительно хуже, чем рассчитывали.</p>
+                            </div>
+                            <div class="item__addition">
+                                <h2 class="item__bonus">Бонус</h2>
+                                <div class="item__extra wysiwyg">
+                                    <p>«Теория вероятностей». Задачи, которые на ЕГЭ могут поставить в тупик не только школьников, но и многих учителей. В большинстве школ эту тему не проходят.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </main>
 
-        <footer class="portal-footer">
-            <div class="portal-footer__wrap container">
-                <div class="portal-footer__primary">
-                    <a class="portal-footer__phone portal-title portal-title--h5" href="tel:+78001872277">
-                        8 800 187 22 77
-                    </a>
-                    <div class="portal-footer__mail">
-                        <a class="portal-link portal-link--text-alike" href="mailto:help@apich.ru">
-                            help@apich.ru
-                        </a>
-                    </div>
-                    <div class="portal-footer__menu">
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Помощь</a>
+            <!-- Panel -->
+            <div class="panel">
+                <div class="panel__detachable">
+                    <input class="panel__visibility visuallyhidden" id="panel-visibility" type="checkbox" style="display: none;">
+                    <label class="panel__show" for="panel-visibility">Развернуть</label>
+                    <label class="panel__hide" for="panel-visibility">Свернуть</label>
+                    <button class="panel__close" type="button">Закрыть</button>
+                    <div class="panel__wrap container">
+                        <div class="panel__heading">
+                            Подписка на рассылку
                         </div>
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Личный кабинет</a>
+                        <div class="panel__body">
+                            <!-- same form but this:  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ and also remove .input_size_smaller and .button_size_smaller -->
+                            <form class="subscription subscription_full">
+                                <div class="subscription__body">
+                                    <div class="subscription__field input">
+                                        <input class="input__widget" type="email" placeholder="Оставь e-mail *">
+                                    </div>
+                                    <div class="subscription__submit">
+                                        <button class="button button_palette_submit" type="button">
+                                            <span class="button__label">
+                                                Подписаться
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="subscription__terms">
+                                    Нажимая подписаться, вы соглашаетесь с <a class="link" href="privacy-policy.html">политикой конфиденциальности</a>.
+                                </div>
+                            </form>
                         </div>
-                        <div class="portal-footer__item">
-                            <a class="portal-link portal-link--inverted" href="#">Журнал</a>
-                        </div>
-                    </div>
-                    <div class="portal-footer__social portal-media portal-media--inverted portal-media--sparse">
-                        <a class="portal-media__item" href="https://vk.com/apichru">
-                            <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                                <path d="M15.206 23C5.98 23 .719 16.994.5 7h4.62c.153 7.335 3.56 10.442 6.257 11.083V7h4.352v6.326c2.664-.272 5.463-3.155 6.408-6.326h4.351c-.725 3.908-3.76 6.79-5.92 7.976 2.16.96 5.617 3.475 6.932 8.024h-4.79c-1.028-3.043-3.592-5.397-6.981-5.718V23h-.523Z"/>
-                            </svg>
-                        </a>
-                        <a class="portal-media__item" href="https://t.me/apichru">
-                            <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                                <path d="M2.36 13.379c6.288-2.74 10.481-4.546 12.579-5.418 5.99-2.492 7.235-2.925 8.046-2.939.178-.003.577.041.836.25.218.178.278.417.307.585.028.168.064.55.036.849-.325 3.41-1.73 11.687-2.444 15.507-.302 1.616-.898 2.159-1.474 2.211-1.253.116-2.204-.827-3.417-1.622-1.898-1.245-2.97-2.02-4.813-3.234-2.13-1.403-.75-2.175.464-3.435.318-.33 5.837-5.35 5.943-5.805.014-.057.026-.27-.1-.381-.126-.113-.312-.074-.447-.044-.19.044-3.223 2.048-9.098 6.014-.86.59-1.64.879-2.339.864-.77-.017-2.251-.436-3.352-.794-1.351-.439-2.425-.67-2.331-1.417.048-.388.583-.785 1.604-1.191Z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="portal-footer__secondary">
-                    <a class="portal-footer__logo portal-logo" href="#">
-                        ЕГЭнатор
-                    </a>
-                    <div class="portal-footer__note portal-caption">
-                        Красивая косметика для красивой тебя
-                    </div>
-                    <div class="portal-footer__copyright portal-caption">
-                        © ООО «ГИД КОСМЕТИКС»<br>
-                        <a class="portal-link portal-link--text-alike-inverted" href="privacy-policy.html">Политика конфиденциальности</a> / <a class="portal-link portal-link--text-alike-inverted" href="public-offer.html">Договор&nbsp;оферты</a><br>
-                        <br>
-                        ОГРН/ОГРНИП <a class="portal-link portal-link--fake">1237700379157</a><br>
-                        ИНН <a class="portal-link portal-link--fake">7716983072</a><br>
                     </div>
                 </div>
             </div>
-        </footer>
+
+            <footer class="portal-footer">
+                <div class="portal-footer__wrap container">
+                    <div class="portal-footer__primary">
+                        <a class="portal-footer__phone portal-title portal-title--h5" href="tel:+78001872277">
+                            8 800 187 22 77
+                        </a>
+                        <div class="portal-footer__mail">
+                            <a class="portal-link portal-link--text-alike" href="mailto:help@apich.ru">
+                                help@apich.ru
+                            </a>
+                        </div>
+                        <div class="portal-footer__menu">
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Помощь</a>
+                            </div>
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Личный кабинет</a>
+                            </div>
+                            <div class="portal-footer__item">
+                                <a class="portal-link portal-link--inverted" href="#">Журнал</a>
+                            </div>
+                        </div>
+                        <div class="portal-footer__social portal-media portal-media--inverted portal-media--sparse">
+                            <a class="portal-media__item" href="https://vk.com/apichru">
+                                <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <path d="M15.206 23C5.98 23 .719 16.994.5 7h4.62c.153 7.335 3.56 10.442 6.257 11.083V7h4.352v6.326c2.664-.272 5.463-3.155 6.408-6.326h4.351c-.725 3.908-3.76 6.79-5.92 7.976 2.16.96 5.617 3.475 6.932 8.024h-4.79c-1.028-3.043-3.592-5.397-6.981-5.718V23h-.523Z"/>
+                                </svg>
+                            </a>
+                            <a class="portal-media__item" href="https://t.me/apichru">
+                                <svg class="portal-media__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <path d="M2.36 13.379c6.288-2.74 10.481-4.546 12.579-5.418 5.99-2.492 7.235-2.925 8.046-2.939.178-.003.577.041.836.25.218.178.278.417.307.585.028.168.064.55.036.849-.325 3.41-1.73 11.687-2.444 15.507-.302 1.616-.898 2.159-1.474 2.211-1.253.116-2.204-.827-3.417-1.622-1.898-1.245-2.97-2.02-4.813-3.234-2.13-1.403-.75-2.175.464-3.435.318-.33 5.837-5.35 5.943-5.805.014-.057.026-.27-.1-.381-.126-.113-.312-.074-.447-.044-.19.044-3.223 2.048-9.098 6.014-.86.59-1.64.879-2.339.864-.77-.017-2.251-.436-3.352-.794-1.351-.439-2.425-.67-2.331-1.417.048-.388.583-.785 1.604-1.191Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portal-footer__secondary">
+                        <a class="portal-footer__logo portal-logo" href="#">
+                            ЕГЭнатор
+                        </a>
+                        <div class="portal-footer__note portal-caption">
+                            Красивая косметика для красивой тебя
+                        </div>
+                        <div class="portal-footer__copyright portal-caption">
+                            © ООО «ГИД КОСМЕТИКС»<br>
+                            <a class="portal-link portal-link--text-alike-inverted" href="privacy-policy.html">Политика конфиденциальности</a> / <a class="portal-link portal-link--text-alike-inverted" href="public-offer.html">Договор&nbsp;оферты</a><br>
+                            <br>
+                            ОГРН/ОГРНИП <a class="portal-link portal-link--fake">1237700379157</a><br>
+                            ИНН <a class="portal-link portal-link--fake">7716983072</a><br>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
         <!-- Поиск -->
         <div class="window window_for_search mfp-hide" id="search">
