@@ -24,8 +24,10 @@
        эффект если модалка открыта из шапки, то в фоне шапка закрывается при взаимодействии с модалкой.
     */
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.alt-header').length && !$(event.target).closest('.mfp-wrap').length) {
-            closeHeader();
+        if($html.hasClass('burger-expanded')) {
+            if (!$(event.target).closest('.alt-header').length && !$(event.target).closest('.mfp-wrap').length) {
+                closeHeader();
+            }
         }
     });
 

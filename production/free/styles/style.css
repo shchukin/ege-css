@@ -1315,14 +1315,8 @@ screen and (max-height:300px) {
   }
 }
 .wysiwyg p {
-  margin-top: 20px;
-  margin-bottom: 20px
-}
-@media (min-width:768px) {
-  .wysiwyg p {
-    margin-top: 26px;
-    margin-bottom: 26px
-  }
+  margin-top: 12px;
+  margin-bottom: 12px
 }
 .wysiwyg_half-spacing p {
   margin-top: 10px;
