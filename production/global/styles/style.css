@@ -3276,7 +3276,13 @@ a.slider__slide:hover .slider__image {
   text-decoration: line-through
 }
 .buying__operations {
-  margin-top: 12px
+  margin-top: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center
 }
 .buying__price + .buying__operations {
   margin-top: 18px
