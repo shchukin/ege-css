@@ -4,6 +4,12 @@
     .index__wrap {
 
     }
+        /* Новый, актуальный слайдер: */
+        .index__slider {
+            border-top: 24px solid transparent;
+        }
+
+        /* Старый слайдер: */
         .index__theater {
             border-top: 24px solid transparent;
         }
@@ -43,6 +49,11 @@
     .index {
 
     }
+        /* Новый, актуальный слайдер: */
+        .index__slider {
+
+        }
+
         .index__theater {
             width: 800px;
             margin-left: auto;

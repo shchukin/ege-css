@@ -1,0 +1,7 @@
+.main-slide {
+    display: block;
+}
+    .main-slide__image {
+        width: 100%;
+        height: auto;
+    }
