@@ -1,0 +1,21 @@
+.billboard {
+    display: block;
+    overflow: hidden;
+    background-color: #999999;
+    /*transition: filter var(--transition-hover);*/
+}
+
+.billboard:hover {
+    /*filter: var(--image-hover);*/
+}
+
+    .billboard__strut {
+        margin-left: -1000px;
+        margin-right: -1000px;
+        text-align: center;
+    }
+        .billboard__image {
+            vertical-align: top;
+            width: auto;
+            height: 100px;
+        }
