@@ -144,11 +144,11 @@
         height: 100%;
     }
         .swiper--info .swiper-icon {
-            background-color: var(--brand_orange);
+            /*background-color: var(--brand_orange); можно добавить фон сюда */
         }
 
         .swiper--info .swiper-control:hover .swiper-icon {
-            background-color: #000000;
+            /*background-color: #000000 можно добавить наведение сюда */
         }
 
         .swiper--info .swiper-chevron {

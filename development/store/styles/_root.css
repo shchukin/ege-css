@@ -22,6 +22,6 @@
      * в --navigation-height будет перезаписано. Смотри navigation.js
      * Эти 61px, это, скорее, значение по-умолчанию, до момента пока заупстится скрипт:
      */
-    --navigation-height: 61px;
+    --navigation-height: 59px;
 }
 /* stylelint-enable declaration-colon-space-after */
