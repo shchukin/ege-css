@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         slidesPerGroup: 1,
         autoHeight: true,
-        spaceBetween: 0,
+        spaceBetween: 40,
         loop: true,
         autoplay: {
             delay: 8000,
