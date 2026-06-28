@@ -2,11 +2,10 @@
     display: block;
     overflow: hidden;
     background-color: #999999;
-    /*transition: filter var(--transition-hover);*/
 }
 
 .billboard:hover {
-    /*filter: var(--image-hover);*/
+    filter: var(--image-hover);
 }
 
     .billboard__strut {
