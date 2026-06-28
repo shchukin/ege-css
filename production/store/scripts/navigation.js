@@ -38,7 +38,7 @@
 
     function setNavigationHeight() {
         const rowsAmount = getFlexRows($navigationList);
-        const height = rowsAmount * 32 + 29; // 32 -- высота одной строки, 29 -- паддинги и бордюры навигации
+        const height = rowsAmount * 30 + 29; // 30 -- высота одной строки, 29 -- паддинги и бордюры навигации
         $html.css('--navigation-height', height);
     }
 

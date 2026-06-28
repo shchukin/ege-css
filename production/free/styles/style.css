@@ -561,13 +561,17 @@ screen and (max-height:300px) {
   --container-width: 100%;
   --brand_grey: #697882;
   --brand_orange: #FF7502;
+  --brand_orange-60pct: rgb(255 117 2 / 60%);
   --brand-orange-15pct: rgb(255 117 2 / 15%);
   --brand-orange-5pct: rgb(255 117 2 / 5%);
-  --image-fallback: #F8F8F8;
   --success: #04B004;
   --warning: #FF7502;
   --warning: var(--brand_orange);
-  --danger: #E51C1C
+  --danger: #E51C1C;
+  --image-hover: brightness(1.1) contrast(1.1);
+  --image-fallback: #F8F8F8;
+  --transition-slide: 0.5s ease;
+  --transition-hover: 0.1s ease
 }
 @media (min-width:370px) {
   :root {
@@ -623,7 +627,7 @@ screen and (max-height:300px) {
   width: auto;
   white-space: inherit
 }
-.body {
+body {
   min-width: 320px;
   margin: 0;
   font-family: "Roboto",sans-serif;
