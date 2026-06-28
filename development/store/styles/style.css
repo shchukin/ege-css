@@ -59,6 +59,9 @@
 
 
 /* store overrides */
+@import url("_html.css");
+@import url("_body.css");
+@import url("_footer.css");
 @import url("_call.css");
 @import url("_location.css");
 @import url("_button.css");

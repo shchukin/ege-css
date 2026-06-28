@@ -1,5 +1,7 @@
 .page {
-
+    display: flex; /* Прибиваем подвал к низу */
+    flex-direction: column;
+    min-height: calc(100% - var(--alt-header-height));
 }
 
 .burger-expanded .page {

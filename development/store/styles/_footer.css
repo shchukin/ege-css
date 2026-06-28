@@ -1,12 +1,4 @@
-
 /* Если компонент .panel не прибил подвал к низу, то пусть сам подвал это делает: */
-html:not(:has(.panel)) .portal-footer {
+html:not(:has(.panel)) .footer {
     margin-top: auto;
-}
-
-
-@media (min-width: 1024px) and (max-width: 1339px) {
-    .portal-footer__primary {
-        width: 280px;
-    }
 }
