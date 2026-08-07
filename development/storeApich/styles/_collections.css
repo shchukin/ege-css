@@ -145,17 +145,41 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .collections__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 13px;
-    }
+    .collections {
 
-    .collections__item {
-        flex-grow: 1;
-        flex-basis: 214px;
     }
+        .collections__heading {
 
+        }
+
+        .collections__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+
+        .collections__item {
+            flex-grow: 1;
+            flex-basis: 214px;
+        }
+            .collections__illustration {
+
+            }
+
+            .collections__item:hover .collections__illustration {
+
+            }
+
+            .collections__overlay {
+
+            }
+                .collections__tile-heading {
+
+                }
+
+                .collections__amount {
+
+                }
 
     /* Первая плитка */
     .collections__item--hair {
@@ -164,33 +188,137 @@
         .collections__item--hair .collections__tile-heading {
             font-size: 19px;
         }
+
+    .collections__item--skin {
+
+    }
+
+    .collections__item--face {
+
+    }
+
+    .collections__item--nails .collections__illustration {
+        aspect-ratio: 327/200;
+        height: auto;
+    }
+
+    .collections__item--giftboxes .collections__illustration {
+        aspect-ratio: 327/200;
+        height: auto;
+    }
+        .collections__item--giftboxes .collections__tile-heading {
+
+        }
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .collections {
+
+    }
+        .collections__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .collections__list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            /*margin-top: var(--landing-gap);*/
+            gap: 12px;
+        }
+
+        .collections__item {
+            /*position: relative;*/
+            /*border-radius: 3px;*/
+            /*overflow: hidden;*/
+        }
+            .collections__illustration {
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*height: 100%;*/
+                /*background-color: var(--image-fallback);*/
+                /*object-fit: cover;*/
+                /*transition: transform 700ms var(--ease-out-quint);*/
+            }
+
+            .collections__item:hover .collections__illustration {
+                /*transform: scale(110%);*/
+            }
+
+            .collections__overlay {
+                /*position: absolute;*/
+                /*inset: 0;*/
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*justify-content: center;*/
+                /*align-items: center;*/
+                /*padding: 24px 12px;*/
+                /*background-color: var(--brand-orange-15pct);*/
+                /*color: #FFFFFF;*/
+                /*text-shadow: 0 0 2px rgb(0 0 0 / 20%);*/
+            }
+                .collections__tile-heading {
+                    /*font-weight: bold;*/
+                    /*font-size: 20px;*/
+                    /*line-height: 28px;*/
+                    /*text-align: center;*/
+                }
+
+                .collections__amount {
+                    /*font-size: 14px;*/
+                    /*line-height: 18px;*/
+                    /*text-align: center;*/
+                }
+
+
+    .collections__item--hair {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .collections__item--skin {
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .collections__item--face {
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .collections__item--nails {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+        .collections__item--nails .collections__tile-heading {
+            /*font-size: 19px;*/
+            /*line-height: 26px;*/
+        }
+
+        .collections__item--nails .collections__amount {
+
+        }
+
+    .collections__item--giftboxes {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+        .collections__item--giftboxes .collections__tile-heading {
+            /*font-size: 19px;*/
+            /*line-height: 26px;*/
+        }
+
+        .collections__item--giftboxes .collections__amount {
+
+        }
 }
 
 
 
 
 
-
-
-@media (min-width: 1340px) {
-
-
-}
-
-
-
-
-@media (min-width: 768px) {
-
-
-}
-
-@media (min-width: 1024px) {
-
-
-}
-
-@media (min-width: 1340px) {
-
-
-}
