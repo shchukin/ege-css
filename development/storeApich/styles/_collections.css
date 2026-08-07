@@ -153,14 +153,14 @@
         }
 
         .collections__list {
-            /*display: grid;*/
-            /*grid-template-columns: repeat(4, minmax(0, 1fr));*/
-            /*margin-top: var(--landing-gap);*/
-            gap: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
         }
 
         .collections__item {
-
+            flex-grow: 1;
+            flex-basis: 214px;
         }
             .collections__illustration {
 
@@ -174,44 +174,40 @@
 
             }
                 .collections__tile-heading {
-                    font-size: 17px;
-                    line-height: 20px;
+
                 }
 
                 .collections__amount {
-                    margin-top: 4px;
-                    font-size: 12px;
-                    line-height: 18px;
-                    /*text-align: center;*/
+
                 }
 
+    /* Первая плитка */
+    .collections__item--hair {
 
-    /* Четвёртая плитка */
+    }
+        .collections__item--hair .collections__tile-heading {
+            font-size: 19px;
+        }
+
+    .collections__item--skin {
+
+    }
+
+    .collections__item--face {
+
+    }
 
     .collections__item--nails {
 
     }
         .collections__item--nails .collections__tile-heading {
-            font-size: 16px;
-            line-height: 19px;
-        }
-
-        .collections__item--nails .collections__amount {
 
         }
-
-
-    /* Пятая плитка */
 
     .collections__item--giftboxes {
 
     }
         .collections__item--giftboxes .collections__tile-heading {
-            font-size: 16px;
-            line-height: 19px;
-        }
-
-        .collections__item--giftboxes .collections__amount {
 
         }
 }
