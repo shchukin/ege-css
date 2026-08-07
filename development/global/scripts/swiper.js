@@ -60,6 +60,31 @@ document.addEventListener('DOMContentLoaded', () => {
             el: '.swiper-pagination',
             clickable: true,
         },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    type: 'fraction',
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            }
+        }
     });
 
 

@@ -43,6 +43,7 @@
         /* some will be hidden by default */
         .shelf__item {
             flex-shrink: 0;
+            width: 278px;
         }
 
     .shelf__load-more {

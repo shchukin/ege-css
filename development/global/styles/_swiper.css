@@ -16,7 +16,10 @@
         justify-content: center;
     }
         .swiper-pagination {
+            position: static;
             width: auto !important;
+            font-size: 15px;
+            line-height: 20px;
         }
 
 
