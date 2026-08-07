@@ -42,7 +42,7 @@
 
             .alt-header__dropdown {
                 display: none;
-                padding-top: 12px;
+                padding-top: 18px;
             }
                 .alt-header__nav {
                     display: block;
@@ -239,7 +239,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        gap: 16px;
+                        gap: 14px;
                         width: auto;
                         pointer-events: auto;
                     }
@@ -247,20 +247,21 @@
                     @media (min-width: 1024px) and (max-width: 1339px) {
                         .alt-header__nav {
                             right: calc(4 * var(--action-width) + 4 * var(--actions-gap) - var(--last-icon-shift));
-                            gap: 12px;
+                            gap: 8px;
                         }
                     }
                         .alt-header__link {
                             padding: 11px 12px;
-                            font-size: 15px;
+                            font-size: 14px;
                             line-height: 20px;
                         }
 
                         @media (min-width: 1024px) and (max-width: 1339px) {
 
                             .alt-header__link {
-                                font-size: 14px;
+                                font-size: 13px;
                                 line-height: 20px;
+                                letter-spacing: 0.75px;
                             }
                         }
 
