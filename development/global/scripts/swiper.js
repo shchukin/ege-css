@@ -44,5 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    /* Слайдер "best-sellers" */
+
+    new Swiper('.swiper--best-sellers', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        autoHeight: true,
+        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+
 
 });
