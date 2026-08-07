@@ -26,6 +26,8 @@
     --image-fallback: #F8F8F8;
     --transition-slide: 0.5s ease;
     --transition-hover: 0.1s ease;
+
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 /* stylelint-enable declaration-colon-space-after */
 
