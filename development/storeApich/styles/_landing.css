@@ -1,8 +1,21 @@
 .landing {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+}
+    .landing__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+
+@media (max-width: 767px) {
+
+    .landing {
+        overflow: hidden;
+    }
+        .landing__wrap .swiper {
+            overflow: visible;
+        }
 }
