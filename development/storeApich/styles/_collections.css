@@ -236,11 +236,13 @@
             /*position: relative;*/
             /*border-radius: 3px;*/
             /*overflow: hidden;*/
+
         }
             .collections__illustration {
                 /*vertical-align: top;*/
                 /*width: 100%;*/
                 /*height: 100%;*/
+                aspect-ratio: 1 / 1;
                 /*background-color: var(--image-fallback);*/
                 /*object-fit: cover;*/
                 /*transition: transform 700ms var(--ease-out-quint);*/
@@ -264,35 +266,34 @@
             }
                 .collections__tile-heading {
                     /*font-weight: bold;*/
-                    /*font-size: 20px;*/
-                    /*line-height: 28px;*/
-                    /*text-align: center;*/
+                    font-size: 18px !important;
+                    line-height: 22px !important;
                 }
 
                 .collections__amount {
-                    /*font-size: 14px;*/
-                    /*line-height: 18px;*/
-                    /*text-align: center;*/
+                    margin-top: 2px;
+                    font-size: 13px !important;
+                    line-height: 18px !important;
                 }
 
 
     .collections__item--hair {
-        grid-row: 1 / 3;
+        grid-row: 1 / 4;
         grid-column: 1 / 2;
     }
 
     .collections__item--skin {
+        grid-row: 4 / 7;
+        grid-column: 1 / 2;
+    }
+
+    .collections__item--face {
         grid-row: 1 / 3;
         grid-column: 2 / 3;
     }
 
-    .collections__item--face {
-        grid-row: 3 / 5;
-        grid-column: 1 / 2;
-    }
-
     .collections__item--nails {
-        grid-row: 3 / 4;
+        grid-row: 3 / 5;
         grid-column: 2 / 3;
     }
         .collections__item--nails .collections__tile-heading {
@@ -305,7 +306,7 @@
         }
 
     .collections__item--giftboxes {
-        grid-row: 4 / 5;
+        grid-row: 5 / 7;
         grid-column: 2 / 3;
     }
         .collections__item--giftboxes .collections__tile-heading {
