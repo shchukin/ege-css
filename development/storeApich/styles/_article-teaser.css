@@ -31,7 +31,7 @@
         }
             .article-teaser__link {
                 padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
-                text-decoration: 1.75px underline transparent;
+                text-decoration: 1.5px underline transparent;
                 text-underline-offset: 2px;
                 color: var(--brand_orange);
             }
