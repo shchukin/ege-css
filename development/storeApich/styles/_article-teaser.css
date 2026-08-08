@@ -1,0 +1,36 @@
+.article-teaser {
+
+}
+    .article-teaser__preview {
+
+    }
+        .article-teaser__image {
+            vertical-align: top;
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+
+    .article-teaser__body {
+        margin-top: 28px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+        .article-teaser__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .article-teaser__description {
+            margin-top: 19px;
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .article-teaser__details {
+            margin-top: 19px;
+        }
