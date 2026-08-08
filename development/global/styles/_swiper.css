@@ -95,6 +95,7 @@
     cursor: pointer;
 }
     .swiper-icon {
+        flex-shrink: 0;
         width: 28px;
         height: 28px;
         border-radius: 50%;
