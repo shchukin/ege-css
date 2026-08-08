@@ -9,9 +9,6 @@
 
     .blog-preview__list {
         margin-top: var(--landing-heading-gap);
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 60px;
     }
 
     .blog-preview__more {
