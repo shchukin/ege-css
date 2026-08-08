@@ -44,5 +44,154 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    /* Слайдер "best-sellers" */
+
+    const altPrev = document.querySelector('.best-sellers__alt-control--prev');
+    const altNext = document.querySelector('.best-sellers__alt-control--next');
+
+    const bestSellersSlider = new Swiper('.swiper--best-sellers', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        autoHeight: true,
+        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    type: 'fraction',
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            }
+        },
+        on: {
+            init: updateAltNavigation,
+            slideChange: updateAltNavigation,
+        }
+    });
+
+    if (altPrev) {
+        altPrev.addEventListener('click', () => {
+            bestSellersSlider.slidePrev();
+        });
+    }
+
+    if (altNext) {
+        altNext.addEventListener('click', () => {
+            bestSellersSlider.slideNext();
+        });
+    }
+
+    function updateAltNavigation(swiper) {
+        if (altPrev) {
+            if (swiper.isBeginning) {
+                altPrev.classList.add('best-sellers__alt-control--disabled');
+            } else {
+                altPrev.classList.remove('best-sellers__alt-control--disabled');
+            }
+        }
+
+        if (altNext) {
+            if (swiper.isEnd) {
+                altNext.classList.add('best-sellers__alt-control--disabled');
+            } else {
+                altNext.classList.remove('best-sellers__alt-control--disabled');
+            }
+        }
+    }
+
+
+    /* Слайдер "summary" для новинок и рекомендаций */
+
+    new Swiper('.swiper--summary', {
+        autoHeight: true,
+        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    type: 'fraction',
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            }
+        }
+    });
+
+
+    /* Слайдер "summary" для новинок и рекомендаций */
+
+    new Swiper('.swiper--blog', {
+        autoHeight: true,
+        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    type: 'fraction',
+                },
+            },
+            768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                pagination: {
+                    type: 'bullets',
+                    clickable: true,
+                },
+            }
+        }
+    });
+
+
 
 });

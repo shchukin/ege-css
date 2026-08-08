@@ -722,6 +722,7 @@ screen and (max-height:300px) {
   --container-padding: 16px;
   --container-width: 100%;
   --brand_grey: #697882;
+  --brand_grey-5pct: rgb(105 120 130 / 5%);
   --brand_orange: #FF7502;
   --brand_orange-60pct: rgb(255 117 2 / 60%);
   --brand-orange-15pct: rgb(255 117 2 / 15%);
@@ -731,9 +732,12 @@ screen and (max-height:300px) {
   --warning: var(--brand_orange);
   --danger: #E51C1C;
   --image-hover: brightness(1.1) contrast(1.1);
+  --hover-image-scale: 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  --hover-image-scale: 700ms var(--ease-out-quint);
   --image-fallback: #F8F8F8;
   --transition-slide: 0.5s ease;
-  --transition-hover: 0.1s ease
+  --transition-hover: 0.1s ease;
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1)
 }
 @media (min-width:370px) {
   :root {
@@ -2467,7 +2471,6 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 278px;
   border: 1px solid #e9e8e8;
   border-radius: 3px
 }
@@ -2476,16 +2479,17 @@ body {
   text-align: center
 }
 .product__image {
-  width: 276px;
-  height: 207px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   object-fit: contain;
   vertical-align: top
 }
 .product__image--stretch-over-border {
-  width: 278px;
-  height: 208px;
+  width: calc(100% + 2px);
+  height: auto;
   margin: -1px -1px 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -2619,6 +2623,40 @@ body {
   right: -11px;
   bottom: -11px;
   display: block
+}
+.product--sparse .product__body {
+  padding-top: 25px;
+  padding-bottom: 40px
+}
+.product--sparse .product__title {
+  margin-top: 6px
+}
+.product--sparse .product__price {
+  margin-top: 14px
+}
+.product--sparse .product__operations {
+  padding-top: 18px
+}
+.product--sparse .product__type {
+  margin-top: 21px
+}
+@media (max-width:1023px) {
+  .product--sparse-on-smartphone-and-small-tablets .product__body {
+    padding-top: 25px;
+    padding-bottom: 40px
+  }
+  .product--sparse-on-smartphone-and-small-tablets .product__title {
+    margin-top: 6px
+  }
+  .product--sparse-on-smartphone-and-small-tablets .product__price {
+    margin-top: 14px
+  }
+  .product--sparse-on-smartphone-and-small-tablets .product__operations {
+    padding-top: 18px
+  }
+  .product--sparse-on-smartphone-and-small-tablets .product__type {
+    margin-top: 21px
+  }
 }
 .slider {
   position: relative
@@ -3976,6 +4014,30 @@ a.slider__slide:hover .slider__image {
   display: block
 }
 .main-slide__image {
+  vertical-align: top;
   width: 100%;
-  height: auto
+  height: auto;
+  border-radius: 3px
+}
+.link-next {
+  display: inline;
+  vertical-align: baseline;
+  padding: 6px 0;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #FF7502;
+  color: var(--brand_orange);
+  text-decoration: none;
+  cursor: pointer
+}
+.link-next__label {
+  text-decoration: 1px underline currentColor;
+  text-underline-offset: .25em
+}
+.link-next:hover .link-next__label {
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent
 }

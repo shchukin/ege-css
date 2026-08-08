@@ -722,6 +722,7 @@ screen and (max-height:300px) {
   --container-padding: 16px;
   --container-width: 100%;
   --brand_grey: #697882;
+  --brand_grey-5pct: rgb(105 120 130 / 5%);
   --brand_orange: #FF7502;
   --brand_orange-60pct: rgb(255 117 2 / 60%);
   --brand-orange-15pct: rgb(255 117 2 / 15%);
@@ -731,9 +732,12 @@ screen and (max-height:300px) {
   --warning: var(--brand_orange);
   --danger: #E51C1C;
   --image-hover: brightness(1.1) contrast(1.1);
+  --hover-image-scale: 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  --hover-image-scale: 700ms var(--ease-out-quint);
   --image-fallback: #F8F8F8;
   --transition-slide: 0.5s ease;
-  --transition-hover: 0.1s ease
+  --transition-hover: 0.1s ease;
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1)
 }
 @media (min-width:370px) {
   :root {
