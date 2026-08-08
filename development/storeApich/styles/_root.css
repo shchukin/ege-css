@@ -26,3 +26,22 @@
     --landing-page-gap: 100px;
     --landing-heading-gap: 42px;
 }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    :root {
+        --landing-page-gap: 80px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    :root {
+
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --landing-page-gap: 60px;
+    }
+}

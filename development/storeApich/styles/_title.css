@@ -1,0 +1,25 @@
+.title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .title {
+
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
