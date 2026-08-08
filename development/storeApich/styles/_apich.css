@@ -1,0 +1,133 @@
+.apich {
+    display: grid;
+    grid-template-columns: 424px 600px;
+    align-items: center;
+    gap: 94px;
+}
+    .apich__preview {
+
+    }
+        .apich__image {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+            background-color: var(--image-fallback);
+            border-radius: 3px;
+        }
+
+    .apich__content {
+
+    }
+        .apich__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-wrap: balance;
+        }
+
+        .apich__description {
+            margin-top: 35px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .apich__description p:first-child {
+            margin-top: 0;
+        }
+
+        .apich__description p:last-child {
+            margin-bottom: 0;
+        }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .apich {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: 60px;
+    }
+        .apich__preview {
+
+        }
+            .apich__image {
+
+            }
+
+        .apich__content {
+
+        }
+            .apich__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                text-wrap: balance;
+            }
+
+            .apich__description {
+                margin-top: 35px;
+                font-size: 17px;
+                line-height: 26px;
+            }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .apich {
+        display: block;
+    }
+        .apich__preview {
+        }
+            .apich__image {
+                width: 392px;
+                height: 220px;
+                object-fit: cover;
+                object-position: center -40px;
+            }
+
+        .apich__content {
+            margin-top: 40px;
+        }
+            .apich__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                text-wrap: balance;
+            }
+
+            .apich__description {
+                margin-top: 35px;
+                font-size: 17px;
+                line-height: 26px;
+            }
+}
+
+@media (max-width: 767px) {
+
+    .apich {
+        display: block;
+    }
+        .apich__preview {
+            width: 100%;
+        }
+            .apich__image {
+                width: 100%;
+                height: auto;
+                /*object-fit: cover;*/
+                /*object-position: center -40px;*/
+            }
+
+        .apich__content {
+            margin-top: 40px;
+        }
+            .apich__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                text-wrap: balance;
+            }
+
+            .apich__description {
+                margin-top: 35px;
+                font-size: 17px;
+                line-height: 26px;
+            }
+}
