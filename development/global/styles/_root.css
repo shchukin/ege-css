@@ -24,6 +24,7 @@
     --danger: #E51C1C;
 
     --image-hover: brightness(1.1) contrast(1.1);
+    --hover-image-scale: 700ms var(--ease-out-quint);
     --image-fallback: #F8F8F8;
     --transition-slide: 0.5s ease;
     --transition-hover: 0.1s ease;

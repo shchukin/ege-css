@@ -2,13 +2,19 @@
 
 }
     .article-teaser__preview {
-
+        display: block;
+        border-radius: 3px;
+        overflow: hidden;
     }
         .article-teaser__image {
             vertical-align: top;
             width: 100%;
             height: auto;
-            border-radius: 3px;
+            transition: transform var(--hover-image-scale);
+        }
+
+        .article-teaser__preview:hover .article-teaser__image {
+            transform: scale(110%);
         }
 
     .article-teaser__body {

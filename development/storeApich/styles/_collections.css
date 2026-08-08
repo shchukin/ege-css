@@ -25,7 +25,7 @@
             height: 100%;
             background-color: var(--image-fallback);
             object-fit: cover;
-            transition: transform 700ms var(--ease-out-quint);
+            transition: transform var(--hover-image-scale);
         }
 
         .collections__item:hover .collections__illustration {
