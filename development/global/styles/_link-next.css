@@ -1,0 +1,22 @@
+.link-next {
+    display: inline;
+    vertical-align: baseline;
+    padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--brand_orange);
+    text-decoration: none;
+    cursor: pointer;
+}
+    .link-next__label {
+        text-decoration: 1px underline currentColor;
+        text-underline-offset: 0.25em;
+    }
+
+    .link-next:hover .link-next__label {
+        text-decoration-color: transparent;
+    }
+
