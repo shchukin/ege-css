@@ -8,5 +8,84 @@
     }
 
     .best-sellers__body {
+        position: relative;
         margin-top: var(--landing-heading-gap);
     }
+
+    .best-sellers__alt-control {
+        display: none;
+    }
+
+        @media (min-width: 1420px),
+               (1160px <= width < 1339px),
+               (900px <= width < 1023px)
+        {
+
+            .best-sellers .swiper-control {
+                display: none !important;
+            }
+
+            .best-sellers__alt-control {
+                position: absolute;
+                top: 0;
+                bottom: 36px;
+                width: 98px;
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+                /* hover */
+                .best-sellers__alt-control::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0 10px;
+                    margin: auto;
+                    border-radius: 3px;
+                }
+
+                .best-sellers__alt-control:hover::before {
+                    background-color: var(--brand_grey-5pct);
+                }
+
+                /* чёрный квадрат */
+                .best-sellers__alt-control::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    width: 44px;
+                    height: 44px;
+                    background-color: var(--brand_orange);
+                    border-radius: 5px;
+                }
+                    .best-sellers__chevron {
+                        vertical-align: top;
+                        position: relative;
+                        z-index: 10;
+                        fill: #FFFFFF;
+                    }
+
+            .best-sellers__alt-control--prev {
+                right: 100%;
+            }
+
+            .best-sellers__alt-control--next {
+                left: 100%;
+            }
+                .best-sellers__chevron {
+                    vertical-align: top;
+                }
+
+
+            .best-sellers__alt-control--disabled {
+                opacity: 20%;
+                cursor: default;
+            }
+                .best-sellers__alt-control--disabled::before {
+                    display: none;
+                }
+        }

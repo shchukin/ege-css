@@ -46,7 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Слайдер "best-sellers" */
 
-    new Swiper('.swiper--best-sellers', {
+    const altPrev = document.querySelector('.best-sellers__alt-control--prev');
+    const altNext = document.querySelector('.best-sellers__alt-control--next');
+
+    const bestSellersSlider = new Swiper('.swiper--best-sellers', {
         slidesPerView: 3,
         slidesPerGroup: 3,
         autoHeight: true,
@@ -84,8 +87,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     clickable: true,
                 },
             }
+        },
+        on: {
+            init: updateAltNavigation,
+            slideChange: updateAltNavigation,
         }
     });
+
+    if (altPrev) {
+        altPrev.addEventListener('click', () => {
+            bestSellersSlider.slidePrev();
+        });
+    }
+
+    if (altNext) {
+        altNext.addEventListener('click', () => {
+            bestSellersSlider.slideNext();
+        });
+    }
+
+    function updateAltNavigation(swiper) {
+        if (altPrev) {
+            if (swiper.isBeginning) {
+                altPrev.classList.add('best-sellers__alt-control--disabled');
+            } else {
+                altPrev.classList.remove('best-sellers__alt-control--disabled');
+            }
+        }
+
+        if (altNext) {
+            if (swiper.isEnd) {
+                altNext.classList.add('best-sellers__alt-control--disabled');
+            } else {
+                altNext.classList.remove('best-sellers__alt-control--disabled');
+            }
+        }
+    }
 
 
     /* Слайдер "summary" для новинок и рекомендаций */
