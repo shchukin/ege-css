@@ -11,6 +11,27 @@
         margin-top: var(--landing-heading-gap);
     }
 
+        @media (min-width: 768px) {
+
+            .blog-preview__list .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 16px;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1339px) {
+            .blog-preview__list .swiper-wrapper {
+                gap: 40px;
+            }
+        }
+
+        @media (min-width: 1340px) {
+            .blog-preview__list .swiper-wrapper {
+                gap: 60px;
+            }
+        }
+
     .blog-preview__more {
         margin-top: 56px;
         text-align: center;
@@ -18,3 +39,5 @@
         .blog-preview__more .button {
             min-width: 276px;
         }
+
+

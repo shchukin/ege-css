@@ -135,16 +135,35 @@
 
 
 
-.swiper--main {
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+Проще перебить пару стилей:
+*/
+.swiper--css-disabled-on-tablets-and-desktop {
 
 }
-    .swiper--main .swiper-control {
 
+@media (min-width: 768px) {
+
+    .swiper--css-disabled-on-tablets-and-desktop {
+        overflow: visible;
     }
+        .swiper--css-disabled-on-tablets-and-desktop .swiper-wrapper {
+            height: auto !important;
+            transform: none !important;
+        }
+            .swiper--css-disabled-on-tablets-and-desktop .swiper-slide {
+                width: auto !important;
+                margin: 0 !important;
+            }
+
+    .swiper--css-disabled-on-tablets-and-desktop .swiper-footer {
+        display: none;
+    }
+}
 
 
 
-
+/* Слайдер Info */
 
 .swiper--info {
 

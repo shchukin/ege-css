@@ -29,6 +29,16 @@
             font-size: 22px;
             line-height: 27px;
         }
+            .article-teaser__link {
+                padding: 6px 0; /* Extend the clickable area and ensure the link remains clickable even if the cursor is between lines */
+                text-decoration: 1.75px underline transparent;
+                text-underline-offset: 2px;
+                color: var(--brand_orange);
+            }
+
+            .article-teaser__link:hover {
+                text-decoration-color: currentColor;
+            }
 
         .article-teaser__description {
             margin-top: 19px;
