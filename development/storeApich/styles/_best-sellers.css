@@ -8,5 +8,5 @@
     }
 
     .best-sellers__body {
-        margin-top: var(--landing-gap);
+        margin-top: var(--landing-heading-gap);
     }

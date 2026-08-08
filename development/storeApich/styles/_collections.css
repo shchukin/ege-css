@@ -10,7 +10,7 @@
     .collections__list {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-top: var(--landing-gap);
+        margin-top: var(--landing-heading-gap);
         gap: 24px;
     }
 
