@@ -217,7 +217,8 @@
             <br>
             <h2>.product--sparse</h2>
             <p>
-                Разреженный вариант, используется в сетке с тремя колонками.
+                Разреженный вариант, используется в сетках с более широкими колонками.
+                Например три колонки вместо четырёх на десктопе и новая мобильная версия главной Апича.
                 В такой сетке увеличивается картинка, и, соответственно,
                 нужно немного разрядить всё что в теле карточки.
             </p>
@@ -227,6 +228,82 @@
             <!--/temp -->
 
                 <div class="product product--sparse">
+                    <a class="product__preview" href="#">
+                        <img class="product__image product__image--stretch-over-border"
+                             srcset="../temp/product-stretch-over-border@2x.jpg 2x"
+                             src="../temp/product-stretch-over-border.jpg"
+                             width="278"
+                             height="208"
+                             alt=""
+                        >
+                    </a>
+                    <div class="product__body">
+                        <div class="product__category">
+                            Онлайн курс
+                        </div>
+                        <h3 class="product__title">
+                            <a class="product__link" href="#">
+                                Всемирная история
+                            </a>
+                        </h3>
+                        <div class="product__price">
+                            От 1 500 руб.
+                        </div>
+                        <div class="product__operations">
+                            <div class="actions">
+                                <div class="actions__buy-now">
+                                    <a class="button button_size_smaller button_palette_submit" href="#">
+                                        <span class="button__label">Купить</span>
+                                    </a>
+                                </div>
+                                <div class="actions__add-to-cart">
+                                    <button class="link" type="button">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__type">
+                            Цифровой, 1шт
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- temp -->
+            </div>
+            <!--/temp -->
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.product--sparse-on-smartphone-and-small-tablets</h2>
+            <p>
+                Точно такой же вариант разреженной плитки, но только на ширинах до 1023px.
+                Используется на главной Апича где на десктопах по-прежнему четыре колонки,
+                но на маленьких планшетах и смартфонах всё так же разреженный вариант.
+            </p>
+
+            <style>
+                .temp-responsive-wrap {
+                    max-width: 280px;
+                }
+
+                @media (max-width: 1023px) {
+
+                    .temp-responsive-wrap {
+                        max-width: 387px;
+                    }
+                }
+            </style>
+
+            <!-- temp -->
+            <div class="temp-responsive-wrap">
+            <!--/temp -->
+
+                <div class="product product--sparse-on-smartphone-and-small-tablets">
                     <a class="product__preview" href="#">
                         <img class="product__image product__image--stretch-over-border"
                              srcset="../temp/product-stretch-over-border@2x.jpg 2x"
