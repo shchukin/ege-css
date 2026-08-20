@@ -68,6 +68,10 @@
                         text-decoration-color: currentColor;
                     }
 
+                    .alt-header__link--current {
+                        opacity: 70%;
+                    }
+
                 .alt-header__dropdown-actions {
 
                 }

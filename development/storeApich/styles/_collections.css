@@ -58,41 +58,41 @@
             }
 
 
-.collections__item--hair {
+.collections__item--hair-care {
     grid-row: 1 / 3;
 }
 
-.collections__item--skin {
+.collections__item--skin-care {
     grid-row: 1 / 3;
 }
 
-.collections__item--face {
+.collections__item--face-care {
     grid-row: 1 / 3;
 }
 
-.collections__item--nails {
+.collections__item--nail-care {
     grid-row: 1 / 2;
     grid-column: 4 / 5;
 }
-    .collections__item--nails .collections__tile-heading {
+    .collections__item--nail-care .collections__tile-heading {
         font-size: 19px;
         line-height: 26px;
     }
 
-    .collections__item--nails .collections__amount {
+    .collections__item--nail-care .collections__amount {
 
     }
 
-.collections__item--giftboxes {
+.collections__item--gift-boxes {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
 }
-    .collections__item--giftboxes .collections__tile-heading {
+    .collections__item--gift-boxes .collections__tile-heading {
         font-size: 19px;
         line-height: 26px;
     }
 
-    .collections__item--giftboxes .collections__amount {
+    .collections__item--gift-boxes .collections__amount {
 
     }
 
@@ -111,15 +111,15 @@
 
     /* Четвёртая плитка */
 
-    .collections__item--nails {
+    .collections__item--nail-care {
 
     }
-        .collections__item--nails .collections__tile-heading {
+        .collections__item--nail-care .collections__tile-heading {
             font-size: 16px;
             line-height: 24px;
         }
 
-        .collections__item--nails .collections__amount {
+        .collections__item--nail-care .collections__amount {
             font-size: 13px;
             line-height: 16px;
         }
@@ -127,15 +127,15 @@
 
     /* Пятая плитка */
 
-    .collections__item--giftboxes {
+    .collections__item--gift-boxes {
 
     }
-        .collections__item--giftboxes .collections__tile-heading {
+        .collections__item--gift-boxes .collections__tile-heading {
             font-size: 17px;
             line-height: 22px;
         }
 
-        .collections__item--giftboxes .collections__amount {
+        .collections__item--gift-boxes .collections__amount {
             font-size: 13px;
             line-height: 16px;
         }
@@ -182,31 +182,31 @@
                 }
 
     /* Первая плитка */
-    .collections__item--hair {
+    .collections__item--hair-care {
 
     }
-        .collections__item--hair .collections__tile-heading {
+        .collections__item--hair-care .collections__tile-heading {
             font-size: 19px;
         }
 
-    .collections__item--skin {
+    .collections__item--skin-care {
 
     }
 
-    .collections__item--face {
+    .collections__item--face-care {
 
     }
 
-    .collections__item--nails .collections__illustration {
+    .collections__item--nail-care .collections__illustration {
         aspect-ratio: 327/200;
         height: auto;
     }
 
-    .collections__item--giftboxes .collections__illustration {
+    .collections__item--gift-boxes .collections__illustration {
         aspect-ratio: 327/200;
         height: auto;
     }
-        .collections__item--giftboxes .collections__tile-heading {
+        .collections__item--gift-boxes .collections__tile-heading {
 
         }
 }
@@ -277,44 +277,44 @@
                 }
 
 
-    .collections__item--hair {
+    .collections__item--hair-care {
         grid-row: 1 / 4;
         grid-column: 1 / 2;
     }
 
-    .collections__item--skin {
+    .collections__item--skin-care {
         grid-row: 4 / 7;
         grid-column: 1 / 2;
     }
 
-    .collections__item--face {
+    .collections__item--face-care {
         grid-row: 1 / 3;
         grid-column: 2 / 3;
     }
 
-    .collections__item--nails {
+    .collections__item--nail-care {
         grid-row: 3 / 5;
         grid-column: 2 / 3;
     }
-        .collections__item--nails .collections__tile-heading {
+        .collections__item--nail-care .collections__tile-heading {
             /*font-size: 19px;*/
             /*line-height: 26px;*/
         }
 
-        .collections__item--nails .collections__amount {
+        .collections__item--nail-care .collections__amount {
 
         }
 
-    .collections__item--giftboxes {
+    .collections__item--gift-boxes {
         grid-row: 5 / 7;
         grid-column: 2 / 3;
     }
-        .collections__item--giftboxes .collections__tile-heading {
+        .collections__item--gift-boxes .collections__tile-heading {
             /*font-size: 19px;*/
             /*line-height: 26px;*/
         }
 
-        .collections__item--giftboxes .collections__amount {
+        .collections__item--gift-boxes .collections__amount {
 
         }
 }

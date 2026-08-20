@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
+                autoHeight: false,
                 pagination: {
                     type: 'bullets',
                     clickable: true,
