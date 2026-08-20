@@ -7223,7 +7223,7 @@ html:not(:has(.panel)) .portal-footer {
   }
   .alt-header__nav {
     position: absolute;
-    top: 0;
+    top: 13px;
     left: 122px;
     left: calc(var(--logo-width) + var(--actions-gap));
     right: 346px;
