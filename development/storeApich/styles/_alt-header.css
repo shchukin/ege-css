@@ -237,7 +237,7 @@
                 }
                     .alt-header__nav {
                         position: absolute;
-                        top: 13px;
+                        top: 0;
                         left: calc(var(--logo-width) + var(--actions-gap));
                         right: calc(3 * var(--action-width) + var(--callback-width) + 4 * var(--actions-gap) - var(--last-icon-shift));
                         display: flex;
