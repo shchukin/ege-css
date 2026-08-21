@@ -7240,6 +7240,9 @@ html:not(:has(.panel)) .portal-footer {
     border-top: 19px solid transparent;
     border-bottom: 19px solid transparent
   }
+  .alt-header__logo {
+    margin-top: -22px
+  }
   .alt-header__dropdown {
     position: fixed;
     z-index: 200;
@@ -7259,7 +7262,7 @@ html:not(:has(.panel)) .portal-footer {
   }
   .alt-header__nav {
     position: absolute;
-    top: 12px;
+    top: 0;
     left: 122px;
     left: calc(var(--logo-width) + var(--actions-gap));
     right: 346px;
