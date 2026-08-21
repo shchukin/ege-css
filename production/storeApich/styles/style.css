@@ -7259,7 +7259,7 @@ html:not(:has(.panel)) .portal-footer {
   }
   .alt-header__nav {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 122px;
     left: calc(var(--logo-width) + var(--actions-gap));
     right: 346px;
@@ -7688,6 +7688,18 @@ body {
 }
 .summary__section:first-child .summary__body::before {
   display: none
+}
+.summary__details {
+  margin-top: 24px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto
+}
+.summary__details .button {
+  padding-left: 32px;
+  padding-right: 32px
 }
 @media (min-width:1024px) and (max-width:1339px) {
   .summary {
