@@ -835,7 +835,8 @@ body {
 .button_disabled {
   pointer-events: none;
   background-color: #e4e6e8;
-  background-image: none
+  background-image: none;
+  opacity: 40%
 }
 .button_palette_submit {
   background-color: #f8a914;
@@ -1502,6 +1503,16 @@ body {
 .wysiwyg p {
   margin-top: 12px;
   margin-bottom: 12px
+}
+.wysiwyg--larger {
+  font-size: 18px;
+  line-height: 26px
+}
+@media (max-width:1023px) {
+  .wysiwyg--larger {
+    font-size: 16px;
+    line-height: 24px
+  }
 }
 .wysiwyg_half-spacing p {
   margin-top: 10px;
@@ -4040,4 +4051,29 @@ a.slider__slide:hover .slider__image {
 .link-next:hover .link-next__label {
   -webkit-text-decoration-color: transparent;
           text-decoration-color: transparent
+}
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  gap: 16px;
+  text-align: center
+}
+.pagination .button {
+  min-width: 44px;
+  padding-left: 12px;
+  padding-right: 12px
+}
+@media (max-width:767px) {
+  .pagination {
+    gap: 12px
+  }
+  .pagination .button {
+    min-width: 40px;
+    padding-left: 6px;
+    padding-right: 6px
+  }
 }

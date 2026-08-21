@@ -1,0 +1,55 @@
+.post {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+    .post__wrap {
+
+    }
+        .post__title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        .post__preview {
+            margin-top: 32px;
+        }
+            .post__image {
+                vertical-align: top;
+                width: 100%;
+                max-width: 520px;
+                height: auto;
+                object-fit: cover;
+                background-color: var(--image-fallback);
+                border-radius: 3px;
+            }
+
+        .post__body {
+            margin-top: 42px;
+            max-width: 800px;
+        }
+
+
+@media (max-width: 767px) {
+
+    .post {
+        padding-top: 32px;
+        padding-bottom: 80px;
+    }
+        .post__heading {
+
+        }
+
+        .post__preview {
+
+        }
+            .post__image {
+
+            }
+
+        .post__body {
+            margin-top: 30px;
+            display: block;
+        }
+}

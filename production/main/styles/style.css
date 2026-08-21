@@ -835,7 +835,8 @@ body {
 .button_disabled {
   pointer-events: none;
   background-color: #e4e6e8;
-  background-image: none
+  background-image: none;
+  opacity: 40%
 }
 .button_palette_submit {
   background-color: #f8a914;
@@ -1350,6 +1351,16 @@ body {
 .wysiwyg p {
   margin-top: 12px;
   margin-bottom: 12px
+}
+.wysiwyg--larger {
+  font-size: 18px;
+  line-height: 26px
+}
+@media (max-width:1023px) {
+  .wysiwyg--larger {
+    font-size: 16px;
+    line-height: 24px
+  }
 }
 .wysiwyg_half-spacing p {
   margin-top: 10px;

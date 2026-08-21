@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+    .pagination .button {
+        min-width: 44px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+
+@media (max-width: 767px) {
+
+    .pagination {
+        gap: 12px;
+    }
+        .pagination .button {
+            min-width: 40px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+}
