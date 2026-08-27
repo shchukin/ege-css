@@ -4064,7 +4064,10 @@ a.slider__slide:hover .slider__image {
   text-align: center
 }
 .main-slide__action:hover {
-  background-color: #333
+  background-color: #494949
+}
+.main-slide__mobile-action-duplicate {
+  display: none
 }
 @media (min-width:1024px) and (max-width:1339px) {
   .main-slide__action {
@@ -4106,6 +4109,14 @@ a.slider__slide:hover .slider__image {
     .main-slide__action {
       font-size: 12px
     }
+  }
+  .main-slide__mobile-action-duplicate {
+    display: block;
+    position: absolute;
+    inset: 0;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden
   }
 }
 .link-next {
