@@ -27,7 +27,11 @@
     }
 
     .main-slide__action:hover {
-        background-color: #333333;
+        background-color: #494949;
+    }
+
+    .main-slide__mobile-action-duplicate {
+        display: none;
     }
 
 
@@ -76,5 +80,14 @@
         .main-slide__action {
             font-size: 12px;
         }
+    }
+
+    .main-slide__mobile-action-duplicate {
+        display: block;
+        position: absolute;
+        inset: 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
