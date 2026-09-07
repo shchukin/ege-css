@@ -40,29 +40,8 @@
 
         .apich__more {
             margin-top: 20px;
-            background-color: transparent;
-            padding: 0;
-            padding-bottom: 6px;
-            border: none;
-            border-top: 4px solid transparent;
-            border-bottom: 4px solid transparent;
-            font-family: inherit;
-            font-weight: 500;
-            color: inherit;
-            cursor: pointer;
-            text-decoration: none;
-            background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
-            background-size: 6px 4px;
-            background-repeat: repeat-x;
-            background-position: left bottom;
         }
 
-        .apich__more:hover {
-            background-image: none;
-        }
-            .apich__label {
-
-            }
 
 
 @media (min-width: 1024px) and (max-width: 1339px) {
