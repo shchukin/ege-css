@@ -26,7 +26,7 @@
             .about-page__section--reversed {
                 flex-direction: row-reverse;
             }
-                .apich__image {
+                .about-page__image {
                     flex-shrink: 0;
                     width: 424px;
                     height: auto;
@@ -41,14 +41,6 @@
                     flex-grow: 1;
                 }
 
-                .about-page__entry {
-                    margin-top: 28px;
-                }
-
-                .about-page__entry:first-child {
-                    margin-top: 0;
-                }
-
             .about-page_features {
 
             }
@@ -56,3 +48,79 @@
             .about-page_numbers {
 
             }
+
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .about-page {
+        /*padding-top: 60px;*/
+        /*padding-bottom: 100px;*/
+    }
+        .about-page__wrap {
+
+        }
+            .about-page__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*text-align: center;*/
+            }
+
+            .about-page__body {
+                /*margin-top: 42px;*/
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*gap: 60px;*/
+            }
+                .about-page__section {
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    gap: 60px;
+                }
+
+                .about-page__section--reversed {
+                    /*flex-direction: row-reverse;*/
+                }
+                    .about-page__image {
+                        width: 376px;
+                    }
+
+                    .about-page__content {
+
+                    }
+
+
+                .about-page_features {
+
+                }
+
+                .about-page_numbers {
+
+                }
+}
+
+
+@media (max-width: 1023px) {
+
+    .about-page__section {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .about-page__image {
+        width: 376px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .about-page__section {
+        gap: 32px;
+    }
+
+    .about-page__image {
+        width: 100%;
+        height: auto;
+    }
+}
