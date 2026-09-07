@@ -1,0 +1,41 @@
+.about-page {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+    .about-page__wrap {
+
+    }
+        .about-page__heading {
+
+        }
+
+        .about-page__section {
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            gap: 94px;
+        }
+
+        .about-page__section:first-child {
+            margin-top: 0;
+        }
+            .apich__image {
+                flex-shrink: 0;
+                width: 424px;
+                height: auto;
+                vertical-align: top;
+                background-color: var(--image-fallback);
+                border-radius: 3px;
+            }
+
+            .about-page__content {
+                flex-grow: 1;
+            }
+
+        .about-page_features {
+            margin-top: 48px;
+        }
+
+        .about-page_numbers {
+            margin-top: 48px;
+        }
