@@ -8,50 +8,51 @@
         .about-page__heading {
             margin-top: 0;
             margin-bottom: 0;
+            text-align: center;
         }
 
-        .about-page__section {
-            margin-top: 80px;
+        .about-page__body {
+            margin-top: 42px;
             display: flex;
-            align-items: center;
-            gap: 94px;
+            flex-direction: column;
+            gap: 60px;
         }
-
-        .about-page__section:first-child {
-            margin-top: 0;
-        }
-
-        .about-page__section--reversed {
-            flex-direction: row-reverse;
-        }
-
-            .apich__image {
-                flex-shrink: 0;
-                width: 424px;
-                height: auto;
-                aspect-ratio: 4/3;
-                object-fit: cover;
-                vertical-align: top;
-                background-color: var(--image-fallback);
-                border-radius: 3px;
+            .about-page__section {
+                display: flex;
+                align-items: center;
+                gap: 94px;
             }
 
-            .about-page__content {
-                flex-grow: 1;
+            .about-page__section--reversed {
+                flex-direction: row-reverse;
+            }
+                .apich__image {
+                    flex-shrink: 0;
+                    width: 424px;
+                    height: auto;
+                    aspect-ratio: 4/3;
+                    object-fit: cover;
+                    vertical-align: top;
+                    background-color: var(--image-fallback);
+                    border-radius: 3px;
+                }
+
+                .about-page__content {
+                    flex-grow: 1;
+                }
+
+                .about-page__entry {
+                    margin-top: 28px;
+                }
+
+                .about-page__entry:first-child {
+                    margin-top: 0;
+                }
+
+            .about-page_features {
+
             }
 
-            .about-page__entry {
-                margin-top: 28px;
+            .about-page_numbers {
+
             }
-
-            .about-page__entry:first-child {
-                margin-top: 0;
-            }
-
-        .about-page_features {
-            margin-top: 60px;
-        }
-
-        .about-page_numbers {
-            margin-top: 60px;
-        }
