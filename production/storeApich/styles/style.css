@@ -8408,6 +8408,11 @@ body {
   -ms-flex-positive: 1;
       flex-grow: 1
 }
+.about-page__sub-heading {
+  margin-top: 24px;
+  margin-bottom: 0;
+  text-align: center
+}
 @media (min-width:1024px) and (max-width:1339px) {
   .about-page__section {
     gap: 60px
@@ -8429,11 +8434,22 @@ body {
   }
 }
 @media (max-width:767px) {
+  .about-page {
+    padding-top: 32px;
+    padding-bottom: 80px
+  }
+  .about-page__body {
+    margin-top: 30px
+  }
   .about-page__section {
     gap: 32px
   }
   .about-page__image {
     width: 100%;
     height: auto
+  }
+  .about-page__sub-heading {
+    margin-top: 0;
+    margin-bottom: -24px
   }
 }
