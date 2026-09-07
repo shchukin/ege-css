@@ -1362,6 +1362,16 @@ body {
     line-height: 24px
   }
 }
+.wysiwyg--about-page {
+  font-size: 17px;
+  line-height: 26px
+}
+@media (min-width:1024px) and (max-width:1339px) {
+  .wysiwyg--about-page {
+    font-size: 16px;
+    line-height: 24px
+  }
+}
 .wysiwyg_half-spacing p {
   margin-top: 10px;
   margin-bottom: 10px
