@@ -6,11 +6,12 @@
 
     }
         .about-page__heading {
-
+            margin-top: 0;
+            margin-bottom: 0;
         }
 
         .about-page__section {
-            margin-top: 100px;
+            margin-top: 80px;
             display: flex;
             align-items: center;
             gap: 94px;
@@ -19,10 +20,17 @@
         .about-page__section:first-child {
             margin-top: 0;
         }
+
+        .about-page__section--reversed {
+            flex-direction: row-reverse;
+        }
+
             .apich__image {
                 flex-shrink: 0;
                 width: 424px;
                 height: auto;
+                aspect-ratio: 4/3;
+                object-fit: cover;
                 vertical-align: top;
                 background-color: var(--image-fallback);
                 border-radius: 3px;
@@ -32,10 +40,18 @@
                 flex-grow: 1;
             }
 
+            .about-page__entry {
+                margin-top: 28px;
+            }
+
+            .about-page__entry:first-child {
+                margin-top: 0;
+            }
+
         .about-page_features {
-            margin-top: 48px;
+            margin-top: 60px;
         }
 
         .about-page_numbers {
-            margin-top: 48px;
+            margin-top: 60px;
         }
