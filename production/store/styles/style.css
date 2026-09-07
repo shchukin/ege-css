@@ -3852,7 +3852,8 @@ a.slider__slide:hover .slider__image {
 }
 .swiper-wrapper {
   -ms-flex-align: stretch;
-      align-items: stretch
+      align-items: stretch;
+  transition-timing-function: cubic-bezier(.22,1,.36,1)!important
 }
 .swiper-slide {
   height: auto

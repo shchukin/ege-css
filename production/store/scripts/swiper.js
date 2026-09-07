@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 0,
         effect: "fade",
         loop: true,
+        speed: 1000,
         autoplay: {
             delay: 8000,
         },
@@ -29,8 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         autoHeight: true,
         spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
         loop: true,
+        speed: 1000,
         autoplay: {
-            delay: 8000,
+            delay: 3000,
         },
         navigation: {
             prevEl: '.swiper-control--prev',
@@ -53,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         slidesPerGroup: 3,
         autoHeight: true,
+        speed: 1000,
         spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
         navigation: {
             prevEl: '.swiper-control--prev',
@@ -129,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.swiper--summary', {
         autoHeight: true,
+        speed: 1000,
         spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
         navigation: {
             prevEl: '.swiper-control--prev',
@@ -164,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.swiper--blog', {
         autoHeight: true,
+        speed: 1000,
         spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
         navigation: {
             prevEl: '.swiper-control--prev',
