@@ -4,7 +4,10 @@
 }
     .swiper-wrapper {
         align-items: stretch;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1) !important;
     }
+
+
         .swiper-slide {
             height: auto;
         }
@@ -19,7 +22,6 @@
             position: static;
             width: auto !important;
         }
-
 
 /* Точки */
 
@@ -223,3 +225,4 @@
 
             }
 }
+
