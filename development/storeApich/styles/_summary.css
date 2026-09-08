@@ -20,7 +20,7 @@
                 position: absolute;
                 left: -60px;
                 top: calc(55px + 40px + var(--landing-heading-gap));
-                bottom: 55px;
+                bottom: 171px;
                 width: 1px;
                 background-color: #E9E8E8;
             }

@@ -19,8 +19,3 @@
     .link-next:hover .link-next__label {
         text-decoration-color: transparent;
     }
-
-.link-next--dashed .link-next__label {
-    text-decoration-style: dotted;
-}
-

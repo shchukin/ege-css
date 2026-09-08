@@ -1,0 +1,13 @@
+.channel {
+
+}
+    .channel__line {
+        margin-top: 8px;
+    }
+
+    .channel__line:first-child {
+        margin-top: 0;
+    }
+        .channel__label {
+            color: var(--brand_grey);
+        }
