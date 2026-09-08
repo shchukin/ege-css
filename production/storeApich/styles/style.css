@@ -8533,6 +8533,12 @@ body {
     width: 100%;
     height: auto
   }
+  .partnership__sub-heading {
+    margin-top: 60px
+  }
+  .partnership__contacts {
+    margin-top: 36px
+  }
 }
 .channel__heading {
   font-weight: 700
