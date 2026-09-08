@@ -2144,6 +2144,11 @@ body {
 .link_fake:hover {
   text-decoration: none
 }
+.link_rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline
+}
 .nobr {
   white-space: nowrap
 }
@@ -4151,10 +4156,6 @@ a.slider__slide:hover .slider__image {
 .link-next:hover .link-next__label {
   -webkit-text-decoration-color: transparent;
           text-decoration-color: transparent
-}
-.link-next--dashed .link-next__label {
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted
 }
 .pagination {
   display: -ms-flexbox;
