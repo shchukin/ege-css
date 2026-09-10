@@ -7330,7 +7330,7 @@ html:not(:has(.panel)) .portal-footer {
     border-bottom: 19px solid transparent
   }
   .alt-header__logo {
-    margin-top: -20px
+    margin-top: -4px
   }
   .alt-header__dropdown {
     position: fixed;
@@ -7340,8 +7340,8 @@ html:not(:has(.panel)) .portal-footer {
     right: 0;
     height: 80px;
     height: var(--alt-header-height);
-    border-top: 19px solid transparent;
-    border-bottom: 19px solid transparent;
+    border-top: 31px solid transparent;
+    border-bottom: 9px solid transparent;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -7436,7 +7436,7 @@ html:not(:has(.panel)) .portal-footer {
     position: absolute;
     right: 292px;
     right: calc(2 * var(--action-width) + var(--callback-width) + 3 * var(--actions-gap) - var(--last-icon-shift));
-    top: 0
+    top: 11px
   }
   @media (min-width:1024px) and (max-width:1339px) {
     .alt-header__search-handler {
@@ -7445,6 +7445,7 @@ html:not(:has(.panel)) .portal-footer {
     }
   }
   .alt-header__buying {
+    top: 11px;
     right: 40px;
     right: calc(var(--action-width) + var(--actions-gap) - var(--last-icon-shift) - 4px)
   }
