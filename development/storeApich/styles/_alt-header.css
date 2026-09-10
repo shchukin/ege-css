@@ -218,7 +218,7 @@
                 border-bottom: 19px solid transparent;
             }
                 .alt-header__logo {
-                    margin-top: -20px;
+                    margin-top: -4px;
                 }
 
                 .alt-header__dropdown {
@@ -228,8 +228,8 @@
                     left: 0;
                     right: 0;
                     height: var(--alt-header-height);
-                    border-top: 19px solid transparent;
-                    border-bottom: 19px solid transparent;
+                    border-top: 31px solid transparent;
+                    border-bottom: 9px solid transparent;
                     display: flex;
                     align-items: center;
                     padding-top: 0;
@@ -330,7 +330,7 @@
                     .alt-header__search-handler {
                         position: absolute;
                         right: calc(2 * var(--action-width) + var(--callback-width) + 3 * var(--actions-gap) - var(--last-icon-shift));
-                        top: 0;
+                        top: 11px;
                     }
 
                     .alt-header__search-handler:hover {
@@ -346,6 +346,7 @@
 
 
                     .alt-header__buying {
+                        top: 11px;
                         right: calc(var(--action-width) + var(--actions-gap) - var(--last-icon-shift) - 4px); /* 4px несистемный сдвиг, но выглядит лучше */
                     }
 
