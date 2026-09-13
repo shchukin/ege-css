@@ -28,6 +28,9 @@
             flex-direction: column;
         }
             .retailers__list {
+                max-width: 1040px;
+                margin-left: auto;
+                margin-right: auto;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 12px;
