@@ -50,11 +50,7 @@
                     }
 
                     .retailers__item:hover {
-                        transform: translateY(-2px);
-                    }
-
-                    .retailers__item:hover .retailers__image {
-                        transform: scale(1.05);
+                        transform: translateY(-3px);
                     }
 
         .retailers__panel {
