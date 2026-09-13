@@ -23,14 +23,14 @@
     --portal-white: #FFFEFB;
     --portal-grey-dark: #616161;
 
-    --landing-page-gap: 100px;
+    --landing-page-gap: 80px;
     --landing-heading-gap: 42px;
 }
 
 
 @media (min-width: 1024px) and (max-width: 1339px) {
     :root {
-        --landing-page-gap: 80px;
+        --landing-page-gap: 60px;
     }
 }
 
@@ -42,6 +42,6 @@
 
 @media (max-width: 767px) {
     :root {
-        --landing-page-gap: 60px;
+        --landing-page-gap: 50px;
     }
 }
