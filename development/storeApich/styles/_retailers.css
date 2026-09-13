@@ -11,6 +11,17 @@
             text-align: center;
         }
 
+        .retailers__description {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--brand_grey);
+            text-align: center;
+        }
+
         .retailers__body {
             margin-top: 42px;
             display: flex;
@@ -38,14 +49,41 @@
                     }
 
 @media (min-width: 1024px) and (max-width: 1339px) {
+
+
+    .retailers__description {
+        max-width: 540px;
+        margin-top: 24px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
     .retailers__list {
         gap: 10px;
     }
 }
 
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) and (max-width: 1339px) {
 
+    .retailers__description {
+        max-width: 540px;
+        margin-top: 24px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .retailers__list {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -55,11 +93,17 @@
         padding-top: 32px;
         padding-bottom: 80px;
     }
+        .retailers__description {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
         .retailers__body {
             margin-top: 30px;
         }
             .retailers__list {
-                max-width: 320px;
+                max-width: 240px;
                 margin-left: auto;
                 margin-right: auto;
                 grid-template-columns: repeat(1, 1fr);
