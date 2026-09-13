@@ -1,0 +1,44 @@
+.comfort {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 40px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+}
+    .comfort__preview {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #E7E7E7;
+    }
+        .comfort__icon {
+            vertical-align: top;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 4px;
+        }
+
+    .comfort__body {
+        flex-grow: 1;
+    }
+        .comfort__heading {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .comfort__note {
+            margin-top: 3px;
+            font-size: 15px;
+            line-height: 22px;
+            color: var(--portal-grey-dark);
+        }
+
+    .comfort__details {
+
+    }

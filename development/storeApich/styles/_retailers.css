@@ -51,6 +51,11 @@
                         transform: scale(105%);
                     }
 
+        .retailers__panel {
+            margin-top: 40px;
+        }
+
+
 @media (min-width: 1024px) and (max-width: 1339px) {
 
 
