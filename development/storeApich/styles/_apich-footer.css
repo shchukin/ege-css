@@ -88,80 +88,59 @@ html:not(:has(.panel)) .apich-footer {
 @media (max-width: 1023px) {
 
     .apich-footer {
-        padding-top: 40px;
-        padding-bottom: 32px;
-        /*background-color: var(--black);*/
-        /*color: var(--white);*/
+        padding-top: 32px;
+        padding-bottom: 48px;
     }
         .apich-footer__wrap {
             display: block;
-            /*align-items: stretch;*/
         }
-            .apich-footer__primary {
-                /*position: relative;*/
-                padding-bottom: 0;
-                /*order: 2;*/
-                /*margin-left: auto;*/
-                width: auto;
-                /*flex-shrink: 0;*/
-            }
-                .apich-footer__phone {
-                    /*display: inline-block;*/
-                    /*vertical-align: top;*/
-                    /*text-decoration: none;*/
-                    /*color: var(--white);*/
-                }
-
-                .apich-footer__mail {
-                    /*margin-top: 28px;*/
-                    /*font-size: 20px;*/
-                    /*color: var(--white);*/
-                }
-
-                .apich-footer__menu {
-                    /*margin-top: 16px;*/
-                }
-                    .apich-footer__item {
-                        /*margin-top: 8px;*/
-                        /*font-size: 20px;*/
-                        /*line-height: 30px;*/
-                    }
-
-                .apich-footer__social {
-                    margin-top: 20px;
-                    position: static;
-                    /*left: 0;*/
-                    /*bottom: 12px;*/
-                }
-
             .apich-footer__secondary {
-                margin-top: 40px;
-                /*order: 1;*/
                 width: auto;
-                /*flex-shrink: 0;*/
             }
                 .apich-footer__intro {
 
-                }
-
-                .apich-footer__form {
-                    /*margin-top: 16px;*/
                 }
 
                 .apich-footer__logo {
 
                 }
 
-                .apich-footer__logo:first-child {
-                    margin-top: 0;
-                }
-
                 .apich-footer__note {
-                    /*margin-top: 10px;*/
+
                 }
 
                 .apich-footer__copyright {
-                    /*margin-top: 16px;*/
-                    /*color: var(--grey-dark);*/
+
                 }
+
+                .apich-footer__copyright + .apich-footer__copyright {
+
+                }
+
+        .apich-footer__primary {
+            width: auto;
+            margin-top: 48px;
+        }
+            .apich-footer__mail {
+
+            }
+
+
+            .apich-footer__menu {
+
+            }
+                .apich-footer__item {
+
+                }
+
+
+            .apich-footer__social-heading {
+
+            }
+
+            .apich-footer__social {
+
+            }
 }
+
+
