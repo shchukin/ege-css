@@ -1,0 +1,167 @@
+html:not(:has(.panel)) .apich-footer {
+    margin-top: auto;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .apich-footer__primary {
+        width: 280px;
+    }
+}
+
+.apich-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--portal-black);
+    color-scheme: dark;
+    color: var(--portal-white);
+}
+    .apich-footer__wrap {
+        display: flex;
+        align-items: flex-start;
+    }
+        .apich-footer__secondary {
+            width: 494px;
+            flex-shrink: 0;
+        }
+            .apich-footer__intro {
+
+            }
+
+            .apich-footer__logo {
+                display: block;
+            }
+
+            .apich-footer__note {
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .apich-footer__copyright {
+                margin-top: 14px;
+                font-size: 12px;
+                line-height: 18px;
+                color: var(--portal-grey-dark);
+            }
+
+            .apich-footer__copyright + .apich-footer__copyright {
+                margin-top: 10px;
+            }
+
+    .apich-footer__primary {
+        position: relative;
+        margin-left: auto;
+        width: 390px;
+        flex-shrink: 0;
+    }
+        .apich-footer__mail {
+            font-size: 20px;
+            line-height: 24px;
+            color: var(--portal-white);
+        }
+
+
+        .apich-footer__menu {
+            margin-top: 16px;
+        }
+            .apich-footer__item {
+                margin-top: 2px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+
+
+        .apich-footer__social-heading {
+            margin-top: 18px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .apich-footer__social {
+            margin-top: 12px;
+        }
+
+
+
+@media (max-width: 1023px) {
+
+    .apich-footer {
+        padding-top: 40px;
+        padding-bottom: 32px;
+        /*background-color: var(--black);*/
+        /*color: var(--white);*/
+    }
+        .apich-footer__wrap {
+            display: block;
+            /*align-items: stretch;*/
+        }
+            .apich-footer__primary {
+                /*position: relative;*/
+                padding-bottom: 0;
+                /*order: 2;*/
+                /*margin-left: auto;*/
+                width: auto;
+                /*flex-shrink: 0;*/
+            }
+                .apich-footer__phone {
+                    /*display: inline-block;*/
+                    /*vertical-align: top;*/
+                    /*text-decoration: none;*/
+                    /*color: var(--white);*/
+                }
+
+                .apich-footer__mail {
+                    /*margin-top: 28px;*/
+                    /*font-size: 20px;*/
+                    /*color: var(--white);*/
+                }
+
+                .apich-footer__menu {
+                    /*margin-top: 16px;*/
+                }
+                    .apich-footer__item {
+                        /*margin-top: 8px;*/
+                        /*font-size: 20px;*/
+                        /*line-height: 30px;*/
+                    }
+
+                .apich-footer__social {
+                    margin-top: 20px;
+                    position: static;
+                    /*left: 0;*/
+                    /*bottom: 12px;*/
+                }
+
+            .apich-footer__secondary {
+                margin-top: 40px;
+                /*order: 1;*/
+                width: auto;
+                /*flex-shrink: 0;*/
+            }
+                .apich-footer__intro {
+
+                }
+
+                .apich-footer__form {
+                    /*margin-top: 16px;*/
+                }
+
+                .apich-footer__logo {
+
+                }
+
+                .apich-footer__logo:first-child {
+                    margin-top: 0;
+                }
+
+                .apich-footer__note {
+                    /*margin-top: 10px;*/
+                }
+
+                .apich-footer__copyright {
+                    /*margin-top: 16px;*/
+                    /*color: var(--grey-dark);*/
+                }
+}

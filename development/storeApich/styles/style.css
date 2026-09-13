@@ -4,14 +4,12 @@
 @import url("../../store/styles/style.css");
 
 /* Портальные компоненты */
-@import url("../../global/styles/_portal-footer.css");
 @import url("../../global/styles/_portal-link.css");
 @import url("../../global/styles/_portal-caption.css");
 @import url("../../global/styles/_portal-title.css");
 @import url("../../global/styles/_portal-media.css");
 @import url("../../global/styles/_portal-logo.css");
 
-@import url("../../global/styles/_portal-footer-override.css");
 @import url("_portal-logo.css");
 
 
@@ -59,4 +57,6 @@
 @import url("_channel.css");
 @import url("_retailers.css");
 @import url("_comfort.css");
+@import url("_apich-footer.css");
+
 
