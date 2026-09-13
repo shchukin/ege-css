@@ -52,7 +52,8 @@ html:not(:has(.panel)) .apich-footer {
     .apich-footer__primary {
         position: relative;
         margin-left: auto;
-        width: 390px;
+        width: 200px;
+        margin-right: 200px;
         flex-shrink: 0;
     }
         .apich-footer__mail {
@@ -120,6 +121,7 @@ html:not(:has(.panel)) .apich-footer {
         .apich-footer__primary {
             width: auto;
             margin-top: 48px;
+            margin-right: 0;
         }
             .apich-footer__mail {
 

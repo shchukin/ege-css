@@ -8713,7 +8713,8 @@ html:not(:has(.panel)) .apich-footer {
 .apich-footer__primary {
   position: relative;
   margin-left: auto;
-  width: 390px;
+  width: 200px;
+  margin-right: 200px;
   -ms-flex-negative: 0;
       flex-shrink: 0
 }
@@ -8752,6 +8753,7 @@ html:not(:has(.panel)) .apich-footer {
   }
   .apich-footer__primary {
     width: auto;
-    margin-top: 48px
+    margin-top: 48px;
+    margin-right: 0
   }
 }
