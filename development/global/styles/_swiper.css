@@ -150,6 +150,7 @@
         overflow: visible;
     }
         .swiper--css-disabled-on-tablets-and-desktop .swiper-wrapper {
+            display: block;
             height: auto !important;
             transform: none !important;
         }

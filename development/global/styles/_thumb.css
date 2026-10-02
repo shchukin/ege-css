@@ -1,0 +1,15 @@
+.thumb {
+    position: relative;
+    display: block;
+}
+    .thumb__image {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        transition: opacity 0.1s ease;
+    }
+
+    .thumb:hover .thumb__image {
+        opacity: 90%;
+    }

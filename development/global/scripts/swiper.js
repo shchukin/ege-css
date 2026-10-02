@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const containerPaddingStyle = window.getComputedStyle(document.documentElement).getPropertyValue('--container-padding');
+
     /* Слайдер "info" */
 
     new Swiper('.swiper--info', {
@@ -20,9 +22,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* Слайдер "main" */
+    /* Слайдер "gallery" */
 
-    const containerPaddingStyle = window.getComputedStyle(document.documentElement).getPropertyValue('--container-padding');
+    new Swiper('.swiper--gallery', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoHeight: true,
+        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+        },
+        navigation: {
+            prevEl: '.swiper-control--prev',
+            nextEl: '.swiper-control--next',
+            disabledClass: 'swiper-control--disabled',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+
+    /* Слайдер "main" */
 
     new Swiper('.swiper--main', {
         slidesPerView: 1,
