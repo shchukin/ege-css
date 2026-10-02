@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
         loop: true,
         speed: 1000,
-        autoplay: {
-            delay: 3000,
-        },
         navigation: {
             prevEl: '.swiper-control--prev',
             nextEl: '.swiper-control--next',

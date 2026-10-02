@@ -1,12 +1,47 @@
 .alt-item {
-    display: grid;
-    grid-template-columns: 520fr 640fr;
-    gap: 40px;
-    padding-top: 32px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
-    .alt-item__preview {
+    .alt-item__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 36px;
+    }
 
+    .alt-item__preview {
+        margin-top: 16px;
+    }
+
+    .alt-item__intro {
+        margin-top: 20px;
+    }
+
+    .alt-item__purchase {
+        margin-top: 24px;
+    }
+
+    .alt-item__description {
+        margin-top: 24px;
+    }
+
+
+
+@media (max-width: 767px) {
+
+    .alt-item {
+        overflow: hidden; /* чтобы галерея упиралась в края экрана 1/2 */
+    }
+        .alt-item__preview .swiper {
+            overflow: visible; /* чтобы галерея упиралась в края экрана 2/2 */
+        }
+}
+
+
+@media (min-width: 768px) {
+
+    .alt-item__preview {
+        width: 414px;
     }
         .alt-item__preview .swiper-wrapper {
             display: grid;
@@ -27,92 +62,73 @@
             .alt-item__preview:has(.swiper-slide:nth-child(5)):not(:has(.swiper-slide:nth-child(6))) .swiper-slide:first-child {
                 grid-column: span 4;
             }
-
-
-    .alt-item__content {
-
-    }
-        .alt-item__heading {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-size: 32px;
-            line-height: 36px;
-        }
-
-        .alt-item__intro {
-            margin-top: 20px;
-        }
-
-        .alt-item__purchase {
-            margin-top: 24px;
-        }
-
-        .alt-item__description {
-            margin-top: 24px;
-        }
-
-
-@media (min-width: 1024px) and (max-width: 1339px) {
-
-    .alt-item {
-        gap: 36px;
-        padding-top: 24px;
-        padding-bottom: 80px;
-    }
 }
 
 
-
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 1024px) {
 
     .alt-item {
-        display: block;
-        /*padding-top: 24px;*/
-        /*padding-bottom: 80px;*/
+        padding-top: 32px;
+        padding-bottom: 100px;
     }
-        .alt-item__preview {
-
-        }
-            .alt-item__preview .swiper-wrapper {
-                /*display: grid;*/
-                /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
-                /*gap: 12px;*/
-            }
-                .alt-item__preview .swiper-slide {
-
-                }
-
-                .alt-item__preview .swiper-slide:first-child {
-                    /*grid-column: span 3;*/
-                }
-
-            .alt-item__preview:has(.swiper-slide:nth-child(5)):not(:has(.swiper-slide:nth-child(6))) .swiper-wrapper {
-                /*grid-template-columns: repeat(4, minmax(0, 1fr));*/
-            }
-                .alt-item__preview:has(.swiper-slide:nth-child(5)):not(:has(.swiper-slide:nth-child(6))) .swiper-slide:first-child {
-                    /*grid-column: span 4;*/
-                }
-
-
-        .alt-item__content {
-
+        .alt-item__wrap {
+            position: relative;
+            padding-left: calc(414px + 36px);
         }
             .alt-item__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*font-size: 32px;*/
-                /*line-height: 36px;*/
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            .alt-item__preview {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 414px;
+                margin-top: 0;
             }
 
             .alt-item__intro {
-                /*margin-top: 24px;*/
+
             }
 
             .alt-item__purchase {
-                /*margin-top: 24px;*/
+
             }
 
             .alt-item__description {
-                /*margin-top: 24px;*/
+
+            }
+}
+
+@media (min-width: 1340px) {
+
+    .alt-item {
+        /*padding-top: 32px;*/
+        /*padding-bottom: 100px;*/
+    }
+        .alt-item__wrap {
+            /*position: relative;*/
+            padding-left: calc(520px + 40px);
+        }
+            .alt-item__heading {
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            .alt-item__preview {
+                width: 520px;
+            }
+
+            .alt-item__intro {
+
+            }
+
+            .alt-item__purchase {
+
+            }
+
+            .alt-item__description {
+
             }
 }
