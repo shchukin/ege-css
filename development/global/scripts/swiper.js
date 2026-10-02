@@ -24,23 +24,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Слайдер "gallery" */
 
-    new Swiper('.swiper--gallery', {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        autoHeight: true,
-        spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
-        loop: true,
-        speed: 1000,
-        navigation: {
-            prevEl: '.swiper-control--prev',
-            nextEl: '.swiper-control--next',
-            disabledClass: 'swiper-control--disabled',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        new Swiper('.swiper--gallery', {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            autoHeight: true,
+            spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
+            loop: true,
+            speed: 1000,
+            navigation: {
+                prevEl: '.swiper-control--prev',
+                nextEl: '.swiper-control--next',
+                disabledClass: 'swiper-control--disabled',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    }
 
 
     /* Слайдер "main" */
