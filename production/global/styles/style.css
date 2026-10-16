@@ -4165,3 +4165,17 @@ a.slider__slide:hover .slider__image {
     padding-right: 6px
   }
 }
+.thumb {
+  position: relative;
+  display: block
+}
+.thumb__image {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: opacity .1s ease
+}
+.thumb:hover .thumb__image {
+  opacity: 90%
+}

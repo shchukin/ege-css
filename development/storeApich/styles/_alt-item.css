@@ -2,28 +2,75 @@
     padding-top: 20px;
     padding-bottom: 80px;
 }
-    .alt-item__heading {
+    .alt-item__smartphone-heading {
         margin-top: 0;
         margin-bottom: 0;
+        font-family: var(--font-heading);
+        font-weight: bold;
         font-size: 24px;
         line-height: 36px;
+        text-wrap: balance;
     }
 
     .alt-item__preview {
         margin-top: 16px;
     }
 
-    .alt-item__intro {
+    .alt-item__content {
         margin-top: 20px;
     }
+        .alt-item__desktop-heading {
+            display: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 32px;
+            text-wrap: balance;
+        }
 
-    .alt-item__purchase {
-        margin-top: 24px;
-    }
+        .alt-item__intro {
 
-    .alt-item__description {
-        margin-top: 24px;
-    }
+        }
+
+        .alt-item__purchase {
+            margin-top: 20px;
+            border: 1px solid #E9E8E8;
+            border-radius: 3px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+            .alt-item__price {
+                margin-top: 13px;
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
+                font-size: 36px;
+                line-height: 40px;
+                color: var(--brand_orange);
+            }
+
+            .alt-item__old-price {
+                display: block;
+                margin-top: 8px;
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
+                font-size: 17px;
+                line-height: 20px;
+                color: #697882;
+                text-decoration: line-through;
+            }
+
+            .alt-item__operations {
+                margin-top: 24px;
+            }
+
+        .alt-item__description {
+            margin-top: 24px;
+        }
 
 
 
@@ -41,8 +88,16 @@
 @media (min-width: 768px) {
 
     .alt-item__preview {
-        width: 414px;
+
     }
+
+    @media (max-width: 1023px) {
+
+        .alt-item__preview {
+            width: 414px;
+        }
+    }
+
         .alt-item__preview .swiper-wrapper {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -73,32 +128,36 @@
     }
         .alt-item__wrap {
             position: relative;
-            padding-left: calc(414px + 36px);
+            display: grid;
+            grid-template-columns: 520fr 640fr;
+            gap: 36px;
         }
-            .alt-item__heading {
-                font-size: 28px;
-                line-height: 32px;
+            .alt-item__smartphone-heading {
+                display: none;
             }
 
             .alt-item__preview {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 414px;
                 margin-top: 0;
             }
 
-            .alt-item__intro {
-
+            .alt-item__content {
+                margin-top: 0;
             }
+                .alt-item__desktop-heading {
+                    display: block;
+                }
 
-            .alt-item__purchase {
+                .alt-item__intro {
+                    margin-top: 20px;
+                }
 
-            }
+                .alt-item__purchase {
 
-            .alt-item__description {
+                }
 
-            }
+                .alt-item__description {
+
+                }
 }
 
 
@@ -109,15 +168,15 @@
         padding-bottom: 100px;
     }
         .alt-item__wrap {
-            padding-left: calc(520px + 40px);
+            gap: 40px;
         }
-            .alt-item__heading {
-                font-size: 32px;
-                line-height: 36px;
+            .alt-item__preview {
+
             }
 
-            .alt-item__preview {
-                width: 520px;
+            .alt-item__desktop-heading {
+                font-size: 32px;
+                line-height: 36px;
             }
 
             .alt-item__intro {

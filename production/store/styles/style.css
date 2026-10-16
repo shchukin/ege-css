@@ -3989,6 +3989,7 @@ a.slider__slide:hover .slider__image {
     overflow: visible
   }
   .swiper--css-disabled-on-tablets-and-desktop .swiper-wrapper {
+    display: block;
     height: auto!important;
     transform: none!important
   }
@@ -4181,6 +4182,20 @@ a.slider__slide:hover .slider__image {
     padding-left: 6px;
     padding-right: 6px
   }
+}
+.thumb {
+  position: relative;
+  display: block
+}
+.thumb__image {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: opacity .1s ease
+}
+.thumb:hover .thumb__image {
+  opacity: 90%
 }
 html {
   height: 100%

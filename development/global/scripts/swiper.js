@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesPerGroup: 1,
             autoHeight: true,
             spaceBetween: parseInt(containerPaddingStyle, 10) || 20,
-            loop: true,
             speed: 1000,
             navigation: {
                 prevEl: '.swiper-control--prev',
