@@ -1,0 +1,65 @@
+.special {
+    display: grid;
+    grid-template-columns: 540fr 660fr;
+    background-color: var(--portal-black);
+    border-radius: 28px;
+    overflow: hidden; /* Обрезаем и каринку внутри */
+    color: #FFFFFF;
+}
+    .special::before {
+        content: "";
+        display: block;
+        background-image: url("../images/special-background@2x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .special__content {
+        padding: 70px 100px 84px 64px;
+    }
+        .special__icon {
+            vertical-align: top;
+        }
+
+        .special__pre-heading {
+            margin-top: 24px;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .special__title {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        .special__description {
+            margin-top: 22px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #B8B8B3;
+        }
+
+        .special__call-to-action {
+            margin-top: 24px;
+        }
+            .special__call-to-action .button {
+                padding-left: 26px;
+                padding-right: 26px;
+                background-color: #FFFFFF;
+                color: var(--portal-black);
+                border-radius: 100px;
+            }
+
+            .special__call-to-action .button:hover {
+                background-color: #eeeeee;
+            }
