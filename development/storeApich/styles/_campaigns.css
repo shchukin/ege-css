@@ -2,6 +2,8 @@
 
 }
     .campaigns__heading {
+        margin-top: 0;
+        margin-bottom: 0;
         font-family: var(--font-heading);
         font-weight: var(--font-weight-heading);
         font-size: 36px;
@@ -9,14 +11,17 @@
     }
 
     .campaigns__list {
+        margin-top: 42px;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 32px;
     }
         .campaigns__item {
-            position: relative;
+            display: flex;
+            flex-direction: column;
         }
             .campaigns__preview {
+                position: relative;
                 display: block;
                 overflow: hidden;
                 border-radius: 16px;
@@ -27,33 +32,159 @@
                     height: auto;
                 }
 
-            .campaigns__sub-heading {
-                margin-top: 28px;
-                margin-bottom: 0;
-                font-size: 24px;
-                line-height: 24px;
-            }
+                .campaigns__badge {
+                    position: absolute;
+                    left: 24px;
+                    top: 24px;
+                    display: block;
+                    padding: 6px 12px;
+                    background-color: var(--portal-black);
+                    border-radius: 100px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                }
 
-            .campaigns__description {
-                margin-top: 16px;
-                font-size: 15px;
-                line-height: 22px;
-                color: var(--brand_grey);
+            .campaigns__body {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                padding-left: 12px;
+                padding-right: 12px;
             }
+                .campaigns__sub-heading {
+                    margin-top: 28px;
+                    margin-bottom: 0;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                    .campaigns__link {
+                        color: inherit;
+                        padding-top: 6px;
+                        padding-block: 6px;
+                        text-decoration: 2px underline transparent;
+                        text-underline-offset: 3px;
+                    }
 
-            .campaigns__timing {
-                position: absolute;
-                left: 0;
-                bottom: 2px;
-                font-size: 13px;
-                line-height: 15px;
-                color: var(--brand_grey);
-            }
+                    .campaigns__link:hover {
+                        text-decoration-color: currentColor;
+                    }
 
-            .campaigns__details {
-                margin-top: 16px;
-                margin-right: 4px;
-                display: block;
-                width: fit-content;
-                margin-left: auto;
+                .campaigns__description {
+                    margin-top: 16px;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: var(--brand_grey);
+                }
+
+                .campaigns__foot {
+                    margin-top: auto;
+                    padding-top: 20px;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .campaigns__timing {
+                        margin-top: 2px;
+                        font-size: 13px;
+                        line-height: 15px;
+                        color: var(--brand_grey);
+                    }
+
+                    .campaigns__details {
+                        display: block;
+                        width: fit-content;
+                        margin-left: auto;
+                    }
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .campaigns {
+
+    }
+        .campaigns__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-family: var(--font-heading);*/
+            /*font-weight: var(--font-weight-heading);*/
+            font-size: 32px;
+            line-height: 46px;
+        }
+
+        .campaigns__list {
+            margin-top: 36px;
+        }
+            .campaigns__item {
+
             }
+                .campaigns__preview {
+                    border-radius: 14px;
+                }
+                    .campaigns__image {
+
+                    }
+
+                    .campaigns__badge {
+                        left: 20px;
+                        top: 20px;
+                        padding: 5px 11px;
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+
+                .campaigns__body {
+                    /*flex-grow: 1;*/
+                    /*display: flex;*/
+                    /*flex-direction: column;*/
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                    .campaigns__sub-heading {
+                        /*margin-top: 28px;*/
+                        /*margin-bottom: 0;*/
+                        font-size: 21px;
+                        line-height: 22px;
+                    }
+                        .campaigns__link {
+                            /*color: inherit;*/
+                            /*padding-top: 6px;*/
+                            /*padding-block: 6px;*/
+                            /*text-decoration: 2px underline transparent;*/
+                            /*text-underline-offset: 3px;*/
+                        }
+
+                        .campaigns__link:hover {
+                            /*text-decoration-color: currentColor;*/
+                        }
+
+                    .campaigns__description {
+                        /*margin-top: 16px;*/
+                        font-size: 14px;
+                        line-height: 20px;
+                        /*color: var(--brand_grey);*/
+                    }
+
+                    .campaigns__foot {
+                        /*margin-top: auto;*/
+                        /*padding-top: 20px;*/
+                        /*display: flex;*/
+                        /*align-items: flex-start;*/
+                    }
+                        .campaigns__timing {
+                            /*margin-top: 2px;*/
+                            font-size: 12px;
+                            /*line-height: 15px;*/
+                            /*color: var(--brand_grey);*/
+                        }
+
+                        .campaigns__details {
+                            /*display: block;*/
+                            /*width: fit-content;*/
+                            /*margin-left: auto;*/
+                        }
+}
