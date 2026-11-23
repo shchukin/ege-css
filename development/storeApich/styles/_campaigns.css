@@ -108,10 +108,6 @@
 
     }
         .campaigns__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-heading);*/
-            /*font-weight: var(--font-weight-heading);*/
             font-size: 32px;
             line-height: 46px;
         }
@@ -138,53 +134,37 @@
                     }
 
                 .campaigns__body {
-                    /*flex-grow: 1;*/
-                    /*display: flex;*/
-                    /*flex-direction: column;*/
                     padding-left: 0;
                     padding-right: 0;
                 }
                     .campaigns__sub-heading {
-                        /*margin-top: 28px;*/
-                        /*margin-bottom: 0;*/
+                        margin-top: 24px;
                         font-size: 21px;
                         line-height: 22px;
                     }
                         .campaigns__link {
-                            /*color: inherit;*/
-                            /*padding-top: 6px;*/
-                            /*padding-block: 6px;*/
-                            /*text-decoration: 2px underline transparent;*/
-                            /*text-underline-offset: 3px;*/
+
                         }
 
                         .campaigns__link:hover {
-                            /*text-decoration-color: currentColor;*/
+
                         }
 
                     .campaigns__description {
-                        /*margin-top: 16px;*/
+                        margin-top: 14px;
                         font-size: 14px;
                         line-height: 20px;
-                        /*color: var(--brand_grey);*/
+                        color: var(--brand_grey);
                     }
 
                     .campaigns__foot {
-                        /*margin-top: auto;*/
-                        /*padding-top: 20px;*/
-                        /*display: flex;*/
-                        /*align-items: flex-start;*/
+                        padding-top: 16px;
                     }
                         .campaigns__timing {
-                            /*margin-top: 2px;*/
                             font-size: 12px;
-                            /*line-height: 15px;*/
-                            /*color: var(--brand_grey);*/
                         }
 
                         .campaigns__details {
-                            /*display: block;*/
-                            /*width: fit-content;*/
-                            /*margin-left: auto;*/
+                         
                         }
 }
