@@ -33,11 +33,11 @@
                 gap: 16px;
             }
                 .push__media .portal-media__item {
-                    padding: 14px;
+                    padding: 12px;
                 }
                     .push__media .portal-media__icon {
-                        width: 28px;
-                        height: 28px;
+                        width: 26px;
+                        height: 26px;
                     }
     .push::after {
         content: "";
