@@ -182,20 +182,82 @@
 
     }
         .campaigns__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-family: var(--font-heading);*/
-            /*font-weight: var(--font-weight-heading);*/
-            /*font-size: 36px;*/
-            /*line-height: 50px;*/
+
         }
 
         .campaigns__list {
-            /*margin-top: 42px;*/
             display: flex;
             flex-direction: column;
-            /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
             gap: 60px;
+        }
+            .campaigns__item {
+
+            }
+                .campaigns__preview {
+                    max-width: 320px;
+                }
+                    .campaigns__image {
+
+                    }
+
+                    .campaigns__badge {
+
+                    }
+
+                .campaigns__body {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                    .campaigns__sub-heading {
+                        max-width: 480px;
+                    }
+                        .campaigns__link {
+
+                        }
+
+                        .campaigns__link:hover {
+
+                        }
+
+                    .campaigns__description {
+                        max-width: 480px;
+                    }
+
+                    .campaigns__foot {
+                        margin-top: 12px;
+                        padding-top: 0;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 12px;
+                    }
+                        .campaigns__timing {
+                            margin-top: 0;
+                        }
+
+                        .campaigns__details {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .campaigns {
+
+    }
+        .campaigns__heading {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        .campaigns__list {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 52px;
         }
             .campaigns__item {
                 /*display: flex;*/
@@ -206,12 +268,16 @@
                     /*display: block;*/
                     /*overflow: hidden;*/
                     /*border-radius: 16px;*/
-                    max-width: 320px;
                 }
                     .campaigns__image {
                         /*vertical-align: top;*/
                         /*width: 100%;*/
                         /*height: auto;*/
+                        /*transition: transform 600ms var(--ease-out-quint);*/
+                    }
+
+                    .campaigns__preview:hover .campaigns__image {
+                        /*transform: scale(1.1);*/
                     }
 
                     .campaigns__badge {
@@ -234,11 +300,10 @@
                     /*flex-grow: 1;*/
                     /*display: flex;*/
                     /*flex-direction: column;*/
-                    padding-left: 0;
-                    padding-right: 0;
+                    /*padding-left: 12px;*/
+                    /*padding-right: 12px;*/
                 }
                     .campaigns__sub-heading {
-                        max-width: 480px;
                         /*margin-top: 28px;*/
                         /*margin-bottom: 0;*/
                         /*font-size: 24px;*/
@@ -257,7 +322,6 @@
                         }
 
                     .campaigns__description {
-                        max-width: 480px;
                         /*margin-top: 16px;*/
                         /*font-size: 15px;*/
                         /*line-height: 22px;*/
@@ -265,14 +329,13 @@
                     }
 
                     .campaigns__foot {
-                        margin-top: 12px;
-                        padding-top: 0;
-                        display: flex;
-                        flex-direction: column-reverse;
-                        gap: 12px;
+                        /*margin-top: auto;*/
+                        /*padding-top: 20px;*/
+                        /*display: flex;*/
+                        /*align-items: flex-start;*/
                     }
                         .campaigns__timing {
-                            margin-top: 0;
+                            /*margin-top: 2px;*/
                             /*font-size: 13px;*/
                             /*line-height: 15px;*/
                             /*color: var(--brand_grey);*/
@@ -281,9 +344,10 @@
                         .campaigns__details {
                             /*display: block;*/
                             /*width: fit-content;*/
-                            margin-top: 0;
-                            margin-left: 0;
+                            /*margin-left: auto;*/
                         }
 }
+
+
 
 
