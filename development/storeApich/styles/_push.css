@@ -112,7 +112,7 @@
         display: block;
     }
         .push__content {
-            padding: 42px 32px 42px 42px;
+            padding: 46px 32px 50px 50px;
             border-radius: 16px;
         }
             .push__heading {
@@ -123,7 +123,7 @@
             .push__sub-heading {
                 margin-top: 32px;
                 font-size: 16px;
-                line-height: 22px;
+                line-height: 24px;
             }
 
             .push__media {
