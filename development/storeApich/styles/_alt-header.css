@@ -60,7 +60,7 @@
                         letter-spacing: 1px;
                         color: var(--brand_orange);
                         text-decoration: 1.5px underline transparent;
-                        text-underline-offset: 4px;
+                        text-underline-offset: 5px;
                         transition: text-decoration-color 0.1s ease;
                     }
 
@@ -84,7 +84,7 @@
                         background-color: transparent;
                         border-radius: 4px;
                         font-family: var(--font-heading);
-                        font-weight: bold;
+                        font-weight: var(--font-weight-heading);
                         font-size: 13px;
                         line-height: 18px;
                         color: var(--brand_orange);

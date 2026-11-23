@@ -14,6 +14,7 @@
     line-height: 20px;
     color: #FFFFFF;
     text-align: center;
+    text-wrap: balance;
 }
 
 .alert_danger {

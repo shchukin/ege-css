@@ -1,0 +1,158 @@
+.push {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+    .push__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 40px 80px 80px;
+        background-color: #F5F5F0;
+        border-top-left-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+        .push__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
+            font-size: 36px;
+            line-height: 50px;
+        }
+
+        .push__sub-heading {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .push__media {
+            margin-top: 24px;
+        }
+            .push__media .portal-media {
+                gap: 16px;
+            }
+                .push__media .portal-media__item {
+                    padding: 14px;
+                }
+                    .push__media .portal-media__icon {
+                        width: 28px;
+                        height: 28px;
+                    }
+    .push::after {
+        content: "";
+        display: block;
+        background-image: url("../images/push@1x.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-top-right-radius: 28px;
+        border-bottom-right-radius: 28px;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .push::after {
+            background-image: url("../images/push@2x.jpg");
+        }
+    }
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .push {
+        grid-template-columns: 6fr 7fr;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .push {
+        display: block;
+    }
+        .push__content {
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: center;*/
+            /*padding: 80px 40px 80px 80px;*/
+            /*background-color: #F5F5F0;*/
+            border-radius: 28px;
+        }
+            .push__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: var(--font-weight-heading);*/
+                /*font-size: 36px;*/
+                /*line-height: 50px;*/
+            }
+                .push__heading br {
+                    display: none;
+                }
+
+            .push__sub-heading {
+                /*margin-top: 40px;*/
+                /*font-size: 18px;*/
+                /*line-height: 22px;*/
+            }
+
+            .push__media {
+                /*margin-top: 24px;*/
+            }
+
+        .push::after {
+            display: none;
+        }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .push {
+        display: block;
+    }
+        .push__content {
+            padding: 42px 32px 42px 42px;
+            /*background-color: #F5F5F0;*/
+            border-radius: 16px;
+        }
+            .push__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: var(--font-weight-heading);*/
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            .push__sub-heading {
+                margin-top: 32px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+
+            .push__media {
+                margin-top: 20px;
+            }
+                .push__media .portal-media {
+                    /*gap: 16px;*/
+                }
+                    .push__media .portal-media__item {
+                        padding: 10px;
+                    }
+                        .push__media .portal-media__icon {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+        .push::after {
+            display: none;
+        }
+}
+
+

@@ -1,3 +1,11 @@
 .shelf__sub-heading {
-    margin-top: 8px;
+    margin-top: 12px;
+}
+
+.shelf__list {
+    margin-top: 42px;
+}
+
+.shelf__details {
+    margin-top: 42px;
 }

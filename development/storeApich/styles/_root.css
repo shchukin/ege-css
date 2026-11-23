@@ -13,7 +13,7 @@
 
     /* RF Dewi Extended используется только в 800 (так же как и Futura PT в global) , так что везде где есть font-family: var(--font-heading); должно сразу идти и font-weight: var(--font-weight-heading); */
     --font-heading: "Open Sans", sans-serif;
-    --font-weight-heading: 700;
+    --font-weight-heading: 600;
 
     /* Импорт с более нового портала */
     --portal-panel-hover: #F2F2F2;

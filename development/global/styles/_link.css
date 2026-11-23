@@ -9,7 +9,7 @@
     font-size: inherit;
     line-height: inherit;
     color: var(--brand_orange);
-    text-decoration: 1px underline transparent;
+    text-decoration: 0.075em underline transparent;
     text-underline-offset: 0.25em;
     cursor: pointer;
 }
@@ -18,6 +18,11 @@
 .wysiwyg a:hover {
     text-decoration-color: currentColor;
 }
+
+/*.title .link {*/
+/*    text-decoration-thickness: 0.075em;*/
+/*    text-underline-offset: 0.12em;*/
+/*}*/
 
 
 .link_danger {
