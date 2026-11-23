@@ -55,12 +55,14 @@
     function disableStylesAndDOM() {
         $('.header, .alt-header, .page, .window, .cookies').hide();
         $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', true);
+        $('link[rel="stylesheet"]#yandex-delivery-widget-fixes').prop('disabled', false);
         $('#delivery-widget').show();
     }
 
     function enableStylesAndDOM() {
         $('.header, .alt-header, .page, .window, .cookies').show();
         $('link[rel="stylesheet"]').not('#yandex-delivery-widget-fixes').prop('disabled', false);
+        $('link[rel="stylesheet"]#yandex-delivery-widget-fixes').prop('disabled', false);
         $('#delivery-widget').hide();
     }
 

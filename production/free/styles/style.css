@@ -1263,7 +1263,8 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
-  text-align: center
+  text-align: center;
+  text-wrap: balance
 }
 .alert_danger {
   background-color: #ff7502
@@ -1396,7 +1397,7 @@ body {
   line-height: inherit;
   color: #FF7502;
   color: var(--brand_orange);
-  text-decoration: 1px underline transparent;
+  text-decoration: .075em underline transparent;
   text-underline-offset: .25em;
   cursor: pointer
 }

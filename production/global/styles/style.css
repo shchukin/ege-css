@@ -1440,7 +1440,8 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
-  text-align: center
+  text-align: center;
+  text-wrap: balance
 }
 .alert_danger {
   background-color: #ff7502
@@ -1573,7 +1574,7 @@ body {
   line-height: inherit;
   color: #FF7502;
   color: var(--brand_orange);
-  text-decoration: 1px underline transparent;
+  text-decoration: .075em underline transparent;
   text-underline-offset: .25em;
   cursor: pointer
 }
@@ -2554,10 +2555,12 @@ body {
   vertical-align: top;
   padding: 1px 5px 3px;
   color: inherit;
-  text-decoration: none
+  text-decoration: 1.5px underline transparent;
+  text-underline-offset: 3px
 }
 .product__link:hover {
-  text-decoration: underline
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor
 }
 .product__price {
   margin-top: 9px;
@@ -3127,10 +3130,15 @@ a.slider__slide:hover .slider__image {
   padding-top: 10px;
   padding-bottom: 10px;
   color: inherit;
-  text-decoration: none
+  text-decoration: 1.5px underline transparent;
+  text-underline-offset: 5px;
+  transition: -webkit-text-decoration-color .1s ease;
+  transition: text-decoration-color .1s ease;
+  transition: text-decoration-color .1s ease, -webkit-text-decoration-color .1s ease
 }
 .breadcrumbs__link:hover {
-  text-decoration: underline
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor
 }
 .breadcrumbs__current {
   padding-top: 10px;
