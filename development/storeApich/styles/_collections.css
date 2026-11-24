@@ -7,10 +7,15 @@
         text-align: center;
     }
 
+    .collections__more {
+        margin-top: 12px;
+        text-align: center;
+    }
+
     .collections__list {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-top: var(--landing-heading-gap);
+        margin-top: calc(var(--landing-heading-gap) - 12px);
         gap: 24px;
     }
 

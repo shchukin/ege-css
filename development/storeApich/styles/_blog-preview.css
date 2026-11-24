@@ -7,8 +7,13 @@
         text-align: center;
     }
 
+    .blog-preview__more {
+        margin-top: 12px;
+        text-align: center;
+    }
+
     .blog-preview__list {
-        margin-top: var(--landing-heading-gap);
+        margin-top: calc(var(--landing-heading-gap) - 12px);
     }
 
         @media (min-width: 768px) {
@@ -32,12 +37,5 @@
             }
         }
 
-    .blog-preview__more {
-        margin-top: 56px;
-        text-align: center;
-    }
-        .blog-preview__more .button {
-            min-width: 276px;
-        }
 
 

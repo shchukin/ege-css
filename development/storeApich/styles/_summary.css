@@ -12,15 +12,20 @@
             text-align: center;
         }
 
+        .summary__more {
+            margin-top: 12px;
+            text-align: center;
+        }
+
         .summary__body {
-            margin-top: var(--landing-heading-gap);
+            margin-top: calc(var(--landing-heading-gap) - 12px);
         }
             .summary__body::before {
                 content: "";
                 position: absolute;
                 left: -60px;
                 top: calc(55px + 40px + var(--landing-heading-gap));
-                bottom: 171px;
+                bottom: 60px;
                 width: 1px;
                 background-color: #E9E8E8;
             }
