@@ -1,0 +1,99 @@
+.overview {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+    .overview__box {
+        padding: 40px 48px;
+        background-color: #F7F7F8;
+        border-radius: 16px;
+    }
+        .overview__inner {
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+            .overview__lead {
+                margin-top: 0;
+                margin-bottom: 16px;
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--portal-black);
+                text-wrap: balance;
+            }
+
+            .overview__text {
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-size: 15px;
+                line-height: 25px;
+                color: var(--portal-grey-dark);
+            }
+
+            .overview__open {
+                display: block;
+                width: fit-content;
+                margin: 4px auto 0;
+                padding-top: 16px;
+                border-top: 1px solid #E5E7EB;
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
+                font-size: 18px;
+                line-height: 24px;
+                color: var(--brand_orange);
+            }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .overview__box {
+        padding: 36px 40px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .overview__box {
+        padding: 32px 28px;
+    }
+        .overview__lead {
+            font-size: 18px;
+            line-height: 26px;
+        }
+}
+
+
+@media (max-width: 767px) {
+
+    .overview {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+        .overview__box {
+            padding: 24px 22px;
+            border-radius: 12px;
+        }
+        .overview__inner {
+            text-align: left;
+        }
+            .overview__lead {
+                margin-bottom: 12px;
+                font-size: 17px;
+                line-height: 24px;
+            }
+
+            .overview__text {
+                margin-bottom: 16px;
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            .overview__open {
+                width: 100%;
+                font-size: 16px;
+                line-height: 22px;
+            }
+}

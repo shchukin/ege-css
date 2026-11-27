@@ -1,0 +1,97 @@
+.collab {
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+    .collab__box {
+        padding: 48px 56px;
+        background-color: var(--portal-black);
+        border-radius: 24px;
+        color: #FFFFFF;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 360px;
+        align-items: center;
+        gap: 48px;
+    }
+    .collab__content {
+
+    }
+        .collab__eyebrow {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #B8B8B3;
+        }
+
+        .collab__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
+            font-size: 26px;
+            line-height: 34px;
+            color: #FFFFFF;
+        }
+
+    .collab__contacts {
+
+    }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .collab {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+        .collab__box {
+            padding: 40px 44px;
+            grid-template-columns: minmax(0, 1fr) 320px;
+            gap: 36px;
+        }
+        .collab__heading {
+            font-size: 22px;
+            line-height: 30px;
+        }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .collab {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+        .collab__box {
+            padding: 36px 32px;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            border-radius: 20px;
+        }
+        .collab__heading {
+            font-size: 22px;
+            line-height: 30px;
+        }
+}
+
+
+@media (max-width: 767px) {
+
+    .collab {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+        .collab__box {
+            padding: 28px 22px;
+            grid-template-columns: 1fr;
+            gap: 22px;
+            border-radius: 16px;
+        }
+        .collab__heading {
+            font-size: 20px;
+            line-height: 27px;
+        }
+}

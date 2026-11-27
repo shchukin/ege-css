@@ -1,0 +1,49 @@
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .contact-list__row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        padding: 10px 12px;
+        background-color: #F7F7F8;
+        border-radius: 10px;
+    }
+        .contact-list__label {
+            font-size: 12px;
+            line-height: 16px;
+            color: var(--portal-grey-dark);
+        }
+
+        .contact-list__link {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: var(--portal-black);
+            text-align: left;
+            text-decoration: 1px underline transparent;
+            text-underline-offset: 3px;
+            word-break: break-word;
+            transition: text-decoration-color 150ms ease;
+        }
+
+        .contact-list__link:hover {
+            text-decoration-color: currentColor;
+        }
+
+
+/* Инвертированный вариант контактов (для тёмного блока) */
+.contact-list--inverted .contact-list__row {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.contact-list--inverted .contact-list__label {
+    color: #B8B8B3;
+}
+
+.contact-list--inverted .contact-list__link {
+    color: #FFFFFF;
+}

@@ -1,0 +1,158 @@
+.benefits {
+    display: grid;
+    grid-template-columns: 480px minmax(0, 1fr);
+    gap: 60px;
+    align-items: start;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+    .benefits__media {
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: var(--image-fallback);
+    }
+        .benefits__image {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+    .benefits__body {
+
+    }
+        .benefits__heading {
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+
+        .benefits__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+            .benefits__item {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+            }
+                .benefits__mark {
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 2px;
+                    border-radius: 50%;
+                    background-color: var(--brand-orange-5pct);
+                    color: var(--brand_orange);
+                }
+
+                .benefits__content {
+                    flex-grow: 1;
+                }
+                    .benefits__title {
+                        margin-top: 0;
+                        margin-bottom: 4px;
+                        font-family: var(--font-heading);
+                        font-weight: var(--font-weight-heading);
+                        font-size: 17px;
+                        line-height: 23px;
+                        color: var(--portal-black);
+                    }
+
+                    .benefits__text {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: var(--portal-grey-dark);
+                        text-wrap: balance;
+                    }
+
+        .benefits__slogan {
+            margin-top: 32px;
+            margin-bottom: 0;
+            padding: 20px 24px;
+            background-color: #F7F7F8;
+            border-radius: 12px;
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
+            font-size: 20px;
+            line-height: 26px;
+            color: var(--portal-black);
+        }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .benefits {
+        grid-template-columns: 380px minmax(0, 1fr);
+        gap: 40px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .benefits {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+        .benefits__media {
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+
+@media (max-width: 767px) {
+
+    .benefits {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+        .benefits__media {
+            border-radius: 12px;
+        }
+
+        .benefits__heading {
+            margin-bottom: 24px;
+        }
+
+        .benefits__list {
+            gap: 18px;
+        }
+            .benefits__item {
+                gap: 12px;
+            }
+                .benefits__title {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+                .benefits__text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+        .benefits__slogan {
+            margin-top: 24px;
+            padding: 16px 22px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+}

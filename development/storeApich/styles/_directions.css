@@ -1,0 +1,115 @@
+.directions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 42px;
+}
+    .directions__card {
+        display: flex;
+        flex-direction: column;
+        padding: 28px 24px;
+        background-color: #FFFFFF;
+        border: 1px solid #E9E8E8;
+        border-radius: 16px;
+        transition: transform 300ms var(--ease-out-quint),
+                    box-shadow 300ms var(--ease-out-quint),
+                    border-color 200ms ease;
+    }
+        .directions__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+            .directions__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                background-color: var(--brand-orange-5pct);
+                border-radius: 10px;
+                color: var(--brand_orange);
+            }
+                .directions__svg {
+                    width: 22px;
+                    height: 22px;
+                    stroke: currentColor;
+                    fill: none;
+                }
+
+        .directions__title {
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-family: var(--font-heading);
+            font-weight: var(--font-weight-heading);
+            font-size: 17px;
+            line-height: 24px;
+            color: var(--portal-black);
+        }
+
+        .directions__contacts {
+            margin-top: auto;
+        }
+
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+
+    .directions {
+        gap: 16px;
+        padding-bottom: 36px;
+    }
+        .directions__card {
+            padding: 24px 20px;
+        }
+            .directions__title {
+                font-size: 16px;
+                line-height: 22px;
+            }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .directions {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding-bottom: 32px;
+    }
+        .directions__card {
+            padding: 24px;
+        }
+}
+
+
+@media (max-width: 767px) {
+
+    .directions {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding-top: 16px;
+        padding-bottom: 26px;
+    }
+        .directions__card {
+            padding: 24px 22px;
+            border-radius: 12px;
+        }
+            .directions__head {
+                margin-bottom: 14px;
+            }
+                .directions__icon {
+                    width: 40px;
+                    height: 40px;
+                }
+
+            .directions__title {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 18px;
+            }
+
+            .directions__contacts {
+                padding-top: 16px;
+            }
+}
