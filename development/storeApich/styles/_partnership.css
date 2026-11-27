@@ -10,66 +10,396 @@
             margin-bottom: 0;
             text-align: center;
         }
-            .partnership__intro {
-                margin-top: 42px;
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                align-items: center;
-                gap: 60px;
-            }
-                .partnership__image {
-                    flex-shrink: 0;
-                    width: 100%;
-                    height: auto;
-                    aspect-ratio: 570/300;
-                    object-fit: cover;
-                    vertical-align: top;
-                    background-color: var(--image-fallback);
-                    border-radius: 3px;
-                }
 
-                .partnership__content {
-
-                }
-
-            .partnership__sub-heading {
-                margin-top: 84px;
-                margin-bottom: 0;
+        /* Вводный блок */
+        .partnership__intro {
+            margin-top: 42px;
+            padding: 40px 48px;
+            background-color: #F7F7F8;
+            border-radius: 16px;
+        }
+            .partnership__intro-inner {
+                max-width: 820px;
+                margin-left: auto;
+                margin-right: auto;
                 text-align: center;
             }
+                .partnership__lead {
+                    margin-top: 0;
+                    margin-bottom: 16px;
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: var(--portal-black);
+                }
 
+                .partnership__text {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: var(--portal-grey-dark);
+                }
 
-            .partnership__contacts {
-                margin-top: 60px;
-                display: flex;
-                flex-direction: column;
+                .partnership__open {
+                    display: inline-block;
+                    margin-top: 4px;
+                    margin-bottom: 0;
+                    padding-top: 16px;
+                    border-top: 1px solid #E5E7EB;
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: var(--brand_orange);
+                }
+
+        /* 3 направления сотрудничества */
+        .partnership__directions {
+            margin-top: 32px;
+        }
+            .partnership__directions-grid {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
                 gap: 24px;
             }
 
+            .partnership-card {
+                display: flex;
+                flex-direction: column;
+                padding: 28px 24px;
+                background-color: #FFFFFF;
+                border: 1px solid #E9E8E8;
+                border-radius: 16px;
+                transition: transform 300ms var(--ease-out-quint),
+                            box-shadow 300ms var(--ease-out-quint),
+                            border-color 200ms ease;
+            }
+
+            .partnership-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+                border-color: #DCDCDC;
+            }
+                .partnership-card__head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+                    .partnership-card__icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 44px;
+                        height: 44px;
+                        background-color: var(--brand-orange-5pct);
+                        border-radius: 10px;
+                        color: var(--brand_orange);
+                    }
+                        .partnership-card__svg {
+                            width: 22px;
+                            height: 22px;
+                            stroke: currentColor;
+                            fill: none;
+                        }
+
+                .partnership-card__title {
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
+                    font-size: 17px;
+                    line-height: 24px;
+                    color: var(--portal-black);
+                }
+
+                .partnership-card__contacts {
+                    margin-top: auto;
+                }
+
+        /* Защищённый блок контактов */
+        .partnership-contacts {
+
+        }
+            .partnership-contacts__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+                .partnership-contacts__row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 2px;
+                    padding: 10px 12px;
+                    background-color: #F7F7F8;
+                    border-radius: 10px;
+                }
+                    .partnership-contacts__label {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: var(--portal-grey-dark);
+                    }
+
+                    .partnership-contacts__link {
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: var(--portal-black);
+                        text-align: left;
+                        text-decoration: 1px underline transparent;
+                        text-underline-offset: 3px;
+                        word-break: break-word;
+                        transition: text-decoration-color 150ms ease;
+                    }
+
+                    .partnership-contacts__link:hover {
+                        text-decoration-color: currentColor;
+                    }
+
+        /* Инвертированный вариант контактов (для тёмного блока) */
+        .partnership-contacts--inverted .partnership-contacts__row {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .partnership-contacts--inverted .partnership-contacts__label {
+            color: #B8B8B3;
+        }
+
+        .partnership-contacts--inverted .partnership-contacts__link {
+            color: #FFFFFF;
+        }
+
+        /* Блок преимуществ + картинка */
+        .partnership__benefits {
+            margin-top: 84px;
+        }
+            .partnership__benefits-grid {
+                display: grid;
+                grid-template-columns: 480px minmax(0, 1fr);
+                gap: 60px;
+                align-items: start;
+            }
+                .partnership__media {
+                    border-radius: 16px;
+                    overflow: hidden;
+                    background-color: var(--image-fallback);
+                }
+                    .partnership__image {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 4 / 5;
+                        object-fit: cover;
+                        vertical-align: top;
+                    }
+
+                .partnership__benefits-body {
+
+                }
+                    .partnership__benefits-heading {
+                        margin-top: 0;
+                        margin-bottom: 32px;
+                    }
+
+                    .partnership__benefits-list {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                    }
+                        .partnership__benefit {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 16px;
+                        }
+                            .partnership__benefit-mark {
+                                flex-shrink: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 30px;
+                                height: 30px;
+                                margin-top: 2px;
+                                border-radius: 50%;
+                                background-color: var(--brand-orange-5pct);
+                                color: var(--brand_orange);
+                            }
+
+                            .partnership__benefit-content {
+                                flex-grow: 1;
+                            }
+                                .partnership__benefit-title {
+                                    margin-top: 0;
+                                    margin-bottom: 4px;
+                                    font-family: var(--font-heading);
+                                    font-weight: var(--font-weight-heading);
+                                    font-size: 17px;
+                                    line-height: 23px;
+                                    color: var(--portal-black);
+                                }
+
+                                .partnership__benefit-text {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    font-size: 15px;
+                                    line-height: 22px;
+                                    color: var(--portal-grey-dark);
+                                    text-wrap: balance;
+                                }
+
+                    .partnership__slogan {
+                        margin-top: 32px;
+                        margin-bottom: 0;
+                        padding: 20px 24px;
+                        background-color: #F7F7F8;
+                        border-radius: 12px;
+                        font-family: var(--font-heading);
+                        font-weight: var(--font-weight-heading);
+                        font-size: 20px;
+                        line-height: 26px;
+                        color: var(--portal-black);
+                    }
+
+        /* Блок рекламы, блогеров и коллабораций */
+        .partnership__collab {
+            margin-top: 84px;
+            padding: 48px 56px;
+            background-color: var(--portal-black);
+            border-radius: 24px;
+            color: #FFFFFF;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 360px;
+            align-items: center;
+            gap: 48px;
+        }
+            .partnership__collab-content {
+
+            }
+                .partnership__collab-eyebrow {
+                    display: inline-block;
+                    margin-bottom: 12px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #B8B8B3;
+                }
+
+                .partnership__collab-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-weight-heading);
+                    font-size: 26px;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                }
+
+            .partnership__collab-contacts {
+
+            }
 
 
 @media (min-width: 1024px) and (max-width: 1339px) {
 
-        .partnership__intro {
-            grid-template-columns: 376px auto;
-            gap: 60px;
-        }
-            .partnership__image {
-                width: 376px;
-            }
+    .partnership__intro {
+        padding: 36px 40px;
+    }
+
+    .partnership__directions-grid {
+        gap: 16px;
+    }
+
+    .partnership-card {
+        padding: 24px 20px;
+    }
+
+    .partnership-card__title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .partnership__benefits {
+        margin-top: 72px;
+    }
+
+    .partnership__benefits-grid {
+        grid-template-columns: 380px minmax(0, 1fr);
+        gap: 40px;
+    }
+
+    .partnership__collab {
+        margin-top: 72px;
+        padding: 40px 44px;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 36px;
+    }
+
+    .partnership__collab-heading {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
-    .partnership__intro {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
+    .partnership {
+        padding-top: 48px;
+        padding-bottom: 84px;
     }
 
-    .partnership__image {
-        width: 376px;
+    .partnership__intro {
+        margin-top: 32px;
+        padding: 32px 28px;
+    }
+
+    .partnership__lead {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .partnership__directions-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .partnership-card {
+        padding: 24px;
+    }
+
+    .partnership__benefits {
+        margin-top: 64px;
+    }
+
+    .partnership__benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .partnership__media {
+        max-width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partnership__collab {
+        margin-top: 64px;
+        padding: 36px 32px;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        border-radius: 20px;
+    }
+
+    .partnership__collab-heading {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 
@@ -78,22 +408,122 @@
 
     .partnership {
         padding-top: 32px;
-        padding-bottom: 80px;
-    }
-        .partnership__intro {
-            margin-top: 30px;
-        }
-
-        .partnership__image {
-            width: 100%;
-            height: auto;
-        }
-
-    .partnership__sub-heading {
-        margin-top: 60px;
+        padding-bottom: 64px;
     }
 
-    .partnership__contacts {
-        margin-top: 36px;
+    .partnership__intro {
+        margin-top: 24px;
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .partnership__intro-inner {
+        text-align: left;
+    }
+
+    .partnership__lead {
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
+    .partnership__text {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .partnership__open {
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .partnership__directions {
+        margin-top: 24px;
+    }
+
+    .partnership__directions-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .partnership-card {
+        padding: 20px 18px;
+        border-radius: 12px;
+    }
+
+    .partnership-card__head {
+        margin-bottom: 14px;
+    }
+
+    .partnership-card__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .partnership-card__title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 18px;
+    }
+
+    .partnership-card__contacts {
+        padding-top: 16px;
+    }
+
+    .partnership__benefits {
+        margin-top: 52px;
+    }
+
+    .partnership__benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .partnership__media {
+        border-radius: 12px;
+    }
+
+    .partnership__benefits-heading {
+        margin-bottom: 24px;
+    }
+
+    .partnership__benefits-list {
+        gap: 18px;
+    }
+
+    .partnership__benefit {
+        gap: 12px;
+    }
+
+    .partnership__benefit-title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .partnership__benefit-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .partnership__slogan {
+        margin-top: 24px;
+        padding: 16px 18px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .partnership__collab {
+        margin-top: 52px;
+        padding: 28px 20px;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        border-radius: 16px;
+    }
+
+    .partnership__collab-heading {
+        font-size: 20px;
+        line-height: 27px;
     }
 }

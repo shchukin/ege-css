@@ -1,14 +1,16 @@
 (function ($) {
     'use strict';
 
-    function decodeRtlPhone(el) {
+    function decodeRtlText(el, mirrorBrackets) {
         var txt = (el.textContent || el.innerText || '').trim();
         if (!txt) return null;
 
-        // Разворачиваем RTL-текст посимвольно с зеркалированием скобок
+        // Разворачиваем RTL-текст посимвольно (для телефонов дополнительно зеркалируем скобки)
         return Array.from(txt).reverse().map(function (c) {
-            if (c === '(') return ')';
-            if (c === ')') return '(';
+            if (mirrorBrackets) {
+                if (c === '(') return ')';
+                if (c === ')') return '(';
+            }
             return c;
         }).join('');
     }
@@ -17,7 +19,7 @@
         if (!el || el.getAttribute('data-unmasked') === 'true') return;
         el.setAttribute('data-unmasked', 'true');
 
-        var rawPhone = decodeRtlPhone(el);
+        var rawPhone = decodeRtlText(el, true);
         if (!rawPhone) return;
 
         var cleanPhone = rawPhone.replace(/[^\d+]/g, '');
@@ -30,14 +32,35 @@
         $(el).removeClass('js-smart-phone link_rtl');
     }
 
-    function initSmartPhone() {
-        $(document).on('pointerenter mouseover mousedown touchstart focusin', '.js-smart-phone', function () {
+    function unmaskEmail(el) {
+        if (!el || el.getAttribute('data-unmasked') === 'true') return;
+        el.setAttribute('data-unmasked', 'true');
+
+        var rawEmail = decodeRtlText(el, false);
+        if (!rawEmail) return;
+
+        // Обновляем ссылку на месте
+        el.href = 'mailto:' + rawEmail;
+        el.textContent = rawEmail;
+
+        // Удаляем служебные классы
+        $(el).removeClass('js-smart-email link_rtl');
+    }
+
+    function initSmartContacts() {
+        var events = 'pointerenter mouseover mousedown touchstart focusin click';
+
+        $(document).on(events, '.js-smart-phone', function () {
             unmaskPhone(this);
+        });
+
+        $(document).on(events, '.js-smart-email', function () {
+            unmaskEmail(this);
         });
     }
 
     $(document).ready(function () {
-        initSmartPhone();
+        initSmartContacts();
     });
 
 })(jQuery);
