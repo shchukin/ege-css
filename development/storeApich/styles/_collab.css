@@ -12,33 +12,32 @@
         align-items: center;
         gap: 48px;
     }
-    .collab__content {
+        .collab__content {
 
-    }
-        .collab__eyebrow {
-            display: inline-block;
-            margin-bottom: 12px;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 18px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: #B8B8B3;
         }
+            .collab__eyebrow {
+                display: block;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: #B8B8B3;
+            }
 
-        .collab__heading {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-family: var(--font-heading);
-            font-weight: var(--font-weight-heading);
-            font-size: 26px;
-            line-height: 34px;
-            color: #FFFFFF;
+            .collab__heading {
+                margin-top: 12px;
+                margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: var(--font-weight-heading);
+                font-size: 26px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+
+        .collab__contacts {
+
         }
-
-    .collab__contacts {
-
-    }
 
 
 @media (min-width: 1024px) and (max-width: 1339px) {
